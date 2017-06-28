@@ -76,27 +76,14 @@
 	
 	?>
 
-    <title><?php echo $title; ?></title>
+    <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/assets/img/favicon.ico">
     
-	<meta property="og:type" content="business.business">
-	<meta property="og:title" content="<?php echo $title; ?>">
-	<meta property="og:url" content="<?php echo $actual_link; ?>">
-	<meta property="og:image" content="<?php echo 'https://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>/<?php echo $imagen; ?>">
+	<meta property="og:type"	content="business.business">
+	<meta property="og:title" 	content="<?php echo $title; ?>">
+	<meta property="og:url" 	content="<?php echo $actual_link; ?>">
+	<meta property="og:image" 	content="<?php echo 'https://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>/<?php echo $imagen; ?>">
 
-
-    <!-- CSS --> 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/fonts.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="assets/css/hover-min.css" rel="stylesheet">
-    <link href="assets/css/owl.carousel.css" rel="stylesheet">
-    <link href="assets/css/owl.theme.default.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link href="assets/css/formValidation.min.css" rel="stylesheet">
-    <link href="assets/css/custom.css?v=1" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
+	<?php wp_head(); ?>
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

@@ -15,9 +15,24 @@ function iniciarTema(){
 	
 // carga css 
 function theme_styles() {
-    wp_enqueue_style('style-joia', get_template_directory_uri() . '/assets/css/main.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-boot', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-fonts', get_template_directory_uri() . '/assets/css/fonts.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-fawe', get_template_directory_uri() . '/assets/css/font-awesome.min.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-animate', get_template_directory_uri() . '/assets/css/animate.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-hover', get_template_directory_uri() . '/assets/css/hover-min.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-owl', get_template_directory_uri() . '/assets/css/owl.carousel.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-owltheme', get_template_directory_uri() . '/assets/css/owl.theme.default.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-bootsel', get_template_directory_uri() . '/https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-jqui', get_template_directory_uri() . '///code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-valio', get_template_directory_uri() . '/assets/css/formValidation.min.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-pak', get_template_directory_uri() . '/assets/css/custom.css', array(), '1', 'screen' );
 
 }
+
+
+    
+
+
 
 // carga js
 function jquery_cdn() {
