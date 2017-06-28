@@ -45,13 +45,18 @@ function jquery_cdn() {
 
 
 function theme_js(){
-    wp_enqueue_script('tether-js', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', array('jquery'),'', true);
-    wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'),'', true);
-    wp_enqueue_script('workaround-js', get_template_directory_uri() . '/assets/js/ie10-viewport-bug-workaround.js', array('jquery'),'', true);
-    wp_enqueue_script('owl', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'),'1.2.2', true);
-    wp_enqueue_script('jquery_easing', get_template_directory_uri() . '/assets/js/jquery.easing.min.js', array('jquery'),'1.2.2', true);
-    wp_enqueue_script('scrolling-nav', get_template_directory_uri() . '/assets/js/scrolling-nav.jss', array('jquery'),'1', true);
-    wp_enqueue_script('joiajs', get_template_directory_uri() . '/assets/js/script.js', array('jquery'),'1', true);
+
+	wp_enqueue_script('jquerymin-js', get_template_directory_uri() . '/https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', array('jquery'),'1', true);
+	wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'),'1', true);
+	wp_enqueue_script('owlcarous-js', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'),'1', true);
+	wp_enqueue_script('bootselec-js', get_template_directory_uri() . '/https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js', array('jquery'),'1', true);
+	wp_enqueue_script('youtube-js', get_template_directory_uri() . '/http://www.youtube.com/player_api', array('jquery'),'1', true);
+	wp_enqueue_script('scrollto-js', get_template_directory_uri() . '///cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js', array('jquery'),'1', true);
+	wp_enqueue_script('autocompl-js', get_template_directory_uri() . '/assets/js/jquery.autocomplete.min.js', array('jquery'),'1', true);
+	wp_enqueue_script('formvalio-js', get_template_directory_uri() . '/assets/js/formValidation.min.js', array('jquery'),'1', true);
+	wp_enqueue_script('valiolang-js', get_template_directory_uri() . '/assets/js/language/es_ES.js', array('jquery'),'1', true);
+	wp_enqueue_script('valioboot-js', get_template_directory_uri() . '/assets/js/framework/bootstrap.min.js', array('jquery'),'1', true);
+	wp_enqueue_script('pak-js', get_template_directory_uri() . '/assets/js/pak.js?v=1.1', array('jquery'),'1', true);
 
 }	
     add_action('wp_enqueue_scripts', 'theme_styles');
@@ -93,7 +98,7 @@ remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 
 // add google analytics to footer
 function add_google_analytics() {
-	echo '<script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>';
+	echo '<script src="http://www.google-analytics.com/ga.js" type="text/javascript', array('jquery'),'1', true);';
 	echo '<script type="text/javascript">';
 	echo 'var pageTracker = _gat._getTracker("UA-XXXXX-X");';
 	echo 'pageTracker._trackPageview();';
