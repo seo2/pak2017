@@ -68,7 +68,7 @@
     <div class="container">
           <div class="footer_bottom">
           <div class="copy">
-              2017 © Todos los derechos reservados.
+              <?php echo date("Y"); ?> © Todos los derechos reservados.
           </div>
           <div class="trip_advisor">
           <!-- <a href="https://www.tripadvisor.cl/Attraction_Review-g294305-d2491922-Reviews-Parque_Arauco-Santiago_Santiago_Metropolitan_Region.html">
@@ -88,18 +88,8 @@
       </div><!-- footer_bottom -->  
     </div>
     <!-- js --> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
-    <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
-    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
-<!--     <script src="assets/js/typeahead.min.js"></script> -->
-    <script src="assets/js/jquery.autocomplete.min.js"></script>
-    <script src="assets/js/formValidation.min.js"></script>
-    <script src="assets/js/language/es_ES.js"></script>
-	<script src="assets/js/framework/bootstrap.min.js"></script>
-    <script src="assets/js/pak.js?v=1.1"></script>
+
+<?php wp_footer(); ?>
 
 <script> 
 	$(function(){
