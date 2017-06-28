@@ -25,8 +25,8 @@
             <div class="container">
               <div class="row">
                 <div class="col-sm-12">
-                   <img class="img-responsive visible-md visible-lg" src="assets/img/tarifas.png" alt="" >
-                   <img class="img-responsive visible-xs visible-sm" src="assets/img/tarifas.png" alt="" >
+                   <img class="img-responsive visible-md visible-lg" src="<?php bloginfo('template_url'); ?>/assets/img/tarifas.png" alt="" >
+                   <img class="img-responsive visible-xs visible-sm" src="<?php bloginfo('template_url'); ?>/assets/img/tarifas.png" alt="" >
                 </div>
               </div>
        

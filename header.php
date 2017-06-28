@@ -55,7 +55,7 @@
 			foreach ($tiendas as $t) {   
 		    	$imagen = get_img_tienda($t['punto_interes']);
 		    	if(!$imagen){
-		        	$imagen = "assets/img/demobgtienda.jpg";
+		        	$imagen = "<?php bloginfo('template_url'); ?>/assets/img/demobgtienda.jpg";
 		    	}else{
 	                $imagen = 'ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
 		    	}
@@ -76,7 +76,7 @@
 	
 	?>
 
-    <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/assets/img/favicon.ico">
+    <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/<?php bloginfo('template_url'); ?>/assets/img/favicon.ico">
     
 	<meta property="og:type"	content="business.business">
 	<meta property="og:title" 	content="<?php echo $title; ?>">

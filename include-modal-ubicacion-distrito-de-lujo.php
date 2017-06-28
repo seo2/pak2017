@@ -7,7 +7,7 @@
                             <h4 class="modal-title" id="myModalLabel">Distrito de Lujo está ubicado en el nivel 3 del Boulevard y muy cercano a Piso Diseño.</h4>
                           </div>
                           <div class="modal-body">
-                              <img src="assets/img/map_ubicacion.png" class="img-responsive center-block" alt="">
+                              <img src="<?php bloginfo('template_url'); ?>/assets/img/map_ubicacion.png" class="img-responsive center-block" alt="">
                           </div>
                           <div class="modal-footer">
                            

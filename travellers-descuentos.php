@@ -61,12 +61,12 @@
                                                  
                                             </div>
                                             <!-- 720 x 720 -->
-                                            <img class="img-responsive" src="assets/img/dcto1.jpg">
+                                            <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/dcto1.jpg">
                                         </a>
                                         <div class="box_logo_tienda">
                                           <div class="logo_tienda">
                                             <!--  -->
-                                              <img src="assets/img/demologotienda.jpg" alt="" class="img-responsive">
+                                              <img src="<?php bloginfo('template_url'); ?>/assets/img/demologotienda.jpg" alt="" class="img-responsive">
                                           </div> <!-- logo_tienda -->
                                         </div> <!-- box logo tienda -->
                                     </div> <!--  tienda -->
@@ -88,11 +88,11 @@
                                               </div>
                                                
                                             </div>
-                                            <img class="img-responsive" src="assets/img/dcto2.jpg">
+                                            <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/dcto2.jpg">
                                         </a>
                                               <div class="box_logo_tienda">
                                                 <div class="logo_tienda">
-                                                    <img src="assets/img/demologotienda.jpg" alt="" class="img-responsive">
+                                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/demologotienda.jpg" alt="" class="img-responsive">
                                                 </div> <!-- logo_tienda -->
                                               </div> <!-- box logo tienda -->
                                     </div> <!--  tienda -->
@@ -115,11 +115,11 @@
                                               </div>
                                                
                                             </div>
-                                            <img class="img-responsive" src="assets/img/dcto3.jpg">
+                                            <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/dcto3.jpg">
                                         </a>
                                               <div class="box_logo_tienda">
                                                 <div class="logo_tienda">
-                                                    <img src="assets/img/demologotienda.jpg" alt="" class="img-responsive">
+                                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/demologotienda.jpg" alt="" class="img-responsive">
                                                 </div> <!-- logo_tienda -->
                                               </div> <!-- box logo tienda -->
                                     </div> <!--  tienda -->
@@ -146,11 +146,11 @@
 
                                                  
                                             </div>
-                                            <img class="img-responsive" src="assets/img/dcto2.jpg">
+                                            <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/dcto2.jpg">
                                         </a>
                                         <div class="box_logo_tienda">
                                           <div class="logo_tienda">
-                                              <img src="assets/img/demologotienda.jpg" alt="" class="img-responsive">
+                                              <img src="<?php bloginfo('template_url'); ?>/assets/img/demologotienda.jpg" alt="" class="img-responsive">
                                           </div> <!-- logo_tienda -->
                                         </div> <!-- box logo tienda -->
                                     </div> <!--  tienda -->
@@ -172,11 +172,11 @@
                                               </div>
                                                
                                             </div>
-                                            <img class="img-responsive" src="assets/img/dcto1.jpg">
+                                            <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/dcto1.jpg">
                                         </a>
                                               <div class="box_logo_tienda">
                                                 <div class="logo_tienda">
-                                                    <img src="assets/img/demologotienda.jpg" alt="" class="img-responsive">
+                                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/demologotienda.jpg" alt="" class="img-responsive">
                                                 </div> <!-- logo_tienda -->
                                               </div> <!-- box logo tienda -->
                                     </div> <!--  tienda -->
@@ -199,11 +199,11 @@
                                               </div>
                                                
                                             </div>
-                                            <img class="img-responsive" src="assets/img/dcto4.jpg">
+                                            <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/dcto4.jpg">
                                         </a>
                                               <div class="box_logo_tienda">
                                                 <div class="logo_tienda">
-                                                    <img src="assets/img/demologotienda.jpg" alt="" class="img-responsive">
+                                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/demologotienda.jpg" alt="" class="img-responsive">
                                                 </div> <!-- logo_tienda -->
                                               </div> <!-- box logo tienda -->
                                     </div> <!--  tienda -->
@@ -220,7 +220,7 @@
                             
                            <a href="" class="btn btn-default btn_ver_mas hvr-float">
                               <h3 class="ver_mas">ver más descuentos</h3>
-                              <img src="assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
+                              <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
                           </a>
                   </div>
                                  

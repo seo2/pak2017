@@ -14,7 +14,7 @@ if(isset($_GET['tiendaID'])){
 		foreach ($tiendas as $t) {   
 	    	$imagen = get_img_tienda($t['punto_interes']);
 	    	if(!$imagen){
-	        	$imagen = "assets/img/demobgtienda.jpg";
+	        	$imagen = "<?php bloginfo('template_url'); ?>/assets/img/demobgtienda.jpg";
 	    	}else{
                 $imagen = 'ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
 	    	}
@@ -64,7 +64,7 @@ if(isset($_GET['tiendaID'])){
 	                            </div>
 <!--
 	                            <div class="item">
-	                            	<div class="img_slide" style="background: url(assets/img/nueva_coleccion2.jpg);"></div>
+	                            	<div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/nueva_coleccion2.jpg);"></div>
 	                            </div>
 -->
                           </div><!-- slider single tienda -->

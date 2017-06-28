@@ -4,7 +4,7 @@
     <div class="col-xs-6 col-sm-3 col-md-3">
         <div class="box_servicio">
           <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#content_transfer">
-              <img src="assets/img/transfer.svg"  class="center-block">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/transfer.svg"  class="center-block">
               <p>Transfer</p>
           </a>
         </div>
@@ -16,7 +16,7 @@
       <div class="col-xs-6 col-sm-3 col-md-3">
         <div class="box_servicio">
           <a href="javascript:void(0);" class="borde_azul" data-toggle="collapse" data-target="#content_casas_cambio">
-              <img src="assets/img/casa_cambio.svg"   class="center-block">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/casa_cambio.svg"   class="center-block">
               <p>Casas de cambio</p>
           </a>
         </div>
@@ -29,7 +29,7 @@
       <div class="col-xs-6 col-sm-3 col-md-3">
         <div class="box_servicio">
           <a href="javascript:void(0);" class="borde_naranja" data-toggle="collapse" data-target="#content_agencia">
-              <img src="assets/img/agencia.svg"  class="center-block">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/agencia.svg"  class="center-block">
               <p>Agencias y turismo</p>
           </a>
         </div>
@@ -41,7 +41,7 @@
       <div class="col-xs-6 col-sm-3 col-md-3">
         <div class="box_servicio">
           <a href="javascript:void(0); " class="borde_amarillo" data-toggle="collapse" data-target="#content_taxis">
-              <img src="assets/img/taxis.svg"  class="center-block">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/taxis.svg"  class="center-block">
               <p>Taxis privados</p>
           </a>
         </div>
@@ -57,7 +57,7 @@
                 <div class="close_servicio"> </div>
                   <div class="row">
                       <div class="col-md-6 col-md-push-6">
-                            <div class="img_servicio"  style="background: url(assets/img/bg_serv_transfer.jpg);"></div>
+                            <div class="img_servicio"  style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_serv_transfer.jpg);"></div>
                       </div>
                       <div class="col-md-6 col-md-pull-6 ">
                            <div class="desc_servicio">
@@ -186,7 +186,7 @@
                <div class="close_servicio"> </div>
               <div class="row">
                   <div class="col-md-6 col-md-push-6">
-                      <div class="img_servicio"  style="background: url(assets/img/bg_serv_casas_cambio.jpg);"></div>
+                      <div class="img_servicio"  style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_serv_casas_cambio.jpg);"></div>
                   </div>
                       <div class="col-md-6 col-md-pull-6 ">
                       <div class="desc_servicio">
@@ -216,7 +216,7 @@
                     <div class="col-md-4">
                           <div class="box_agencia">
                                 <div class="head_agencia">
-                                  <img src="assets/img/turistik.png" alt="" width="65" height="80">
+                                  <img src="<?php bloginfo('template_url'); ?>/assets/img/turistik.png" alt="" width="65" height="80">
                                 </div>
                                 <div class="desc_servicio text-center">
                                 <p> Ofrece cultura, esparcimiento y diversión a través de servicios turísticos seguros, 
@@ -231,7 +231,7 @@
                     <div class="col-md-4">
                        <div class="box_agencia">
                           <div class="head_agencia">
-                           <img src="assets/img/latam.png" alt="" width="229" height="70">
+                           <img src="<?php bloginfo('template_url'); ?>/assets/img/latam.png" alt="" width="229" height="70">
                           </div>
                           <div class="desc_servicio text-center">
                             <p> Las vacaciones soñadas nunca fueron más simples de obtener que en nuestra tienda Lan Tam, 
@@ -244,7 +244,7 @@
                     <div class="col-md-4">
                         <div class="box_agencia">
                               <div class="head_agencia">
-                                <img src="assets/img/cocha.png" alt="" width="187" height="80">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/img/cocha.png" alt="" width="187" height="80">
                               </div>
                               <div class="desc_servicio text-center">
                               <p> Cuando de viajes se trata, Cocha es el experto. Con más de 60 años de experiencia,
@@ -266,7 +266,7 @@
                <div class="close_servicio"> </div>
               <div class="row">
                   <div class="col-md-6 col-md-push-6">
-                      <div class="img_servicio"  style="background: url(assets/img/bg_serv_taxis.jpg);"></div>
+                      <div class="img_servicio"  style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_serv_taxis.jpg);"></div>
                   </div>
                       <div class="col-md-6 col-md-pull-6 ">
                         <div class="desc_servicio">
@@ -296,7 +296,7 @@
       <div class="col-xs-6 col-sm-3 col-md-3">
         <div class="box_servicio">
           <a href="javascript:void(0);" class="borde_rojo" data-toggle="collapse" data-target="#content_bancos">
-              <img src="assets/img/bancos.svg"   class="center-block">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/bancos.svg"   class="center-block">
               <p>Bancos</p>
           </a>
         </div>
@@ -308,7 +308,7 @@
 <!--       <div class="col-xs-6 col-sm-3 col-md-3">
         <div class="box_servicio">
           <a href="javascript:void(0);" class="borde_verde_oscuro" data-toggle="collapse" data-target="#content_chip">
-              <img src="assets/img/arauco_chip.svg"  class="center-block">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/arauco_chip.svg"  class="center-block">
               <p>Arauco Chip </p>
           </a>
         </div>
@@ -325,7 +325,7 @@
                      <div class="col-md-4">
                            <div class="box_agencia">
                                  <div class="head_agencia">
-                                   <img src="assets/img/logo_bbva.png" height="40">
+                                   <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_bbva.png" height="40">
                                  </div>
                                  <div class="desc_servicio text-center">
                                  <p> Lunes a Viernes <br>
@@ -341,7 +341,7 @@
                      <div class="col-md-4">
                      <div class="box_agencia">
                            <div class="head_agencia">
-                             <img src="assets/img/logo_santander.jpg">
+                             <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_santander.jpg">
                            </div>
                            <div class="desc_servicio text-center">
                                <p> Lunes a Viernes <br>

@@ -6,7 +6,7 @@
        <div class="col-sm-6">
 	   		<div class="box_servicio">
 				<a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#gal4_xs">
-				  <img src="assets/img/prev_dlgal05.jpg" class="center-block img-responsive">
+				  <img src="<?php bloginfo('template_url'); ?>/assets/img/prev_dlgal05.jpg" class="center-block img-responsive">
 			  </a>
 			</div>
 			<div class="box_more_info">
@@ -22,37 +22,37 @@
                       <div class="col-md-6">
                             <div class="slider_entrentencion owl-carousel owl-theme">
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tiffany/img_001.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_001.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tiffany/img_002.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_002.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tiffany/img_003.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_003.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tiffany/img_004.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_004.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tiffany/img_005.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_005.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tiffany/img_006.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_006.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tiffany/img_007.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_007.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tiffany/img_008.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_008.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tiffany/img_009.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_009.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tiffany/img_010.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_010.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tiffany/img_011.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_011.jpg);"> </div>
                                       </div>
 
                                 </div><!--  slider_entretenion -->
@@ -74,7 +74,7 @@
        <div class="col-sm-6">
 	   		<div class="box_servicio">
 				<a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#gal1_xs">
-				  <img src="assets/img/prev_dlgal01.jpg" class="center-block img-responsive">
+				  <img src="<?php bloginfo('template_url'); ?>/assets/img/prev_dlgal01.jpg" class="center-block img-responsive">
 			  </a>
 			</div>
 			<div class="box_more_info">
@@ -90,37 +90,37 @@
                       <div class="col-md-6">
                             <div class="slider_entrentencion owl-carousel owl-theme">
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tous10/img_01.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_01.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tous10/img_02.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_02.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tous10/img_03.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_03.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tous10/img_04.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_04.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tous10/img_05.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_05.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tous10/img_06.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_06.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tous10/img_07.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_07.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tous10/img_08.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_08.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tous10/img_09.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_09.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tous10/img_10.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_10.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/tous10/img_11.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_11.jpg);"> </div>
                                       </div>
 
                                 </div><!--  slider_entretenion -->
@@ -143,7 +143,7 @@
             <div class="col-sm-6">
                 <div class="box_servicio">
                   <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#gal2_xs">
-                      <img src="assets/img/prev_dlgal02.jpg" class="center-block img-responsive">
+                      <img src="<?php bloginfo('template_url'); ?>/assets/img/prev_dlgal02.jpg" class="center-block img-responsive">
                   </a>
                 </div>
                 <div class="box_more_info">
@@ -159,121 +159,121 @@
                               <div class="col-md-6">
                                     <div class="slider_entrentencion owl-carousel owl-theme">
                                           <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_01.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_01.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_02.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_02.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_03.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_03.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_04.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_04.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_05.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_05.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_06.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_06.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_07.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_07.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_08.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_08.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_09.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_09.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_10.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_10.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_11.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_11.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_12.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_12.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_13.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_13.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_14.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_14.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_15.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_15.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_16.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_16.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_17.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_17.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_18.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_18.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_19.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_19.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_20.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_20.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_21.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_21.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_22.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_22.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_23.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_23.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_24.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_24.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_25.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_25.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_26.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_26.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_27.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_27.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_28.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_28.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_29.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_29.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_30.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_30.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_31.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_31.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_32.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_32.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_33.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_33.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_34.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_34.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_35.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_35.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_36.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_36.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_37.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_37.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_38.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_38.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/primaveradelujo/img_39.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/primaveradelujo/img_39.jpg);"> </div>
                                       </div> 
 
                                     </div><!--  slider_entretenion -->
@@ -294,7 +294,7 @@
             <div class="col-sm-6">
                 <div class="box_servicio">
                   <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#gal3_xs">
-                      <img src="assets/img/prev_dlgal03.jpg" class="center-block img-responsive">
+                      <img src="<?php bloginfo('template_url'); ?>/assets/img/prev_dlgal03.jpg" class="center-block img-responsive">
                   </a>
                 </div>
                 <div class="box_more_info">
@@ -310,70 +310,70 @@
                               <div class="col-md-6">
                                     <div class="slider_entrentencion owl-carousel owl-theme">
                                     	<div class="item">
-											<div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_01.jpg);"> </div>
+											<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_01.jpg);"> </div>
 										</div>
                                    		<div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_02.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_02.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_03.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_03.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_04.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_04.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_05.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_05.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_06.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_06.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_07.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_07.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_08.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_08.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_09.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_09.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_10.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_10.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_11.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_11.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_12.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_12.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_13.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_13.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_14.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_14.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_15.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_15.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_16.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_16.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_17.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_17.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_18.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_18.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_19.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_19.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_20.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_20.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_21.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_21.jpg);"> </div>
                                       </div>
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/galeria/louis_vuitton/img_22.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_22.jpg);"> </div>
                                       </div>
                                     </div><!--  slider_entretenion -->
                                      <!-- <p>Quiero compartir este post: </p> -->
@@ -394,7 +394,7 @@
 				 <!--<div class="col-sm-6">
 					  <div class="box_servicio">
 						<a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#gal4_xs">
-							<img src="assets/img/prev_dlgal04.jpg" class="center-block img-responsive">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/prev_dlgal04.jpg" class="center-block img-responsive">
 						</a>
 					  </div>
 					  <div class="box_more_info">
@@ -410,34 +410,34 @@
                             <div class="col-md-6">
                                   <div class="slider_entrentencion owl-carousel owl-theme">
                                             <div class="item">
-													<div class="img_servicio" style="background: url(assets/img/galeria/exhibicion_autos_lujo/img_01.jpg);"> </div>
+													<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_01.jpg);"> </div>
 											  </div>
 											  <div class="item">
-													<div class="img_servicio" style="background: url(assets/img/galeria/exhibicion_autos_lujo/img_02.jpg);"> </div>
+													<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_02.jpg);"> </div>
 											  </div>
 											  <div class="item">
-													<div class="img_servicio" style="background: url(assets/img/galeria/exhibicion_autos_lujo/img_03.jpg);"> </div>
+													<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_03.jpg);"> </div>
 											  </div>
 											  <div class="item">
-													<div class="img_servicio" style="background: url(assets/img/galeria/exhibicion_autos_lujo/img_04.jpg);"> </div>
+													<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_04.jpg);"> </div>
 											  </div>
 											  <div class="item">
-													<div class="img_servicio" style="background: url(assets/img/galeria/exhibicion_autos_lujo/img_05.jpg);"> </div>
+													<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_05.jpg);"> </div>
 											  </div>
 											  <div class="item">
-													<div class="img_servicio" style="background: url(assets/img/galeria/exhibicion_autos_lujo/img_06.jpg);"> </div>
+													<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_06.jpg);"> </div>
 											  </div>
 											  <div class="item">
-													<div class="img_servicio" style="background: url(assets/img/galeria/exhibicion_autos_lujo/img_07.jpg);"> </div>
+													<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_07.jpg);"> </div>
 											  </div>
 											  <div class="item">
-													<div class="img_servicio" style="background: url(assets/img/galeria/exhibicion_autos_lujo/img_08.jpg);"> </div>
+													<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_08.jpg);"> </div>
 											  </div>
 											  <div class="item">
-													<div class="img_servicio" style="background: url(assets/img/galeria/exhibicion_autos_lujo/img_09.jpg);"> </div>
+													<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_09.jpg);"> </div>
 											  </div>
 											  <div class="item">
-													<div class="img_servicio" style="background: url(assets/img/galeria/exhibicion_autos_lujo/img_10.jpg);"> </div>
+													<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_10.jpg);"> </div>
 											  </div>
 
                                       </div>
@@ -458,7 +458,7 @@
 <!--<div class="box_ver_mas_tiendas text-center">
    <a href="" class="btn btn-default btn_ver_mas hvr-float">
       <h3 class="ver_mas">ver más galerías</h3>
-      <img src="assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
+      <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
   </a>
 </div>-->
 

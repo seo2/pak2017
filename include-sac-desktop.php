@@ -8,7 +8,7 @@
                                                <h3>contáctanos </h3>
                                                <div class="divider"> </div>
                                            </div>
-                                           <div class="box_slide" style="background: url(assets/img/bg_sac_contactanos.jpg);"> </div>                             
+                                           <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_sac_contactanos.jpg);"> </div>                             
                                       </a>
                                    </div> <!-- contactanos -->
 
@@ -26,7 +26,7 @@
                                          <h3>horarios </h3>
                                          <div class="divider"> </div>
                                      </div>
-                                     <div class="box_slide" style="background: url(assets/img/bg_sac_horarios.jpg);"> </div>                             
+                                     <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_sac_horarios.jpg);"> </div>                             
                                 </a>
                              </div> <!-- item -->
                         </div><!-- box slider  -->

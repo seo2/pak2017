@@ -23,11 +23,11 @@
            <section class="sobre_distrito">
                       
                         <div class="container">
-                          <div class="box_content" style="background: url(assets/img/demo_bg_about_dl.png);">
+                          <div class="box_content" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/demo_bg_about_dl.png);">
                               <div class="content_about texto_blanco">
                            
                                       <div class="col-sm-6">
-                                            <img src="assets/img/logo_about_dl.png" alt="" class="img-responsive">
+                                            <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_about_dl.png" alt="" class="img-responsive">
                                            <p>
                                              Parque Arauco es el único mall en Chile que alberga las más importantes marcas de lujo del mundo.
                                              Distrito de Lujo es un sector que combina lo mejor del shopping en una calle con tiendas premium, 
@@ -58,7 +58,7 @@
                           
                         	<div class="item"> 
                                   <!--1140 x 520 -->
-									<div class="img_slide" style="background: url(assets/img/tienda_dl_1.jpg);"> </div>
+									<div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/tienda_dl_1.jpg);"> </div>
 									  <!-- 700x580 -->
 									  <div class="container">
 									  <div class="row">
@@ -68,7 +68,7 @@
 											  <p>Revisa esta colección en especial chaquetas</p> -->
 											  <div class="text-center">
 												  <div class="logo_tienda_dl">
-													  <img src="assets/img/logo_tienda_dl_1.png" alt="" class="img-responsive">
+													  <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_tienda_dl_1.png" alt="" class="img-responsive">
 												  </div>
 												  <a class="btn btn-default btn_blanco" href="distrito-de-lujo-tienda.php?tiendaID=410" role="button">ver más</a>
 											  </div>
@@ -79,7 +79,7 @@
 
 								  <div class="item"> 
 										  <!--1140 x 520 -->
-										<div class="img_slide" style="background: url(assets/img/tienda_dl_2.jpg);"> </div>
+										<div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/tienda_dl_2.jpg);"> </div>
 										  <!-- 700x580 -->
 										  <div class="container">
 										  <div class="row">
@@ -89,7 +89,7 @@
 												  <p>Revisa esta colección en especial chaquetas</p> -->
 												  <div class="text-center">
 													  <div class="logo_tienda_dl">
-														  <img src="assets/img/logo_tienda_dl_2.png" alt="" class="img-responsive">
+														  <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_tienda_dl_2.png" alt="" class="img-responsive">
 													  </div>
 													  <a class="btn btn-default btn_blanco" href="distrito-de-lujo-tienda.php?tiendaID=442" role="button">ver más</a>
 												  </div>
@@ -100,7 +100,7 @@
 
 								  <div class="item"> 
 										  <!--1140 x 520 -->
-										<div class="img_slide" style="background: url(assets/img/tienda_dl_3.jpg);"> </div>
+										<div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/tienda_dl_3.jpg);"> </div>
 										  <!-- 700x580 -->
 										  <div class="container">
 										  <div class="row">
@@ -110,7 +110,7 @@
 												  <p>Revisa esta colección en especial chaquetas</p> -->
 												  <div class="text-center">
 													  <div class="logo_tienda_dl">
-														  <img src="assets/img/logo_tienda_dl_3.png" alt="" class="img-responsive">
+														  <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_tienda_dl_3.png" alt="" class="img-responsive">
 													  </div>
 													  <a class="btn btn-default btn_blanco" href="distrito-de-lujo-tienda.php?tiendaID=483" role="button">ver más</a>
 												  </div>
@@ -122,7 +122,7 @@
 								  
 								  <div class="item"> 
 										  <!--1140 x 520 -->
-										<div class="img_slide" style="background: url(assets/img/tienda_dl_4.jpg);"> </div>
+										<div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/tienda_dl_4.jpg);"> </div>
 										  <!-- 700x580 -->
 										  <div class="container">
 										  <div class="row">
@@ -132,7 +132,7 @@
 												  <p>Revisa esta colección en especial chaquetas</p> -->
 												  <div class="text-center">
 													  <div class="logo_tienda_dl">
-														  <img src="assets/img/logo_tienda_dl_4.png" alt="" class="img-responsive">
+														  <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_tienda_dl_4.png" alt="" class="img-responsive">
 													  </div>
 													  <a class="btn btn-default btn_blanco" href="distrito-de-lujo-tienda.php?tiendaID=564" role="button">ver más</a>
 												  </div>
@@ -144,7 +144,7 @@
 								  
 								  <div class="item"> 
 										  <!--1140 x 520 -->
-										<div class="img_slide" style="background: url(assets/img/tienda_dl_5.jpg);"> </div>
+										<div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/tienda_dl_5.jpg);"> </div>
 										  <!-- 700x580 -->
 										  <div class="container">
 										  <div class="row">
@@ -154,7 +154,7 @@
 												  <p>Revisa esta colección en especial chaquetas</p> -->
 												  <div class="text-center">
 													  <div class="logo_tienda_dl">
-														  <img src="assets/img/logo_tienda_dl_5.png" alt="" class="img-responsive">
+														  <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_tienda_dl_5.png" alt="" class="img-responsive">
 													  </div>
 													  <a class="btn btn-default btn_blanco" href="distrito-de-lujo-tienda.php?tiendaID=658" role="button">ver más</a>
 												  </div>
@@ -166,7 +166,7 @@
 								  
 								  <div class="item"> 
 										  <!--1140 x 520 -->
-										<div class="img_slide" style="background: url(assets/img/tienda_dl_6.jpg);"> </div>
+										<div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/tienda_dl_6.jpg);"> </div>
 										  <!-- 700x580 -->
 										  <div class="container">
 										  <div class="row">
@@ -176,7 +176,7 @@
 												  <p>Revisa esta colección en especial chaquetas</p> -->
 												  <div class="text-center">
 													  <div class="logo_tienda_dl">
-														  <img src="assets/img/logo_tienda_dl_6.png" alt="" class="img-responsive">
+														  <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_tienda_dl_6.png" alt="" class="img-responsive">
 													  </div>
 													  <a class="btn btn-default btn_blanco" href="distrito-de-lujo-tienda.php?tiendaID=660" role="button">ver más</a>
 												  </div>
@@ -188,7 +188,7 @@
 								  
 								  <div class="item"> 
 										  <!--1140 x 520 -->
-										<div class="img_slide" style="background: url(assets/img/tienda_dl_7.jpg);"> </div>
+										<div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/tienda_dl_7.jpg);"> </div>
 										  <!-- 700x580 -->
 										  <div class="container">
 										  <div class="row">
@@ -198,7 +198,7 @@
 												  <p>Revisa esta colección en especial chaquetas</p> -->
 												  <div class="text-center">
 													  <div class="logo_tienda_dl">
-														  <img src="assets/img/logo_tienda_dl_7.png" alt="" class="img-responsive">
+														  <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_tienda_dl_7.png" alt="" class="img-responsive">
 													  </div>
 													  <a class="btn btn-default btn_blanco" href="distrito-de-lujo-tienda.php?tiendaID=457" role="button">ver más</a>
 												  </div>
@@ -210,7 +210,7 @@
 								  
 								  <div class="item"> 
 									  <!--1140 x 520 -->
-										<div class="img_slide" style="background: url(assets/img/tienda_dl_8.jpg);"> </div>
+										<div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/tienda_dl_8.jpg);"> </div>
 										  <!-- 700x580 -->
 										  <div class="container">
 										  <div class="row">
@@ -220,7 +220,7 @@
 												  <p>Revisa esta colección en especial chaquetas</p> -->
 												  <div class="text-center">
 													  <div class="logo_tienda_dl">
-														  <img src="assets/img/logo_tienda_dl_8.png" alt="" class="img-responsive">
+														  <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_tienda_dl_8.png" alt="" class="img-responsive">
 													  </div>
 													  <a class="btn btn-default btn_blanco" href="distrito-de-lujo-tienda.php?tiendaID=650" role="button">ver más</a>
 												  </div>

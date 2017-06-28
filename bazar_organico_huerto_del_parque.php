@@ -28,76 +28,76 @@
              <!--GALERIA-->
              <div class="box-galery">
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_01.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_01.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_02.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_02.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_03.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_03.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_04.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_04.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_05.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_05.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_06.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_06.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_07.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_07.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_08.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_08.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_09.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_09.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_10.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_10.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_11.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_11.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_12.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_12.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_13.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_13.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_14.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_14.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_15.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_15.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_16.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_16.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_17.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_17.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_18.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_18.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_19.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_19.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_20.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_20.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_21.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_21.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_22.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_22.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_23.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_23.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/bazar_organico/bazar_24.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_24.jpg"></div>
              	</div>
              	
              </div>

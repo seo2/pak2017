@@ -29,21 +29,21 @@
             <div class="col-sm-12">
               <div class="caja_tienda_single clearfix">
                     <div class="col-sm-6 col-sm-push-6">
-                          <img class="img-responsive visible-xs center-block logo" src="assets/img/logo_tory.png" alt="">
+                          <img class="img-responsive visible-xs center-block logo" src="<?php bloginfo('template_url'); ?>/assets/img/logo_tory.png" alt="">
 
                           <div class="slider_single_tiendas_dl owl-carousel owl-theme pull-right">
                              <div class="item">
-                                       <div class="img_slide" style="background: url(assets/img/tory1.jpg);"></div>
+                                       <div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/tory1.jpg);"></div>
                                    </div>
                                   <div class="item">
-                                       <div class="img_slide" style="background: url(assets/img/tory2.jpg);"></div>
+                                       <div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/tory2.jpg);"></div>
                                    </div>
                                  
                           </div><!-- slider single tienda -->
                       </div>
                       <div class="col-sm-6 col-sm-pull-6">
                           <div class="desc_tienda">
-                              <img class="img-responsive hidden-xs logo" src="assets/img/logo_tory.png" alt="">
+                              <img class="img-responsive hidden-xs logo" src="<?php bloginfo('template_url'); ?>/assets/img/logo_tory.png" alt="">
                               <div class="datos_tienda">
                              
                                 <p>LOCAL Nº 494 - 3 º PISO</p>

@@ -4,7 +4,7 @@
     <div class="col-sm-6">
         <div class="box_servicio">
           <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#sala_arte_xs">
-              <img src="assets/img/bg_sala.jpg" class="center-block img-responsive">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/bg_sala.jpg" class="center-block img-responsive">
           
           </a>
         </div>
@@ -21,7 +21,7 @@
                       <div class="col-md-6 col-md-push-6">
                             <div class="slider_entrentencion owl-carousel owl-theme ">
                                       <div class="item">
-                                          <div class="img_servicio" style="background: url(assets/img/demo_galeria.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/demo_galeria.jpg);"> </div>
                                       </div>
                                   
                                 </div><!--  slider_entretenion -->
@@ -56,7 +56,7 @@
       <div class="col-sm-6">
         <div class="box_servicio">
           <a href="javascript:void(0);" class="borde_azul" data-toggle="collapse" data-target="#teatro_xs">
-              <img src="assets/img/bg_mori.jpg"   class="center-block img-responsive">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/bg_mori.jpg"   class="center-block img-responsive">
           </a>
         </div>
          <div class="box_more_info">
@@ -74,7 +74,7 @@
                      
                      <div class="slider_entrentencion owl-carousel owl-theme ">
                                <div class="item">
-                                   <div class="img_servicio" style="background: url(assets/img/salamori.jpg);"> </div>
+                                   <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/salamori.jpg);"> </div>
                                </div>
                          
 
@@ -86,7 +86,7 @@
                                     <a href="http://www.centromori.cl/" target="_blank">ver cartelera y precios</a>
                                 </div>
                                 <div class="col-xs-4">
-                                    <img src="assets/img/logo_mori.png" alt="" class="img-responsive pull-right"></div> 
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_mori.png" alt="" class="img-responsive pull-right"></div> 
                               </div>    
                          </div>
                </div>
@@ -126,7 +126,7 @@
       <div class="col-sm-6">
         <div class="box_servicio_no_callapse">
           <a href="novedades-galeria.php" class="borde_naranja">
-              <img src="assets/img/bg_galeria.jpg" class="center-block img-responsive">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/bg_galeria.jpg" class="center-block img-responsive">
           </a>
         </div>
           <div class="box_more_info_no_collapse">
@@ -138,7 +138,7 @@
           <div class="col-sm-6">
             <div class="box_servicio_no_callapse">
               <a href="http://www.cinehoyts.cl/cartelera/santiago-oriente/parque-arauco" target="_blank" class="borde_amarillo">
-                  <img src="assets/img/cinegif.gif" class="center-block img-responsive">
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/cinegif.gif" class="center-block img-responsive">
               </a>
             </div>
             <div class="box_more_info_no_collapse">

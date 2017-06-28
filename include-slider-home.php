@@ -4,9 +4,9 @@
 
                   <div class="item"> 
                           <!-- 1600x580 hidden-xs hidden-sm-->
-                        <div class="owl-lazy img_slide" data-src="assets/img/slider_home1.png" style="background: url(assets/img/slider_home1.png);"> </div>
+                        <div class="owl-lazy img_slide" data-src="<?php bloginfo('template_url'); ?>/assets/img/slider_home1.png" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider_home1.png);"> </div>
                           <!-- 700x580 -->
-<!--                         <div class="owl-lazy img_slide visible-xs visible-sm" data-src="assets/img/slider_home1_xs.jpg" style="background: url(assets/img/slider_home1_xs.jpg);"> </div>
+<!--                         <div class="owl-lazy img_slide visible-xs visible-sm" data-src="<?php bloginfo('template_url'); ?>/assets/img/slider_home1_xs.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider_home1_xs.jpg);"> </div>
  -->                     <div class="container">
                           <div class="row">
                             <div class="caption">
@@ -22,9 +22,9 @@
                   </div>
 
                   <div class="item"> 
-                          <div class="owl-lazy img_slide" data-src="assets/img/plantillamstrcrdSLIDERHOMEPAK1600480.jpg" style="background: url(assets/img/plantillamstrcrdSLIDERHOMEPAK1600480.jpg);"> </div>
+                          <div class="owl-lazy img_slide" data-src="<?php bloginfo('template_url'); ?>/assets/img/plantillamstrcrdSLIDERHOMEPAK1600480.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/plantillamstrcrdSLIDERHOMEPAK1600480.jpg);"> </div>
                         	<!-- 700x580 -->
-                   			<div class="owl-lazy img_slide visible-xs visible-sm hidden-xs hidden-sm" data-src="assets/img/SLIDER-HOME-PAK-700x400.png" style="background: url(assets/img/SLIDER-HOME-PAK-700x400.png);"></div>
+                   			<div class="owl-lazy img_slide visible-xs visible-sm hidden-xs hidden-sm" data-src="<?php bloginfo('template_url'); ?>/assets/img/SLIDER-HOME-PAK-700x400.png" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/SLIDER-HOME-PAK-700x400.png);"></div>
  
                              <div class="container">
                           <div class="row">

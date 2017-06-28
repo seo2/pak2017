@@ -28,45 +28,45 @@
             <div class="col-sm-12">
               <div class="caja_tienda_single clearfix">
                     <div class="col-sm-6 col-sm-push-6">
-                          <img class="img-responsive visible-xs center-block logo" src="assets/img/demo_logo_tienda_single.png" alt="">
+                          <img class="img-responsive visible-xs center-block logo" src="<?php bloginfo('template_url'); ?>/assets/img/demo_logo_tienda_single.png" alt="">
 
                           <div class="slider_single_tiendas_dl owl-carousel owl-theme pull-right">
                                  <div class="item">
-                                       <div class="img_slide" style="background: url(assets/img/vida_en_distrito1.jpg);"></div>
+                                       <div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/vida_en_distrito1.jpg);"></div>
                                    </div>
                                       <div class="item">
-                                       <div class="img_slide" style="background: url(assets/img/vida_en_distrito2.jpg);"></div>
+                                       <div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/vida_en_distrito2.jpg);"></div>
                                    </div>
                                       <div class="item">
-                                       <div class="img_slide" style="background: url(assets/img/vida_en_distrito3.jpg);"></div>
+                                       <div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/vida_en_distrito3.jpg);"></div>
                                    </div>
                                    <div class="item">
-                                       <div class="img_slide" style="background: url(assets/img/vida_en_distrito4.jpg);"></div>
+                                       <div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/vida_en_distrito4.jpg);"></div>
                                    </div>
                                    <div class="item">
-                                       <div class="img_slide" style="background: url(assets/img/vida_en_distrito5.jpg);"></div>
+                                       <div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/vida_en_distrito5.jpg);"></div>
                                    </div>
                                    <div class="item">
-                                       <div class="img_slide" style="background: url(assets/img/vida_en_distrito6.jpg);"></div>
+                                       <div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/vida_en_distrito6.jpg);"></div>
                                    </div>
                                    <div class="item">
-                                       <div class="img_slide" style="background: url(assets/img/vida_en_distrito7.jpg);"></div>
+                                       <div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/vida_en_distrito7.jpg);"></div>
                                    </div>
                                    <div class="item">
-                                       <div class="img_slide" style="background: url(assets/img/vida_en_distrito8.jpg);"></div>
+                                       <div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/vida_en_distrito8.jpg);"></div>
                                    </div>
                                    <div class="item">
-                                       <div class="img_slide" style="background: url(assets/img/vida_en_distrito9.jpg);"></div>
+                                       <div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/vida_en_distrito9.jpg);"></div>
                                    </div>
                                    <div class="item">
-                                       <div class="img_slide" style="background: url(assets/img/vida_en_distrito10.jpg);"></div>
+                                       <div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/vida_en_distrito10.jpg);"></div>
                                    </div>
                                  
                           </div><!-- slider single tienda -->
                       </div>
                       <div class="col-sm-6 col-sm-pull-6">
                           <div class="desc_tienda">
-<!--                               <img class="img-responsive hidden-xs logo" src="assets/img/demo_logo_tienda_single.png" alt="">
+<!--                               <img class="img-responsive hidden-xs logo" src="<?php bloginfo('template_url'); ?>/assets/img/demo_logo_tienda_single.png" alt="">
  -->                           <!--    <div class="datos_tienda">
                                 <p>LOCAL Nº 483 - 3 º PISO</p>
                                 <p>Horarios: 10:00am a 22:00pm hrs</p>

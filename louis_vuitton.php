@@ -28,70 +28,70 @@
              <!--GALERIA-->
              <div class="box-galery">
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_01.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_01.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_02.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_02.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_03.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_03.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_04.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_04.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_05.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_05.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_06.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_06.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_07.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_07.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_08.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_08.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_09.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_09.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_10.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_10.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_11.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_11.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_12.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_12.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_13.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_13.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_14.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_14.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_15.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_15.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_16.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_16.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_17.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_17.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_18.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_18.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_19.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_19.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_20.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_20.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_21.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_21.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/louis_vuitton/img_22.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/louis_vuitton/img_22.jpg"></div>
              	</div>
              	
              	

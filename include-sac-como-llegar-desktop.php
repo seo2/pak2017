@@ -9,7 +9,7 @@
                                              <h3>cómo llegar</h3>
                                              <div class="divider"> </div>
                                          </div>
-                                         <div class="box_slide" style="background: url(assets/img/bg_sac_como_llegar.jpg);"> </div>                             
+                                         <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_sac_como_llegar.jpg);"> </div>                             
                                     </a>
                                  </div> <!-- item -->
                              </div><!-- box slider  -->

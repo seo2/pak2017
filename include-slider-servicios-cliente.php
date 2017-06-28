@@ -3,7 +3,7 @@
             <div class="slider_servicios_cliente owl-carousel owl-theme">
                   <div class="item"> 
                           <!-- 1600x520 -->
-                        <div class="owl-lazy img_slide " data-src="assets/img/bg_slider_sac.jpg" style="background: url(assets/img/bg_slider_sac.jpg);"> </div>
+                        <div class="owl-lazy img_slide " data-src="<?php bloginfo('template_url'); ?>/assets/img/bg_slider_sac.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_slider_sac.jpg);"> </div>
                           <!-- 700x580 -->
                           <div class="container">
                           <div class="row">
@@ -20,7 +20,7 @@
                   </div>
         
                   <div class="item"> 
-                          <div class="owl-lazy img_slide" data-src="assets/img/slider1.jpg" style="background: url(assets/img/slider1.jpg);"> </div>
+                          <div class="owl-lazy img_slide" data-src="<?php bloginfo('template_url'); ?>/assets/img/slider1.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider1.jpg);"> </div>
                              <div class="container">
                           <div class="row">
                             <div class="caption texto_blanco">
@@ -36,7 +36,7 @@
                   </div>
 
                   <div class="item"> 
-                      <div class="owl-lazy img_slide" data-src="assets/img/slider2.jpg" style="background: url(assets/img/slider2.jpg);"> </div>
+                      <div class="owl-lazy img_slide" data-src="<?php bloginfo('template_url'); ?>/assets/img/slider2.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider2.jpg);"> </div>
                         <div class="container">
                         <div class="row">
                           <div class="caption texto_blanco">
@@ -53,12 +53,12 @@
 
 
                   <div class="item"> 
-                         <div class="owl-lazy img_slide" data-src="assets/img/slider3.jpg" style="background: url(assets/img/slider3.jpg);"> </div>
+                         <div class="owl-lazy img_slide" data-src="<?php bloginfo('template_url'); ?>/assets/img/slider3.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider3.jpg);"> </div>
                            <a class="btn btn-default btn_blanco btn_single_img" href="#" role="button">ver catálogo</a>
                                                 
                   </div>
                   <div class="item"> 
-                          <div class="owl-lazy img_slide" data-src="assets/img/slider4.jpg" style="background: url(assets/img/slider4.jpg);"> </div>
+                          <div class="owl-lazy img_slide" data-src="<?php bloginfo('template_url'); ?>/assets/img/slider4.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider4.jpg);"> </div>
                             <div class="container">
                             <div class="row">
                               <div class="caption">

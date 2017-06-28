@@ -28,37 +28,37 @@
              <!--GALERIA-->
              <div class="box-galery">
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tous10/img_01.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_01.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tous10/img_02.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_02.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tous10/img_03.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_03.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tous10/img_04.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_04.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tous10/img_05.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_05.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tous10/img_06.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_06.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tous10/img_07.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_07.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tous10/img_08.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_08.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tous10/img_09.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_09.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tous10/img_10.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_10.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tous10/img_11.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tous10/img_11.jpg"></div>
              	</div>
              	
              	

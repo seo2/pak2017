@@ -15,17 +15,17 @@ function iniciarTema(){
 	
 // carga css 
 function theme_styles() {
-	wp_enqueue_style('style-boot', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '1', 'screen' );
-	wp_enqueue_style('style-fonts', get_template_directory_uri() . '/assets/css/fonts.css', array(), '1', 'screen' );
-	wp_enqueue_style('style-fawe', get_template_directory_uri() . '/assets/css/font-awesome.min.css', array(), '1', 'screen' );
-	wp_enqueue_style('style-animate', get_template_directory_uri() . '/assets/css/animate.css', array(), '1', 'screen' );
-	wp_enqueue_style('style-hover', get_template_directory_uri() . '/assets/css/hover-min.css', array(), '1', 'screen' );
-	wp_enqueue_style('style-owl', get_template_directory_uri() . '/assets/css/owl.carousel.css', array(), '1', 'screen' );
-	wp_enqueue_style('style-owltheme', get_template_directory_uri() . '/assets/css/owl.theme.default.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-boot', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/css/bootstrap.min.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-fonts', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/css/fonts.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-fawe', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/css/font-awesome.min.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-animate', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/css/animate.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-hover', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/css/hover-min.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-owl', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/css/owl.carousel.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-owltheme', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/css/owl.theme.default.css', array(), '1', 'screen' );
 	wp_enqueue_style('style-bootsel', get_template_directory_uri() . '/https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css', array(), '1', 'screen' );
 	wp_enqueue_style('style-jqui', get_template_directory_uri() . '///code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css', array(), '1', 'screen' );
-	wp_enqueue_style('style-valio', get_template_directory_uri() . '/assets/css/formValidation.min.css', array(), '1', 'screen' );
-	wp_enqueue_style('style-pak', get_template_directory_uri() . '/assets/css/custom.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-valio', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/css/formValidation.min.css', array(), '1', 'screen' );
+	wp_enqueue_style('style-pak', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/css/custom.css', array(), '1', 'screen' );
 
 }
 
@@ -47,16 +47,16 @@ function jquery_cdn() {
 function theme_js(){
 
 	wp_enqueue_script('jquerymin-js', get_template_directory_uri() . '/https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', array('jquery'),'1', true);
-	wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'),'1', true);
-	wp_enqueue_script('owlcarous-js', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'),'1', true);
+	wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/js/bootstrap.min.js', array('jquery'),'1', true);
+	wp_enqueue_script('owlcarous-js', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/js/owl.carousel.min.js', array('jquery'),'1', true);
 	wp_enqueue_script('bootselec-js', get_template_directory_uri() . '/https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js', array('jquery'),'1', true);
 	wp_enqueue_script('youtube-js', get_template_directory_uri() . '/http://www.youtube.com/player_api', array('jquery'),'1', true);
 	wp_enqueue_script('scrollto-js', get_template_directory_uri() . '///cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js', array('jquery'),'1', true);
-	wp_enqueue_script('autocompl-js', get_template_directory_uri() . '/assets/js/jquery.autocomplete.min.js', array('jquery'),'1', true);
-	wp_enqueue_script('formvalio-js', get_template_directory_uri() . '/assets/js/formValidation.min.js', array('jquery'),'1', true);
-	wp_enqueue_script('valiolang-js', get_template_directory_uri() . '/assets/js/language/es_ES.js', array('jquery'),'1', true);
-	wp_enqueue_script('valioboot-js', get_template_directory_uri() . '/assets/js/framework/bootstrap.min.js', array('jquery'),'1', true);
-	wp_enqueue_script('pak-js', get_template_directory_uri() . '/assets/js/pak.js?v=1.1', array('jquery'),'1', true);
+	wp_enqueue_script('autocompl-js', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/js/jquery.autocomplete.min.js', array('jquery'),'1', true);
+	wp_enqueue_script('formvalio-js', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/js/formValidation.min.js', array('jquery'),'1', true);
+	wp_enqueue_script('valiolang-js', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/js/language/es_ES.js', array('jquery'),'1', true);
+	wp_enqueue_script('valioboot-js', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/js/framework/bootstrap.min.js', array('jquery'),'1', true);
+	wp_enqueue_script('pak-js', get_template_directory_uri() . '/<?php bloginfo('template_url'); ?>/assets/js/pak.js?v=1.1', array('jquery'),'1', true);
 
 }	
     add_action('wp_enqueue_scripts', 'theme_styles');
@@ -98,7 +98,7 @@ remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 
 // add google analytics to footer
 function add_google_analytics() {
-	echo '<script src="http://www.google-analytics.com/ga.js" type="text/javascript', array('jquery'),'1', true);';
+	echo '<script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>';
 	echo '<script type="text/javascript">';
 	echo 'var pageTracker = _gat._getTracker("UA-XXXXX-X");';
 	echo 'pageTracker._trackPageview();';

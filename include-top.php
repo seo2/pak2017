@@ -24,9 +24,9 @@
               
                  <!--  <div class="lang ">
                     <ul class="hidden-xs hidden-sm">
-                       <li><a href="" class="hvr-float"><img src="assets/img/esp.png"></a></li>
-                       <li><a href="" class="hvr-float"><img src="assets/img/eng.png"></a></li>
-                       <li><a href="" class="hvr-float"><img src="assets/img/por.png"></a></li>
+                       <li><a href="" class="hvr-float"><img src="<?php bloginfo('template_url'); ?>/assets/img/esp.png"></a></li>
+                       <li><a href="" class="hvr-float"><img src="<?php bloginfo('template_url'); ?>/assets/img/eng.png"></a></li>
+                       <li><a href="" class="hvr-float"><img src="<?php bloginfo('template_url'); ?>/assets/img/por.png"></a></li>
                     </ul>
                    </div>  lang -->
                    
@@ -124,7 +124,7 @@
                         </div> <!-- row -->
 						<div class="row">
 							<div class="col-sm-12 col_box_news_letter"> 
-								<div class="box_newsletter" style="background: url(assets/img/bg_box_newsletter.jpg);">  
+								<div class="box_newsletter" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_box_newsletter.jpg);">  
 									<h3>suscríbete</h3>
 									<form class="form_neswsletter" role="" id="form_neswsletter">
 										<div class="box_input">

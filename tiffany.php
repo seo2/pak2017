@@ -28,37 +28,37 @@
              <!--GALERIA-->
              <div class="box-galery">
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tiffany/img_001.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_001.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tiffany/img_002.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_002.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tiffany/img_003.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_003.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tiffany/img_004.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_004.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tiffany/img_005.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_005.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tiffany/img_006.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_006.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tiffany/img_007.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_007.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tiffany/img_008.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_008.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tiffany/img_009.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_009.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tiffany/img_010.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_010.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/tiffany/img_011.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/tiffany/img_011.jpg"></div>
              	</div>
              	
              	

@@ -30,7 +30,7 @@
                             <div class="box_items_beneficios clearfix">
                                   <div class="item_beneficio clearfix ">
                                       <div class="ico_beneficio">
-                                        <img src="assets/img/beneficio1.png" alt="" class="img-responsive">   
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/beneficio1.png" alt="" class="img-responsive">   
                                       </div>
                                       <div class="desc_beneficio">
                                         <p>No tendrás que sacar ticket de estacionamiento,
@@ -42,7 +42,7 @@
                                 <div class="clearfix"></div>
                                 <div class="item_beneficio clearfix">
                                       <div class="ico_beneficio">
-                                          <img src="assets/img/beneficio2.png" alt="" class="img-responsive">
+                                          <img src="<?php bloginfo('template_url'); ?>/assets/img/beneficio2.png" alt="" class="img-responsive">
                                       </div>
                                       <div class="desc_beneficio">
                                           <p>Ahorra tiempo y olvídate de pagar el
@@ -54,7 +54,7 @@
                                 <div class="clearfix"></div>
                                 <div class="item_beneficio clearfix">
                                       <div class="ico_beneficio">
-                                        <img src="assets/img/beneficio3.png" alt="" class="img-responsive">   
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/beneficio3.png" alt="" class="img-responsive">   
                                       </div>
                                       <div class="desc_beneficio">
                                         <p>Todos los accesos a los estacionamientos

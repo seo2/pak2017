@@ -41,13 +41,13 @@
                         <div id="video2" class="box_video" data-video="_YZyLJecku4">
                             <div class="lente_video"></div>
                             <!-- 560 x 300 -->
-                            <div class="cap_video" style="background: url(assets/img/day_off.png);"></div>
+                            <div class="cap_video" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/day_off.png);"></div>
                             <div class="yt-video embed-responsive embed-responsive-16by9">
                               <iframe  class="videito video2" width="420" height="315" src="" frameborder="0" allowfullscreen></iframe> 
                             </div>                        
                                 <div class="btn_play_video">
                                   <a class="hvr-float play_video">
-                                      <img src="assets/img/btn_play_video.png" alt="">
+                                      <img src="<?php bloginfo('template_url'); ?>/assets/img/btn_play_video.png" alt="">
                                   </a> 
                                   <p>ver video</p>                               
                             </div>
@@ -57,13 +57,13 @@
                         <div id="video1" class="box_video" data-video="bkPN-msE7SI">
                             <div class="lente_video"></div>
                               <!-- 560x300-->
-                            <div class="cap_video" style="background: url(assets/img/navidad.jpg);"> </div>
+                            <div class="cap_video" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/navidad.jpg);"> </div>
                             <div class="yt-video embed-responsive embed-responsive-16by9">
                                <iframe  class="videito video1"  width="420" height="315" src="" frameborder="0" allowfullscreen></iframe> 
                             </div>
                             <div class="btn_play_video">
                                   <a class="hvr-float play_video">
-                                      <img src="assets/img/btn_play_video.png" alt="">
+                                      <img src="<?php bloginfo('template_url'); ?>/assets/img/btn_play_video.png" alt="">
                                   </a>
                                   <p>ver video</p>                                 
                             </div>
@@ -79,7 +79,7 @@
             <div class="box_ver_mas_tiendas text-center">
              <a href="https://www.youtube.com/user/parquearauco/videos" target="_blank" class="btn btn-default btn_ver_mas hvr-float">
                 <h3 class="ver_mas">ver más videos</h3>
-                <img src="assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
             </a>
           </div>
         </section> <!-- entretencion -->

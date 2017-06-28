@@ -2,7 +2,7 @@
                    <div class="col-sm-12">
                     <div class="image_dynamic hover">
                        <a href="servicios-cliente.php">
-                       <div class="img_servicio" style="background: url(assets/img/bg_servicio_cliente.png);"> </div>
+                       <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_servicio_cliente.png);"> </div>
                              <div class="caption_lg">
                                 <h3>servicio al cliente</h3>
                                 <h4 class="divider">TODO LO QUE NECESITAS SABER</h4>
@@ -60,7 +60,7 @@
               </ul>
           </div>
             <a href="http://www.parauco.com/" class="btn_inversionistas hvr-float" target="_blank">
-              <img src="https://s219687.gridserver.com/clientes/bond/pak/assets/img/btn_inversionistas.svg" class="img-responsive">
+              <img src="https://s219687.gridserver.com/clientes/bond/pak/<?php bloginfo('template_url'); ?>/assets/img/btn_inversionistas.svg" class="img-responsive">
             </a>
         </div> <!-- row -->
       </footer> <!-- footer -->
@@ -72,7 +72,7 @@
           </div>
           <div class="trip_advisor">
           <!-- <a href="https://www.tripadvisor.cl/Attraction_Review-g294305-d2491922-Reviews-Parque_Arauco-Santiago_Santiago_Metropolitan_Region.html">
-              <img src="assets/img/tripadvisor.png"> 
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/tripadvisor.png"> 
           </a> -->
             
               <div id="TA_socialButtonBubbles464" class="TA_socialButtonBubbles">

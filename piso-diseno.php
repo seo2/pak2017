@@ -46,7 +46,7 @@
 									foreach ($tiendas as $t) {   
                                     	$imagen = get_img_tienda($t['punto_interes']);
                                     	if(!$imagen){
-                                        	$imagen = "assets/img/demobgtienda.jpg";
+                                        	$imagen = "<?php bloginfo('template_url'); ?>/assets/img/demobgtienda.jpg";
                                     	}else{
 	                                    	$imagen = 'ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
                                     	}
@@ -78,7 +78,7 @@
                           <div class="box_ver_mas_tiendas text-center">
                                 <a href="javascript:void(0);" class="btn btn-default btn_ver_mas hvr-float">
                                   <h3 class="ver_mas" id="cargar_mas">ver más tiendas </h3>
-                                  <img src="assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
+                                  <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
                                   <span id="loader"  style="display:none"><i class="fa fa-circle-o-notch fa-spin fa-fw"></i></span>
                                 </a>
                           </div> <!-- ver mas -->

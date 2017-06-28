@@ -26,8 +26,8 @@
             <div class="container">
               <div class="row">
                 <div class="col-sm-12">
-                   <img class="img-responsive visible-md visible-lg" src="assets/img/1140.png" alt="" >
-                   <img class="img-responsive visible-xs visible-sm" src="assets/img/720.png" alt="" >
+                   <img class="img-responsive visible-md visible-lg" src="<?php bloginfo('template_url'); ?>/assets/img/1140.png" alt="" >
+                   <img class="img-responsive visible-xs visible-sm" src="<?php bloginfo('template_url'); ?>/assets/img/720.png" alt="" >
                 </div>
               </div>
               <div class="row">
@@ -205,11 +205,11 @@
                                           <div  class="tienda">
                                               <a class="btn_tienda" href="javascript:void(0);">
                                                 <span id="sparta" class="overlay_img"> </span>
-                                                <img class="img-responsive" src="assets/img/demo_boulevard.jpg">
+                                                <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/demo_boulevard.jpg">
                                               </a>
                                                   <div class="box_logo_tienda">
                                                     <div class="logo_tienda">
-                                                        <img src="assets/img/logo_costillas.png" alt="" class="img-responsive">
+                                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_costillas.png" alt="" class="img-responsive">
                                                     </div> <!-- logo_tienda -->
                                                   </div> <!-- box logo tienda -->
                                         </div> <!--  tienda -->
@@ -220,11 +220,11 @@
                                           <div class="tienda">
                                             <a class="btn_tienda" href="javascript:void(0);">
                                                 <span class="overlay_img"> </span>
-                                                <img class="img-responsive" src="assets/img/demo_boulevard.jpg">
+                                                <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/demo_boulevard.jpg">
                                               </a>
                                                   <div class="box_logo_tienda">
                                                     <div class="logo_tienda">
-                                                        <img src="assets/img/demologotienda8.jpg" alt="" class="img-responsive">
+                                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/demologotienda8.jpg" alt="" class="img-responsive">
                                                     </div> <!-- logo_tienda -->
                                                   </div> <!-- box logo tienda -->
                                         </div> <!--  tienda -->
@@ -235,11 +235,11 @@
                                         <div class="tienda">
                                           <a class="btn_tienda" href="javascript:void(0);">
                                               <span class="overlay_img"> </span>
-                                              <img class="img-responsive" src="assets/img/demo_boulevard.jpg">
+                                              <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/demo_boulevard.jpg">
                                             </a>
                                                 <div class="box_logo_tienda">
                                                   <div class="logo_tienda">
-                                                      <img src="assets/img/demologotienda9.jpg" alt="" class="img-responsive">
+                                                      <img src="<?php bloginfo('template_url'); ?>/assets/img/demologotienda9.jpg" alt="" class="img-responsive">
                                                   </div> <!-- logo_tienda -->
                                                 </div> <!-- box logo tienda -->
                                       </div> <!--  tienda -->
@@ -250,11 +250,11 @@
                                         <div class="tienda">
                                           <a class="btn_tienda" href="javascript:void(0);">
                                               <span class="overlay_img"> </span>
-                                              <img class="img-responsive" src="assets/img/demo_boulevard.jpg">
+                                              <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/demo_boulevard.jpg">
                                             </a>
                                                 <div class="box_logo_tienda">
                                                   <div class="logo_tienda">
-                                                      <img src="assets/img/demologotienda9.jpg" alt="" class="img-responsive">
+                                                      <img src="<?php bloginfo('template_url'); ?>/assets/img/demologotienda9.jpg" alt="" class="img-responsive">
                                                   </div> <!-- logo_tienda -->
                                                 </div> <!-- box logo tienda -->
                                       </div> <!--  tienda -->
@@ -266,7 +266,7 @@
                                               
                                              <a href="" class="btn btn-default btn_ver_mas hvr-float">
                                                 <h3 class="ver_mas">ver más</h3>
-                                                <img src="assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
                                             </a>
                                     </div>
                           </div>

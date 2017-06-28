@@ -4,9 +4,9 @@
             <h4 class="divider">destacados</h4>
             <div class="col-sm-6 col-md-6">
               <div class="image_dynamic">
-                  <div class="image_dynamic_portada" style="background: url(assets/img/vida_en_distrito.jpg);"> </div>
+                  <div class="image_dynamic_portada" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/vida_en_distrito.jpg);"> </div>
                  
-                   <!--  <div class="logo_revista" style="background: url(assets/img/logo_revista_detalle.svg);"> </div> -->
+                   <!--  <div class="logo_revista" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_revista_detalle.svg);"> </div> -->
                    <div class="box_title">
                       <div class="caption_title">
                          <h3> vida en distrito </h3> 
@@ -29,7 +29,7 @@
                 <div class="box">
                       <!-- arauco tag -->
                       <a href="distrito-de-lujo-tienda-2.php" class="box_enlace">
-                        <div class="box_img" style="background: url(assets/img/demo_bg_coleccion.png);"> </div>
+                        <div class="box_img" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/demo_bg_coleccion.png);"> </div>
                         <div class="caption">
                             <h3>nueva coleccion</h3>
                             <p>Tory Burch</p>
@@ -41,7 +41,7 @@
              <div class="box">
                       <!-- arauco tag -->
                       <a href="distrito-de-lujo-servicios.php" class="box_enlace">
-                        <div class="box_img" style="background: url(assets/img/servicios-de-lujo-horario.jpg);"> </div>
+                        <div class="box_img" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/servicios-de-lujo-horario.jpg);"> </div>
                         <div class="caption">
                             <h3>servicios</h3>
                             <p>de lujo</p>

@@ -3,7 +3,7 @@
                   <div class="item clearfix">
              
                       <div class="col-md-6 col-md-push-6 ">
-                            <div class="img_servicio" style="background: url(assets/img/servicios-de-lujo-valet.jpg);"> </div>
+                            <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/servicios-de-lujo-valet.jpg);"> </div>
                       </div>
                       <div class="col-md-6 col-md-pull-6">
                             <div class="desc_servicio">
@@ -20,7 +20,7 @@
                         
                                     <div class="col-md-6 col-md-push-6">
                                      
-                                          <div class="img_servicio" style="background: url(assets/img/servicios-de-lujo-horario.jpg);"> </div>
+                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/servicios-de-lujo-horario.jpg);"> </div>
                                        
                                     </div>
                                     <div class="col-md-6 col-md-pull-6">

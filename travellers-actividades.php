@@ -33,12 +33,12 @@
 
                                                <div class="divider"> </div>
                                            </div>
-                                           <div class="box_slide" style="background: url(assets/img/portada_zona.jpg);"> </div>                             
+                                           <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_zona.jpg);"> </div>                             
                                       </a>
                                    </div> <!-- item -->
                                     <!-- <div class="item">
                                       <a href="">
-                                           <div class="box_slide" style="background: url(assets/img/portada_zona.jpg);"> </div>                             
+                                           <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_zona.jpg);"> </div>                             
                                       </a>
                                    </div>  item -->
                               </div><!-- box slider  -->
@@ -51,20 +51,20 @@
                             <div class="item">
                                
                                 <a href="distrito-de-lujo.php">
-                                  <div class="logo_seccion logo_distrito" style="background: url(assets/img/logo_distrito.svg);"> </div>
-                                  <div class="box_slide" style="background: url(assets/img/portada_distrito.png);"> </div>
+                                  <div class="logo_seccion logo_distrito" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_distrito.svg);"> </div>
+                                  <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_distrito.png);"> </div>
                                 </a>
                             </div>
                       <!--       <div class="item">
                                 <a href="">
-                                  <div class="box_slide" style="background: url(assets/img/slider2.jpg);"> </div>
+                                  <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider2.jpg);"> </div>
                                 </a>
                             </div>
                             <div class="item">
-                                  <div class="box_slide" style="background: url(assets/img/slider3.jpg);"> </div>
+                                  <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider3.jpg);"> </div>
                             </div>
                             <div class="item">
-                                  <div class="box_slide" style="background: url(assets/img/slider4.jpg);"> </div>
+                                  <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider4.jpg);"> </div>
                             </div> -->
                         </div><!-- box slider  -->
                     </div> <!-- slider distrito -->
@@ -80,12 +80,12 @@
                                               <h3>cine </h3>
                                               <div class="divider"> </div>
                                           </div>
-                                          <div class="box_slide" style="background: url(assets/img/portada_cine.jpg);"> </div>                             
+                                          <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_cine.jpg);"> </div>                             
                                      </a>
                                   </div> <!-- item -->
                                     <!-- <div class="item">
                                      <a href="">
-                                          <div class="box_slide" style="background: url(assets/img/portada_zona.jpg);"> </div>                             
+                                          <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_zona.jpg);"> </div>                             
                                      </a>
                                   </div> item -->
                              </div><!-- box slider  -->
@@ -102,7 +102,7 @@
                                               <h3>teatro </h3>
                                               <div class="divider"> </div>
                                           </div>
-                                          <div class="box_slide" style="background: url(assets/img/portada_teatro.jpg);"> </div>                             
+                                          <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_teatro.jpg);"> </div>                             
                                      </a>
                                   </div> <!-- item -->
                              </div><!-- box slider  -->
@@ -119,18 +119,18 @@
                                      <h3>galería de arte </h3>
                                     <div class="divider"> &nbsp </div>
                                 </div>
-                               <div class="box_slide" style="background: url(assets/img/portada_galeria_arte.jpg);"> </div>
+                               <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_galeria_arte.jpg);"> </div>
                              </a>
                            </div>
 
                            <!-- <div class="item">
-                                <div class="box_slide" style="background: url(assets/img/slider2.jpg);"> </div>
+                                <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider2.jpg);"> </div>
                             </div> -->
                          <!--   <div class="item">
-                                <div class="box_slide" style="background: url(assets/img/slider3.jpg);"> </div>
+                                <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider3.jpg);"> </div>
                             </div> -->
                         <!--    <div class="item"> 
-                                <div class="box_slide" style="background: url(assets/img/slider4.jpg);"> </div>
+                                <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider4.jpg);"> </div>
                             </div> -->
                        </div><!-- box slider  -->
                 </div> <!-- galeria -->

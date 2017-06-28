@@ -9,7 +9,7 @@
                                              <h3>cómo llegar  </h3>
                                              <div class="divider"> </div>
                                          </div>
-                                         <div class="box_slide" style="background: url(assets/img/bg_sac_como_llegar.jpg);"> </div>                             
+                                         <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_sac_como_llegar.jpg);"> </div>                             
                                     </a>
                                  </div> <!-- item -->
                              </div><!-- box slider  -->
@@ -29,7 +29,7 @@
                 </div>
                   <div class="datos_como_llegar clearfix">
                               <div class="col-xs-4">
-                                    <img src="assets/img/map_turistik.png" alt="" class="img-responsive center-block">
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/map_turistik.png" alt="" class="img-responsive center-block">
                               </div>
                               <div class="col-xs-8">
                                     <p>El pasajero El pasajero debe esperar en el lugar indicado por Turistik a la hora.</p>
@@ -37,7 +37,7 @@
                               </div>
                              
                               <!-- <div class="col-xs-4">
-                                <img src="assets/img/map_transfer.png" alt="" class="img-responsive center-block">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/img/map_transfer.png" alt="" class="img-responsive center-block">
                               </div>
                               <div class="col-xs-8">
                                 <p>Parque Arauco Shopping Center pone a su disposición y sin costo el servicio regular de Transfer Gratis, desde y hacia los hoteles. Este servicio recorre los principales hoteles de la cuidad los 365 días del año.</p>

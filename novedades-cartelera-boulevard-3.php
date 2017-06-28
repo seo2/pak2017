@@ -23,8 +23,8 @@
             <div class="container">
               <div class="row">
                 <div class="col-sm-12">
-                   <img class="img-responsive visible-md visible-lg" src="assets/img/1140.png" alt="" >
-                   <img class="img-responsive visible-xs visible-sm" src="assets/img/720.png" alt="" >
+                   <img class="img-responsive visible-md visible-lg" src="<?php bloginfo('template_url'); ?>/assets/img/1140.png" alt="" >
+                   <img class="img-responsive visible-xs visible-sm" src="<?php bloginfo('template_url'); ?>/assets/img/720.png" alt="" >
                 </div>
               </div>
               <div class="row">
@@ -47,7 +47,7 @@
 					foreach ($tiendas as $t) {   
 	                	$imagen = get_img_tienda($t['punto_interes']);
 	                	if(!$imagen){
-	                    	$imagen = "assets/img/demobgtienda.jpg";
+	                    	$imagen = "<?php bloginfo('template_url'); ?>/assets/img/demobgtienda.jpg";
 	                	}else{
 	                    	$imagen = 'ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
 	                	}

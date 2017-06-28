@@ -3,7 +3,7 @@
                   <div class="item clearfix">
              
                       <div class="col-md-6 col-md-push-6 ">
-                            <div class="owl-lazy img_servicio"  data-src="assets/img/bicicleteros.jpg" style="background: url(assets/img/bicicleteros.jpg);"> </div>
+                            <div class="owl-lazy img_servicio"  data-src="<?php bloginfo('template_url'); ?>/assets/img/bicicleteros.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bicicleteros.jpg);"> </div>
                       </div>
                       <div class="col-md-6 col-md-pull-6">
                             <div class="desc_servicio">
@@ -22,7 +22,7 @@
                         
                                     <div class="col-md-6 col-md-push-6">
                                      
-                                          <div class="owl-lazy img_servicio"  data-src="assets/img/estacionamientos_minusvalidos.jpg" style="background: url(assets/img/estacionamientos_minusvalidos.jpg);"> </div>
+                                          <div class="owl-lazy img_servicio"  data-src="<?php bloginfo('template_url'); ?>/assets/img/estacionamientos_minusvalidos.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/estacionamientos_minusvalidos.jpg);"> </div>
                                        
                                     </div>
                                     <div class="col-md-6 col-md-pull-6">
@@ -48,7 +48,7 @@
                   <div class="item clearfix">
                        
                                     <div class="col-md-6 col-md-push-6 ">
-                                          <div class="owl-lazy img_servicio"  data-src="assets/img/tarifas_estacionamiento.jpg" style="background: url(assets/img/tarifas_estacionamiento.jpg);"> </div>
+                                          <div class="owl-lazy img_servicio"  data-src="<?php bloginfo('template_url'); ?>/assets/img/tarifas_estacionamiento.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/tarifas_estacionamiento.jpg);"> </div>
                                     </div>
                                     <div class="col-md-6 col-md-pull-6 ">
                                       <div class="desc_servicio">
@@ -65,7 +65,7 @@
                     <div class="item clearfix">
                        
                                     <div class="col-md-6 col-md-push-6 ">
-                                          <div class="owl-lazy img_servicio"  data-src="assets/img/banos_ninos.jpg" style="background: url(assets/img/banos_ninos.jpg);"> </div>
+                                          <div class="owl-lazy img_servicio"  data-src="<?php bloginfo('template_url'); ?>/assets/img/banos_ninos.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/banos_ninos.jpg);"> </div>
                                     </div>
                                     <div class="col-md-6 col-md-pull-6 ">
                                       <div class="desc_servicio">
@@ -85,7 +85,7 @@
                     <div class="item clearfix">
                        
                                     <div class="col-md-6 col-md-push-6 ">
-                                          <div class="owl-lazy img_servicio"  data-src="assets/img/rodados.jpg" style="background: url(assets/img/rodados.jpg);"> </div>
+                                          <div class="owl-lazy img_servicio"  data-src="<?php bloginfo('template_url'); ?>/assets/img/rodados.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/rodados.jpg);"> </div>
                                     </div>
                                     <div class="col-md-6 col-md-pull-6 ">
                                       <div class="desc_servicio">
@@ -102,7 +102,7 @@
                     <div class="item clearfix">
                        
                                     <div class="col-md-6 col-md-push-6 ">
-                                          <div class="owl-lazy img_servicio"  data-src="assets/img/cargador_cel.jpg" style="background: url(assets/img/cargador_cel.jpg);"> </div>
+                                          <div class="owl-lazy img_servicio"  data-src="<?php bloginfo('template_url'); ?>/assets/img/cargador_cel.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/cargador_cel.jpg);"> </div>
                                     </div>
                                     <div class="col-md-6 col-md-pull-6 ">
                                       <div class="desc_servicio">
@@ -118,7 +118,7 @@
                     <div class="item clearfix">
                        
                                     <div class="col-md-6 col-md-push-6 ">
-                                          <div class="owl-lazy img_servicio"  data-src="assets/img/lactancia.jpg" style="background: url(assets/img/lactancia.jpg);"> </div>
+                                          <div class="owl-lazy img_servicio"  data-src="<?php bloginfo('template_url'); ?>/assets/img/lactancia.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/lactancia.jpg);"> </div>
                                     </div>
                                     <div class="col-md-6 col-md-pull-6 ">
                                       <div class="desc_servicio">
@@ -137,7 +137,7 @@
                     <div class="item clearfix">
                        
                                     <div class="col-md-6 col-md-push-6 ">
-                                          <div class="owl-lazy img_servicio"  data-src="assets/img/auxilios.jpg" style="background: url(assets/img/auxilios.jpg);"> </div>
+                                          <div class="owl-lazy img_servicio"  data-src="<?php bloginfo('template_url'); ?>/assets/img/auxilios.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/auxilios.jpg);"> </div>
                                     </div>
                                     <div class="col-md-6 col-md-pull-6 ">
                                       <div class="desc_servicio">
@@ -156,7 +156,7 @@
                    <div class="item clearfix">
                        
                                     <div class="col-md-6 col-md-push-6 ">
-                                          <div class="owl-lazy img_servicio"  data-src="assets/img/electrolinera.jpg" style="background: url(assets/img/electrolinera.jpg);"> </div>
+                                          <div class="owl-lazy img_servicio"  data-src="<?php bloginfo('template_url'); ?>/assets/img/electrolinera.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/electrolinera.jpg);"> </div>
                                     </div>
                                     <div class="col-md-6 col-md-pull-6 ">
                                       <div class="desc_servicio">
@@ -176,7 +176,7 @@
                            <div class="item clearfix">
                        
                                     <div class="col-md-6 col-md-push-6 ">
-                                          <div class="owl-lazy img_servicio"  data-src="assets/img/valet_parking.jpg" style="background: url(assets/img/valet_parking.jpg);"> </div>
+                                          <div class="owl-lazy img_servicio"  data-src="<?php bloginfo('template_url'); ?>/assets/img/valet_parking.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/valet_parking.jpg);"> </div>
                                     </div>
                                     <div class="col-md-6 col-md-pull-6 ">
                                       <div class="desc_servicio">
@@ -193,7 +193,7 @@
 
                       <div class="item clearfix">
                                     <div class="col-md-6 col-md-push-6 ">
-                                          <div class="owl-lazy img_servicio"  data-src="assets/img/lockers.jpg" style="background: url(assets/img/lockers.jpg);"> </div>
+                                          <div class="owl-lazy img_servicio"  data-src="<?php bloginfo('template_url'); ?>/assets/img/lockers.jpg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/lockers.jpg);"> </div>
                                     </div>
                                     <div class="col-md-6 col-md-pull-6 ">
                                       <div class="desc_servicio">

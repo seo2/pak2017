@@ -28,34 +28,34 @@
              <!--GALERIA-->
              <div class="box-galery">
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/exhibicion_autos_lujo/img_01.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_01.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/exhibicion_autos_lujo/img_02.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_02.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/exhibicion_autos_lujo/img_03.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_03.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/exhibicion_autos_lujo/img_04.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_04.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/exhibicion_autos_lujo/img_05.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_05.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/exhibicion_autos_lujo/img_06.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_06.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/exhibicion_autos_lujo/img_07.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_07.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/exhibicion_autos_lujo/img_08.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_08.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/exhibicion_autos_lujo/img_09.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_09.jpg"></div>
              	</div>
              	<div class="item-gal">
-             		<div class="img_servicios"><img src="assets/img/galeria/exhibicion_autos_lujo/img_10.jpg"></div>
+             		<div class="img_servicios"><img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/exhibicion_autos_lujo/img_10.jpg"></div>
              	</div>
              	
              	

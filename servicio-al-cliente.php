@@ -47,7 +47,7 @@
                                              <h3>servicios </h3>
                                              <div class="divider"> </div>
                                          </div>
-                                         <div class="box_slide" style="background: url(assets/img/bg_sac_servicios.jpg);"> </div>                             
+                                         <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_sac_servicios.jpg);"> </div>                             
                                     </a>
                                  </div> <!-- item -->
                              </div><!-- box slider  -->
@@ -67,7 +67,7 @@
                           </div>
                           <div class="datos_como_llegar clearfix">
                               <div class="col-xs-2">
-                                    <img src="assets/img/map_turistik.png" alt="" class="img-responsive center-block">
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/map_turistik.png" alt="" class="img-responsive center-block">
                               </div>
                               <div class="col-xs-10">
                                     <div class="centerer">
@@ -78,7 +78,7 @@
                               </div>
                            <!--    <div class="clearfix"></div>
                               <div class="col-xs-2">
-                                <img src="assets/img/map_transfer.png" alt="" class="img-responsive center-block">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/img/map_transfer.png" alt="" class="img-responsive center-block">
                               </div>
                               <div class="col-xs-10">
                                     <div class="centerer">
@@ -101,8 +101,8 @@
                      <div class="box_slider owl-carousel owl-theme">
                            <div class="item">
                                <a href="travellers.php">
-                                     <div class="logo_seccion logo_travellers" style="background: url(assets/img/logo_travellers_blanco.svg);"> </div>                             
-                                    <div class="box_slide" style="background: url(assets/img/portada_travellers.png);"> </div>                             
+                                     <div class="logo_seccion logo_travellers" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_travellers_blanco.svg);"> </div>                             
+                                    <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_travellers.png);"> </div>                             
                                </a>
                             </div>
                  

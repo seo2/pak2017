@@ -26,11 +26,11 @@
                                     <div class="item_tienda">
                                             <div class="tienda">
                                                 <a class="" href="http://www.cinehoyts.cl/cartelera/santiago-oriente/parque-arauco" target="_blank">
-                                                  <img class="img-responsive" src="assets/img/cinegif.gif">
+                                                  <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/cinegif.gif">
                                                 </a>
                                                     <div class="box_logo_destacado">
                                                       <div class="logo_destacado center-block">
-                                                          <img src="assets/img/demo_logo_cine.png" alt="" class="img-responsive">
+                                                          <img src="<?php bloginfo('template_url'); ?>/assets/img/demo_logo_cine.png" alt="" class="img-responsive">
                                                       </div> <!-- logo_tienda -->
 
                                                         <div class="desc_destacado visible-xs">
@@ -48,7 +48,7 @@
                                  <div class="box_slider">
                                    <div class="item disable-owl-swipe">
                                       <div class="image_dynamic">
-                                           <div class="img_lg" style="background: url(assets/img/header_boulevard.png);"> </div>
+                                           <div class="img_lg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/header_boulevard.png);"> </div>
                                            <div class="caption texto_blanco">
                                                <h3>cartelera</h3>
                                                      <h4 class="divider">boulevard</h4>
@@ -86,7 +86,7 @@
 									foreach ($tiendas as $t) {   
                                     	$imagen = get_img_tienda($t['punto_interes']);
                                     	if(!$imagen){
-                                        	$imagen = "assets/img/demobgtienda.jpg";
+                                        	$imagen = "<?php bloginfo('template_url'); ?>/assets/img/demobgtienda.jpg";
                                     	}else{
 	                                    	$imagen = 'ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
                                     	}
@@ -119,7 +119,7 @@
                           <div class="box_ver_mas_tiendas text-center">
                                    <a href="boulevard-tiendas.php" class="btn btn-default btn_ver_mas hvr-float">
                                       <h3 class="ver_mas">ver más restaurantes</h3>
-                                      <img src="assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
+                                      <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
                                   </a>
                           </div>
                                          
@@ -140,7 +140,7 @@
 					foreach ($tiendas as $t) {   
 	                	$imagen = get_img_tienda($t['punto_interes']);
 	                	if(!$imagen){
-	                    	$imagen = "assets/img/demobgtienda.jpg";
+	                    	$imagen = "<?php bloginfo('template_url'); ?>/assets/img/demobgtienda.jpg";
 	                	}else{
 	                    	$imagen = 'ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
 	                	}
