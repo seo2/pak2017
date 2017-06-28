@@ -1,0 +1,161 @@
+footer{
+  position: relative;
+  .btn_inversionistas {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+     padding-top: 40px;
+     border-top: 1px solid #B0B0B0;
+    .menu_footer {
+      list-style-type: none;
+      padding-left: 0;
+      @media(max-width: 767px){
+          margin-bottom: 40px;
+
+      }
+        li {
+          text-transform: uppercase;
+          margin: 12px 0;
+            &.active a {
+            color: $rojo;
+          }
+                &:first-child {
+                  margin-top: 0;
+                }
+                &:last-child {
+                  margin-bottom: 0;
+                }
+             a {
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+                @include bold(12px, black);
+                &:hover {
+                  color: $rojo;
+                }
+                @media (max-width: 768px){
+                   font-size: 13px;
+                   
+              }
+             }
+        }
+    }
+
+    .bullets {
+      margin: 0;
+      padding: 0;
+      li {
+        display: block;
+        margin-bottom: 30px;
+         &:last-child {
+        margin-bottom: 0;
+      }
+        &.bullet {
+          .bullet-icon {
+            float: left;
+            min-height: 110px;
+            width: 45px;
+             @media (max-width: 768px){
+                     width: auto;
+                }
+
+              @media (max-width: 768px){
+                   min-height: 70px;
+              }
+              i{
+              color: red;
+              font-size: 50px;
+              @media (max-width: 768px){
+                   font-size: 30px;
+              }
+             }
+          }
+          .bullet-content {
+            padding-left: 60px;
+             @media (max-width: 768px){
+                     padding-left: 35px;
+                }
+             
+            h2 {
+                @include regular(18px, $rojo);
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                 @media (max-width: 1024px){
+                    font-size: 16px;
+                }
+                @media (max-width: 768px){
+                     font-size: 14px;
+                }
+            }
+            p{
+              @include bold(12px, black);
+              text-transform: uppercase;
+              line-height: 24px;
+              margin: 0;
+              
+              @media (max-width: 768px){
+                   @include bold(12px, black);
+                    line-height: 18px;
+              }
+                a{
+                  @extend %link_rojo;
+                }
+            }
+          }
+
+        } // bullet
+
+      }
+        
+    }
+    a {
+      &.btn_inversionistas {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 115px;
+          max-width:115px;
+          min-height: 80px;
+        @media(max-width: 767px){
+            position: relative;
+            float: left;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+      }
+    }
+
+
+
+} // footer
+
+.footer_bottom {
+  margin-top: 35px;
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  border-top: 1px solid #B0B0B0;
+    .copy {
+        @include centerer(false, true);
+        @include regular(12px, black);
+        left: 0;
+        @media(max-width: 767px){
+          @include centerer(true, true);
+          width: 100%;
+          text-align: center;
+          
+        }
+    }
+
+    .trip_advisor {
+      @include centerer(false, true);
+      right: 0;
+      @media(max-width: 767px){
+          @include centerer(true, true);
+          right: auto;
+          top: 100px;
+      }
+        
+    }
+
+}
