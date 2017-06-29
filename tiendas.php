@@ -136,7 +136,7 @@ Template name: Tiendas
 	$x = 1;
 	while($x <= $paginas) {
 	?>
-		<a href="<?php echo 'https://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>/tiendas.php?page=<?php echo  $x.$cola; ?>"></a>
+		<a href="<?php bloginfo('url'); ?>/tiendas.php?page=<?php echo  $x.$cola; ?>"></a>
 	<?php 
 		$x++; 
 	}

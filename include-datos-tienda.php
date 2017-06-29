@@ -7,7 +7,7 @@ if(isset($_GET['tiendaID'])){
 		foreach ($tiendas as $t) {   
 	    	$imagen = get_img_tienda($t['punto_interes']);
 	    	if(!$imagen){
-	        	$imagen = "<?php bloginfo('template_url'); ?>/assets/img/demobgtienda.jpg";
+	        	$imagen = "assets/img/demobgtienda.jpg";
 	    	}else{
                 $imagen = 'ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
 	    	}
@@ -29,12 +29,12 @@ if(isset($_GET['tiendaID'])){
       <div id="adidas" class="datos_tienda">
         <div class="row ">
          <div class="col-sm-6 col-sm-push-6 nopad relative">
-              <div class="img_tienda" style="background: url(<?php echo $imagen; ?>);" ></div>
+              <div class="img_tienda" style="background: url(<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>);" ></div>
           </div>
           <div class="col-sm-6  col-sm-pull-6 nopad relative min-height">
                 <div class="datos">
                     <div class="logo_tienda">
-                        <img src="<?php echo $logo; ?>" alt="" class="img-responsive">
+                        <img src="<?php bloginfo('template_url'); ?>/<?php echo $logo; ?>" alt="" class="img-responsive">
                     </div>
 					<p><?php echo $desc; ?></p>
                     <h3> CONTACTO: <span class="telefono"><?php echo $fono; ?><span></h3>

@@ -6,25 +6,26 @@ var urlpak  = document.location.origin+dir;
 
 $(document).ready(function() {
 
-            $(window).scroll(function() {
-                     if ($(this).scrollTop() < 480) {
-                        $(".search_home").addClass("fixed");
-                        $(".main_content").css("margin-top", "60px");
-                      } else {
-                        $(".search_home").removeClass("fixed");
-                         $(".main_content").css("margin-top", "0px");
-                      }
-              });
+    $(window).scroll(function() {
+		if ($(this).scrollTop() < 480) {
+			$(".search_home").addClass("fixed");
+			$(".main_content").css("margin-top", "60px");
+		} else {
+			$(".search_home").removeClass("fixed");
+			$(".main_content").css("margin-top", "0px");
+		}
+    });
 
-            $(window).scroll(function() {
-                     if ($(this).scrollTop() > 480) {
-                        $(".search_home").addClass("fixed");
-                        $(".main_content").css("margin-top", "70px");
-                      } else {
-                        $(".search_home").removeClass("fixed");
-                         $(".main_content").css("margin-top", "0px");
-                      }
-              });
+    $(window).scroll(function() {
+		if ($(this).scrollTop() > 480) {
+			$(".search_home").addClass("fixed");
+			$(".main_content").css("margin-top", "70px");
+		} else {
+			$(".search_home").removeClass("fixed");
+			$(".main_content").css("margin-top", "0px");
+		}
+    });
+      
 // slider home
 $('.slider_home').owlCarousel({
     loop:true,
@@ -322,20 +323,20 @@ $('.box_slider').owlCarousel({
             window.setTimeout(offsetAnchor, 0);
 
     // tiendas
-        var id_tienda;
+       var id_tienda;
 
        $('body').on('click', '.overlay_img', function(e) {
 	   		tipo = $(this).data('tipo');
 	        id_tienda = $(this).data('id');
 	   		if(tipo>0){
 	   		  if(tipo=='0'){
-			      pagina = '/tiendas.php?tiendaID=';
+			      pagina = 'tiendas?tiendaID=';
 		      }else if(tipo=='110'){
-			      pagina = '/boulevard-tiendas.php?tiendaID=';
+			      pagina = 'boulevard-tiendas?tiendaID=';
 			  }else if(tipo=='119'){
-			      pagina = '/distrito-de-lujo-tienda.php?tiendaID=';
+			      pagina = 'distrito-de-lujo-tienda?tiendaID=';
 			  }else if(tipo=='131'){
-			      pagina = '/piso-diseno.php?tiendaID=';
+			      pagina = 'piso-diseno?tiendaID=';
 			  }
 		      window.location.href = urlpak+pagina+id_tienda;		   		
 	   		}else{
@@ -354,7 +355,7 @@ $('.box_slider').owlCarousel({
 		   		
 		   		pagina = $('#pages').data('pagina');
 		   		
-		   		window.history.pushState("object or string", "Parque Arauco | " + nombre, pagina+".php?tiendaID="+id_tienda);
+		   		window.history.pushState("object or string", "Parque Arauco | " + nombre, pagina+"?tiendaID="+id_tienda);
 		   		document.title = "Parque Arauco | " + nombre;
 		   		$("#caja_datos_tienda p").html(desc);
 		   		$("#caja_datos_tienda .img_tienda").css({"background":"url("+img+")"});
@@ -392,7 +393,7 @@ $('.box_slider').owlCarousel({
 	   		
 	   		pagina = $('#pages').data('pagina');
 			
-	   		window.history.pushState("object or string", "Parque Arauco | Tiendas", pagina+".php");
+	   		window.history.pushState("object or string", "Parque Arauco | Tiendas", pagina);
 	   		document.title = "Parque Arauco | Tiendas";
 	   		
 			$(window).scrollTo($("#tienda_"+id_tienda).offset().top-150, 1500,'elasout');

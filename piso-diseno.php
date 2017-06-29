@@ -1,3 +1,10 @@
+<?
+/*
+
+Template name: Piso de Diseño
+
+*/
+?>
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
 <?php include('include-slider-home.php') ?>
@@ -46,27 +53,26 @@
 									foreach ($tiendas as $t) {   
                                     	$imagen = get_img_tienda($t['punto_interes']);
                                     	if(!$imagen){
-                                        	$imagen = "<?php bloginfo('template_url'); ?>/assets/img/demobgtienda.jpg";
+                                        	$imagen = "assets/img/demobgtienda.jpg";
                                     	}else{
 	                                    	$imagen = 'ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
                                     	}
                                 ?>
-                                  <div class="col-sm-3 caja_tienda"> 
-                                      <div class="item_tienda" id="tienda_<?php echo $t['punto_interes']; ?>">
-                                            <div  class="tienda">
-                                                <a class="btn_tienda" href="javascript:void(0);"  >
-                                                    <span id="adidas" class="overlay_img" data-id="<?php echo $t['punto_interes']; ?>" data-logo="ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" data-desc="<?php echo trim($t['descripcion']); ?>" data-img="<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['numero_piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>"></span>
-                                                    <img class="img-responsive" src="<?php echo $imagen; ?>">
-                                                  </a>
-                                                      <div class="box_logo_tienda">
-                                                        <div class="logo_tienda">
-                                                            <img src="ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" alt="" class="img-responsive">
-                                                        </div> <!-- logo_tienda -->
-                                                      </div> <!-- box logo tienda -->
-                                            </div> <!--  tienda -->
-                                    </div> <!-- item tienda -->
-
-                              </div> <!-- col sm 3 -->
+					            <div class="col-sm-3 caja_tienda"> 
+					            	<div class="item_tienda" id="tienda_<?php echo $t['punto_interes']; ?>">
+					                	<div  class="tienda">
+					                    	<a class="btn_tienda" href="javascript:void(0);"  >
+					                        	<span id="adidas" class="overlay_img" data-id="<?php echo $t['punto_interes']; ?>" data-logo="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" data-desc="<?php echo trim($t['descripcion']); ?>" data-img="<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['numero_piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="<?php bloginfo('template_url'); ?>/ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>"></span>
+					                            <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>">
+					                        </a>
+				                            <div class="box_logo_tienda">
+				                                <div class="logo_tienda">
+				                                    <img src="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" alt="" class="img-responsive">
+				                                </div> <!-- logo_tienda -->
+				                            </div> <!-- box logo tienda -->
+				                        </div> <!--  tienda -->
+				                    </div> <!-- item tienda -->
+					            </div> <!-- col sm 3 -->   
 								 
 								<?php
 									}
@@ -87,7 +93,7 @@
               
               </section> <!-- end tiendas -->
       </div>
-		  <div id="pages" style="display:none;" data-pagina="piso-diseno">
+		  <div id="pages" style="display:none;" data-pagina="<?php bloginfo('url'); ?>/piso-diseno">
 <?php 
 	$postperpage = 12;
 	$db->where('tipo', Array(131), 'IN');
@@ -102,7 +108,7 @@
 	$x = 1;
 	while($x <= $paginas) {
 	?>
-		<a href="<?php echo 'https://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>/piso-diseno.php?page=<?php echo  $x; ?>"></a>
+		<a href="<?php bloginfo('url'); ?>/piso-diseno?page=<?php echo  $x; ?>"></a>
 	<?php 
 		$x++; 
 	}

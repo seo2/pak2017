@@ -11,7 +11,7 @@
                   <div class="box">
                         <div class="box_slider owl-carousel owl-theme ">
                           <div class="item">
-                              <a href="distrito-de-lujo.php">
+                              <a href="<?php bloginfo('url'); ?>/distrito-de-lujo">
                                 <div class="logo_seccion logo_distrito" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_distrito.svg);"> </div>
                                 <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_distrito.png);"> </div>
                               </a>
@@ -24,7 +24,7 @@
                   <div class="box">
                         <div class="box_slider owl-carousel owl-theme ">
                               <div class="item">
-                                  <a href="boulevard.php">
+                                  <a href="<?php bloginfo('url'); ?>/boulevard">
                                        <div class="caption">
                                           <p>&nbsp </p>
                                            <h3>boulevard </h3>
@@ -43,7 +43,7 @@
                       <div class="box_slider owl-carousel owl-theme ">
                            <div class="item">
                                   
-                               <a href="piso-diseno.php">
+                               <a href="<?php bloginfo('url'); ?>/piso-diseno">
                                     <div class="logo_seccion logo_piso_diseno" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_piso_diseno.svg);"> </div> 
                                     <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_piso_diseno.png);"> </div>                 
                                </a>
@@ -57,9 +57,9 @@
                   <div class="box">
                          <div class="box_slider owl-carousel owl-theme">
                               <div class="item">
-                                  <a href="travellers.php">
+                                  <a href="<?php bloginfo('url'); ?>/travellers">
                                         <div class="logo_seccion logo_travellers" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_travellers_blanco.svg);"> </div>                             
-                                       <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_travellers.png);"> </div>                             
+										<div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_travellers.png);"> </div>                             
                                   </a>
                                </div>
                           </div><!-- box slider  -->
@@ -92,7 +92,7 @@
               <div class="col-sm-6 col-md-6">
                   <div class="box">
                         <!-- arauco tag -->
-                        <a href="arauco-tag.php" class="box_enlace">
+                        <a href="<?php bloginfo('url'); ?>/arauco-tag" class="box_enlace">
                           <div class="box_img" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_arauco_tag.png);"> </div>
                           <div class="caption">
                               <h3>Inscríbete</h3>

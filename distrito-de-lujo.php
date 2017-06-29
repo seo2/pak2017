@@ -1,3 +1,10 @@
+<?
+/*
+
+Template name: Distrito de Lujo
+
+*/
+?>
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
 <?php include('include-slider-dl.php') ?>
@@ -38,7 +45,7 @@
                                                 de centros comerciales que tienen este tipo de marcas en el mundo.
                                            </p>
                                              <div class="text-center">
-                                                <a class="btn btn-default btn_blanco" href="distrito-de-lujo-tiendas.php" role="button">ver todas las tiendas</a>
+                                                <a class="btn btn-default btn_blanco" href="<?php bloginfo('url'); ?>distrito-de-lujo-tiendas" role="button">ver todas las tiendas</a>
                                              </div>
                                       </div>
                               </div>

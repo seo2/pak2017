@@ -67,17 +67,17 @@
                                  <li><a href="https://www.instagram.com/parquearauco/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                                  <li><a href="https://twitter.com/parquearauco" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                 <!--  <li><a href="https://es.pinterest.com/parquearauco/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li> -->
-                                <li><a href="horarios.php"><i class="fa fa-clock-o" aria-hidden="true"></i></a></li>
+                                <li><a href="<?php bloginfo('url'); ?>/horarios"><i class="fa fa-clock-o" aria-hidden="true"></i></a></li>
                                </ul>
                               </div><!-- RRSS -->
                                  <ul class="nav navbar-nav">
-                                     <li class="active"><a href="index.php">Home</a></li>
-                                     <li><a id="btn_distrito" href="distrito-de-lujo.php">distrito de lujo</a></li>
-                                     <li><a id="btn_boulevard" href="boulevard.php">boulevard</a></li>
-                                     <li><a id="btn_piso" href="piso-diseno.php">piso diseño</a></li>
-                                     <li><a id="btn_entretencion" href="novedades.php#entretencion">entretención</a></li>
-                                     <li><a id="btn_novedades" href="novedades.php#novedades">novedades</a></li>
-                                     <li><a id="btn_tiendas" href="tiendas.php">tiendas</a></li>
+                                     <li class="active"><a 			href="<?php bloginfo('url'); ?>">Home</a></li>
+                                     <li><a id="btn_distrito" 		href="<?php bloginfo('url'); ?>/distrito-de-lujo">distrito de lujo</a></li>
+                                     <li><a id="btn_boulevard" 		href="<?php bloginfo('url'); ?>/boulevard">boulevard</a></li>
+                                     <li><a id="btn_piso" 			href="<?php bloginfo('url'); ?>/piso-diseno">piso diseño</a></li>
+                                     <li><a id="btn_entretencion" 	href="<?php bloginfo('url'); ?>/novedades#entretencion">entretención</a></li>
+                                     <li><a id="btn_novedades" 		href="<?php bloginfo('url'); ?>/novedades#novedades">novedades</a></li>
+                                     <li><a id="btn_tiendas" 		href="<?php bloginfo('url'); ?>/tiendas">tiendas</a></li>
                                 </ul>
                             </div>
 
@@ -88,10 +88,10 @@
                                        <li class="hidden-xs hidden-sm"><a class="invisible" href="javascript:void(0);">&nbsp</a></li>
                                        <li class="hidden-xs hidden-sm"><a class="invisible" href="javascript:void(0);">&nbsp</a></li>
                                        <li class="hidden-xs hidden-sm"><a class="invisible" href="javascript:void(0);">&nbsp</a></li>
-                                       <li><a href="arauco-tag.php">arauco tag</a></li>
+                                       <li><a href="<?php bloginfo('url'); ?>/arauco-tag">arauco tag</a></li>
                                        <li><a href="http://www.revistadetalle.cl/" target="_blank">revista detalle</a></li>
-                                       <li><a href="servicio-al-cliente.php">servicio al cliente</a></li>
-                                       <li><a href="travellers.php">travellers</a></li>
+                                       <li><a href="<?php bloginfo('url'); ?>/servicio-al-cliente">servicio al cliente</a></li>
+                                       <li><a href="<?php bloginfo('url'); ?>/travellers">travellers</a></li>
                                   </ul>
                             </div>
 
@@ -111,7 +111,7 @@
                               <div class="horarios">
                                     <ul class="clearfix">
                                       <li>
-                                            <a href="horarios.php"><i class="fa fa-clock-o" aria-hidden="true"></i>  horarios </a>
+                                            <a href="<?php bloginfo('url'); ?>/horarios"><i class="fa fa-clock-o" aria-hidden="true"></i>  horarios </a>
                                       </li>
 
                                       <li>

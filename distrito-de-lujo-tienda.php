@@ -1,3 +1,10 @@
+<?
+/*
+
+Template name: Distrito de lujo tienda
+
+*/
+?>
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
 <?php //include('include-slider-dl.php') ?>
@@ -14,7 +21,7 @@ if(isset($_GET['tiendaID'])){
 		foreach ($tiendas as $t) {   
 	    	$imagen = get_img_tienda($t['punto_interes']);
 	    	if(!$imagen){
-	        	$imagen = "<?php bloginfo('template_url'); ?>/assets/img/demobgtienda.jpg";
+	        	$imagen = "assets/img/demobgtienda.jpg";
 	    	}else{
                 $imagen = 'ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
 	    	}
@@ -56,11 +63,11 @@ if(isset($_GET['tiendaID'])){
             <div class="col-sm-12">
               <div class="caja_tienda_single clearfix">
                     <div class="col-sm-6 col-sm-push-6">
-                          <img class="img-responsive visible-xs center-block logo" src="<?php echo $logo; ?>" alt="">
+                          <img class="img-responsive visible-xs center-block logo" src="<?php bloginfo('template_url'); ?>/<?php echo $logo; ?>" alt="">
 
                           <div class="slider_single_tiendas_dl owl-carousel owl-theme pull-right">
 	                            <div class="item">
-	                                <div class="img_slide" style="background: url(<?php echo $imagen; ?>);"></div>
+	                                <div class="img_slide" style="background: url(<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>);"></div>
 	                            </div>
 <!--
 	                            <div class="item">
@@ -71,7 +78,7 @@ if(isset($_GET['tiendaID'])){
                       </div>
                       <div class="col-sm-6 col-sm-pull-6">
                           <div class="desc_tienda">
-                              <img class="img-responsive hidden-xs logo" src="<?php echo $logo; ?>" alt="">
+                              <img class="img-responsive hidden-xs logo" src="<?php bloginfo('template_url'); ?>/<?php echo $logo; ?>" alt="">
                               <div class="datos_tienda">
                                 <p>LOCAL Nº <?php echo get_local($punto_interes); ?> - <?php echo $piso; ?> º PISO</p>
 <!--                                 <p>Horarios: 10:00am a 22:00pm hrs</p> -->

@@ -1,3 +1,10 @@
+<?
+/*
+
+Template name: Arauco Tag
+
+*/
+?>
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
 <?php include('include-slider-tag.php') ?>

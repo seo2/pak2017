@@ -1,3 +1,10 @@
+<?
+/*
+
+Template name: Servicio al Cliente
+
+*/
+?>
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
 <?php //include('include-slider-servicios-cliente.php') ?>

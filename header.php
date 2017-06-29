@@ -55,7 +55,7 @@
 			foreach ($tiendas as $t) {   
 		    	$imagen = get_img_tienda($t['punto_interes']);
 		    	if(!$imagen){
-		        	$imagen = "<?php bloginfo('template_url'); ?>/assets/img/demobgtienda.jpg";
+		        	$imagen = "assets/img/demobgtienda.jpg";
 		    	}else{
 	                $imagen = 'ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
 		    	}
@@ -72,16 +72,17 @@
 		$title = 'Parque Arauco | '.$nombre;
 	}else{
 		$title = 'Parque Arauco | Mucho más que comprar';
+		$imagen = "assets/img/demobgtienda.jpg";
 	} 
 	
 	?>
 
-    <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/<?php bloginfo('template_url'); ?>/assets/img/favicon.ico">
+    <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/assets/img/favicon.ico">
     
 	<meta property="og:type"	content="business.business">
 	<meta property="og:title" 	content="<?php echo $title; ?>">
 	<meta property="og:url" 	content="<?php echo $actual_link; ?>">
-	<meta property="og:image" 	content="<?php echo 'https://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>/<?php echo $imagen; ?>">
+	<meta property="og:image" 	content="<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>">
 
 	<?php wp_head(); ?>
     

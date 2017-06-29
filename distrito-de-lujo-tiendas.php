@@ -1,3 +1,10 @@
+<?
+/*
+
+Template name: Distrito de lujo Tiendas
+
+*/
+?>
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
 <?php //include('include-slider-dl.php') ?>
@@ -48,16 +55,16 @@
 				foreach ($tiendas as $t) {   
                 	$imagen = get_img_tienda($t['punto_interes']);
                 	if(!$imagen){
-                    	$imagen = "<?php bloginfo('template_url'); ?>/assets/img/demobgtienda.jpg";
+                    	$imagen = "assets/img/demobgtienda.jpg";
                 	}else{
                     	$imagen = 'ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
                 	}
             ?>
 			<div class="col-sm-6 col-md-3 caja_tienda">
                 <div class="box_tienda">
-                  <a class="hover" href="distrito-de-lujo-tienda.php?tiendaID=<?php echo $t['punto_interes']; ?>">
-                      <img class="logo_tienda hover" src="ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" style="filter: invert(100%);">
-                      <img class="logo_tienda" src="ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg">
+                  <a class="hover" href="<?php bloginfo('url'); ?>/distrito-de-lujo-tienda?tiendaID=<?php echo $t['punto_interes']; ?>">
+                      <img class="logo_tienda hover" src="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" style="filter: invert(100%);">
+                      <img class="logo_tienda" src="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg">
                       
                   </a>
                 </div>
@@ -86,7 +93,7 @@
         <?php// include('footer-distrito-de-lujo.php') ?>
       </div> -->
       
-<div id="pages" style="display:none;" data-pagina="tiendas">
+<div id="pages" style="display:none;" data-pagina="<?php bloginfo('template_url'); ?>/distrito-de-lujo-tienda">
 <?php 
 	$postperpage = 12;
 	$db->where('tipo', Array(119), 'IN');
@@ -101,7 +108,7 @@
 	$x = 1;
 	while($x <= $paginas) {
 	?>
-		<a href="<?php echo 'https://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']); ?>/distrito-de-lujo-tiendas.php?page=<?php echo  $x; ?>"></a>
+		<a href="<?php bloginfo('url'); ?>/distrito-de-lujo-tiendas?page=<?php echo  $x; ?>"></a>
 	<?php 
 		$x++; 
 	}

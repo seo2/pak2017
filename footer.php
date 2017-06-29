@@ -1,7 +1,7 @@
       <div class="row">
                    <div class="col-sm-12">
                     <div class="image_dynamic hover">
-                       <a href="servicios-cliente.php">
+                       <a href="<?php bloginfo('url'); ?>/servicios-cliente">
                        <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_servicio_cliente.png);"> </div>
                              <div class="caption_lg">
                                 <h3>servicio al cliente</h3>
@@ -26,12 +26,12 @@
           <div class="col-xs-12 col-sm-4">
             <ul class="menu_footer">
               <li class=""><a href="http://www.parauco.com/" target="_blank">Investor Relations</a></li>
-              <li><a href="contacto-comercial.php">Contacto Comercial</a></li>
+              <li><a href="<?php bloginfo('url'); ?>/contacto-comercial">Contacto Comercial</a></li>
               <li><a href="https://secure.ethicspoint.com/domain/media/es/gui/23025/index.html" target="_blank">Código Conducta Empresarial</a></li>
-              <li><a href="terminos-y-condiciones.php">Términos y Condiciones de Uso</a></li>
+              <li><a href="<?php bloginfo('url'); ?>/terminos-y-condiciones">Términos y Condiciones de Uso</a></li>
               <li><a href="http://sistemas.parquearauco.cl/Relatorios/Inicio.aspx" target="_blank">Relatorios de ventas</a></li>
               <li><a href="http://sistemas.parquearauco.cl/Portal" target="_blank">Proveedores y Locatarios</a></li>
-              <li><a href="legales-concursos.php">Legales concursos</a></li>
+              <li><a href="<?php bloginfo('url'); ?>/legales-concursos">Legales concursos</a></li>
             </ul>
           </div>
           <div class="col-xs-12 col-sm-6">
@@ -122,21 +122,21 @@
      
       
       if(suggestion.busqueda=='Cat'){
-	      pagina = '/tiendas.php?catID=';
+	      pagina = '<?php bloginfo('url'); ?>/tiendas?catID=';
       }else if(suggestion.busqueda=='Tienda'){
 	      if(suggestion.tipo=='0'){
-		      pagina = '/tiendas.php?tiendaID=';
+		      pagina = '<?php bloginfo('url'); ?>/tiendas?tiendaID=';
 	      }else if(suggestion.tipo=='110'){
-		      pagina = '/boulevard-tiendas.php?tiendaID=';
+		      pagina = '<?php bloginfo('url'); ?>/boulevard-tiendas?tiendaID=';
 		  }else if(suggestion.tipo=='119'){
-		      pagina = '/distrito-de-lujo-tienda.php?tiendaID=';
+		      pagina = '<?php bloginfo('url'); ?>/distrito-de-lujo-tienda?tiendaID=';
 		  }else if(suggestion.tipo=='131'){
-		      pagina = '/piso-diseno.php?tiendaID=';
+		      pagina = '<?php bloginfo('url'); ?>/piso-diseno?tiendaID=';
 		  }
       }else{
 	      
       }
-	  window.location.href = urlpak+pagina+suggestion.id;
+	  window.location.href = pagina+suggestion.id;
       
     }
   });
