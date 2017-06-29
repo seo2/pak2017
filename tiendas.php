@@ -1,3 +1,10 @@
+<?
+/*
+
+Template name: Tiendas
+
+*/
+?>
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
 <?php include('include-slider-home.php') ?>
