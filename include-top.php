@@ -10,7 +10,7 @@
                  <span class="icon-bar bottom_bar"></span>
                </button>
                   <div class="logo">
-                    <a href="index.php"> parque arauco</a>
+                    <a href="<?php bloginfo('url'); ?>"> parque arauco</a>
                   </div> <!-- brand -->
 
                  <!--    <div id="lang_switcher" class="visible-xs visible-sm">

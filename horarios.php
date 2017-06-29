@@ -16,7 +16,7 @@ Template name: Horarios
                 <h4 class="divider">horarios</h4>
             </div>
             <div class="col-sm-12 col-md-2">
-                 <a href="index.php" class="back">< volver</a>
+                 <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
             </div>
           </div>
         </div>
@@ -24,248 +24,74 @@ Template name: Horarios
     </div> <!-- titulo seccion -->
 <section class="main_content">
 <div class="container">
-  <div class="row">
-    <section class="servicios_cliente clearfix">
-       <div id="content_horarios" class="content_servicio ">
-           <div class="container">
-                <div class="row">
-                <div class="col-md-12 ">
-                     <div class="desc_servicio">
-                        <section class="box_horarios">
-                                     <div class="col-sm-12">
-                                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  	<div class="row">
+	    <section class="servicios_cliente clearfix">
+	       	<div id="content_horarios" class="content_servicio ">
+	           	<div class="container">
+	                <div class="row">
+		                <div class="col-md-12 ">
+		                     <div class="desc_servicio">
+		                        <section class="box_horarios">
+		                            <div class="col-sm-12">
+	                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<?php	                                         
+							    $args = array(
+									'post_type' 		=> array('horario')
+							    );
+								$the_query = new WP_Query ($args);
+							    $i = 0;
+							    if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
+							    	$i++;
+							?>	                    
                                            <div class="panel panel-default">
                                              <div class="panel-heading" role="tab" id="">
                                                  <!-- <div class="ribbon"></div> -->
                                                    <h4>
-                                                     <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q1" aria-expanded="true" aria-controls="q1">
-                                                         LOCALES COMERCIALES
+                                                     <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q<?php echo $i; ?>" aria-expanded="true" aria-controls="q<?php echo $i; ?>">
+                                                         <?php the_title(); ?>
                                                      </a>
                                                    </h4>
                                              </div>
-                                             <div id="q1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
+                                             <div id="q<?php echo $i; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
                                                <div class="panel-body">
+					 
+											   	<?php
+													$horarios = get_order_group('fila_titulo_1');
+													foreach($horarios as $horario){   
+												?>        
                                                    <div class="row">
                                                          <div class="col-sm-6"> 
-                                                             <p>Lunes a sábado de 10:00 a 21:00 hrs <br> 
-                                                             Domingo y festivos de 11:00 a 21:00</p>
+	                                                         <h4><?php echo get('fila_titulo_1',$horario); ?></h4>
+                                                             <p><?php echo get('fila_texto_1',$horario); ?></p>
                                                          </div>
                                                          <div class="col-sm-6">
-                                                              <p> Los días feriados, el Mall abrirá a las 11:00 hrs. <br>
-                                                              El Horario de apertura de día domingo es a las 11:00 </p>
-                                                         </div>
-                                                         <div class="col-sm-12">
-                                                           <p> > Excepcionalmente las joyerías del mall cierran de lunes a domingo a las 20:30 </p>
-                                                         </div>
+	                                                         <h4><?php echo get('fila_titulo_2',$horario); ?></h4>
+                                                             <p><?php echo get('fila_texto_2',$horario); ?></p>
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                           <p><?php echo get('fila_texto_en_1_columna',$horario); ?></p>
+                                                        </div>
                                                    </div>
+                                                <?php } ?>
+                                                   
+                                                   
                                                </div>
                                              </div>
                                            </div>
-                                           <div class="panel panel-default">
-                                             <div class="panel-heading" role="tab" id="">
-                                                 <!-- <div class="ribbon"></div> -->
-                                               <h4 class="panel-title">
-                                                 <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q2" aria-expanded="false" aria-controls="q2">
-                                                   distrito de lujo
-                                                 </a>
-                                               </h4>
-                                             </div>
-                                             <div id="q2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
-                                               <div class="panel-body">
-                                                   <div class="row">
-                                                     <div class="col-sm-6"> 
-                                                         <h4>HORARIO VERANO</h4>
-                                                         <p> Lunes a sábado de 10:30 a 22:00 <br>
-                                                            Domingo y festivos de 11:00 a 22:00</p>
-                                                     </div>
-                                                     <div class="col-sm-6">
-                                                         <h4>HORARIO invierno</h4>
-                                                         <p> Lunes a sábado de 10:30 a 21:00 <br>
-                                                              Domingo y festivos de 11:00 a 21:00 </p>
-                                                     </div>
-
-                                                   </div>
-                                                 
-                                               </div>
-                                             </div>
-                                           </div>
-                                           <div class="panel panel-default">
-                                             <div class="panel-heading" role="tab" id="">
-                                                 <!-- <div class="ribbon"></div> -->
-                                               <h4 class="panel-title">
-                                                 <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q3" aria-expanded="false" aria-controls="q3">
-                                                   grandes tiendas
-                                                 </a>
-                                               </h4>
-                                             </div>
-                                             <div id="q3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
-                                               <div class="panel-body">
-                                               <div class="row">
-                                                 <div class="col-sm-12"> 
-                                                     <p>Lunes a domingo y festivos de 11:00 a 21:00</p>
-                                                 </div>
-                                               </div>
-                                               </div>
-                                             </div>
-                                           </div>
-
-                                           <div class="panel panel-default">
-                                             <div class="panel-heading" role="tab" id="">
-                                                 <!-- <div class="ribbon"></div> -->
-                                               <h4 class="panel-title">
-                                                 <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q4" aria-expanded="false" aria-controls="q3">
-                                                   TIENDAS BOULEVARD
-                                                 </a>
-                                               </h4>
-                                             </div>
-                                             <div id="q4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
-                                               <div class="panel-body">
-                                                  <div class="row">
-                                                    <div class="col-sm-6"> 
-                                                        <h4>HORARIO VERANO</h4>
-                                                        <p> Lunes a sábado de 10:30 a 23:00 <br>
-                                                             Domingo y festivos de 11:00 a 23:00</p>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <h4>HORARIO invierno</h4>
-                                                        <p> Lunes a sábado de 10:30 a 22:00 <br>
-                                                             Domingo y festivos de 11:00 a 22:00</p>
-                                                    </div>
-                                                  </div>
-                                               </div>
-                                             </div>
-                                           </div>
-
-                                           <div class="panel panel-default">
-                                             <div class="panel-heading" role="tab" id="">
-                                                 <!-- <div class="ribbon"></div> -->
-                                               <h4 class="panel-title">
-                                                 <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q5" aria-expanded="false" aria-controls="q5">
-                                                   ENTRETENCIÓN
-                                                 </a>
-                                               </h4>
-                                             </div>
-                                             <div id="q5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
-                                               <div class="panel-body">
-                                                  <div class="row">
-                                                    <div class="col-sm-6"> 
-                                                        <h4>teatro mori</h4>
-                                                        <p> Lunes a Domingo hasta las 00:00</p>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <h4>cine</h4>
-                                                        <p>Lunes a Jueves de 11:00 a 01:30 <br>  
-                                                            Viernes, sábado, domingo y festivos de 11:00 a 03:00</p>
-                                                    </div>
-                                                  </div>
-                                               </div>
-                                             </div>
-                                           </div>
-
-                                           <div class="panel panel-default">
-                                             <div class="panel-heading" role="tab" id="">
-                                                 <!-- <div class="ribbon"></div> -->
-                                               <h4 class="panel-title">
-                                                 <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q6" aria-expanded="false" aria-controls="q3">
-                                                   RESTAURANTES / FOOD COURT
-                                                 </a>
-                                               </h4>
-                                             </div>
-                                             <div id="q6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
-                                               <div class="panel-body">
-                                               <div class="row">
-                                                 <div class="col-sm-6"> 
-                                                     <h4>RESTAURANTES</h4>
-                                                     <p> Domingo a jueves de 10:00 a 24:00 <br>
-                                                           Viernes y sábado de 10:00 a 02:00</p>
-                                                 </div>
-                                                 <div class="col-sm-6">
-                                                     <h4>FOOD COURT</h4>
-                                                     <p>Lunes a jueves de 10:00 a 22:00 <br>
-                                                         Viernes, sábado  de 10:00 a 23:00 <br>
-                                                         Domingo y festivos  de 11:00 a 22:00</p>
-                                                 </div>
-                                               </div>
-                                               </div>
-                                             </div>
-                                           </div>
-
-                                           <div class="panel panel-default">
-                                             <div class="panel-heading" role="tab" id="">
-                                                 <!-- <div class="ribbon"></div> -->
-                                               <h4 class="panel-title">
-                                                 <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q7" aria-expanded="false" aria-controls="q7">
-                                                   horarios fechas especiales
-                                                 </a>
-                                               </h4>
-                                             </div>
-                                             <div id="q7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
-                                               <div class="panel-body">
-                                                    <div class="row">
-                                                      <div class="col-sm-6"> 
-                                                          <h4>15 a 23 de diciembre:</h4>
-                                                          <p> Cierre Tienda Interior Mall 22:45
-                                                              Cierre Tienda Boulevard 23:00
-                                                              Cierre Tienda Distrito de Lujo 22:45
-                                                              Boulevard, cine y Teatro Mori, horario normal</p>
-                                                      </div>
-                                                      <div class="col-sm-6">
-                                                          <h4>24 y 31 de diciembre:</h4>
-                                                          <p>Cierre a las 19:45 horas <br>
-                                                              todo el Centro Comercial</p>
-                                                      </div>
-
-                                                    </div>
-
-                                                    <div class="row">
-                                                      <div class="col-sm-6"> 
-                                                          <h4>26 a 30 de diciembre:</h4>
-                                                          <p> Horario normal</p>
-                                                      </div>
-                                                      <div class="col-sm-6">
-                                                          <h4> 25 de diciembre y 1 de enero:</h4>
-                                                          <p>Cerrado Tiendas interior Mall <br>
-                                                                Tiendas Boulevard, Teatro <br>
-                                                                Restaurante Boulevard, horario normal</p>
-                                                      </div>
-                                                    </div>
-                                               </div>
-                                             </div>
-                                           </div>
-
-                                          <div class="panel panel-default">
-                                             <div class="panel-heading" role="tab" id="">
-                                                 <!-- <div class="ribbon"></div> -->
-                                               <h4 class="panel-title">
-                                                 <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q8" aria-expanded="false" aria-controls="q8">
-                                                  CLÍNICA ARAUCO SALUD
-                                                 </a>
-                                               </h4>
-                                             </div>
-                                             <div id="q8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
-                                               <div class="panel-body">
-                                                    <div class="row">
-                                                      <div class="col-sm-6"> 
-                                                          <p> Lunes a viernes de 8:00 a 21:00</p>
-                                                      </div>
-                                                      <div class="col-sm-6">
-                                                          <p>Sábado de 09:00 a 18:00</p>
-                                                      </div>
-                                                    </div>
-                                               </div>
-                                             </div>
-                                           </div>
-
+											<?php endwhile; else: ?>
+											<?php endif; ?>
+											<?php wp_reset_query(); ?>
+											<?php $i++; ?>
                                            <div class="panel panel-default">
                                               <div class="panel-heading" role="tab" id="">
                                                   <!-- <div class="ribbon"></div> -->
                                                 <h4 class="panel-title">
-                                                  <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q9" aria-expanded="false" aria-controls="q9">
+                                                  <a class="cd-faq-trigger collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#q<?php echo $i; ?>" aria-expanded="false" aria-controls="q<?php echo $i; ?>">
                                                    ESTACIONAMIENTOS PARQUE ARAUCO
                                                   </a>
                                                 </h4>
                                               </div>
-                                              <div id="q9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
+                                              <div id="q<?php echo $i; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="">
                                                 <div class="panel-body nopad">
                                                      <div class="row">
                                                        <div class="col-sm-12"> 
@@ -338,16 +164,16 @@ Template name: Horarios
                                                      </table> <!-- end tabla horarios -->
                                                 </div>
                                               </div>
-                                            </div>
-                                         </div> <!-- END panel group -->
-                                          </div>
-                                    </section> <!-- box horarios del mall -->
-                               </div> <!-- end desc_servicio -->
-                          </div>
+                                            </div>                                           
+										</div> <!-- END panel group -->
+									</div>
+								</section> <!-- box horarios del mall -->
+                            </div> <!-- end desc_servicio -->
                         </div>
-                    </div> <!-- end container -->
-                 </div> <!-- end content horarios -->
+                    </div>
+                </div> <!-- end container -->
+            </div> <!-- end content horarios -->
         </section>
-    </div> <!-- row -->
+	</div> <!-- row -->
 <?php include('footer.php') ?>
 

@@ -16,7 +16,7 @@ Template name: Novedades
                 <h4 class="divider">novedades del mes  </h4>
             </div>
             <div class="col-sm-12 col-md-2">
-               <a href="index.php" class="back">< volver</a>
+               <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
             </div>
           </div>
         </div>

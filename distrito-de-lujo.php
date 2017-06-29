@@ -17,7 +17,7 @@ Template name: Distrito de Lujo
                <h4 class="divider">sobre distrito de lujo</h4>
             </div>
             <div class="col-sm-12 col-md-2">
-              <a href="index.php" class="back">< volver</a>
+              <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
             </div>
           </div>
         </div>

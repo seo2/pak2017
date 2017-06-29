@@ -18,7 +18,7 @@ Template name: Piso de Diseño
                    <h4 class="divider">piso diseño</h4>
             </div>
             <div class="col-sm-12 col-md-2">
-               <a href="index.php" class="back">< volver</a>
+               <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
             </div>
           </div>
         </div>

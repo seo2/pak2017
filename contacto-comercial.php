@@ -18,7 +18,7 @@ Template name: Contacto Comercial
                <h4 class="divider">contacto comercial</h4>
             </div>
             <div class="col-sm-12 col-md-2">
-              <a href="index.php" class="back">< volver</a>
+              <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ Template name: Contacto Comercial
               <section class="contacto_comercial clearfix">
               
               <!--   <div class="col-sm-12">
-                 <a href="index.php" class="back">< volver</a>
+                 <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
                   <div class="termino">
                     <div class="title">
                       <h3>contacto comercial</h3>
@@ -44,7 +44,7 @@ Template name: Contacto Comercial
 
                   </div>
                 </div> -->
-               <!--  <a href="index.php" class="back">< volver</a> -->
+               <!--  <a href="<?php bloginfo('url'); ?>" class="back">< volver</a> -->
 
                   <div class="col-sm-6">
                     <div class="content">
