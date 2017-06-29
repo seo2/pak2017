@@ -1,3 +1,10 @@
+<?
+/*
+
+Template name: Términos y Condiciones
+
+*/
+?>
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
 <?php // include('include-slider-home.php') ?>

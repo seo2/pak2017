@@ -128,7 +128,7 @@
 									<h3>suscríbete</h3>
 									<form class="form_neswsletter" role="" id="form_neswsletter">
 										<div class="box_input">
-											<input  class="form-control" type="text" placeholder="me quiero suscribir" required name="mail"/>
+											<input  class="form-control" type="email" placeholder="me quiero suscribir" required name="mail"/>
 											<button type="submit">
 												<i class="fa fa-envelope" aria-hidden="true"></i>
 											</button>

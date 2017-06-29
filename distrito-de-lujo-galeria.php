@@ -1,3 +1,10 @@
+<?
+/*
+
+Template name: Distrito de lujo Galería
+
+*/
+?>
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
 <?php //include('include-slider-dl.php') ?>
@@ -33,8 +40,6 @@
             </div>
           </div>
 
-            
-            
         </section> <!-- entretencion -->
       </div><!-- row -->
 <?php include('footer.php') ?>
