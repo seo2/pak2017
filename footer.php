@@ -60,7 +60,7 @@
               </ul>
           </div>
             <a href="http://www.parauco.com/" class="btn_inversionistas hvr-float" target="_blank">
-              <img src="https://s219687.gridserver.com/clientes/bond/pak/<?php bloginfo('template_url'); ?>/assets/img/btn_inversionistas.svg" class="img-responsive">
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/btn_inversionistas.svg" class="img-responsive">
             </a>
         </div> <!-- row -->
       </footer> <!-- footer -->

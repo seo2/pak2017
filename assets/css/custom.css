@@ -127,8 +127,8 @@ section.top .nav_bottom_line { min-height: 70px; border-bottom: 1px solid #B8B8B
 section.top .navbar-header { position: relative; }
 section.top .navbar-header .logo { position: absolute; top: 50%; -webkit-transform: translate(0, -50%); transform: translate(0, -50%); left: 90px; }
 @media (max-width: 991px) { section.top .navbar-header .logo { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } }
-section.top .navbar-header .logo a { display: inline-block; width: 205px; height: 50px; background: url(https://s219687.gridserver.com/clientes/bond/pak/assets/img/logo.svg) no-repeat; text-indent: -9999px; cursor: pointer; opacity: 1; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
-@media (max-width: 991px) { section.top .navbar-header .logo a { background: url(https://s219687.gridserver.com/clientes/bond/pak/assets/img/logo_xs.svg) no-repeat; width: 80px; height: 61px; } }
+section.top .navbar-header .logo a { display: inline-block; width: 205px; height: 50px; background: url(assets/img/logo.svg) no-repeat; text-indent: -9999px; cursor: pointer; opacity: 1; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+@media (max-width: 991px) { section.top .navbar-header .logo a { background: url(assets/img/logo_xs.svg) no-repeat; width: 80px; height: 61px; } }
 section.top .navbar-header .logo a:hover { opacity: 0.8; }
 section.top .navbar-header #lang_switcher { position: absolute; top: 50%; -webkit-transform: translate(0, -50%); transform: translate(0, -50%); right: 5px; z-index: 10; }
 section.top .navbar-header #lang_switcher .bootstrap-select { width: 90px; }
