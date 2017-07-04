@@ -1,4 +1,4 @@
-     <div class="col-sm-6 col-md-6">
+     <div class="col-sm-6 col-md-6"> 
                   <div class="box">
                         <div class="box_slider" id="contactanosbox">
                               <div class="item disable-owl-swipe">
