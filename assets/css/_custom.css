@@ -28,10 +28,6 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 @media (min-width: 768px) and (max-width: 1440px) { .container.width { width: 100%; padding-left: 0; padding-right: 0; } }
 @media (max-width: 767px) { .container.width { padding-left: 0; padding-right: 0; } }
-.anclita { position: absolute; top: -150px; height: 10px; width: 10px; }
-
-.content_servicio { position: relative; }
-
 .titulo_seccion { margin-top: 30px; }
 .titulo_seccion.sin_slider { margin-top: 100px; }
 @media (max-width: 768px) { .titulo_seccion.sin_slider { margin-top: 30px; } }
@@ -331,9 +327,8 @@ section.box_slider_home .slider_home .owl-dots .owl-dot.active span { background
 section.box_slider_tag .slider_tag { position: relative; }
 section.box_slider_tag .slider_tag .item { position: relative; height: 480px !important; }
 @media (max-width: 767px) { section.box_slider_tag .slider_tag .item { height: 400px !important; } }
-section.box_slider_tag .slider_tag .item .caption { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); top: 330px; text-align: left; }
-@media (max-width: 768px) { section.box_slider_tag .slider_tag .item .caption { top: 340px; } }
-@media (max-width: 767px) { section.box_slider_tag .slider_tag .item .caption { top: 280px; } }
+section.box_slider_tag .slider_tag .item .caption { position: absolute; top: 50%; -webkit-transform: translate(0, -50%); transform: translate(0, -50%); text-align: left; }
+@media (max-width: 991px) { section.box_slider_tag .slider_tag .item .caption { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; width: 90%; } }
 section.box_slider_tag .slider_tag .item .caption h3 { font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif; font-size: 50px; color: black; text-transform: uppercase; margin-bottom: 10px; }
 @media (max-width: 768px) { section.box_slider_tag .slider_tag .item .caption h3 { font-size: 40px; } }
 @media (max-width: 375px) { section.box_slider_tag .slider_tag .item .caption h3 { font-size: 35px; } }
@@ -348,7 +343,7 @@ section.box_slider_tag .slider_tag .item .caption .divider { color: black; overf
 section.box_slider_tag .slider_tag .item .caption .divider:before, section.box_slider_tag .slider_tag .item .caption .divider:after { content: ""; vertical-align: middle; display: inline-block; width: 50px; border-bottom: 1px solid black; margin-top: -6px; }
 section.box_slider_tag .slider_tag .item .caption .divider:before { margin-right: 10px; }
 section.box_slider_tag .slider_tag .item .caption .divider:after { margin-left: 10px; }
-section.box_slider_tag .slider_tag .item .caption .box_btn_registro_tag { width: 300px; }
+section.box_slider_tag .slider_tag .item .caption .box_btn_registro_tag { width: 300px; margin-left: 60px; }
 @media (max-width: 768px) { section.box_slider_tag .slider_tag .item .caption .box_btn_registro_tag { margin: 0 auto; max-width: 90%; } }
 section.box_slider_tag .slider_tag .item .caption .box_btn_registro_tag img { max-width: 161px; max-height: 61px; height: auto; display: block; margin-bottom: 20px; }
 section.box_slider_tag .slider_tag .item .caption .box_btn_registro_tag .strip { background-size: cover !important; background-position: center !important; display: block !important; background-repeat: repeat-x !important; width: 100%; height: 13px; background: url(../img/strip.png); }
@@ -1722,5 +1717,11 @@ section.main_content section.entretencion .content_servicio .owl-dots { position
 .autocomplete-suggestions strong { font-weight: normal; color: #FF0024; }
 
 nav #navbar .container.menu_container .col-sm-12 .box_newsletter .form_neswsletter .box_input button[type=submit] i.fa-spinner { color: white; font-size: 40px; }
+
+
+section.main_content section.travelers_descuentos .grid_descuentos .box_descuento .item_descuento a .box_dcto .datos_dcto p, section.main_content section.piso_diseno_descuentos .grid_descuentos .box_descuento .item_descuento a .box_dcto .datos_dcto p {
+    font-size: 10px;
+}
+
 
 /*----*/
