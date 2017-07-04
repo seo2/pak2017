@@ -1,3 +1,10 @@
+<?
+/*
+
+Template name: Servicios al cliente
+
+*/
+?>
 <?php include('header.php') ?> 
 <?php include('include-top.php') ?>
 <?php //include('include-slider-servicios-cliente.php') ?>
@@ -51,7 +58,6 @@
                                     </a>
                                  </div> <!-- item -->
                              </div><!-- box slider  -->
-
                     </div><!-- servicios -->
                 </div>
 
