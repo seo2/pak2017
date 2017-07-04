@@ -15,7 +15,7 @@
             <div class="box_servicio" id="gal<?php echo $e; ?>box">
 
               <a href="javascript:void(0);" data-toggle="collapse" data-target="#gal<?php echo $e; ?>">
-                  <? the_post_thumbnail('preview_galerias', array( 'class' => 'center-block responsive-img' ) ); ?>
+                  <? the_post_thumbnail('preview_galerias', array( 'class' => 'center-block img-responsive' ) ); ?>
               </a>
             </div>
             <div class="box_more_info">

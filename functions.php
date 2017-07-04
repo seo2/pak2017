@@ -13,6 +13,17 @@ function iniciarTema(){
   }
   // Cuando ocurra 'after_setup_theme, invocar "iniciarTema"
   add_action( 'after_setup_theme', 'iniciarTema' );
+
+
+add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
+add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
+
+function remove_width_attribute( $html ) {
+   $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+   return $html;
+}
+
+add_filter( 'wp_calculate_image_srcset', '__return_false' );
 	
 // carga css 
 function theme_styles() {
