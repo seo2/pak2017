@@ -3,17 +3,17 @@
             <div class="slider_tag owl-carousel owl-theme">
                   <div class="item"> 
                           <!-- 1600x580 -->
-                        <div class="owl-lazy img_slide" data-src="<?php bloginfo('template_url'); ?>/assets/img/slider_araucotag_lg.png" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider_araucotag_lg.png);"> </div>
+                        <div class="owl-lazy img_slide" data-src="assets/img/slider_araucotag_lg.png" style="background: url(assets/img/slider_araucotag_lg.png);"> </div>
                           <!-- 700x580 -->
-<!--                         <div class="owl-lazy img_slide visible-xs visible-sm" data-src="<?php bloginfo('template_url'); ?>/assets/img/slider_araucotag_xs.png" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider_araucotag_xs.png);"> </div>
+<!--                         <div class="owl-lazy img_slide visible-xs visible-sm" data-src="assets/img/slider_araucotag_xs.png" style="background: url(assets/img/slider_araucotag_xs.png);"> </div>
  -->                          <div class="container">
                           <div class="row">
                             <div class="caption">
-                                <h3>ACTUALIZA</h3>
+                              <!--   <h3>ACTUALIZA</h3>
                                 <h4 class="divider">TU MANERA DE ESTACIONAR</h4>
-                                <p>Y podrás acceder a los estacionamientos del mall con el mismo TAG que usas en las autopistas urbanas</p>
+                                <p>Y podrás acceder a los estacionamientos del mall con el mismo TAG que usas en las autopistas urbanas</p> -->
                                   <div class="box_btn_registro_tag">
-                                      <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_arauco_tag.png" alt="" class="center-block">
+                                      <img src="assets/img/logo_arauco_tag.png" alt="" class="center-block hidden">
                                       <div class="strip"> </div>
                                       <a href="https://www.costaneranorte.cl/sucursal_virtual/login.html"  target="_blank" class="btn btn-default btn_verde" role="button">Inscríbete aquí</a>
                                   </div>
