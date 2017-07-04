@@ -143,12 +143,18 @@ Template name: Novedades
       <div class="row">
         <section id="entretencion" class="entretencion clearfix">
         <h4   class="divider">entretención</h4>
-            <div class="hidden-xs">
-              <?php include('include-entretencion-desktop.php'); ?>
-            </div>
-            <div class="visible-xs">
-              <?php include('include-entretencion-mobile.php'); ?>
-            </div>
+        
+<? 
+    $detect = new Mobile_Detect();
+    	 
+	if ($detect->isMobile()) { 
+	   include('include-entretencion-mobile.php'); 
+	}else{ 	 
+	  	include('include-entretencion-desktop.php');
+	}
+?>
+            
+            
         </section>
       </div><!-- row -->
       

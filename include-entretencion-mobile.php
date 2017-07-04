@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6">
-        <div class="box_servicio">
+        <div class="box_servicio" id="sala_artebox">
           <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#sala_arte_xs">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/bg_sala.jpg" class="center-block img-responsive">
           
