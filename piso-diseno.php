@@ -61,6 +61,9 @@ Template name: Piso de Diseño
 					            	<div class="item_tienda" id="tienda_<?php echo $t['punto_interes']; ?>">
 					                	<div  class="tienda">
 					                    	<a class="btn_tienda" href="javascript:void(0);"  >
+                                              <h4 class="nombre_tienda"><?php echo $t['nombre']; ?></h4>
+                                               <div class="borde"> </div>
+                                              <span class="bg_nombre_tienda"> </span>
 					                        	<span id="adidas" class="overlay_img" data-id="<?php echo $t['punto_interes']; ?>" data-logo="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" data-desc="<?php echo trim($t['descripcion']); ?>" data-img="<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['numero_piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="<?php bloginfo('template_url'); ?>/ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>"></span>
 					                            <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>">
 					                        </a>
