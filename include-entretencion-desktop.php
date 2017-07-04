@@ -27,12 +27,12 @@
 
       <div class="col-xs-6 col-sm-3 col-md-3">
         <div class="box_servicio_no_callapse">
-          <a href="novedades-galeria.php#galerias" >
+          <a href="<?php bloginfo('url'); ?>/novedades-galeria#galerias" >
               <img src="<?php bloginfo('template_url'); ?>/assets/img/bg_galeria.jpg"  class="center-block img-responsive">
           </a>
         </div>
           <div class="box_more_info_no_collapse">
-            <a href="novedades-galeria.php">galería</a>
+            <a href="<?php bloginfo('url'); ?>/novedades-galeria#galerias">galería</a>
           </div>
     </div>
       

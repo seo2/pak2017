@@ -125,12 +125,12 @@
    
       <div class="col-sm-6">
         <div class="box_servicio_no_callapse">
-          <a href="novedades-galeria.php" class="borde_naranja">
+          <a href="<?php bloginfo('url'); ?>/novedades-galeria#galerias" class="borde_naranja">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/bg_galeria.jpg" class="center-block img-responsive">
           </a>
         </div>
           <div class="box_more_info_no_collapse">
-            <a href="novedades-galeria.php">galeria</a>
+            <a href="<?php bloginfo('url'); ?>/novedades-galeria#galerias">galeria</a>
           </div>
     </div>
 

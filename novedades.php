@@ -108,11 +108,11 @@ Template name: Novedades
                                                     <span id="adidas" class="overlay_img" data-id="<?php echo $t['punto_interes']; ?>" data-logo="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" data-desc="<?php echo trim($t['descripcion']); ?>" data-img="<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['numero_piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="<?php bloginfo('template_url'); ?>/ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>" data-tipo="<?php echo $t['tipo']; ?>"></span>
                                                     <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>">
                                                   </a>
-                                                      <div class="box_logo_tienda">
-                                                        <div class="logo_tienda">
-                                                            <img src="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" alt="" class="img-responsive">
-                                                        </div> <!-- logo_tienda -->
-                                                      </div> <!-- box logo tienda -->
+                                                  <div class="box_logo_tienda">
+                                                    <div class="logo_tienda">
+                                                        <img src="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" alt="" class="img-responsive">
+                                                    </div> <!-- logo_tienda -->
+                                                  </div> <!-- box logo tienda -->
                                             </div> <!--  tienda -->
                                     </div> <!-- item tienda -->
 
