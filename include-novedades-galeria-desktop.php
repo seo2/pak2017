@@ -1,9 +1,3 @@
-<style>
-	   .content_servicio{position: relative;}
-     .anclita{position: absolute; top: -150px; height: 10px; width: 10px;}
-     
-      
-</style>
 <div class="container">
   <div class="row">
 	  	<?
@@ -11,19 +5,17 @@
 				'post_type' 	=> 'galeria',
 				'posts_per_page'=> 4
 			);
-
+			$e = 0;
             $query = new WP_Query( $args ); 
 			if ( $query->have_posts() ) {
 				while ( $query->have_posts() ) : $query->the_post();							
-					
+					$e++;	
 		?>		  
-	  
-	  
         <div class="col-xs-6 col-sm-3 col-md-3">
-            <div class="box_servicio" id="gal1box">
+            <div class="box_servicio" id="gal<?php echo $e; ?>box">
 
               <a href="javascript:void(0);" data-toggle="collapse" data-target="#gal<?php echo $e; ?>">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/img/demo_portada_galeria.jpg"  class="center-block img-responsive">
+                  <? the_post_thumbnail('preview_galerias', array( 'class' => 'center-block responsive-img' ) ); ?>
               </a>
             </div>
             <div class="box_more_info">
@@ -43,11 +35,11 @@
 				'post_type' 	=> 'galeria',
 				'posts_per_page'=> 4
 			);
-
+			$i = 0;
             $query = new WP_Query( $args ); 
 			if ( $query->have_posts() ) {
 				while ( $query->have_posts() ) : $query->the_post();							
-					
+					$i++;
 		?>		 
     
     
