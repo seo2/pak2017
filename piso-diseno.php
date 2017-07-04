@@ -10,7 +10,6 @@ Template name: Piso de Diseño
 <?php include('include-slider-home.php') ?>
 <?php include('include-search-home.php') ?>
 
-
    <div class="titulo_seccion">
         <div class="container">
           <div class="row">

@@ -34,7 +34,7 @@ Template name: Travellers
                      <div class="box">
                            <div class="box_slider owl-carousel owl-theme ">
                                  <div class="item">
-                                     <a href="travellers-descuentos.php">
+                                     <a href="<?php bloginfo('url'); ?>/travellers-descuentos">
                                           <div class="caption">
                                              <p>tiendas </p>
                                               <h3>descuentos </h3>
@@ -56,7 +56,7 @@ Template name: Travellers
                     <div class="box">
                           <div class="box_slider owl-carousel owl-theme ">
                                 <div class="item">
-                                    <a href="travellers-servicios.php">
+                                    <a href="<?php bloginfo('url'); ?>/travellers-servicios">
                                          <div class="caption">
                                             <p>&nbsp </p>
                                              <h3>servicios </h3>
@@ -79,7 +79,7 @@ Template name: Travellers
                      <div class="box">
                            <div class="box_slider owl-carousel owl-theme ">
                                  <div class="item">
-                                     <a href="travellers-actividades.php">
+                                     <a href="<?php bloginfo('url'); ?>/travellers-actividades">
                                           <div class="caption">
                                              <p>&nbsp </p>
                                               <h3>actividades </h3>
@@ -101,7 +101,7 @@ Template name: Travellers
                      <div class="box">
                            <div class="box_slider owl-carousel owl-theme ">
                                  <div class="item">
-                                     <a href="travellers-form-tarjeta.php">
+                                     <a href="<?php bloginfo('url'); ?>/travellers-contacto">
                                           <div class="caption">
                                              <p>&nbsp </p>
                                               <h3>contacto </h3>

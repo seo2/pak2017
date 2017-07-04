@@ -37,23 +37,23 @@ Template name: Tiendas
 	                            <?php
 								if($_GET['busqueda']){
 									$buscar = filter_var($_GET["busqueda"], FILTER_SANITIZE_STRING);
-									if($_GET['page']){
-										$desde = 12 * ($_GET['page'] - 1);
+									if($_GET['pagina']){
+										$desde = 12 * ($_GET['pagina'] - 1);
 										$tiendas = $db->rawQuery("select * from pak_tiendas where descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit $desde, 12");
 									}else{
 										$tiendas = $db->rawQuery("select * from pak_tiendas where descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit 12");
 									}
 								}elseif($_GET['catID']){
 									$buscar = $_GET['catID'];
-									if($_GET['page']){
-										$desde = 12 * ($_GET['page'] - 1);
+									if($_GET['pagina']){
+										$desde = 12 * ($_GET['pagina'] - 1);
 										$tiendas = $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre limit $desde,12");
 									}else{
 										$tiendas = $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre limit 12");
 									}
 								}else{
-									if($_GET['page']){
-										$desde 	 = 12 * ($_GET['page'] - 1);
+									if($_GET['pagina']){
+										$desde 	 = 12 * ($_GET['pagina'] - 1);
 										$tiendas = $db->rawQuery("select * from pak_tiendas where tipo NOT IN(119,131,110) order by nombre limit $desde, 12");
 									}else{
 										$tiendas = $db->rawQuery("select * from pak_tiendas where tipo NOT IN(119,131,110) order by nombre limit 12");
@@ -118,6 +118,12 @@ Template name: Tiendas
 		$cola = "&busqueda=ropa";		
 	}elseif($_GET['catID']){
 		$tiendas = $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre");
+		if($tiendas){
+			foreach ($tiendas as $t) { 
+				$rowcount++;
+			}
+		}
+		$cola = "&catID=$buscar";	
 	}else{
 		$db->where('tipo', Array(119, 131,110), 'NOT IN');
 		$rowcount = $db->getValue ("pak_tiendas", "count(*)");
@@ -136,7 +142,7 @@ Template name: Tiendas
 	$x = 1;
 	while($x <= $paginas) {
 	?>
-		<a href="<?php bloginfo('url'); ?>/tiendas.php?page=<?php echo  $x.$cola; ?>"></a>
+		<a href="<?php bloginfo('url'); ?>/tiendas?pagina=<?php echo  $x.$cola; ?>"></a>
 	<?php 
 		$x++; 
 	}
