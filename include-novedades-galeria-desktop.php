@@ -6,352 +6,83 @@
 </style>
 <div class="container">
   <div class="row">
+	  	<?
+			$args = array(
+				'post_type' 	=> 'galeria',
+				'posts_per_page'=> 4
+			);
+
+            $query = new WP_Query( $args ); 
+			if ( $query->have_posts() ) {
+				while ( $query->have_posts() ) : $query->the_post();							
+					
+		?>		  
+	  
+	  
         <div class="col-xs-6 col-sm-3 col-md-3">
             <div class="box_servicio" id="gal1box">
 
-              <a href="javascript:void(0);" data-toggle="collapse" data-target="#gal1">
+              <a href="javascript:void(0);" data-toggle="collapse" data-target="#gal<?php echo $e; ?>">
                   <img src="<?php bloginfo('template_url'); ?>/assets/img/demo_portada_galeria.jpg"  class="center-block img-responsive">
               </a>
             </div>
             <div class="box_more_info">
-              <a href="javascript:void(0);"  data-toggle="collapse" data-target="#gal1">Bazar orgánico Huerto del Parque</a>
+              <a href="javascript:void(0);"  data-toggle="collapse" data-target="#gal<?php echo $e; ?>">Bazar orgánico Huerto del Parque</a>
             </div>
         </div>
 
-            <div class="col-xs-6 col-sm-3 col-md-3">
-              <div class="box_servicio" id="gal2box">
-                <a href="javascript:void(0);" class="" data-toggle="collapse" data-target="#gal2">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/prev_gal02.jpg"   class="center-block img-responsive">
-                </a>
-              </div>
-               <div class="box_more_info">
-                  <a href="javascript:void(0);" data-toggle="collapse" data-target="#gal2">Lanzamiento colección otoño - invierno Mango</a>
-                </div>
-          </div>
-
-          <div class="col-xs-6 col-sm-3 col-md-3">
-            <div class="box_servicio" id="gal3box">
-              <a href="javascript:void(0);" class="" data-toggle="collapse" data-target="#gal3">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/img/prev_gal03.jpg"   class="center-block img-responsive">
-               
-              </a>
-            </div>
-             <div class="box_more_info">
-                <a href="javascript:void(0);" data-toggle="collapse" data-target="#gal3">Bocas Moradas</a>
-              </div>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-md-3">
-            <div class="box_servicio" id="gal4box">
-              <a href="javascript:void(0);" class="" data-toggle="collapse" data-target="#gal4">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/img/prev_gal04.jpg"   class="center-block img-responsive">
-               
-              </a>
-            </div>
-             <div class="box_more_info">
-                <a href="javascript:void(0);" data-toggle="collapse" data-target="#gal4">Lanzamiento invierno Jazmín Chebar</a>
-              </div>
-        </div>
+        <?    
+                endwhile; 
+          } 
+        ?>	
 
     <div class="clearfix"></div>
-                <div id="gal1" class="content_servicio collapse">
-             
-             	<div id="gal1ancla" class="anclita"></div>
-                <div class="container">
-                
-                  <div class="close_servicio" data-target="#gal1"> </div>
-                  <div class="row">
-                      <!---->
-                       <div class="col-md-6">
-                            <div class="slider_entrentencion owl-carousel owl-theme">
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_01.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                            <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_02.jpg);"> </div>
-                                      </div>
+    
+	  	<?
+			$args = array(
+				'post_type' 	=> 'galeria',
+				'posts_per_page'=> 4
+			);
 
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_03.jpg);"> </div>
-                                      </div>
-                                       <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_04.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_05.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_06.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_07.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_08.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_09.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_10.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_11.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_12.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_13.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_14.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_15.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_16.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_17.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_18.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_19.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_20.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_21.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_22.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_23.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                           <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bazar_organico/bazar_24.jpg);"> </div>
-                                      </div>
-
-                                </div><!--  slider_entretenion -->
-                                <!-- <p>Quiero compartir este post: </p> -->
-                      </div>
-                      <!---->
-                      <div class="col-md-6  ">
-                           <div class="desc_servicio desc_galeria">
-                           
-                             <h4>Bazar orgánico Huerto del Parque</h4>
-                               <p>Un fin de semana completo dedicado a la vida sana es lo que propuso la feria Huerto del Parque,
-                               inédita instancia donde 18 expositores nacionales comercializaron frutas y verduras frescas, miel,
-                               quesos, y huertos colgantes, entre muchos otros productos 100% naturales.
-                               </p>
-                               
-							   <div class="btn-mas"><a href="bazar_organico_huerto_del_parque.php">Ver más</a></div>
-                               
-                           </div>
-                      </div>
-
-                      
-                    </div>
-                    
-                </div><!-- container -->
-            </div> 
-            <!-- content galeria de arte  -->
-
-            <div id="gal2" class="content_servicio collapse">
-             	<div id="gal2ancla" class="anclita"></div>
-                <div class="container">
-                  
-                  <div class="close_servicio" data-target="#gal2"> </div>
-                  <div class="row">
-                      <div class="col-md-6">
-                            <div class="slider_entrentencion owl-carousel owl-theme">
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanzamiento_mango/img_001.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanzamiento_mango/img_002.jpg);"> </div>
-                                      </div>
-
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanzamiento_mango/img_003.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanzamiento_mango/img_004.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanzamiento_mango/img_005.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanzamiento_mango/img_006.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanzamiento_mango/img_007.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanzamiento_mango/img_008.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanzamiento_mango/img_009.jpg);"> </div>
-                                      </div>
-
-                                </div><!--  slider_entretenion -->
-                                <!-- <p>Quiero compartir este post: </p> -->
-                      </div>
-                      <div class="col-md-6  ">
-                           <div class="desc_servicio desc_galeria">
-                           <h4>Lanzamiento colección otoño - invierno Mango</h4>
-                               <p>Mango presentó su nueva colección Otoño-Invierno con increíbles formas y colores. Revísalo aquí.</p>
-                               <div class="btn-mas"><a href="lanzamiento_coleccion_otonoinvierno_mango.php">Ver más</a></div>
-                           </div>
-                      </div>
-
-                      
-                    </div>
-                    
-                </div> <!-- container -->
-            </div> <!-- content galeria de arte  -->
-
-            <div id="gal3" class="content_servicio collapse">
-             
-             	<div id="gal3ancla" class="anclita"></div>
-                <div class="container">
-                  
-                  <div class="close_servicio" data-target="#gal3"> </div>
-                  <div class="row">
-                      <div class="col-md-6 ">
-                            <div class="slider_entrentencion owl-carousel owl-theme">
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_001.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_002.jpg);"> </div>
-                                      </div>
-									  <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_003.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_004.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_005.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_006.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_007.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_008.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_009.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_010.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_011.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_012.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_013.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_014.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_015.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_016.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_017.jpg);"> </div>
-                                      </div>
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/bocas_moradas/img_018.jpg);"> </div>
-                                      </div>
-
-                                </div><!--  slider_entretenion -->
-                                <!-- <p>Quiero compartir este post: </p> -->
-                      </div>
-                      <div class="col-md-6  ">
-                           <div class="desc_servicio desc_galeria">
-                           <h4>Bocas Moradas</h4>
-                               <p>Cada Bocas Moradas es especial, con cepas, maridajes y catas de diversos vinos. Conoce cómo estuvo. </p>
-                               <div class="btn-mas"><a href="bocas_moradas.php">Ver más</a></div>
-                           </div>
-                      </div>
-
-                      
-                    </div>
-                    
-                </div> <!-- container -->
-            </div> <!-- content galeria de arte  -->
-
-            <div id="gal4" class="content_servicio collapse">
-             
-             	<div id="gal4ancla" class="anclita"></div>
-                <div class="container">
-                  
-                  <div class="close_servicio" data-target="#gal4"> </div>
-                  <div class="row">
-
-                  <div class="col-md-6 ">
+            $query = new WP_Query( $args ); 
+			if ( $query->have_posts() ) {
+				while ( $query->have_posts() ) : $query->the_post();							
+					
+		?>		 
+    
+    
+        <div id="gal<?php echo $i; ?>" class="content_servicio collapse">     
+        	<div id="gal<?php echo $i; ?>ancla" class="anclita"></div>
+            <div class="container">
+              <div class="close_servicio" data-target="#gal1"></div>
+              	<div class="row">
+              <!---->
+                   <div class="col-md-6">
                         <div class="slider_entrentencion owl-carousel owl-theme">
-                                  <div class="item">
-                                  		<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanz_jazminchebar_01/img_001.jpg);"> </div>
-                                  </div>
-                                  <div class="item">
-                                  		<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanz_jazminchebar_01/img_002.jpg);"> </div>
-                                  </div>
-                                  <div class="item">
-                                  		<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanz_jazminchebar_01/img_003.jpg);"> </div>
-                                  </div>
-                                  <div class="item">
-                                  		<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanz_jazminchebar_01/img_004.jpg);"> </div>
-                                  </div>
-                                  <div class="item">
-                                  		<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanz_jazminchebar_01/img_005.jpg);"> </div>
-                                  </div>
-                                  <div class="item">
-                                  		<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanz_jazminchebar_01/img_006.jpg);"> </div>
-                                  </div>
-                                  <div class="item">
-                                  		<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanz_jazminchebar_01/img_007.jpg);"> </div>
-                                  </div>
-                                  <div class="item">
-                                  		<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanz_jazminchebar_01/img_008.jpg);"> </div>
-                                  </div>
-                                  <div class="item">
-                                  		<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/lanz_jazminchebar_01/img_009.jpg);"> </div>
-                                  </div>
-
-                            </div><!--  slider_entretenion -->
-                            <!-- <p>Quiero compartir este post: </p> -->
+							<?php $imagenes = muestra_galeria(); ?>
+							<?php foreach ($imagenes as $imagen): ?>
+							<div class="item">
+                            	<div class="img_servicio" style="background: url(<?php echo wp_get_attachment_url($imagen->ID); ?>);"></div>
+                        	</div>
+							<?php endforeach ?>
+                        </div><!--  slider_entretenion -->
+                        <!-- <p>Quiero compartir este post: </p> -->
                   </div>
-                      
-                      <div class="col-md-6  ">
-                           <div class="desc_servicio desc_galeria">
-                           <h4>Lanzamiento invierno Jazmín Chebar</h4>
-                               <p>Jazmin Chebar nos invitó al lanzamiento de su última colección de invierno. Entérate de todos los detalles aquí.</p>
-                               <div class="btn-mas"><a href="lanzamiento_invierno_jazmin_chebar.php">Ver más</a></div>
-                           </div>
-                      </div>
-
-                      
+                  <!---->
+                  <div class="col-md-6  ">
+                  	<div class="desc_servicio desc_galeria">
+                        <h4><?php the_title(); ?></h4>
+                        <?php the_content(); ?>
+                        <div class="btn-mas"><a href="<?php the_permalink(); ?>">Ver más</a></div>
                     </div>
-                </div> <!-- container -->
-            </div> <!-- content galeria   -->
+                  </div>
+                </div>
+            </div><!-- container -->
+        </div> 
+        <?    
+                endwhile; 
+          } 
+        ?>	
 
 
         <div class="col-xs-6 col-sm-3 col-md-3">

@@ -4,6 +4,7 @@ function iniciarTema(){
     // ACTIVA IMAGENES DESTACADAS  
     add_theme_support( 'post-thumbnails' );
     add_image_size('preview_programacion', 400, 289, true);
+    add_image_size('preview_galerias', 650, 650, true);
 /*     add_image_size('galeria', 200); */
 
     // Activar Titulo 
@@ -233,5 +234,20 @@ function wpb_imagelink_setup() {
 	}
 }
 add_action('admin_init', 'wpb_imagelink_setup', 10);
+
+
+function muestra_galeria($post_id = false, $exclude = true, $cantidad = -1) {
+		global $post;
+		if (!$post_id){
+			$post_id = $post->ID;
+		}
+		$args = array( 'post_type' => 'attachment', 'numberposts' => $cantidad, 'post_status' => null, 'post_parent' => $post_id, 'post_mime_type' => 'image', 'orderby' => 'menu_order', 'order' => 'ASC'); 
+		if ($exclude){
+			$args = array_merge( $args, array( 'post__not_in' => array( get_post_thumbnail_id(), $imagen_chica ) ) );
+		}
+		$attachments = get_posts($args);
+		return $attachments;
+	}
+
 
 ?>

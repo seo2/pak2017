@@ -1,3 +1,4 @@
+<? include('Mobile_Detect.php'); ?>
 <?php
 	require_once("ws/_lib/config.php");
 	require_once("ws/_lib/MysqliDb.php");
@@ -36,9 +37,6 @@
 		}
 		return $imagenes;
 	}
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="es">

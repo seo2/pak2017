@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6">
-        <div class="box_servicio">
+        <div class="box_servicio" id="sala_artebox">
           <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#sala_arte_xs">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/bg_sala.jpg" class="center-block img-responsive">
           
@@ -125,12 +125,12 @@
    
       <div class="col-sm-6">
         <div class="box_servicio_no_callapse">
-          <a href="novedades-galeria.php" class="borde_naranja">
+          <a href="<?php bloginfo('url'); ?>/novedades-galeria#galerias" class="borde_naranja">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/bg_galeria.jpg" class="center-block img-responsive">
           </a>
         </div>
           <div class="box_more_info_no_collapse">
-            <a href="novedades-galeria.php">galeria</a>
+            <a href="<?php bloginfo('url'); ?>/novedades-galeria#galerias">galeria</a>
           </div>
     </div>
 

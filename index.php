@@ -104,7 +104,7 @@
                   <div class="box">
                      <div class="box_slider owl-carousel owl-theme">
                            <div class="item">
-                             <a href="novedades-galeria.php#galerias">
+                             <a href="<?php bloginfo('url'); ?>/novedades-galeria#galerias">
                                 <div class="caption">
                                     <h3>Galería</h3>
                                     <div class="divider"> &nbsp </div>
@@ -130,10 +130,9 @@
                     <div class="image_dynamic_portada" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/revista_detalle.jpg);"> </div>
                     <div class="caption_revista" >
                       <div class="logo_revista" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_revista_detalle.svg);"> </div>
-                            <p>Suscríbete y podrás estar al día de todas las tendencias.
+                        <p>Suscríbete y podrás estar al día de todas las tendencias.
                             <a href="http://www.revistadetalle.cl/" target="_blank"  class="btn btn-default btn_revista hvr-float" role="button">revista detalle</a>
-                      </p>
-                       
+						</p>
                     </div>
                  </div>
               </div> <!-- revista detalle -->
