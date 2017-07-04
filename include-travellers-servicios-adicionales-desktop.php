@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-6 col-sm-3 col-md-3">
-        <div class="box_servicio">
+        <div class="box_servicio" id="serv1box">
           <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#content_transfer">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/transfer.svg"  class="center-block">
               <p>Transfer</p>
@@ -14,7 +14,7 @@
     </div>
 
       <div class="col-xs-6 col-sm-3 col-md-3">
-        <div class="box_servicio">
+        <div class="box_servicio" id="serv2box">
           <a href="javascript:void(0);" class="borde_azul" data-toggle="collapse" data-target="#content_casas_cambio">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/casa_cambio.svg"   class="center-block">
               <p>Casas de cambio</p>
@@ -27,7 +27,7 @@
 
 
       <div class="col-xs-6 col-sm-3 col-md-3">
-        <div class="box_servicio">
+        <div class="box_servicio" id="serv3box">
           <a href="javascript:void(0);" class="borde_naranja" data-toggle="collapse" data-target="#content_agencia">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/agencia.svg"  class="center-block">
               <p>Agencias y turismo</p>
@@ -39,7 +39,7 @@
     </div>
       
       <div class="col-xs-6 col-sm-3 col-md-3">
-        <div class="box_servicio">
+        <div class="box_servicio" id="serv4box">
           <a href="javascript:void(0); " class="borde_amarillo" data-toggle="collapse" data-target="#content_taxis">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/taxis.svg"  class="center-block">
               <p>Taxis privados</p>
@@ -50,11 +50,11 @@
         </div>
     </div>
 
-            <div id="content_transfer" class="content_servicio collapse">
-             
+     <div id="content_transfer" class="content_servicio collapse">
+        <div id="content_transferancla" class="anclita"></div>
                 <div class="container">
                 <h4 class="divider verde">Servicio de transfer</h4>
-                <div class="close_servicio"> </div>
+                <div class="close_servicio" data-target="#serv1"> </div>
                   <div class="row">
                       <div class="col-md-6 col-md-push-6">
                             <div class="img_servicio"  style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_serv_transfer.jpg);"></div>
@@ -181,9 +181,10 @@
             </div> <!-- content transfer -->
 
             <div id="content_casas_cambio" class="content_servicio collapse">
+            <div id="content_casas_cambioancla" class="anclita"></div>
               <div class="container">
               <h4 class="divider azul">Casas de Cambio</h4>
-               <div class="close_servicio"> </div>
+               <div class="close_servicio" data-target="#serv2"> </div>
               <div class="row">
                   <div class="col-md-6 col-md-push-6">
                       <div class="img_servicio"  style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_serv_casas_cambio.jpg);"></div>
@@ -209,9 +210,10 @@
               </div>
             </div><!-- casas de cambio -->
             <div id="content_agencia" class="content_servicio collapse">
+             <div id="content_agenciaancla" class="anclita"></div>
               <div class="container">
                   <h4 class="divider naranja">Servicios y agencias turismo</h4>
-                 <div class="close_servicio"> </div>
+                 <div class="close_servicio" data-target="#serv3"> </div>
                 <div class="row">
                     <div class="col-md-4">
                           <div class="box_agencia">
@@ -261,9 +263,10 @@
                 </div>
             </div> <!-- content agencia -->
             <div id="content_taxis" class="content_servicio collapse">
+            <div id="content_taxisancla" class="anclita"></div>
             <div class="container">
                 <h4 class="divider amarillo">Taxis privados</h4>
-               <div class="close_servicio"> </div>
+                <div class="close_servicio" data-target="#serv4"> </div>
               <div class="row">
                   <div class="col-md-6 col-md-push-6">
                       <div class="img_servicio"  style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_serv_taxis.jpg);"></div>
@@ -294,7 +297,7 @@
       </div> <!-- content taxis -->
 
       <div class="col-xs-6 col-sm-3 col-md-3">
-        <div class="box_servicio">
+        <div class="box_servicio" id="serv5box">
           <a href="javascript:void(0);" class="borde_rojo" data-toggle="collapse" data-target="#content_bancos">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/bancos.svg"   class="center-block">
               <p>Bancos</p>
@@ -318,9 +321,10 @@
       </div> -->
 
           <div id="content_bancos" class="content_servicio collapse">
+            <div id="content_bancosancla" class="anclita"></div>
            <div class="container">
                <h4 class="divider rojo">Bancos</h4>
-                  <div class="close_servicio"> </div>
+                  <div class="close_servicio" data-target="#serv5"> </div>
                  <div class="row">
                      <div class="col-md-4">
                            <div class="box_agencia">
