@@ -537,13 +537,13 @@ section.main_content section.tiendas .grid_tiendas { padding-bottom: 50px; }
 section.main_content section.tiendas .grid_tiendas .item_tienda { display: block; overflow: hidden; margin-bottom: 30px; }
 section.main_content section.tiendas .grid_tiendas .item_tienda .tienda a { display: block; position: relative; overflow: hidden; }
 section.main_content section.tiendas .grid_tiendas .item_tienda .tienda a h4.nombre_tienda { font-size: 16px; color: white; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); opacity: 0; transition: all .5s ease; z-index: 2; }
-section.main_content section.tiendas .grid_tiendas .item_tienda .tienda a .borde { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 90%; height: 90%; border: 1px solid white; opacity: 0; transition: all .5s ease; z-index: 1; }
+section.main_content section.tiendas .grid_tiendas .item_tienda .tienda a .borde { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 100%; height: 100%; border: 1px solid white; opacity: 0; transition: all .5s ease; z-index: 1; }
 section.main_content section.tiendas .grid_tiendas .item_tienda .tienda a span { transition: all .5s ease; opacity: 0; }
 section.main_content section.tiendas .grid_tiendas .item_tienda .tienda a span.bg_nombre_tienda { position: absolute; left: 0; top: 0; background-color: black; width: 100%; height: 100%; opacity: 0; }
 section.main_content section.tiendas .grid_tiendas .item_tienda .tienda a .overlay_img { position: absolute; left: 0; top: 0; z-index: 10; width: 100%; height: 100%; transition: all .5s ease; }
 section.main_content section.tiendas .grid_tiendas .item_tienda .tienda a img { transition: all .5s ease; opacity: 1; }
 section.main_content section.tiendas .grid_tiendas .item_tienda .tienda a:hover img { opacity: 0.6; -webkit-transform: scale(1.05); transform: scale(1.05); }
-section.main_content section.tiendas .grid_tiendas .item_tienda .tienda a:hover .borde { opacity: 1; }
+section.main_content section.tiendas .grid_tiendas .item_tienda .tienda a:hover .borde { opacity: 1; width: 90%; height: 90%; }
 section.main_content section.tiendas .grid_tiendas .item_tienda .tienda a:hover span.bg_nombre_tienda { opacity: 1; }
 section.main_content section.tiendas .grid_tiendas .item_tienda .tienda a:hover h4.nombre_tienda { opacity: 1; }
 section.main_content section.tiendas .grid_tiendas .item_tienda .tienda .box_logo_tienda, section.main_content section.tiendas section.novedades .grid_tiendas .item_tienda .tienda .box_logo_destacado, section.main_content section.novedades section.tiendas .grid_tiendas .item_tienda .tienda .box_logo_destacado { border: 1px solid black; min-height: 60px; position: relative; overflow: hidden; }
@@ -565,13 +565,13 @@ section.main_content section.otras_tiendas .divider:before { margin-right: 10px;
 section.main_content section.otras_tiendas .item_tienda { display: block; overflow: hidden; margin-bottom: 30px; }
 section.main_content section.otras_tiendas .item_tienda .tienda a { display: block; position: relative; overflow: hidden; }
 section.main_content section.otras_tiendas .item_tienda .tienda a h4.nombre_tienda { color: white; font-size: 16px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); opacity: 0; transition: all .5s ease; z-index: 2; }
-section.main_content section.otras_tiendas .item_tienda .tienda a .borde { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 90%; height: 90%; border: 1px solid white; opacity: 0; transition: all .5s ease; z-index: 1; }
+section.main_content section.otras_tiendas .item_tienda .tienda a .borde { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 100%; height: 100%; border: 1px solid white; opacity: 0; transition: all .5s ease; z-index: 1; }
 section.main_content section.otras_tiendas .item_tienda .tienda a span { transition: all .5s ease; opacity: 0; }
 section.main_content section.otras_tiendas .item_tienda .tienda a span.bg_nombre_tienda { position: absolute; left: 0; top: 0; background-color: black; width: 100%; height: 100%; opacity: 0; }
 section.main_content section.otras_tiendas .item_tienda .tienda a .overlay_img { position: absolute; left: 0; top: 0; z-index: 10; width: 100%; height: 100%; transition: all .5s ease; }
 section.main_content section.otras_tiendas .item_tienda .tienda a img { transition: all .5s ease; opacity: 1; }
 section.main_content section.otras_tiendas .item_tienda .tienda a:hover img { opacity: 0.6; -webkit-transform: scale(1.05); transform: scale(1.05); }
-section.main_content section.otras_tiendas .item_tienda .tienda a:hover .borde { opacity: 1; }
+section.main_content section.otras_tiendas .item_tienda .tienda a:hover .borde { opacity: 1; width: 90%; height: 90%; }
 section.main_content section.otras_tiendas .item_tienda .tienda a:hover span.bg_nombre_tienda { opacity: 1; }
 section.main_content section.otras_tiendas .item_tienda .tienda a:hover h4.nombre_tienda { opacity: 1; }
 section.main_content section.otras_tiendas .item_tienda .tienda .box_logo_tienda, section.main_content section.otras_tiendas section.novedades .grid_tiendas .item_tienda .tienda .box_logo_destacado, section.main_content section.novedades .grid_tiendas section.otras_tiendas .item_tienda .tienda .box_logo_destacado { border: 1px solid black; min-height: 60px; position: relative; overflow: hidden; }
@@ -590,13 +590,13 @@ section.main_content section.novedades .grid_tiendas { padding-bottom: 50px; }
 section.main_content section.novedades .grid_tiendas .item_tienda { display: block; overflow: hidden; margin-bottom: 30px; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a { display: block; position: relative; overflow: hidden; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a h4.nombre_tienda { color: white; font-size: 16px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); opacity: 0; transition: all .5s ease; z-index: 2; }
-section.main_content section.novedades .grid_tiendas .item_tienda .tienda a .borde { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 90%; height: 90%; border: 1px solid white; opacity: 0; transition: all .5s ease; z-index: 1; }
+section.main_content section.novedades .grid_tiendas .item_tienda .tienda a .borde { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 100%; height: 100%; border: 1px solid white; opacity: 0; transition: all .5s ease; z-index: 1; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a span { transition: all .5s ease; opacity: 0; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a span.bg_nombre_tienda { position: absolute; left: 0; top: 0; background-color: black; width: 100%; height: 100%; opacity: 0; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a .overlay_img { position: absolute; left: 0; top: 0; z-index: 10; width: 100%; height: 100%; transition: all .5s ease; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a img { transition: all .5s ease; opacity: 1; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a:hover img { opacity: 0.6; -webkit-transform: scale(1.05); transform: scale(1.05); }
-section.main_content section.novedades .grid_tiendas .item_tienda .tienda a:hover .borde { opacity: 1; }
+section.main_content section.novedades .grid_tiendas .item_tienda .tienda a:hover .borde { opacity: 1; width: 90%; height: 90%; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a:hover span.bg_nombre_tienda { opacity: 1; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a:hover h4.nombre_tienda { opacity: 1; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda .box_logo_tienda, section.main_content section.novedades .grid_tiendas .item_tienda .tienda .box_logo_destacado { border: 1px solid black; min-height: 60px; position: relative; overflow: hidden; }
@@ -1031,13 +1031,13 @@ section.main_content section.novedades .grid_tiendas { padding-bottom: 50px; }
 section.main_content section.novedades .grid_tiendas .item_tienda { display: block; overflow: hidden; margin-bottom: 30px; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a { display: block; position: relative; overflow: hidden; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a h4.nombre_tienda { color: white; font-size: 16px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); opacity: 0; transition: all .5s ease; z-index: 2; }
-section.main_content section.novedades .grid_tiendas .item_tienda .tienda a .borde { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 90%; height: 90%; border: 1px solid white; opacity: 0; transition: all .5s ease; z-index: 1; }
+section.main_content section.novedades .grid_tiendas .item_tienda .tienda a .borde { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 100%; height: 100%; border: 1px solid white; opacity: 0; transition: all .5s ease; z-index: 1; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a span { transition: all .5s ease; opacity: 0; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a span.bg_nombre_tienda { position: absolute; left: 0; top: 0; background-color: black; width: 100%; height: 100%; opacity: 0; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a .overlay_img { position: absolute; left: 0; top: 0; z-index: 10; width: 100%; height: 100%; transition: all .5s ease; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a img { transition: all .5s ease; opacity: 1; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a:hover img { opacity: 0.6; -webkit-transform: scale(1.05); transform: scale(1.05); }
-section.main_content section.novedades .grid_tiendas .item_tienda .tienda a:hover .borde { opacity: 1; }
+section.main_content section.novedades .grid_tiendas .item_tienda .tienda a:hover .borde { opacity: 1; width: 90%; height: 90%; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a:hover span.bg_nombre_tienda { opacity: 1; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda a:hover h4.nombre_tienda { opacity: 1; }
 section.main_content section.novedades .grid_tiendas .item_tienda .tienda .box_logo_tienda, section.main_content section.novedades .grid_tiendas .item_tienda .tienda .box_logo_destacado { border: 1px solid black; min-height: 60px; position: relative; overflow: hidden; }
