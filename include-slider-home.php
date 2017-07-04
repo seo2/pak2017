@@ -39,6 +39,16 @@
                           </div>
                         </div>
                   </div>
+                  <!-- imagen sin texto btn centro -->
+                  <div class="item"> 
+                         <div class="owl-lazy img_slide" data-src="assets/img/slider3.jpg" style="background: url(assets/img/slider3.jpg);"> </div>
+                          <a class="btn btn-default btn_blanco btn_single_img" href="#" role="button">ver catálogo</a>                   
+                  </div>
+                  <!-- video -->
+                    <div class="item">
+                      <a class="owl-video item-video" href="https://www.youtube.com/watch?v=3DgsV87OcJY"></a>
+                  </div>
+
             </div><!-- slider home -->
      </section><!-- / slider home -->
      
