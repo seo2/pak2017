@@ -545,6 +545,17 @@ $('.box_slider').owlCarousel({
                       }, 500);
 //                      $('html, body').animate({scrollTop: $(elid+" .close_servicio").offset().top -100 }, 'slow');
             	});
+
+                    $('.box_slider a').click(function() {
+                    elid = $(this).data('target');
+                     //$('.box_servicio a.active').removeClass('active');
+                    $(".content_servicio").collapse('hide');
+                  
+                     window.setTimeout(function() {
+                        $(window).scrollTo($(elid+"ancla"), 1500,'elasout');
+                      }, 500);
+//                      $('html, body').animate({scrollTop: $(elid+" .close_servicio").offset().top -100 }, 'slow');
+                });
   
                   
                         
@@ -575,9 +586,9 @@ $('.box_slider').owlCarousel({
 
                   
                   $('.box_slider').click(function() {
-                        $('.marker').removeClass('active');
-                         $(this).addClass('active');
-                });
+                      // $('.marker').removeClass('active');
+                       // $(this).addClass('active');
+                  });
 
                                
                   //      $(".video")[0].src += "&autoplay=0";

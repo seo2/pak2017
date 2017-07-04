@@ -1,24 +1,23 @@
      <div class="col-sm-6 col-md-6">
-                      <div class="box">
-                            <div class="box_slider ">
-                                  <div class="item disable-owl-swipe">
-                                      <a href="javascript:void(0);"  data-toggle="collapse" data-target="#content_contactanos">
-                                           <div class="caption">
-                                               <p>&nbsp </p>
-                                               <h3>contáctanos </h3>
-                                               <div class="divider"> </div>
-                                           </div>
-                                           <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_sac_contactanos.jpg);"> </div>                             
-                                      </a>
-                                   </div> <!-- contactanos -->
-
-                              </div><!-- box slider  -->
-                              <div class="marker"> </div>
-                     </div>
+                  <div class="box">
+                        <div class="box_slider" id="contactanosbox">
+                              <div class="item disable-owl-swipe">
+                                  <a href="javascript:void(0);"  data-toggle="collapse" data-target="#content_contactanos">
+                                       <div class="caption">
+                                           <p>&nbsp </p>
+                                           <h3>contáctanos </h3>
+                                           <div class="divider"> </div>
+                                       </div>
+                                       <div class="box_slide" style="background: url( <?php bloginfo('template_url'); ?>/assets/img/bg_sac_contactanos.jpg);"> </div>                             
+                                  </a>
+                               </div> <!-- contactanos -->
+                          </div><!-- box slider  -->
+                          <div class="marker"> </div>
+                 </div>
                 </div>
                 <div class="col-sm-6 col-md-6">
                     <div class="box">
-                          <div class="box_slider ">
+                          <div class="box_slider" id="horariobox">
                             <div class="item disable-owl-swipe">
                                 <a href="javascript:void(0);" data-toggle="collapse" data-target="#content_horarios">
                                      <div class="caption">
@@ -34,9 +33,10 @@
                     </div> <!-- horarios -->
                 </div> 
         <div id="content_contactanos" class="content_servicio collapse">
+          <div id="content_contactanosancla" class="anclita"></div>
           <div class="container">
           <h4 class="divider verde">Contacto</h4> 
-          <div class="close_servicio"> </div>
+          <div class="close_servicio" data-target="#contactanos"> </div>
             <div class="row">
                 <div class="col-md-12 ">
                      <div class="desc_servicio">
@@ -53,9 +53,10 @@
       </div> <!-- content contactanos-->
 
        <div id="content_horarios" class="content_servicio collapse">
+         <div id="content_horariosancla" class="anclita"></div>
            <div class="container">
               <h4 class="divider verde">horarios </h4> 
-              <div class="close_servicio"> </div>
+              <div class="close_servicio" data-target="#horario"> </div>
                 <div class="row">
                 <div class="col-md-12 ">
                      <div class="desc_servicio">

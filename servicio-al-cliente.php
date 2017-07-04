@@ -1,10 +1,3 @@
-<?
-/*
-
-Template name: Servicio al Cliente
-
-*/
-?>
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
 <?php //include('include-slider-servicios-cliente.php') ?>
@@ -63,13 +56,14 @@ Template name: Servicio al Cliente
                 </div>
 
                 <div id="content_como_llegar" class="content_servicio collapse hidden-xs">
+                <div id="content_como_llegarancla" class="anclita"></div>
                     <div class="container">
                     <h4 class="divider verde">Cómo llegar</h4> 
-                    <div class="close_servicio"> </div>
+                    <div class="close_servicio" data-target="#content_como_llegar"> </div>
                       <div class="row">
                           <div class="col-md-12 ">
                                <div class="desc_servicio">
-                                       <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.819335987263!2d-70.58139348498179!3d-33.401877280787886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf26243dcc31%3A0xc9aacb64a9fec91!2sParque+Arauco!5e0!3m2!1ses!2scl!4v1498239272187' width='600' height='450' frameborder='0' style='border:0' allowfullscreen></iframe></div>
+                                           <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.819335987263!2d-70.58139348498179!3d-33.401877280787886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf26243dcc31%3A0xc9aacb64a9fec91!2sParque+Arauco!5e0!3m2!1ses!2scl!4v1498239272187' width='600' height='450' frameborder='0' style='border:0' allowfullscreen></iframe></div>
                                </div>
                           </div>
                           <div class="datos_como_llegar clearfix">
