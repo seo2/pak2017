@@ -3,7 +3,7 @@
             <div class="slider_tag owl-carousel owl-theme">
                   <div class="item"> 
                           <!-- 1600x580 -->
-                        <div class="owl-lazy img_slide" data-src="assets/img/slider_araucotag_lg.png" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider_araucotag_lg.png);"> </div>
+                        <div class="owl-lazy img_slide" data-src="<?php bloginfo('template_url'); ?>/assets/img/slider_araucotag_lg.png" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider_araucotag_lg.png);"> </div>
                           <!-- 700x580 -->
 <!--                         <div class="owl-lazy img_slide visible-xs visible-sm" data-src="assets/img/slider_araucotag_xs.png" style="background: url(assets/img/slider_araucotag_xs.png);"> </div>
  -->                          <div class="container">
