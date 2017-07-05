@@ -144,8 +144,9 @@ Template name: Novedades
       </div>
 
       <div class="row">
-        <section id="entretencion" class="entretencion clearfix">
-        <h4   class="divider">entretención</h4>
+        <section class="entretencion clearfix">
+         <div id="entretencion" class="anchor_entretencion"></div>
+        <h4 class="divider">entretención</h4>
         
 <? 
     $detect = new Mobile_Detect();
