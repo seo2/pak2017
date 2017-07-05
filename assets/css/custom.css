@@ -970,6 +970,7 @@ section.main_content section.servicios_cliente .content_servicio .desc_servicio 
 section.main_content section.servicios_cliente .content_servicio .desc_servicio a.url_agencia { font-family: 'euphemia_ucasbold', Helvetica, Arial, sans-serif; font-size: 14px; color: black; text-transform: uppercase; }
 section.main_content section.servicios_cliente .content_servicio .desc_servicio ul { margin: 0 0 0 20px; padding: 0; }
 section.main_content section.servicios_cliente .content_servicio .desc_servicio ul li { font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif; font-size: 12px; color: black; margin-bottom: 10px; }
+section.main_content section.servicios_cliente .content_servicio .desc_servicio section.box_horarios p { font-family: 'euphemia_ucasregular', Helvetica, Arial, sans-serif; font-size: 15px; color: black; margin: 0 0 30px 0; padding: 0; }
 @media (max-width: 767px) { section.main_content section.servicios_cliente .content_servicio .desc_servicio section.box_horarios { margin-top: 20px; } }
 section.main_content section.servicios_cliente .content_servicio .desc_servicio section.box_horarios *::after, section.main_content section.servicios_cliente .content_servicio .desc_servicio section.box_horarios *::before { content: ''; }
 section.main_content section.servicios_cliente .content_servicio .desc_servicio section.box_horarios .panel-group .panel { border-color: #f8f7f7; }

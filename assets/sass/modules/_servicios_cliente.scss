@@ -212,9 +212,15 @@ section.servicios_cliente{
                             }
                           }
                         }
-                    
+
+
                     section.box_horarios{
-                     
+                                        
+                    p{ 
+                        @include regular(15px, black);
+                        margin: 0 0 30px 0;
+                        padding: 0;
+                    }
                        @media (max-width: 767px){
                                      margin-top: 20px;
                       }
