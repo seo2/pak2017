@@ -73,11 +73,11 @@
                                  <ul class="nav navbar-nav">
                                      <li class="active"><a 			href="<?php bloginfo('url'); ?>">Home</a></li>
                                      <li><a id="btn_distrito" 		href="<?php bloginfo('url'); ?>/distrito-de-lujo">distrito de lujo</a></li>
-                                     <li><a id="btn_boulevard" 		href="<?php bloginfo('url'); ?>/boulevard">boulevard</a></li>
+                                     <li><a id="btn_boulevard" 		href="<?php bloginfo('url'); ?>/boulevard#boulevard">boulevard</a></li>
                                      <li><a id="btn_piso" 			href="<?php bloginfo('url'); ?>/piso-diseno">piso diseño</a></li>
                                      <li><a id="btn_entretencion" 	href="<?php bloginfo('url'); ?>/novedades#entretencion">entretención</a></li>
                                      <li><a id="btn_novedades" 		href="<?php bloginfo('url'); ?>/novedades#novedades">novedades</a></li>
-                                     <li><a id="btn_tiendas" 		href="<?php bloginfo('url'); ?>/tiendas">tiendas</a></li>
+                                     <li><a id="btn_tiendas" 		href="<?php bloginfo('url'); ?>/tiendas#tiendas">tiendas</a></li>
                                 </ul>
                             </div>
 

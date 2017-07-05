@@ -1,3 +1,36 @@
+.anchor_entretencion{
+  position: absolute;
+  top: -194px;
+  width: 5px;
+  height: 5px;
+  //background-color: tomato;
+}
+.anchor_seccion{
+  position: absolute;
+  top: -222px;
+  width: 5px;
+  height: 5px;
+ // background-color: tomato;
+  z-index: 10;
+}
+
+.anclita {
+    position: absolute;
+    top: -150px;
+    height: 10px;
+    width: 10px;
+}
+// .anclita2 {
+//     position: absolute;
+//     top: 220px;
+//     height: 10px;
+//     width: 10px;
+// }
+
+ .content_servicio{
+    position: relative;
+  }
+
 .titulo_seccion{
   margin-top: 30px;
   &.sin_slider{
@@ -57,6 +90,12 @@
             }
 
 }// titulo seccion
+
+.main_content {
+  .titulo_seccion {
+    margin: 0 0 30px 0;
+  }
+}
 
 .modal-backdrop {
   z-index: 1;
@@ -227,6 +266,7 @@ a{
 .modal {
   text-align: center;
   padding: 0!important;
+  margin-top: 60px;
 }
 
 .modal:before {

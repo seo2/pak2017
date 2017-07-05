@@ -302,26 +302,28 @@ $('.box_slider').owlCarousel({
         //  setTimeout(Time, 1500);
 
 
-        // The function actually applying the offset
-            function offsetAnchor() {
-              if (location.hash.length !== 0) {
-                window.scrollTo(window.scrollX, window.scrollY - 223);
-              }
-            }
+        // The function actually applying the offset al ancla
+
+            // function offsetAnchor() {
+            //   if (location.hash.length !== 0) {
+            //     window.scrollTo(window.scrollX, window.scrollY - 223);
+            //   }
+            // }
 
             // Captures click events of all <a> elements with href starting with #
-            $(document).on('click', 'a[href^="#"]', function(event) {
+          //  $(document).on('click', 'a[href^="#"]', function(event) {
               // Click events are captured before hashchanges. Timeout
               // causes offsetAnchor to be called after the page jump.
-              window.setTimeout(function() {
-                offsetAnchor();
-              }, 0);
-            });
+
+            //   window.setTimeout(function() {
+            //     offsetAnchor();
+            //   }, 0);
+            // });
 
             // Set the offset when entering page with hash present in the url
-            window.setTimeout(offsetAnchor, 0);
+          //  window.setTimeout(offsetAnchor, 0);
 
-    // tiendas
+        // tiendas
         var id_tienda;
 
        $('body').on('click', '.overlay_img', function(e) {
@@ -479,11 +481,11 @@ $('.box_slider').owlCarousel({
                     
                 });
 
-        // colapsa menu al click en un enlace
-        $('.nav a').on('click', function(){
-            $('.navbar-toggle').click()
+            // colapsa menu al click en un enlace
+            $('.nav a').on('click', function(){
+                $('.navbar-toggle').click()
 
-        });
+            });
 
            // ===== Scroll to Top ==== 
               $(window).scroll(function() {

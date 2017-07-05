@@ -9,12 +9,29 @@ section.box_slider_tag {
                     height: 400px !important;
         }
             .caption {
-                  @include centerer(false, true);
+                  @include centerer(true, true);
+                  top: 330px;
                    text-align: left;
-                      @media(max-width: 991px){
-                        @include centerer(true, true);
-                        text-align: center;
-                        width: 90%;
+                      // @media(max-width: 991px){
+                      // //  @include centerer(true, true);
+                      //   //text-align: center;
+                      //   //width: 90%;
+                      //   top: 350px;
+
+                      // }
+                      @media(max-width: 768px){
+                       // @include centerer(true, true);
+                        //text-align: center;
+                        //width: 90%;
+                        top: 340px;
+
+                      }
+                       @media(max-width: 767px){
+                       // @include centerer(true, true);
+                        //text-align: center;
+                        //width: 90%;
+                        top: 280px;
+
                       }
              
                     h3 {
@@ -83,8 +100,8 @@ section.box_slider_tag {
                   .box_btn_registro_tag{
                         
                         width: 300px;
-                        
-                        margin-left: 60px;
+                      //  @include centerer(true, true);
+                     //   margin-left: 60px;
                          @media(max-width: 768px){
                                  margin: 0 auto;
                                  max-width: 90%;

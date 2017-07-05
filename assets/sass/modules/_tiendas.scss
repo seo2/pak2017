@@ -67,6 +67,44 @@ section.tiendas {
                           display: block;
                           position: relative;
                           overflow: hidden;
+                     
+                          // para nombre de tienda
+                            h4{
+
+                              &.nombre_tienda{
+                                 font-size: 16px;
+                                 color: white;
+                                  @include centerer(true, true);
+                                  opacity: 0;
+                                  transition: all .5s ease;
+                                  z-index: 2;
+                              }
+                            }
+                            .borde {
+                               @include centerer(true, true);
+                               width: 100%;
+                              height: 100%;
+                              border: 1px solid white;
+                              opacity: 0;
+                              transition: all .5s ease;
+                             // background-color: tomato;
+                              z-index: 1;
+                            }
+                            span{
+                                transition: all .5s ease;
+                                opacity: 0;
+                              &.bg_nombre_tienda{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                background-color: black;
+                                width: 100%;
+                                height: 100%;
+                                opacity: 0;
+
+                              }
+                             
+                            }
                           .overlay_img {
                             position: absolute;
                             left: 0;
@@ -81,13 +119,24 @@ section.tiendas {
                              opacity: 1;
                           }
                             &:hover  {
-                                  img{
-                                    opacity: 0.9;
+                                img{
+                                    opacity:0.6;
                                     transform: scale(1.05);
+                                }
+                                .borde{
+                                  opacity: 1;
+                                  width: 90%;
+                                  height: 90%;
+                                }
+                                span.bg_nombre_tienda{
+                                  opacity: 1;
+                                }
+                                h4.nombre_tienda{
+                                  opacity: 1;
                                 }
                               
                             }
-                        }
+                        } // a
                           
                           .box_logo_tienda {
                               border: 1px solid black;
@@ -203,26 +252,78 @@ section.tiendas {
                           display: block;
                           position: relative;
                           overflow: hidden;
-                          .overlay_img {
+                      // para nombre de tienda con hover
+
+                      
+                        h4{
+
+                          &.nombre_tienda{
+                             color: white;
+                             font-size: 16px;
+                              @include centerer(true, true);
+                              opacity: 0;
+                              transition: all .5s ease;
+                              z-index: 2;
+                          }
+                        }
+                        .borde {
+                           @include centerer(true, true);
+                           width: 100%;
+                          height: 100%;
+                          border: 1px solid white;
+                          opacity: 0;
+                          transition: all .5s ease;
+                         // background-color: tomato;
+                          z-index: 1;
+                        }
+                        span{
+                            transition: all .5s ease;
+                            opacity: 0;
+                          &.bg_nombre_tienda{
                             position: absolute;
                             left: 0;
                             top: 0;
-                            z-index: 10;
+                            background-color: black;
                             width: 100%;
                             height: 100%;
-                            transition: all .5s ease;
+                            opacity: 0;
+
                           }
-                          img {
-                             transition: all .5s ease;
-                             opacity: 1;
-                          }
-                            &:hover  {
-                                  img{
-                                    opacity: 0.9;
-                                    transform: scale(1.05);
-                                }
-                              
+                         
+                        }
+                      .overlay_img {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: 10;
+                        width: 100%;
+                        height: 100%;
+                        transition: all .5s ease;
+                      }
+                      img {
+                         transition: all .5s ease;
+                         opacity: 1;
+                      }
+                        &:hover  {
+                            img{
+                                opacity:0.6;
+                                transform: scale(1.05);
                             }
+                            .borde{
+                              opacity: 1;
+                              width: 90%;
+                              height: 90%;
+                            }
+                            span.bg_nombre_tienda{
+                              opacity: 1;
+                            }
+                            h4.nombre_tienda{
+                              opacity: 1;
+                            }
+                          
+                        }
+                       
+                         
                         }
                           
                           .box_logo_tienda {

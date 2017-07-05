@@ -136,12 +136,11 @@ section.travelers_descuentos, section.piso_diseno_descuentos {
                                 text-transform: uppercase;
                                  @media(max-width:1024px){
                                   font-size: 14px;
-
                                 }
                             }
                           }
                           p{
-                             @include bold(14px,white);
+                             @include bold(10px,white);
                              margin-top: 10px;
                            }
                        }

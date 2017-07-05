@@ -9,6 +9,8 @@ Template name: Novedades
 <?php include('include-top.php') ?>
 <?php include('include-slider-home.php') ?>
 <?php include('include-search-home.php') ?>
+
+    <section class="main_content">
     <div class="titulo_seccion ">
         <div class="container">
           <div class="row">
@@ -21,10 +23,11 @@ Template name: Novedades
           </div>
         </div>
     </div> <!-- titulo seccion -->
-    <section class="main_content">
+
       <div class="container">
           <div class="row">
-              <section id="novedades" class="novedades">
+              <section  class="novedades">
+              <div id="novedades" class="anchor_seccion"></div>
                       <div class="grid_tiendas center-block">
                           <div class="container">
                           <div class="row">

@@ -10,6 +10,10 @@ Template name: Novedades Galería
 <?php include('include-slider-home.php') ?>
 <?php include('include-search-home.php') ?>
 
+
+
+    <section class="main_content">
+
     <div class="titulo_seccion ">
         <div class="container">
           <div class="row">
@@ -24,12 +28,11 @@ Template name: Novedades Galería
     </div> <!-- titulo seccion -->
 
 
-    <section class="main_content">
-      <div id="galerias" class="container">
+      <div class="container">
       
       <div class="row">
         <section class="entretencion clearfix">
-       
+        <div id="galerias" class="anchor_seccion"></div>
           <div class="grid_tiendas center-block">       
 			<? 
 			    $detect = new Mobile_Detect();

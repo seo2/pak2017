@@ -9,29 +9,34 @@ Template name: Tiendas
 <?php include('include-top.php') ?>
 <?php include('include-slider-home.php') ?>
 <?php include('include-search-home.php') ?>
-    <div class="titulo_seccion ">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-10">
-	            <?php if($_GET['busqueda']){ ?>
-                <h4 class="divider">Resultado Búsqueda: "<?php echo $_GET['busqueda']; ?>" </h4>
-				<?php }elseif($_GET['catID']){ ?>
-                <h4 class="divider"><?php echo get_nom_categoria($_GET['catID']); ?></h4>
-				<?php }else{ ?>
-                <h4 class="divider">Tiendas </h4>
-                <?php } ?>
-            </div>
-            <div class="col-sm-12 col-md-2">
-               <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
+
+	<section class="main_content">
+
+      <div class="titulo_seccion ">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-10">
+                <?php if($_GET['busqueda']){ ?>
+                  <h4 class="divider">Resultado Búsqueda: "<?php echo $_GET['busqueda']; ?>" </h4>
+          <?php }elseif($_GET['catID']){ ?>
+                  <h4 class="divider"><?php echo get_nom_categoria($_GET['catID']); ?></h4>
+          <?php }else{ ?>
+                  <h4 class="divider">Tiendas </h4>
+                  <?php } ?>
+              </div>
+              <div class="col-sm-12 col-md-2">
+                 <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
+              </div>
             </div>
           </div>
-        </div>
-    </div> <!-- titulo seccion -->
-	<section class="main_content">
+      </div> <!-- titulo seccion -->
+
+
     	<div class="container">
         	<div class="row">
             	<section class="tiendas">
-					<div class="grid_tiendas center-block">
+              <div id="tiendas" class="anchor_seccion"></div>
+					       <div class="grid_tiendas center-block">
                         <div class="container">
                         	<div class="row" id="caja_tienda">
 	                            <?php

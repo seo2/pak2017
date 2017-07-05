@@ -9,7 +9,10 @@ Template name: Boulevard
 <?php include('include-top.php') ?>
 <?php include('include-slider-home.php') ?>
 <?php include('include-search-home.php') ?>
-    <div class="titulo_seccion">
+
+    <section class="main_content">
+
+        <div class="titulo_seccion">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-10">
@@ -21,11 +24,12 @@ Template name: Boulevard
           </div>
         </div>
     </div> <!-- titulo seccion -->
-    <section class="main_content">
+
+
       <div class="container">
           <div class="row">
               <section class="novedades">
-
+                    <div id="boulevard" class="anchor_seccion"></div>
                       <div class="grid_tiendas center-block">
                           <div class="container">
                           <div class="row">
