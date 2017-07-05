@@ -1,3 +1,10 @@
+<?
+/*
+
+Template name: Arauco Tag FAQ
+
+*/
+?>
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
 <?php include('include-slider-tag.php') ?>
@@ -10,7 +17,7 @@
                 <h4 class="divider">arauco tag / preguntas frecuentes </h4>
             </div>
             <div class="col-sm-12 col-md-2">
-               <a href="arauco-tag.php" class="back">< volver</a>
+               <a href="javascript:window.history.back();" class="back">< volver</a>
             </div>
           </div>
         </div>

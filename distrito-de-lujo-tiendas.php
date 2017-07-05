@@ -18,7 +18,7 @@ Template name: Distrito de lujo Tiendas
                <h4 class="divider">sobre distrito de lujo</h4>
             </div>
             <div class="col-sm-12 col-md-2">
-              <a href="distrito-de-lujo.php" class="back">< volver</a>
+              <a href="javascript:window.history.back();" class="back">< volver</a>
             </div>
           </div>
         </div>

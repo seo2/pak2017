@@ -1,3 +1,10 @@
+<?
+/*
+
+Template name: Distrito de lujo Servicios
+
+*/
+?>
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
 <?php // include('include-slider-home.php') ?>
@@ -11,7 +18,7 @@
              <h4 class="divider">servicios de lujo</h4>  
             </div>
             <div class="col-sm-12 col-md-2">
-             <a href="distrito-de-lujo.php" class="back">&lt; volver</a>
+             <a href="javascript:window.history.back(); class="back">&lt; volver</a>
             </div>
           </div>
         </div>
@@ -25,7 +32,7 @@
  -->           
             <div class="col-sm-12">
               <?php include('include-slider-distrito-de-lujo-servicios.php') ?>
-                 <a href="distrito-de-lujo-tiendas.php" class="ver_mas_tiendas raya_after pull-right"> ver más tiendas </a>
+              <a href="<?php bloginfo('url'); ?>/distrito-de-lujo-tiendas" class="ver_mas_tiendas raya_after pull-right"> ver más tiendas </a>
             </div>
              <?php include('include-modal-ubicacion-distrito-de-lujo.php'); ?>
           </section> <!-- fin grilla tiendas distrito -->

@@ -30,14 +30,16 @@ Template name: Novedades Galería
       <div class="row">
         <section class="entretencion clearfix">
        
-          <div class="grid_tiendas center-block">
-            <div class="hidden-xs">
-              <?php include('include-novedades-galeria-desktop.php'); ?>
-            </div>
-
-            <div class="visible-xs">
-              <?php include('include-novedades-galeria-mobile.php'); ?>
-            </div>
+          <div class="grid_tiendas center-block">       
+			<? 
+			    $detect = new Mobile_Detect();
+			    	 
+				if ($detect->isMobile()) { 
+				   include('include-novedades-galeria-mobile.php'); 
+				}else{ 	 
+				  	include('include-novedades-galeria-desktop.php');
+				}
+			?>
           </div>
 
             <section class="galeria_videos">

@@ -35,17 +35,9 @@ Template name: Distrito de Lujo
                            
                                       <div class="col-sm-6">
                                             <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_about_dl.png" alt="" class="img-responsive">
-                                           <p>
-                                             Parque Arauco es el único mall en Chile que alberga las más importantes marcas de lujo del mundo.
-                                             Distrito de Lujo es un sector que combina lo mejor del shopping en una calle con tiendas premium, 
-                                             con las comodidades de comprar en un mall. Este espacio, ubicado en el tercer nivel del Boulevard,
-                                              alberga prestigiosas marcas como Burberry, CH Carolina Herrera, Dolce & Gabanna, 
-                                              Emporio Armani,Emporio Armani Cafe , Ermenegildo Zegna, Louis Vuitton, Mont Blanc,
-                                               Omega y Salvatore Ferragamo, y que ubica a Parque Arauco en el muy selecto grupo
-                                                de centros comerciales que tienen este tipo de marcas en el mundo.
-                                           </p>
+											<?php the_content(); ?>
                                              <div class="text-center">
-                                                <a class="btn btn-default btn_blanco" href="<?php bloginfo('url'); ?>distrito-de-lujo-tiendas" role="button">ver todas las tiendas</a>
+                                                <a class="btn btn-default btn_blanco" href="<?php bloginfo('url'); ?>/distrito-de-lujo-tiendas" role="button">ver todas las tiendas</a>
                                              </div>
                                       </div>
                               </div>

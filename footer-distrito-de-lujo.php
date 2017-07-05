@@ -15,11 +15,11 @@
                    </div>
                 <div class="box_caption">
                      <div class="caption_revista" >
-                        <h3 class=""> otoño de lujo</h3>
+                        <h3 class="">otoño de lujo</h3>
                         <p>Distrito de lujo se vistió de fiesta el pasado 27 de abril, presentando las nuevas colecciones
                         para esta temporada AW17, junto a invitados como Carolina de Moras, Santiago Errázuriz,
                         Antonia Bulnes entre otros. </p>
-                        <a href="distrito-de-lujo-galeria.php#galerias" class="btn btn-default btn_revista hvr-float" role="button">ver más</a>
+                        <a href="<?php bloginfo('url'); ?>/distrito-de-lujo/galerias/#galerias" class="btn btn-default btn_revista hvr-float" role="button">ver más</a>
                   </div> 
                 </div>
                </div>
@@ -40,7 +40,7 @@
                     
              <div class="box">
                       <!-- arauco tag -->
-                      <a href="distrito-de-lujo-servicios.php" class="box_enlace">
+                      <a href="<?php bloginfo('url'); ?>/distrito-de-lujo/servicios/" class="box_enlace">
                         <div class="box_img" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/servicios-de-lujo-horario.jpg);"> </div>
                         <div class="caption">
                             <h3>servicios</h3>
