@@ -34,7 +34,7 @@ Template name: Novedades
                               <div class="col-sm-4 col-md-3"> 
                                     <div class="item_tienda">
                                             <div class="tienda">
-                                              <a class="" href="novedades-cartelera-boulevard.php">
+                                              <a class="" href="novedades-cartelera-boulevard.php#cartelera">
                                                  
                                                   <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/demo_destacado_boulevard.jpg">
                                                 </a>

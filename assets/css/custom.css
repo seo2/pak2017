@@ -469,7 +469,8 @@ section.main_content .box a.box_enlace:hover { -webkit-transform: scale(1.05); t
 @media (max-width: 1024px) { section.main_content .box a.box_enlace:hover { -webkit-transform: none; transform: none; } }
 section.main_content .box a.box_enlace:hover .caption { opacity: 0; }
 @media (max-width: 1024px) { section.main_content .box a.box_enlace:hover .caption { opacity: 1; } }
-section.main_content .box_horizontal, section.main_content section.travellers_actividades .box_horizontal { margin-bottom: 30px; }
+section.main_content .box_horizontal, section.main_content section.travellers_actividades .box_horizontal { margin-bottom: 30px; min-height: 300px; }
+section.main_content .box_horizontal .img_slide { min-height: 300px; background-size: cover !important; background-position: center !important; }
 section.main_content .box_horizontal .owl-nav.disabled { display: none; }
 section.main_content .box_horizontal .owl-dots { position: absolute; bottom: 10px; right: 30px; }
 @media (max-width: 767px) { section.main_content .box_horizontal .owl-dots { right: auto; position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); } }
@@ -1136,7 +1137,7 @@ section.main_content section.entretencion section.galeria_videos .box_video .yt-
 section.main_content section.entretencion section.galeria_videos .box_video .btn_play_video { position: absolute; left: 30px; bottom: 30px; cursor: pointer; z-index: 10; }
 section.main_content section.entretencion section.galeria_videos .box_video .btn_play_video a { display: inline-block; }
 section.main_content section.entretencion section.galeria_videos .box_video .btn_play_video p { font-family: 'euphemia_ucasbold', Helvetica, Arial, sans-serif; font-size: 12px; color: white; text-transform: uppercase; }
-section.main_content section.cartelera { padding-bottom: 60px; margin-top: 0; }
+section.main_content section.cartelera { position: relative; padding-bottom: 60px; margin-top: 0; }
 section.main_content section.cartelera .back { margin-bottom: 20px; }
 section.main_content section.cartelera h4 { font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif; font-size: 20px; color: black; text-transform: uppercase; letter-spacing: 5px; }
 @media (max-width: 768px) { section.main_content section.cartelera h4 { font-size: 18px; } }

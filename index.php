@@ -7,7 +7,6 @@
       <div class="container">
           <div class="row">
               <div class="col-sm-6 col-md-6">
-
                   <div class="box">
                         <div class="box_slider owl-carousel owl-theme ">
                           <div class="item">
@@ -71,20 +70,23 @@
                     <div class="box_horizontal">
                        <div class="box_slider owl-carousel owl-theme">
                          <div class="item">
-                            <div class="image_dynamic">
-                                 <div class="img_lg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/emporio_paula_lanas.png);"> </div>
-                                 <!--<div class="caption">
+                            
+                            <div class="img_slide hidden-xs hidden-sm"  style="background: url(<?php bloginfo('template_url'); ?>/assets/img/emporio_paula_lanas.png);"> </div>
+                            <!-- 700 x 400px -->
+                            <div class="img_slide visible-xs visible-sm"  style="background: url(<?php bloginfo('template_url'); ?>/assets/img/vacaciones_espacio_xs.png);"> </div> 
+
+                      <!--            <div class="caption">
                                            <h3>novedades</h3>
                                            <h4 class="divider">bocas moradas</h4>
                                            <p>Revisa el panorama para este fin de semana</p>
                                            <div class="text-center">
                                                <a href="novedades.php" class="btn btn-default btn_blanco"  role="button">ver todo</a>
                                            </div>
-                                 </div> caption -->
-                           </div><!-- image dynamic -->
+                                 </div>   -->
+
                          </div><!-- item -->
                       </div>
-                    </div>
+                    </div><!-- box horizontal -->
               </div>
                 
             </div> <!-- row -->

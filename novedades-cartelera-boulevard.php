@@ -3,7 +3,11 @@
 <?php include('include-slider-home.php') ?>
 <?php include('include-search-home.php') ?>
 
-   <div class="titulo_seccion">
+ 
+
+    <section class="main_content">
+
+      <div class="titulo_seccion">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-10">
@@ -17,12 +21,12 @@
     </div> <!-- titulo seccion -->
 
 
-    <section class="main_content">
+
       <div class="container">
       
       <div class="row">
         <section class="cartelera clearfix">
-          
+             <div id="cartelera" class="anchor_seccion"></div>
             <div class="container">
               <div class="row">
                 <div class="col-sm-12">
