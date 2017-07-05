@@ -33,16 +33,19 @@ Template name: Horarios
 		                     <div class="desc_servicio">
 		                        <section class="box_horarios">
 		                            <div class="col-sm-12">
-	                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<?php	                                         
-							    $args = array(
-									'post_type' 		=> array('horario')
-							    );
-								$the_query = new WP_Query ($args);
-							    $i = 0;
-							    if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
-							    	$i++;
-							?>	                    
+                                    
+                                    <p> Lunes a domingo abierto desde las 07:00 y acceso restringido a partir de las 23:30</p>
+	                                  
+                                      <div class="panel-group hidden" id="accordion" role="tablist" aria-multiselectable="true">
+        							<?php	                                         
+        							    $args = array(
+        									'post_type' 		=> array('horario')
+        							    );
+        								$the_query = new WP_Query ($args);
+        							    $i = 0;
+        							    if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
+        							    	$i++;
+        							?>	                    
                                            <div class="panel panel-default">
                                              <div class="panel-heading" role="tab" id="">
                                                  <!-- <div class="ribbon"></div> -->
