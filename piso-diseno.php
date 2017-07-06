@@ -7,7 +7,7 @@ Template name: Piso de Diseño
 ?>
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
-<?php include('include-slider-piso_diseno.php') ?>
+<?php include('include-slider-piso-diseno.php') ?>
 <?php include('include-search-home.php') ?>
 
    <div class="titulo_seccion">
