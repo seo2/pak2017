@@ -25,6 +25,7 @@
 				require_once("_lib/MysqliDb.php");
 				$db 	= new MysqliDb (DBHOST, DBUSER, DBPASS, DBNAME);
 				$url  = 'http://testing.mzzo.cl:8080/totem/rest/front/getPuntosInteres';
+				$url  = 'http://52.45.110.155:8080/totem/rest/front/getPuntosInteres';
 				$lang = $_GET['lang'];
 				
 				$ch = curl_init();
