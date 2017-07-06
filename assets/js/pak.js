@@ -26,6 +26,29 @@ $(document).ready(function() {
                       }
               });
 // slider home
+
+$('#slider_piso_diseno').owlCarousel({
+    loop:false,
+    margin:10,
+    nav:false,
+    dots: false,
+    autoplay: false,
+   // video: true,
+    lazyLoad:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1
+        },
+        1200:{
+            items:1
+        }
+    }
+});
+
+
 $('.slider_home').owlCarousel({
     loop:true,
     margin:10,
@@ -47,11 +70,14 @@ $('.slider_home').owlCarousel({
     }
 });
 
+
+
+
 $('.slider_dl').owlCarousel({
     loop:false,
     margin:10,
     nav:false,
-    dots: true,
+    dots: false,
     autoplay: false,
     video: true,
     lazyLoad:true,
@@ -163,7 +189,7 @@ $('.slider_travellers').owlCarousel({
     loop:false,
     margin:10,
     nav:false,
-    dots: true,
+    dots: false,
     autoplay: false,
     rewind: true,
     lazyLoad:true,
@@ -481,11 +507,11 @@ $('.box_slider').owlCarousel({
                     
                 });
 
-            // colapsa menu al click en un enlace
-            $('.nav a').on('click', function(){
-                $('.navbar-toggle').click()
+        // colapsa menu al click en un enlace
+        $('.nav a').on('click', function(){
+            $('.navbar-toggle').click()
 
-            });
+        });
 
            // ===== Scroll to Top ==== 
               $(window).scroll(function() {
