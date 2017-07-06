@@ -4,9 +4,10 @@
                                     
                   <div class="item"> 
                           <!-- 1600x580 -->
-                        <div class="owl-lazy img_slide hidden-xs hidden-sm" data-src="<?php bloginfo('template_url'); ?>/assets/img/slider_piso_diseno_lg.png" style="background: url(assets/img/slider_piso_diseno_lg);"> </div>
+                        <div class="owl-lazy img_slide hidden-xs hidden-sm" data-src="<?php bloginfo('template_url'); ?>/assets/img/slider_piso_diseno_lg.png" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider_piso_diseno_lg.png);"> </div>
+                        
                           <!-- 700x580 -->
-                        <div class="owl-lazy img_slide visible-xs visible-sm" data-src="<?php bloginfo('template_url'); ?>/assets/img/slider_piso_diseno_xs.png" style="background: url(assets/img/slider_piso_diseno_xs.png);"> </div>
+                        <div class="owl-lazy img_slide visible-xs visible-sm" data-src="<?php bloginfo('template_url'); ?>/assets/img/slider_piso_diseno_xs.png" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider_piso_diseno_xs.png);"> </div>
                           <div class="container">
 	                       </div>   
 	                       </div>   
