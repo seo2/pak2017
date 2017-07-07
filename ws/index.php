@@ -24,7 +24,7 @@
 				require_once("_lib/config.php");
 				require_once("_lib/MysqliDb.php");
 				$db 	= new MysqliDb (DBHOST, DBUSER, DBPASS, DBNAME);
-				$url  = 'http://testing.mzzo.cl:8080/totem/rest/front/getPuntosInteres';
+				$url  = 'http://107.20.253.116:10000/totem/rest/front/getPuntosInteres';
 				$url  = 'http://52.45.110.155:8080/totem/rest/front/getPuntosInteres';
 				$lang = $_GET['lang'];
 				
@@ -77,7 +77,6 @@
 							$nombre			 				= $value['nombre']; 
 							$descripcion	 				= $value['descripcion'];  
 							$logo			 				= $value['logo'];   
-							
 							$orden			 				= $value['orden'];  
 							$prioridad		 				= $value['prioridad']; 
 							$nombre_estado_contenido 		= $value['nombre_estado_contenido']; 
@@ -215,9 +214,11 @@
 						    echo '<p>'.$value['estado_punto_interes'] .'</p>';
 						    echo '<p>'.$value['nombre_estado_punto_interes'] .'</p>';
 						    $sub_categoria = $value['sub_categoria'];
-						    echo '<h4>Categorías:</h4>';
+						    echo '<h4>Categorías:</h4>'.'<p>';
+						    $categorias = '';
 							foreach( $sub_categoria as $key => $sc ){
-							    echo '<p>'.$sc.'</p>';
+							    echo $sc . ' ';
+							    $categorias .= $sc.',';
 							    if($sc){
 								    $existe = false;
 									$participante = $db->rawQuery("select * from pak_tiendas_scat where punto_interes = $punto_interes and sub_categoria = $sc");
@@ -245,6 +246,14 @@
 									}
 								}
 							}
+							$categorias = rtrim($categorias, ',');
+							echo '</p><p>'.$categorias.'</p>';
+							$data = Array (
+								"categorias" => $categorias
+							);
+							$db->where ('punto_interes', $punto_interes);
+							$db->update ('pak_tiendas', $data);
+							
 							$i = 0;
 						    $imagenes = $value['imagenes'];
 						    echo '<div class="row">';
