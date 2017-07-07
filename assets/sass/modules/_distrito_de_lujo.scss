@@ -218,13 +218,13 @@ section.distrito_de_lujo{
                                @media(max-width: 991px){
                                  @include centerer(true, true);
                                  text-align: center;
-                                 width: 90%;
+                                 max-width: 90%;
                                }
 
                         .logo_tienda_dl{
                           margin-bottom: 70px;
                             @media(max-width: 767px){
-                                   margin-bottom: 160px; 
+                                  // margin-bottom:0px; 
                                }
 
                         }
