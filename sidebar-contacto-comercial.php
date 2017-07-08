@@ -1,6 +1,6 @@
 <div class="box">
         <!-- arauco tag -->
-        <a href="arauco-tag.php" class="box_enlace">
+        <a href="<?php bloginfo('url'); ?>/arauco-tag" class="box_enlace">
           <div class="box_img" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_arauco_tag.png);"> </div>
           <div class="caption">
               <h3>actualízate</h3>
@@ -12,7 +12,7 @@
   <div class="box">
      <div class="box_slider owl-carousel owl-theme ">
            <div class="item">
-               <a href="travellers-servicios.php">
+               <a href="<?php bloginfo('url'); ?>/travellers/travellers-servicios/">
                     <div class="caption">
                          <p>&nbsp </p>
                         <h3>servicios </h3>
@@ -33,7 +33,7 @@
  <div class="box">
        <div class="box_slider owl-carousel owl-theme">
             <div class="item">
-                <a href="travellers.php">
+                <a href="<?php bloginfo('url'); ?>/travellers">
                       <div class="logo_seccion logo_travellers" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_travellers_blanco.svg);"> </div>                             
                      <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_travellers.png);"> </div>                             
                 </a>

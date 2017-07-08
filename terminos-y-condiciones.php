@@ -178,49 +178,7 @@ Template name: Términos y Condiciones
                             </p>
                             </div> <!-- termino -->
 
-                            
-
-
-
-
-                            
-
-
-                            
-
-
-
-
-
-
-
-                            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                 
-
-
-                      
-                  
-
                   </div>
-                
-
-
 
               </section> <!-- end terminos -->
       </div>

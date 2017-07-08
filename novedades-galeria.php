@@ -26,14 +26,11 @@ Template name: Novedades Galería
           </div>
         </div>
     </div> <!-- titulo seccion -->
-
-
-      <div class="container">
-      
-      <div class="row">
-        <section class="entretencion clearfix">
-        <div id="galerias" class="anchor_seccion"></div>
-          <div class="grid_tiendas center-block">       
+    <div class="container">  
+    	<div class="row">
+        	<section class="entretencion clearfix">
+			<div id="galerias" class="anchor_seccion"></div>
+			<div class="grid_tiendas center-block">       
 			<? 
 			    $detect = new Mobile_Detect();
 			    	 
