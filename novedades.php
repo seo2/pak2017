@@ -11,18 +11,18 @@ Template name: Novedades
 <?php include('include-search-home.php') ?>
 
     <section class="main_content">
-    <div class="titulo_seccion ">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-10">
-                <h4 class="divider">novedades del mes  </h4>
-            </div>
-            <div class="col-sm-12 col-md-2">
-               <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
-            </div>
-          </div>
-        </div>
-    </div> <!-- titulo seccion -->
+	    <div class="titulo_seccion ">
+	        <div class="container">
+	        	<div class="row">
+	            	<div class="col-sm-12 col-md-10">
+	                	<h4 class="divider">novedades del mes  </h4>
+	            	</div>
+					<div class="col-sm-12 col-md-2">
+						<a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
+					</div>
+				</div>
+	        </div>
+	    </div> <!-- titulo seccion -->
 
       <div class="container">
           <div class="row">
@@ -143,11 +143,10 @@ Template name: Novedades
               </section> <!-- end tiendas -->
       </div>
 
-      <div class="row">
+    <div class="row">
         <section class="entretencion clearfix">
-         <div id="entretencion" class="anchor_entretencion"></div>
-        <h4 class="divider">entretención</h4>
-        
+        	<div id="entretencion" class="anchor_entretencion"></div>
+			<h4 class="divider">entretención</h4>    
 <? 
     $detect = new Mobile_Detect();
     	 
@@ -157,10 +156,9 @@ Template name: Novedades
 	  	include('include-entretencion-desktop.php');
 	}
 ?>
-            
-            
+   
         </section>
-      </div><!-- row -->
+    </div><!-- row -->
       
 <div id="pages" style="display:none;" data-pagina="boulevard"></div>
 <?php include('footer.php') ?>

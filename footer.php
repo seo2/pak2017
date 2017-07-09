@@ -1,7 +1,7 @@
       <div class="row">
                    <div class="col-sm-12">
                     <div class="image_dynamic hover">
-                       <a href="<?php bloginfo('url'); ?>/servicios-cliente">
+                       <a href="<?php bloginfo('url'); ?>/servicios-al-cliente">
                        <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_servicio_cliente.png);"> </div>
                              <div class="caption_lg">
                                 <h3>servicio al cliente</h3>
