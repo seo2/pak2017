@@ -1,14 +1,6 @@
      <section class="box_slider_travellers">
             <div class="slider_travellers owl-carousel owl-theme">
 <?php
-			if($_GET['pagina']){
-			  	
-		  	}else{
-			  	$offset1 = 0;
-			  	$offset2 = 4;
-			  	$e = 0;
-			  	$i = 0;
-		  	}
 			$args = array(
 				'p' => 53,
 				'post_type'	=> array('slider')

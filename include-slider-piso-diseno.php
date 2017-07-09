@@ -2,6 +2,7 @@
             <?php include('include-datos-tienda.php'); ?>
             <div class="slider_home owl-carousel owl-theme">
 <?php
+/*
 		  	if($_GET['pagina']){
 			  	
 		  	}else{
@@ -10,6 +11,7 @@
 			  	$e = 0;
 			  	$i = 0;
 		  	}
+*/
 			$args = array(
 				'p' => 418,
 				'post_type'	=> array('slider')

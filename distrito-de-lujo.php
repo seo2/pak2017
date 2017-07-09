@@ -27,25 +27,29 @@ Template name: Distrito de Lujo
       <div class="container">
           <div class="row">
 
-           <section class="sobre_distrito">
+		  	<section class="sobre_distrito">
                       
-                        <div class="container">
-                          <div class="box_content" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/demo_bg_about_dl.png);">
-                              <div class="content_about texto_blanco">
-                           
-                                      <div class="col-sm-6">
-                                            <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_about_dl.png" alt="" class="img-responsive">
-											<?php the_content(); ?>
-                                             <div class="text-center">
-                                                <a class="btn btn-default btn_blanco" href="<?php bloginfo('url'); ?>/distrito-de-lujo-tiendas" role="button">ver todas las tiendas</a>
-                                             </div>
-                                      </div>
-                              </div>
-                            </div>
-                          
-                        </div>
-               
-              </section>
+                <div class="container">
+                  <div class="box_content" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/demo_bg_about_dl.png);">
+                      <div class="content_about texto_blanco">
+                          <div class="col-sm-6">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/img/logo_about_dl.png" alt="" class="img-responsive">
+								<?php if (have_posts()) : ?>
+								<?php while (have_posts()) : the_post(); ?>                                
+								<?php the_content(); ?>
+						        <?php endwhile; ?>
+								<?php // Navegación ?>
+								<?php else : ?>
+								<?php // Cuando no hay post ?>
+								<?php endif; ?>
+                                <div class="text-center">
+                                    <a class="btn btn-default btn_blanco" href="<?php bloginfo('url'); ?>/distrito-de-lujo-tiendas" role="button">ver todas las tiendas</a>
+                                </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
               
                  <!---->
                   <section class="distrito_de_lujo">
