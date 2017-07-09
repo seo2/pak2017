@@ -2,6 +2,15 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-6 col-sm-3 col-md-3">
+	    <?php
+			$args = array(
+				'p' => 428,
+				'post_type'	=> array('novedades')
+			);
+            $query = new WP_Query( $args ); 
+			if ( $query->have_posts() ) {
+				while ( $query->have_posts() ) : $query->the_post();
+?>
         <div class="box_servicio" id="sala_artebox">
           <a href="javascript:void(0);" data-toggle="collapse" data-target="#sala_arte">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/bg_sala.jpg"  class="center-block img-responsive">
@@ -10,9 +19,22 @@
         <div class="box_more_info">
           <a  href="javascript:void(0);"  data-toggle="collapse" data-target="#sala_arte">sala de arte</a>
         </div>
+<?php 
+        endwhile; 
+	} 
+?>      
     </div>
 
       <div class="col-xs-6 col-sm-3 col-md-3">
+<?php
+			$args = array(
+				'p' => 431,
+				'post_type'	=> array('novedades')
+			);
+            $query = new WP_Query( $args ); 
+			if ( $query->have_posts() ) {
+				while ( $query->have_posts() ) : $query->the_post();
+?>	      
         <div class="box_servicio" id="teatrobox">
           <a href="javascript:void(0);" class="" data-toggle="collapse" data-target="#teatro">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/bg_mori.jpg"   class="center-block img-responsive">
@@ -22,6 +44,10 @@
          <div class="box_more_info">
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#teatro">teatro mori</a>
           </div>
+<?php 
+        endwhile; 
+	} 
+?>    
     </div>
 
 
@@ -65,15 +91,10 @@
                   <div class="row">
                       <div class="col-md-6 col-md-push-6">
                             <div class="slider_entrentencion owl-carousel owl-theme">
-                                      <div class="item">
-                                          <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/demo_galeria.jpg);"> </div>
-                                      </div>
-                                   
-
-                                
-
-                                </div><!--  slider_entretenion -->
-                                <!-- <p>Quiero compartir este post: </p> -->
+                                <div class="item">
+                                	<div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/demo_galeria.jpg);"> </div>
+                                </div>
+                            </div><!--  slider_entretenion -->
                       </div>
                       <div class="col-md-6 col-md-pull-6 ">
                            <div class="desc_servicio desc_entretencion">
