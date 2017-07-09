@@ -36,7 +36,7 @@
                      <li><a href="https://www.instagram.com/parquearauco/" target="_blank"><i class="fa fa-instagram hvr-float" aria-hidden="true"></i></a></li>
                      <li><a href="https://twitter.com/parquearauco" target="_blank"><i class="fa fa-twitter hvr-float" aria-hidden="true"></i></a></li>
 <!--                      <li><a href="https://es.pinterest.com/parquearauco/" target="_blank"><i class="fa fa-pinterest-p hvr-float" aria-hidden="true"></i></a></li>
- -->                  <li><a href="horarios.php"><i class="fa fa-clock-o hvr-float" aria-hidden="true"></i></a></li>
+ -->                  <li><a href="<?php bloginfo('site_url'); ?>/horarios"><i class="fa fa-clock-o hvr-float" aria-hidden="true"></i></a></li>
                    </ul>
                 </div>
                 <!-- RRSS -->
