@@ -26,24 +26,18 @@ Template name: Servicios al cliente
     <section class="main_content">
       <div class="container">
           <div class="row">
-          <section class="servicios_cliente clearfix">
-     
-           <!-- servicios cliente desktop -->
-            <div class="hidden-xs">
-                <?php include('include-sac-desktop.php') ?>
-            </div>
-            <!-- servicios cliente mobile -->
-             <div class="visible-xs">
-                <?php include('include-sac-mobile.php') ?>
-            </div>
-
-            <div class="hidden-xs">
-                <?php include('include-sac-como-llegar-desktop.php') ?>
-            </div>
-            <div class="visible-xs">
-                <?php include('include-sac-como-llegar-mobile.php') ?>
-            </div>
-                  
+          	<section class="servicios_cliente clearfix">
+ 		<? 
+		    $detect = new Mobile_Detect();
+		    	 
+			if ($detect->isMobile()) { 
+			   include('include-sac-mobile.php'); 
+			   include('include-sac-como-llegar-mobile.php'); 
+			}else{ 	 
+			  	include('include-sac-desktop.php');
+			  	include('include-sac-como-llegar-desktop.php');
+			}
+		?>
             <div class="col-sm-6 col-md-6">
                 <div class="box">
                     <div class="box_slider">

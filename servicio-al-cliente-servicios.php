@@ -33,12 +33,15 @@ Template name: Servicio al Cliente Servicios
           </div>
           </section><!-- travellers servicios generales -->
           <section class="travellers_servicios_adicionales clearfix">
-              <div class="hidden-xs">
-                <?php include('include-travellers-servicios-adicionales-desktop.php'); ?>
-              </div>
-              <div class="visible-xs">
-                <?php include('include-travellers-servicios-adicionales-mobile.php'); ?>
-              </div>
+		<? 
+			    $detect = new Mobile_Detect();
+			    	 
+				if ($detect->isMobile()) { 
+				   include('include-travellers-servicios-adicionales-mobile.php'); 
+				}else{ 	 
+				  	include('include-travellers-servicios-adicionales-desktop.php');
+				}
+		?>
           </section>
     </div> <!-- row -->
 <?php include('footer.php') ?>
