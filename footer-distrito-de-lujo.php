@@ -43,8 +43,8 @@
                       <a href="<?php bloginfo('url'); ?>/distrito-de-lujo/servicios/" class="box_enlace">
                         <div class="box_img" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/servicios-de-lujo-horario.jpg);"> </div>
                         <div class="caption">
-                            <h3>servicios</h3>
-                            <p>de lujo</p>
+                          <!--   <h3>servicios</h3> -->
+                            <p>servicios</p>
                             <div class="divider"> &nbsp </div>
                         </div>
                       </a>
