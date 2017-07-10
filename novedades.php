@@ -59,14 +59,14 @@ Template name: Novedades
                                    <div class="item disable-owl-swipe">
                                       <div class="image_dynamic">
                                            <div class="img_lg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_demo_bocas.jpg);"> </div>
-                                           <!--<div class="caption texto_blanco">
-                                                     <h3>novedades</h3>
+                                          <div class="caption texto_blanco2">
+                                                     <!--<h3>Viajeros del Espacio</h3>
                                                      <h4 class="divider">bocas moradas</h4>
-                                                     <p>Revisa el panorama para este fin de semana</p>
+                                                     <p>10 al 23 de julio - 1er NIvel</p>-->
                                                      <div class="">
-                                                         <a class="btn btn-default btn_blanco" href="novedades-cartelera-boulevard.php" role="button">ver todo</a>
+                                                         <a class="btn btn-default btn_blanco" href="novedades-cartelera-general.php" role="button">más información</a>
                                                      </div>
-                                           </div> caption -->
+                                              </div> <!--caption -->
                                      </div><!-- image dynamic -->
                                    </div><!-- item -->
                                    

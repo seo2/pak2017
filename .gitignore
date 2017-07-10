@@ -9,3 +9,5 @@ assets/js/.DS_Store
 >>>>>>> 2ed841e35cfcb037316a12224413d788056d6f9f
 include-travellers-servicios-adicionales-desktop copia.php
 assets/img/galeria/.DS_Store
+*.jpg
+*.png
