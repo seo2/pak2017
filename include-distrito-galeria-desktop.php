@@ -20,7 +20,22 @@
             </div>
         </div>
         <!---->  
-                  
+            
+        <!---->     
+        <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="box_servicio" id="gal76box">
+
+              <a href="javascript:void(0);" data-toggle="collapse" data-target="#gal76">
+                  <img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/otono_de_lujo/prev_otono_de_lujo.jpg"  class="center-block img-responsive">
+              </a>
+            </div>
+            <div class="box_more_info">
+              <a href="javascript:void(0);"  data-toggle="collapse" data-target="#gal76">Otoño de lujo</a>
+            </div>
+         </div>
+         <!---->
+
+
         <!---->     
         <div class="col-xs-6 col-sm-3 col-md-3">
             <div class="box_servicio" id="gal1box">
@@ -36,7 +51,7 @@
          <!---->
 		 
          <!---->
-         <div class="col-xs-6 col-sm-3 col-md-3">
+         <!-- <div class="col-xs-6 col-sm-3 col-md-3">
               <div class="box_servicio" id="gal2box">
                 <a href="javascript:void(0);" class="" data-toggle="collapse" data-target="#gal2">
                     <img src="<?php bloginfo('template_url'); ?>/assets/img/prev_dlgal02.jpg"   class="center-block img-responsive">
@@ -45,7 +60,7 @@
                <div class="box_more_info">
                   <a href="javascript:void(0);" data-toggle="collapse" data-target="#gal2">Primavera de Lujo</a>
                 </div>
-          </div>
+          </div> -->
           <!---->
 
          <!---->
@@ -139,6 +154,65 @@
                 </div><!-- container -->
             </div> 
             <!-- content galeria de arte  -->
+
+
+                    <div id="gal76" class="content_servicio collapse">
+                       
+                        <div id="gal76ancla" class="anclita"></div>
+                          <div class="container">
+                          
+                            <div class="close_servicio" data-target="#gal76"> </div>
+                            <div class="row">
+                                <!---->
+                                 <div class="col-md-6">
+                                      <div class="slider_entrentencion owl-carousel owl-theme">
+                                                <div class="item">
+                                                    <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/otono_de_lujo/img_001.jpg);"> </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/otono_de_lujo/img_002.jpg);"> </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/otono_de_lujo/img_003.jpg);"> </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/otono_de_lujo/img_004.jpg);"> </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/otono_de_lujo/img_005.jpg);"> </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/otono_de_lujo/img_006.jpg);"> </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/otono_de_lujo/img_007.jpg);"> </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="img_servicio" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/galeria/otono_de_lujo/img_008.jpg);"> </div>
+                                                </div>
+                                           
+
+                                          </div><!--  slider_entretenion -->
+                                          <!-- <p>Quiero compartir este post: </p> -->
+                                </div>
+                                <!---->
+                                <div class="col-md-6  ">
+                                     <div class="desc_servicio desc_galeria">
+
+                                      <h4>otoño de lujo</h4>
+                                      <p>Revive la experiencia de Otoño de Lujo que se vivió en Parque Arauco, de esta formas le dimos la mejor bienvenida a la temporada.
+          </p>
+                                         <div class="btn-mas"><a href="otono-de-lujo.php">Ver más</a></div>
+                                     </div>
+                                </div>
+
+                                
+                              </div>
+                              
+                          </div><!-- container -->
+                      </div> 
+                      <!-- otoño de lujo -->
+
                 
                 <div id="gal1" class="content_servicio collapse">
              
@@ -205,7 +279,7 @@
             </div> 
             <!-- content galeria de arte  -->
 
-            <div id="gal2" class="content_servicio collapse">
+            <div id="gal2" class="content_servicio collapse hide">
              	<div id="gal2ancla" class="anclita"></div>
                 <div class="container">
                   
