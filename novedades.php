@@ -15,7 +15,7 @@ Template name: Novedades
 	        <div class="container">
 	        	<div class="row">
 	            	<div class="col-sm-12 col-md-10">
-	                	<h4 class="divider">novedades del mes  </h4>
+	                	<h4 class="divider">novedades del mes </h4>
 	            	</div>
 					<div class="col-sm-12 col-md-2">
 						<a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
@@ -36,7 +36,7 @@ Template name: Novedades
                                             <div class="tienda">
                                               <a class="" href="novedades-cartelera-boulevard.php#cartelera">
                                                  
-                                                  <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/demo_destacado_boulevard.jpg">
+                                                  <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/cinegif.gif">
                                                 </a>
                                                     <div class="box_logo_destacado">
                                                       <div class="logo_destacado center-block">
@@ -44,9 +44,8 @@ Template name: Novedades
                                                       </div> <!-- logo_tienda -->
 
                                                               <div class="desc_destacado visible-xs">
-                                                            <h3>Un don excepcional</h3>
-                                                            <p>Frank Adler (Chris Evans) es un hombre soltero que crió a su sobrina Mary
-                                                            (Mckenna Grace) una niña talentosa, en una ciudad en la costa de Florida.</p>
+                                                            <h3>¡Descubre los mejores estrenos!</h3>
+                                                            <p>Si eres amante del cine, entra aquí y conoce las últimas novedades en la cartelera de Hoyts Parque Arauco.</p>
                                                             <a href="http://www.cinehoyts.cl/cartelera/santiago-oriente/parque-arauco" target="_blank">www.cinehoyts.cl</a>
                                                         </div>
                                                     </div> <!-- box logo tienda -->
