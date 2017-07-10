@@ -31,7 +31,7 @@ $('#slider_piso_diseno').owlCarousel({
     loop:false,
     margin:10,
     nav:false,
-    dots: false,
+    dots: true,
     autoplay: false,
    // video: true,
     lazyLoad:true,
@@ -49,13 +49,16 @@ $('#slider_piso_diseno').owlCarousel({
 });
 
 
+
+
 $('.slider_home').owlCarousel({
-    loop:true,
+    loop: false,
     margin:10,
     nav:false,
     dots: true,
-    autoplay: true,
+    autoplay: false,
     video: true,
+    center: true,
     lazyLoad:true,
     responsive:{
         0:{
@@ -68,16 +71,14 @@ $('.slider_home').owlCarousel({
             items:1
         }
     }
+
 });
-
-
-
 
 $('.slider_dl').owlCarousel({
     loop:false,
     margin:10,
     nav:false,
-    dots: false,
+    dots: true,
     autoplay: false,
     video: true,
     lazyLoad:true,
