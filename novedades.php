@@ -15,7 +15,7 @@ Template name: Novedades
 	        <div class="container">
 	        	<div class="row">
 	            	<div class="col-sm-12 col-md-10">
-	                	<h4 class="divider">novedades del mes  </h4>
+	                	<h4 class="divider">novedades del mes </h4>
 	            	</div>
 					<div class="col-sm-12 col-md-2">
 						<a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
@@ -36,7 +36,7 @@ Template name: Novedades
                                             <div class="tienda">
                                               <a class="" href="novedades-cartelera-boulevard.php#cartelera">
                                                  
-                                                  <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/demo_destacado_boulevard.jpg">
+                                                  <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/cinegif.gif">
                                                 </a>
                                                     <div class="box_logo_destacado">
                                                       <div class="logo_destacado center-block">
@@ -44,9 +44,8 @@ Template name: Novedades
                                                       </div> <!-- logo_tienda -->
 
                                                               <div class="desc_destacado visible-xs">
-                                                            <h3>Un don excepcional</h3>
-                                                            <p>Frank Adler (Chris Evans) es un hombre soltero que crió a su sobrina Mary
-                                                            (Mckenna Grace) una niña talentosa, en una ciudad en la costa de Florida.</p>
+                                                            <h3>¡Descubre los mejores estrenos!</h3>
+                                                            <p>Si eres amante del cine, entra aquí y conoce las últimas novedades en la cartelera de Hoyts Parque Arauco.</p>
                                                             <a href="http://www.cinehoyts.cl/cartelera/santiago-oriente/parque-arauco" target="_blank">www.cinehoyts.cl</a>
                                                         </div>
                                                     </div> <!-- box logo tienda -->
@@ -60,14 +59,14 @@ Template name: Novedades
                                    <div class="item disable-owl-swipe">
                                       <div class="image_dynamic">
                                            <div class="img_lg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_demo_bocas.jpg);"> </div>
-                                           <!--<div class="caption texto_blanco">
-                                                     <h3>novedades</h3>
+                                          <div class="caption texto_blanco2">
+                                                     <!--<h3>Viajeros del Espacio</h3>
                                                      <h4 class="divider">bocas moradas</h4>
-                                                     <p>Revisa el panorama para este fin de semana</p>
+                                                     <p>10 al 23 de julio - 1er NIvel</p>-->
                                                      <div class="">
-                                                         <a class="btn btn-default btn_blanco" href="novedades-cartelera-boulevard.php" role="button">ver todo</a>
+                                                         <a class="btn btn-default btn_blanco" href="novedades-cartelera-general.php" role="button">más información</a>
                                                      </div>
-                                           </div> caption -->
+                                              </div> <!--caption -->
                                      </div><!-- image dynamic -->
                                    </div><!-- item -->
                                    

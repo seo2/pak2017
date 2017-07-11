@@ -186,6 +186,9 @@ section.box_slider_travellers {
         position: absolute;
         @include centerer(true, false);
         bottom: 10px;
+         &.disabled {
+              display: none;
+          }
         .owl-dot {
               span {
                   border: 2px solid white;

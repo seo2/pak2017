@@ -25,11 +25,11 @@ Template name: Distrito de lujo Galería
 
 
     <section class="main_content">
-      <div id="galerias" class="container">
+      <div class="container">
       
       <div class="row">
         <section class="entretencion clearfix">
-       
+           <div id="galerias" class="anchor_seccion"></div>
           <div class="grid_tiendas center-block">
             <div class="hidden-xs">
               <?php include('include-distrito-galeria-desktop.php'); ?>
