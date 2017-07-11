@@ -11,3 +11,5 @@ include-travellers-servicios-adicionales-desktop copia.php
 assets/img/galeria/.DS_Store
 *.jpg
 *.png
+.DS_Store
+.DS_Store
