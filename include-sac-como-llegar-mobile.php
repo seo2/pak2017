@@ -1,9 +1,9 @@
       
                 <div class="col-sm-6 col-md-6">
                      <div class="box">
-                           <div class="box_slider ">
+                            <div class="box_slider " id="serv4xsbox">
                                 <div class="item disable-owl-swipe">
-                                    <a href="javascript:void(0);"  data-toggle="collapse" data-target="#content_como_llegar_xs">
+                                    <a href="javascript:void(0);"  data-toggle="collapse" data-target="#serv4xsbox">
                                          <div class="caption">
                                              <p>&nbsp </p>
                                              <h3>cómo llegar  </h3>
@@ -17,7 +17,8 @@
                     </div><!-- cine -->
                 </div> 
 
-        <div id="content_como_llegar_xs" class="content_servicio collapse">
+        <div id="serv4xsbox" class="content_servicio collapse">
+         <div id="serv4xsancla" class="anclita_xs3"></div>
           <div class="container">
           <h4 class="divider verde">Cómo llegar</h4> 
           <div class="close_servicio"> </div>
