@@ -1,10 +1,7 @@
-
 <div class="container">
   <div class="row">
-    
-       
        <div class="col-sm-6">
-	   		<div class="box_servicio">
+	   		<div class="box_servicio" id="gal4_xsbox">
 				<a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#gal4_xs">
 				  <img src="<?php bloginfo('template_url'); ?>/assets/img/prev_dlgal05.jpg" class="center-block img-responsive">
 			  </a>
@@ -15,9 +12,10 @@
 	   </div>
 
           <div id="gal4_xs" class="content_servicio collapse">
+          <div id="gal4_xsancla" class="anclita_xs5"></div>
                 <div class="container">
                   <h4 class="divider">Inuguración tienda Tiffany</h4>
-                  <div class="close_servicio"> </div>
+                  <div class="close_servicio" data-target="#gal4_xs"> </div>
                   <div class="row">
                       <div class="col-md-6">
                             <div class="slider_entrentencion owl-carousel owl-theme">
@@ -77,7 +75,7 @@
               <div class="col-sm-6">
                <div class="box_servicio" id="gal76_xsbox">
                <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#gal76_xs">
-                 <img src="assets/img/galeria/otono_de_lujo/prev_otono_de_lujo.jpg" class="center-block img-responsive">
+                 <img src="<?php bloginfo('template_url'); ?>/assets/img/galeria/otono_de_lujo/prev_otono_de_lujo.jpg" class="center-block img-responsive">
                </a>
              </div>
              <div class="box_more_info">
@@ -86,9 +84,10 @@
             </div>
 
                  <div id="gal76_xs" class="content_servicio collapse">
+                 <div id="gal76_xsancla" class="anclita_xs5"></div>
                        <div class="container">
                          <h4 class="divider">Otoño de lujo</h4>
-                         <div class="close_servicio"> </div>
+                          <div class="close_servicio" data-target="#gal76_xs"> </div>
                          <div class="row">
                              <div class="col-md-6">
                                    <div class="slider_entrentencion owl-carousel owl-theme">
@@ -138,7 +137,7 @@
 
        
        <div class="col-sm-6">
-	   		<div class="box_servicio">
+	   		<div class="box_servicio" id="gal1_xsbox">
 				<a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#gal1_xs">
 				  <img src="<?php bloginfo('template_url'); ?>/assets/img/prev_dlgal01.jpg" class="center-block img-responsive">
 			  </a>
@@ -149,9 +148,9 @@
 	   </div>
 
           <div id="gal1_xs" class="content_servicio collapse">
-                <div class="container">
-                  <h4 class="divider">10 años Tous</h4>
-                  <div class="close_servicio"> </div>
+          <div id="gal1_xsancla" class="anclita_xs5"></div>                 
+           <h4 class="divider">10 años Tous</h4>
+                  <div class="close_servicio" data-target="#gal1_xs"> </div>
                   <div class="row">
                       <div class="col-md-6">
                             <div class="slider_entrentencion owl-carousel owl-theme">
@@ -208,7 +207,7 @@
 
 
             <div class="col-sm-6">
-                <div class="box_servicio">
+                <div class="box_servicio" id="gal3_xsbox">
                   <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#gal3_xs">
                       <img src="<?php bloginfo('template_url'); ?>/assets/img/prev_dlgal03.jpg" class="center-block img-responsive">
                   </a>
@@ -218,10 +217,11 @@
                 </div>
             </div>
 
-                  <div id="gal3_xs" class="content_servicio collapse">
+                <div id="gal3_xs" class="content_servicio collapse">
+                  <div id="gal3_xsancla" class="anclita_xs5"></div>
                         <div class="container">
                           <h4 class="divider">Louis Vuitton</h4>
-                          <div class="close_servicio"> </div>
+                           <div class="close_servicio" data-target="#gal3_xs"> </div>
                           <div class="row">
                               <div class="col-md-6">
                                     <div class="slider_entrentencion owl-carousel owl-theme">
@@ -528,7 +528,7 @@
 <!--<div class="box_ver_mas_tiendas text-center">
    <a href="" class="btn btn-default btn_ver_mas hvr-float">
       <h3 class="ver_mas">ver más galerías</h3>
-      <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
+      <img src="<?php// bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
   </a>
 </div>-->
 

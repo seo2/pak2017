@@ -29,9 +29,10 @@
     	</div>
 
 		<div id="<?php echo $post_slug; ?>" class="content_servicio collapse">
+        <div id="<?php echo $post_slug; ?>ancla" class="anclita_xs"></div>
             <div class="container">
             	<h4 class="divider"><?php the_title(); ?></h4>
-                <div class="close_servicio"></div>
+                <div class="close_servicio" data-target="#<?php echo $post_slug; ?>"></div>
                 <div class="row">
                     <div class="col-md-6 col-md-push-6">
                         <div class="slider_entrentencion owl-carousel owl-theme ">

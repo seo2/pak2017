@@ -1,8 +1,8 @@
      <div class="col-sm-6 col-md-6">
                       <div class="box">
-                            <div class="box_slider " id="serv1xsbox">
+                            <div class="box_slider" id="serv1xsbox">
                                   <div class="item disable-owl-swipe">
-                                      <a href="javascript:void(0);"  data-toggle="collapse" data-target="##serv1xs">
+                                      <a href="javascript:void(0);"  data-toggle="collapse" data-target="#serv1xs">
                                            <div class="caption">
                                                <p>&nbsp </p>
                                                <h3>contáctanos </h3>
@@ -16,11 +16,11 @@
                               <div class="marker"> </div>
                      </div>
                 </div>
-      <div id="#serv1xs" class="content_servicio collapse">
+      <div id="serv1xs" class="content_servicio collapse">
         <div id="serv1xsancla" class="anclita_xs3"></div>
           <div class="container">
           <h4 class="divider verde">Contacto </h4> 
-          <div class="close_servicio"> </div>
+          <div class="close_servicio" data-target="#serv1xs"> </div>
             <div class="row">
                 <div class="col-md-12 ">
                      <div class="desc_servicio">
@@ -39,7 +39,7 @@
 
       <div class="col-sm-6 col-md-6">
           <div class="box">
-                <div class="box_slider " id="serv2box">
+                <div class="box_slider " id="serv2xsbox">
                   <div class="item disable-owl-swipe">
                       <a href="javascript:void(0);" data-toggle="collapse" data-target="#serv2xs">
                            <div class="caption">
@@ -59,7 +59,7 @@
     <div id="serv2xsancla" class="anclita_xs3"></div>
       <div class="container">
          <h4 class="divider verde">horarios </h4> 
-         <div class="close_servicio"> </div>
+         <div class="close_servicio" data-target="#serv2xs"> </div>
            <div class="row">
            <div class="col-md-12 ">
                 <div class="desc_servicio">
