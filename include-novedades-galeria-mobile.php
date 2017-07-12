@@ -21,7 +21,7 @@
 					$e++;	
 		?>
     	<div class="col-sm-6">
-        	<div class="box_servicio">
+        	<div class="box_servicio" id="gal<?php echo $e; ?>_xsbox">
 				<a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#gal<?php echo $e; ?>_xs">
 					<? the_post_thumbnail('preview_galerias', array( 'class' => 'center-block img-responsive' ) ); ?>
           		</a>
@@ -32,9 +32,10 @@
     	</div>
 
         <div id="gal<?php echo $e; ?>_xs" class="content_servicio collapse">
+         <div id="gal<?php echo $e; ?>_xsancla" class="anclita_xs"></div>
         	<div class="container">
             	<h4 class="divider"><?php the_title(); ?></h4>
-                <div class="close_servicio"></div>
+                <div class="close_servicio" data-target="#gal<?php echo $e; ?>_xs"></div>
                 <div class="row">
                 	<div class="col-md-6">
                     	<div class="slider_entrentencion owl-carousel owl-theme">
@@ -46,7 +47,7 @@
 							<?php endforeach ?>
                         </div><!--  slider_entretenion -->
                     </div>
-                    <div class="col-md-6  ">
+                    <div class="col-md-6">
                     	<div class="desc_servicio desc_galeria">
                         	<h4><?php the_title(); ?></h4>
 							<?php the_content(); ?>

@@ -2,31 +2,31 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-6">
-        <div class="box_servicio">
-          <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#content_transfer_xs">
+        <div class="box_servicio" id="serv1xsbox">
+          <a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#serv1xs">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/transfer.svg"  class="center-block">
               <p>Transfer</p>
           </a>
         </div>
         <div class="box_more_info">
-          <a href="javascript:void(0);" data-toggle="collapse" data-target="#content_transfer_xs">más información</a>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#serv1xs">más información</a>
         </div>
     </div>
 
       <div class="col-xs-6">
-        <div class="box_servicio">
-          <a href="javascript:void(0);" class="borde_azul" data-toggle="collapse" data-target="#content_casas_cambio_xs">
+        <div class="box_servicio" id="serv2xsbox">
+          <a href="javascript:void(0);" class="borde_azul" data-toggle="collapse" data-target="#serv2xs">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/casa_cambio.svg"   class="center-block">
               <p>Casas de cambio</p>
           </a>
         </div>
          <div class="box_more_info">
-            <a href="javascript:void(0);" data-toggle="collapse" data-target="#content_casas_cambio_xs">más información</a>
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#serv2xs">más información</a>
           </div>
     </div>
             
-         <div id="content_transfer_xs" class="content_servicio collapse">
-          
+         <div id="serv1xs" class="content_servicio collapse">
+           <div id="serv1xsancla" class="anclita_xs4"></div>
              <div class="container">
              <h4 class="divider verde">Servicio de transfer</h4>
              <div class="close_servicio"> </div>
@@ -158,10 +158,10 @@
 
 
 
-             <div id="content_casas_cambio_xs" class="content_servicio collapse">
+             <div id="serv2xs" class="content_servicio collapse">
               <div class="container">
               <h4 class="divider azul">Casas de Cambio</h4>
-               <div class="close_servicio"> </div>
+               <div class="close_servicio" data-target="#serv2xs"> </div>
               <div class="row">
                   <div class="col-md-6 col-md-push-6">
                       <div class="img_servicio"  style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_serv_casas_cambio.jpg);"></div>
@@ -188,33 +188,34 @@
             </div><!-- casas de cambio -->
    
       <div class="col-xs-6">
-        <div class="box_servicio">
-          <a href="javascript:void(0);" class="borde_naranja" data-toggle="collapse" data-target="#content_agencia_xs">
+        <div class="box_servicio" id="serv3xsbox">
+          <a href="javascript:void(0);" class="borde_naranja" data-toggle="collapse" data-target="#serv3xs">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/agencia.svg"  class="center-block">
               <p>Agencias y turismo</p>
           </a>
         </div>
           <div class="box_more_info">
-            <a href="javascript:void(0);" data-toggle="collapse" data-target="#content_agencia_xs">más información</a>
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#serv3xs">más información</a>
           </div>
     </div>
       
       <div class="col-xs-6">
-        <div class="box_servicio">
-          <a href="javascript:void(0);" class="borde_amarillo" data-toggle="collapse" data-target="#content_taxis_xs">
+        <div class="box_servicio" id="serv4xsbox">
+          <a href="javascript:void(0);" class="borde_amarillo" data-toggle="collapse" data-target="#serv4xs">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/taxis.svg"  class="center-block">
               <p>Taxis privados</p>
           </a>
         </div>
         <div class="box_more_info">
-          <a href="javascript:void(0);" ata-toggle="collapse" data-target="#content_taxis_xs">más información</a>
+          <a href="javascript:void(0);" ata-toggle="collapse" data-target="#serv4xs">más información</a>
         </div>
     </div>
 
-           <div id="content_agencia_xs" class="content_servicio collapse">
+           <div id="serv3xs" class="content_servicio collapse">
+            <div id="serv3xsancla" class="anclita_xs4"></div>
               <div class="container">
                   <h4 class="divider naranja">Servicios y agencias turismo</h4>
-                 <div class="close_servicio"> </div>
+                 <div class="close_servicio" data-target="#serv3xs"> </div>
                 <div class="row">
                     <div class="col-md-4">
                           <div class="box_agencia">
@@ -264,10 +265,11 @@
                 </div>
             </div> <!-- content agencia -->
 
-                  <div id="content_taxis_xs" class="content_servicio collapse">
+                  <div id="serv4xs" class="content_servicio collapse">
+                  <div class="close_servicio" data-target="#serv4xs"> </div>
                   <div class="container">
                       <h4 class="divider amarillo">Taxis privados</h4>
-                     <div class="close_servicio"> </div>
+                     <div class="close_servicio" data-target="#serv4xs"> </div>
                     <div class="row">
                         <div class="col-md-6 col-md-push-6">
                             <div class="img_servicio"  style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_serv_taxis.jpg);"></div>
@@ -298,14 +300,14 @@
             </div> <!-- content taxis -->
      
       <div class="col-xs-6">
-        <div class="box_servicio">
-          <a href="javascript:void(0);" class="borde_rojo" data-toggle="collapse" data-target="#content_bancos_xs">
+         <div class="box_servicio" id="serv5xsbox">
+          <a href="javascript:void(0);" class="borde_rojo" data-toggle="collapse" data-target="#serv5xs">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/bancos.svg"   class="center-block">
               <p>Bancos</p>
           </a>
         </div>
          <div class="box_more_info">
-            <a href="javascript:void(0); data-toggle="collapse" data-target="#content_bancos_xs">más información</a>
+            <a href="javascript:void(0); data-toggle="collapse" data-target="#serv5xs">más información</a>
           </div>
       </div>
 
@@ -321,9 +323,8 @@
           </div>
       </div> -->
 
-
-    
-          <div id="content_bancos_xs" class="content_servicio collapse">
+          <div id="serv5xs" class="content_servicio collapse">
+           <div id="serv5xsancla" class="anclita_xs4"></div>
            <div class="container">
                <h4 class="divider rojo">Bancos</h4>
                   <div class="close_servicio"> </div>

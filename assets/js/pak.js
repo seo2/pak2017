@@ -590,6 +590,11 @@ $('.box_slider').owlCarousel({
                         
 
                 $('.box_more_info a').click(function() {
+                     elid = $(this).data('target');
+                       window.setTimeout(function() {
+                      $(window).scrollTo($(elid+"ancla"), 1500,'elasout');
+                    }, 500);
+                    
                     $('.box_servicio a.active').removeClass('active');
                     $(".content_servicio").collapse('hide');
                     $(".content_servicio").$(this).collapse('show');

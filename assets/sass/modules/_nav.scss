@@ -317,7 +317,7 @@ nav {
 
                     .box_input{
                       position: relative;
-                      input[type=text] {
+                      input[type=text],input[type=email] {
                       
                         @include bold(16px, white);
                        

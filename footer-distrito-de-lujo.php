@@ -15,10 +15,10 @@
                    </div>
                 <div class="box_caption">
                      <div class="caption_revista" >
-                        <h3 class="">otoño de lujo</h3>
-                        <p>Distrito de lujo se vistió de fiesta el pasado 27 de abril, presentando las nuevas colecciones
-                        para esta temporada AW17, junto a invitados como Carolina de Moras, Santiago Errázuriz,
-                        Antonia Bulnes entre otros. </p>
+                         <h3> otoño de lujo</h3>
+                        <p> Revive la experiencia de Otoño de Lujo que se vivió en Parque
+                            Arauco, de esta formas le dimos la mejor bienvenida a la temporada.
+                        </p>
                         <a href="<?php bloginfo('url'); ?>/distrito-de-lujo/galerias/#galerias" class="btn btn-default btn_revista hvr-float" role="button">ver más</a>
                   </div> 
                 </div>
