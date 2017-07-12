@@ -30,14 +30,11 @@
               <a href="javascript:void(0);"  data-toggle="collapse" data-target="#gal<?php echo $e; ?>"><?php the_title(); ?></a>
             </div>
         </div>
-
         <?    
                 endwhile; 
           } 
         ?>	
-
     <div class="clearfix"></div>
-    
 	  	<?
 			$args = array(
 				'post_type' 	=> 'galeria',
@@ -49,8 +46,6 @@
 				while ( $query->have_posts() ) : $query->the_post();							
 					$i++;
 		?>		 
-    
-    
         <div id="gal<?php echo $i; ?>" class="content_servicio collapse">     
         	<div id="gal<?php echo $i; ?>ancla" class="anclita"></div>
             <div class="container">

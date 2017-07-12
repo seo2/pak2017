@@ -19,8 +19,7 @@
 			if ( $query->have_posts() ) {
 				while ( $query->have_posts() ) : $query->the_post();							
 					$e++;	
-		?>	    	
-    	
+		?>
     	<div class="col-sm-6">
         	<div class="box_servicio">
 				<a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#gal<?php echo $e; ?>_xs">
@@ -57,12 +56,11 @@
                 </div>
             </div> <!-- container -->
         </div> <!-- content gal   -->
-
 <?    
         endwhile; 
   } 
 ?>	
-  </div> <!-- row -->
+	</div> <!-- row -->
 </div><!-- container -->
 <!--<div class="box_ver_mas_tiendas text-center">
    <a href="" class="btn btn-default btn_ver_mas hvr-float">

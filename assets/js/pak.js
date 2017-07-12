@@ -822,11 +822,6 @@ $('#form_neswsletter')
     });
 
 
-
-
-
-
-
 $(document).mouseup(function(e) 
 {
     var container = $(".menu_container");
