@@ -95,6 +95,18 @@ input[type="color"]:focus,
 .bottom {
   position: absolute; }
 
+.panel-group {
+  position: relative; }
+
+.ancla {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -185px; }
+  @media (max-width: 768px) {
+    .ancla {
+      top: -90px; } }
+
 .anclita_xs {
   position: absolute;
   top: -40px;

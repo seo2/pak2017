@@ -87,6 +87,7 @@ Template name: Arauco Tag FAQ
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                 <div id="faq" class="ancla"> </div>
                                   <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="">
                                         <div class="ribbon"></div>
