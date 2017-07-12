@@ -76,8 +76,6 @@ Template name: Horarios
                                                         </div>
                                                    </div>
                                                 <?php } ?>
-                                                   
-                                                   
                                                </div>
                                              </div>
                                            </div>
