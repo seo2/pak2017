@@ -75,7 +75,7 @@ Template name: Arauco Tag FAQ
                   <div class="col-sm-6">
                       <ul class="botonera_tag">
                         <li class="active">
-                          <a href="javascript:void(0);">PREGUNTAS FRECUENTES</a>
+                          <a href="#faq">PREGUNTAS FRECUENTES</a>
                         </li>
                         <li> <a href="http://www.parquearauco.cl/wp-content/uploads/2012/08/parquearauco-contrato.pdf">CONOCER FORMULARIO TIPO DE INSCRIPCIÓN</a></li>
                        <!--  <li> <a href="#">UBICACIÓN MÓDULOS DE INSCRIPCIÓN</a></li> -->
