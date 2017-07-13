@@ -62,7 +62,7 @@ Template name: Distrito de lujo Tiendas
             ?>
 			<div class="col-sm-6 col-md-3 caja_tienda">
                 <div class="box_tienda">
-                  <a class="hover" href="<?php bloginfo('url'); ?>/distrito-de-lujo-tienda?tiendaID=<?php echo $t['punto_interes']; ?>">
+                  <a class="hover" href="<?php bloginfo('url'); ?>/distrito-de-lujo/distrito-de-lujo-tienda?tiendaID=<?php echo $t['punto_interes']; ?>">
                       <img class="logo_tienda hover" src="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" style="filter: invert(100%);">
                       <img class="logo_tienda" src="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg">
                       

@@ -25,22 +25,22 @@ Template name: Distrito de lujo Galería
 
 
     <section class="main_content">
-      <div class="container">
-      
-      <div class="row">
-            <section class="entretencion clearfix">
-               <div id="galerias" class="anchor_seccion"></div>
-              <div class="grid_tiendas center-block">
-                <div class="hidden-xs">
-                  <?php include('include-distrito-galeria-desktop.php'); ?>
-                </div>
-
-                <div class="visible-xs">
-                  <?php include('include-distrito-galeria-mobile.php'); ?>
-                </div>
-              </div>
-
-            </section> <!-- entretencion -->
-      </div><!-- row -->
+		<div class="container">
+			<div class="row">
+            	<section class="entretencion clearfix">
+					<div id="galerias" class="anchor_seccion"></div>
+					<div class="grid_tiendas center-block">
+						<? 
+						    $detect = new Mobile_Detect();
+						    	 
+							if ($detect->isMobile()) { 
+							   include('include-distrito-galeria-mobile.php'); 
+							}else{ 	 
+							  	include('include-distrito-galeria-desktop.php');
+							}
+						?>
+        			</div>
+				</section> <!-- entretencion -->
+			</div><!-- row -->
+			
 <?php include('footer.php') ?>
-

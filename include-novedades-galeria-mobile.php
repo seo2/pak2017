@@ -13,6 +13,7 @@
 			$args = array(
 				'post_type' 	=> 'galeria',
 				'posts_per_page'=> 4,
+				'category_name'		=> 'novedades',
 				'offset' 		=> $offset1
 			);
             $query = new WP_Query( $args ); 
@@ -63,12 +64,12 @@
 ?>	
 	</div> <!-- row -->
 </div><!-- container -->
-<!--<div class="box_ver_mas_tiendas text-center">
+<div class="box_ver_mas_tiendas text-center">
    <a href="" class="btn btn-default btn_ver_mas hvr-float">
       <h3 class="ver_mas">ver más galerías</h3>
       <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
   </a>
-</div>-->
+</div>
 
     
 

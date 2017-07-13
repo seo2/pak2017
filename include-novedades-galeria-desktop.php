@@ -12,6 +12,7 @@
 			$args = array(
 				'post_type' 	=> 'galeria',
 				'posts_per_page'=> 4,
+				'category_name'	=> 'novedades',
 				'offset' 		=> $offset1
 			);
             $query = new WP_Query( $args ); 
@@ -39,6 +40,7 @@
 			$args = array(
 				'post_type' 	=> 'galeria',
 				'posts_per_page'=> 4,
+				'category_name'	=> 'novedades',
 				'offset' 		=> $offset1
 			);
             $query = new WP_Query( $args ); 
@@ -82,6 +84,7 @@
 			$args = array(
 				'post_type' 	=> 'galeria',
 				'posts_per_page'=> 4,
+				'category_name'	=> 'novedades',
 				'offset' 		=> $offset2
 			);
             $query = new WP_Query( $args ); 
@@ -109,6 +112,7 @@
 			$args = array(
 				'post_type' 	=> 'galeria',
 				'posts_per_page'=> 4,
+				'category_name'	=> 'novedades',
 				'offset' 		=> $offset2
 			);
             $query = new WP_Query( $args ); 
