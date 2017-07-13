@@ -18,7 +18,7 @@ Template name: Distrito de lujo Servicios
              <h4 class="divider">servicios de lujo</h4>  
             </div>
             <div class="col-sm-12 col-md-2">
-             <a href="javascript:window.history.back(); class="back">&lt; volver</a>
+             <a href="javascript:window.history.back();" class="back">&lt; volver</a>
             </div>
           </div>
         </div>
