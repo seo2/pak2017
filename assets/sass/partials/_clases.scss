@@ -17,7 +17,19 @@
   position: absolute;
   
 }
-
+.panel-group{
+  position: relative;
+}
+.ancla{
+  position: absolute;
+  width: 10px; 
+  height: 10px;
+  //background-color: tomato;
+  top: -185px;
+  @media(max-width: 768px){
+      top: -90px;
+  }
+}
 .anclita_xs {
     position: absolute;
     top: -40px;

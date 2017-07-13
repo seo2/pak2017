@@ -76,7 +76,7 @@ Template name: Arauco Tag
                             </div><!-- box beneficios -->
                         
                           <ul class="botonera_tag">
-                            <li> <a href="<?php bloginfo('url'); ?>/arauco-tag/faq#accordion">PREGUNTAS FRECUENTES</a></li>
+                            <li> <a href="<?php bloginfo('url'); ?>/arauco-tag/faq#faq">PREGUNTAS FRECUENTES</a></li>
                             <li> <a href="http://www.parquearauco.cl/wp-content/uploads/2012/08/parquearauco-contrato.pdf">CONOCER FORMULARIO TIPO DE INSCRIPCIÓN</a></li>
                            <!--  <li> <a href="#">UBICACIÓN MÓDULOS DE INSCRIPCIÓN</a></li> -->
                             <li> <a href="https://www.costaneranorte.cl/sucursal_virtual/login.html" target="_blank">INSCRIBIRSE EN LÍNEA</a></li>
