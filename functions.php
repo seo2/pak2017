@@ -259,6 +259,10 @@ function muestra_galeria($post_id = false, $exclude = true, $cantidad = -1) {
 		$attachments = get_posts($args);
 		return $attachments;
 	}
-
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
 
 ?>

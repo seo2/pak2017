@@ -30,51 +30,54 @@ Template name: Novedades
               <div id="novedades" class="anchor_seccion"></div>
                       <div class="grid_tiendas center-block">
                           <div class="container">
-                          <div class="row">
-                              <div class="col-sm-4 col-md-3"> 
-                                    <div class="item_tienda">
-                                            <div class="tienda">
-                                              <a class="" href="novedades-cartelera-boulevard.php#cartelera">
-                                                 
-                                                  <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/cinegif.gif">
-                                                </a>
-                                                    <div class="box_logo_destacado">
-                                                      <div class="logo_destacado center-block">
-                                                          <img src="<?php bloginfo('template_url'); ?>/assets/img/demo_logo_cine.png" alt="" class="img-responsive">
-                                                      </div> <!-- logo_tienda -->
-
-                                                              <div class="desc_destacado visible-xs">
-                                                            <h3>¡Descubre los mejores estrenos!</h3>
-                                                            <p>Si eres amante del cine, entra aquí y conoce las últimas novedades en la cartelera de Hoyts Parque Arauco.</p>
-                                                            <a href="http://www.cinehoyts.cl/cartelera/santiago-oriente/parque-arauco" target="_blank">www.cinehoyts.cl</a>
-                                                        </div>
-                                                    </div> <!-- box logo tienda -->
-                                          </div> <!--  tienda -->
-                                  </div> <!-- item tienda -->
-
-                            </div> <!-- col sm 4 -->
-                            <div class=" col-sm-8 col-md-9"> 
-                                <div class="box_horizontal">
-                                 <div class="box_slider">
-                                   <div class="item disable-owl-swipe">
-                                      <div class="image_dynamic">
-                                           <div class="img_lg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_demo_bocas.jpg);"> </div>
-                                          <div class="caption texto_blanco2">
-                                                     <!--<h3>Viajeros del Espacio</h3>
-                                                     <h4 class="divider">bocas moradas</h4>
-                                                     <p>10 al 23 de julio - 1er NIvel</p>-->
-                                                     <div class="">
-                                                         <a class="btn btn-default btn_blanco" href="novedades-cartelera-general.php" role="button">más información</a>
-                                                     </div>
-                                              </div> <!--caption -->
-                                     </div><!-- image dynamic -->
-                                   </div><!-- item -->
-                                   
-                                </div> <!-- box slider -->
-                              </div> <!-- box horizontal -->
-                                
-                            </div> <!-- col sm 12 -->
-                          </div>
+<?php	                                         
+    $args = array(
+		'post_type' => array('novedades_top')
+    );
+	$the_query = new WP_Query ($args);
+	
+    if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
+?> 
+                        	<div class="row">
+                            	<div class="col-sm-4 col-md-3"> 
+                                	<div class="item_tienda">
+                                        <div class="tienda">
+                                        	<a class="" href="<?php echo get('caluga_cine_link'); ?>" target="_blank">
+                                            	<img class="img-responsive" src="<?php echo get('caluga_cine_imagen'); ?>">
+                                            </a>
+                                            <div class="box_logo_destacado">
+                                            	<div class="logo_destacado center-block">
+                                                	<img src="<?php bloginfo('template_url'); ?>/assets/img/demo_logo_cine.png" alt="" class="img-responsive">
+                                              	</div> <!-- logo_tienda -->
+                                                <div class="desc_destacado visible-xs">
+                                                    <h3>¡Descubre los mejores estrenos!</h3>
+                                                    <p>Si eres amante del cine, entra aquí y conoce las últimas novedades en la cartelera de Hoyts Parque Arauco.</p>
+                                                    <a href="http://www.cinehoyts.cl/cartelera/santiago-oriente/parque-arauco" target="_blank">www.cinehoyts.cl</a>
+                                                </div>
+                                            </div> <!-- box logo tienda -->
+                                        </div> <!--  tienda -->
+                                  	</div> <!-- item tienda -->
+								</div> <!-- col sm 4 -->
+								
+								<div class=" col-sm-8 col-md-9"> 
+                                	<div class="box_horizontal">
+										<div class="box_slider">
+											<div class="item disable-owl-swipe">
+												<div class="image_dynamic">
+													<div class="img_lg" style="background: url(<?php echo get('banner_grande_imagen'); ?>);"> </div>
+													<div class="caption texto_blanco2">
+														<div class="">
+															<a class="btn btn-default btn_blanco" href="<?php echo get('banner_grande_link'); ?>" role="button">más información</a>
+														</div>
+													</div> 
+                                				</div><!-- image dynamic -->
+											</div><!-- item -->
+										</div> <!-- box slider -->
+									</div> <!-- box horizontal -->
+								</div> <!-- col sm 12 -->
+							</div><!-- fin row -->
+<?php endwhile; else: ?>
+<?php endif; ?>             
                               <div class="row" id="caja_tienda">
 	                            <?php
 								if($_GET['buscar']){

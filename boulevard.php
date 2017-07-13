@@ -26,55 +26,64 @@ Template name: Boulevard
     </div> <!-- titulo seccion -->
 
 
-      <div class="container">
-          <div class="row">
-              <section class="novedades">
-                    <div id="boulevard" class="anchor_seccion"></div>
-                      <div class="grid_tiendas center-block">
-                          <div class="container">
-                          <div class="row">
-                              <div class="col-sm-4 col-md-3"> 
-                                    <div class="item_tienda">
-                                            <div class="tienda">
-                                                <a class="" href="http://www.cinehoyts.cl/cartelera/santiago-oriente/parque-arauco" target="_blank">
-                                                  <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/cinegif.gif">
-                                                </a>
-                                                    <div class="box_logo_destacado">
-                                                      <div class="logo_destacado center-block">
-                                                          <img src="<?php bloginfo('template_url'); ?>/assets/img/demo_logo_cine.png" alt="" class="img-responsive">
-                                                      </div> <!-- logo_tienda -->
-
-                                                        <div class="desc_destacado visible-xs">
-                                                            <h3>¡Descubre los mejores estrenos!</h3>
-                                                            <p>Si eres amante del cine, entra aquí y conoce las últimas novedades en la cartelera de Hoyts Parque Arauco.</p>
-                                                            <a href="http://www.cinehoyts.cl/cartelera/santiago-oriente/parque-arauco" target="_blank">www.cinehoyts.cl</a>
-                                                        </div>
-                                                    </div> <!-- box logo tienda -->
-                                          </div> <!--  tienda -->
-                                  </div> <!-- item tienda -->
-
-                            </div> <!-- col sm 4 -->
-                            <div class=" col-sm-8 col-md-9"> 
-                                <div class="box_horizontal">
-                                 <div class="box_slider">
-                                   <div class="item disable-owl-swipe">
-                                      <div class="image_dynamic">
-                                           <div class="img_lg" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/header_boulevard.png);"> </div>
-                                           <div class="caption texto_blanco">
-                                               <h3>cartelera</h3>
-                                                     <h4 class="divider">boulevard</h4>
-                                                     <p>20 - 25 Junio 2017</p> 
-                                                     <div class="">
-                                                         <a class="btn btn-default btn_blanco" href="novedades-cartelera-boulevard-3.php#cartelera" role="button">más información</a>
-                                                     </div>
-                                           </div> 
-                                     </div><!-- image dynamic -->
-                                   </div><!-- item -->
-                                </div> <!-- box slider -->
-                              </div> <!-- box horizontal -->
-                            </div> <!-- col sm 12 -->
-                          </div>
-                              <div class="row" id="caja_tienda">
+    <div class="container">
+    	<div class="row">
+        	<section class="novedades">
+            	<div id="boulevard" class="anchor_seccion"></div>
+                	<div class="grid_tiendas center-block">
+                    	<div class="container">
+<?php	                                         
+    $args = array(
+		'post_type' => array('boulevard')
+    );
+	$the_query = new WP_Query ($args);
+	
+    if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
+?> 
+                        	<div class="row">
+                            	<div class="col-sm-4 col-md-3"> 
+                                	<div class="item_tienda">
+                                        <div class="tienda">
+                                        	<a class="" href="<?php echo get('caluga_cine_link'); ?>" target="_blank">
+                                            	<img class="img-responsive" src="<?php echo get('caluga_cine_imagen'); ?>">
+                                            </a>
+                                            <div class="box_logo_destacado">
+                                            	<div class="logo_destacado center-block">
+                                                	<img src="<?php bloginfo('template_url'); ?>/assets/img/demo_logo_cine.png" alt="" class="img-responsive">
+                                              	</div> <!-- logo_tienda -->
+                                                <div class="desc_destacado visible-xs">
+                                                    <h3>¡Descubre los mejores estrenos!</h3>
+                                                    <p>Si eres amante del cine, entra aquí y conoce las últimas novedades en la cartelera de Hoyts Parque Arauco.</p>
+                                                    <a href="http://www.cinehoyts.cl/cartelera/santiago-oriente/parque-arauco" target="_blank">www.cinehoyts.cl</a>
+                                                </div>
+                                            </div> <!-- box logo tienda -->
+                                        </div> <!--  tienda -->
+                                  	</div> <!-- item tienda -->
+								</div> <!-- col sm 4 -->
+								
+								<div class=" col-sm-8 col-md-9"> 
+                                	<div class="box_horizontal">
+										<div class="box_slider">
+											<div class="item disable-owl-swipe">
+												<div class="image_dynamic">
+													<div class="img_lg" style="background: url(<?php echo get('caluga_cartelera_imagen'); ?>);"> </div>
+													<div class="caption <?php if(get('caluga_cartelera_texto_blanco')){ ?>texto_blanco<?php } ?>">
+														<h3>cartelera</h3>
+														<h4 class="divider">boulevard</h4>
+														<p><?php echo get('caluga_cartelera_fecha'); ?></p> 
+														<div class="">
+															<a class="btn btn-default btn_blanco" href="<?php bloginfo('url'); ?>?p=<?php echo get('caluga_cartelera_enlace'); ?>#cartelera" role="button">más información</a>
+														</div>
+													</div> 
+                                				</div><!-- image dynamic -->
+											</div><!-- item -->
+										</div> <!-- box slider -->
+									</div> <!-- box horizontal -->
+								</div> <!-- col sm 12 -->
+							</div><!-- fin row -->
+<?php endwhile; else: ?>
+<?php endif; ?>                                                         
+                            <div class="row" id="caja_tienda">
 	                            <?php
 								if($_GET['buscar']){
 									$buscar = filter_var($_GET["buscar"], FILTER_SANITIZE_STRING);
