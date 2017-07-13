@@ -144,7 +144,7 @@
 						<div class="clearfix"></div>
 						<!-- mobile menu -->
 						<section class="search_home_xs visible-xs visible-sm">
-						<?php include('include-search-home-mobile.php'); ?>
+						  <?php include('include-search-home-mobile.php'); ?>
 						</section>
 						</div>
                       </div><!-- col -->
