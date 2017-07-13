@@ -1,20 +1,30 @@
 <?php include('header.php') ?>
 <?php include('include-top.php') ?>
 <?php include('include-slider-home.php') ?>
-<?php include('include-search-home.php') ?>
-
-    <section class="main_content">
-      <div class="container">
-          <div class="row">
+<?php include('include-search-home.php') ?>  
+	<section class="main_content">
+    	<div class="container">
+<?php	                                         
+    $args = array(
+		'post_type' => array('home')
+    );
+	$the_query = new WP_Query ($args);
+    $i = 0;
+    if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
+    	$i++;
+?>	
+        	<div class="row">
               <div class="col-sm-6 col-md-6">
                   <div class="box">
                         <div class="box_slider owl-carousel owl-theme ">
+	                        
                           <div class="item">
                               <a href="<?php bloginfo('url'); ?>/distrito-de-lujo">
                                 <div class="logo_seccion logo_distrito" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_distrito.svg);"> </div>
                                 <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_distrito.png);"> </div>
                               </a>
                           </div>
+                          
                       </div><!-- box slider  -->
                   </div> <!-- slider distrito -->
               </div> 
@@ -139,5 +149,7 @@
                  </div>
               </div> <!-- revista detalle -->
       </div> <!-- row -->
+<?php endwhile; else: ?>
+<?php endif; ?>
 <?php include('footer.php') ?>
 
