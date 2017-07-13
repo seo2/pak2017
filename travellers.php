@@ -10,7 +10,9 @@ Template name: Travellers
 <?php include('include-slider-travellers.php') ?>
 <?php include('include-search-home.php') ?>
 
-    <div class="titulo_seccion">
+
+    <section class="main_content">
+        <div class="titulo_seccion">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-10">
@@ -22,7 +24,7 @@ Template name: Travellers
           </div>
         </div>
     </div> <!-- titulo seccion -->
-    <section class="main_content">
+    
       <div class="container">
     
           <div class="row">

@@ -8,7 +8,11 @@ section.search_home_xs{
     &.clicked {
       background-color: #bcbcbc;
     }
+    
+      
+
     .box_search_home {
+
       min-height: 90px;
 
       background-color: $gris_claro;
@@ -38,7 +42,7 @@ section.search_home_xs{
                text-align: center;
           }
           @media (max-width: 600px){
-               font-size: 14px;
+               font-size: 12px;
                text-align: left;
           }
           appearance: none;

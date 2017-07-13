@@ -6,6 +6,15 @@ var urlpak  = document.location.origin+dir;
 
 $(document).ready(function() {
 
+
+/*animacion cerrar mobile*/
+   $('#nav_mobile button.navbar-toggle').click(function() {
+        $('button.navbar-toggle').toggleClass('collapsed');
+    });
+/*animacion cerrar mobile*/
+
+
+                  
             $(window).scroll(function() {
                      if ($(this).scrollTop() < 480) {
                         $(".search_home").addClass("fixed");
@@ -19,9 +28,9 @@ $(document).ready(function() {
             $(window).scroll(function() {
                      if ($(this).scrollTop() > 480) {
                         $(".search_home").addClass("fixed");
-                        $(".main_content").css("margin-top", "70px");
+                         $(".main_content").css("margin-top", "70px");
                       } else {
-                        $(".search_home").removeClass("fixed");
+                         $(".search_home").removeClass("fixed");
                          $(".main_content").css("margin-top", "0px");
                       }
               });
