@@ -37,7 +37,7 @@
 }
 .anclita_xs {
     position: absolute;
-    top: -40px;
+    top: -140px;
     height: 10px;
     width: 10px;
    // background-color: tomato;
@@ -46,7 +46,7 @@
 //ancla servicio al cliente mobile y como llegar mobile
 .anclita_xs3 {
     position: absolute;
-    top: 80px;
+    top: -150px;
     height: 10px;
     width: 10px;
    // background-color: tomato;
@@ -55,10 +55,11 @@
 // ancla servicios adicionales
 .anclita_xs4 {
     position: absolute;
-    top: -30px;
+    top: -150px;
     height: 10px;
     width: 10px;
    // background-color: tomato;
+   // z-index: 10000000;
 }
 
 // ancla galerias vida en distrito
