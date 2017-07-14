@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 
 Template name: Servicio al Cliente Servicios
@@ -33,7 +33,7 @@ Template name: Servicio al Cliente Servicios
           </div>
           </section><!-- travellers servicios generales -->
           <section class="travellers_servicios_adicionales clearfix">
-		<? 
+		<?php 
 			    $detect = new Mobile_Detect();
 			    	 
 				if ($detect->isMobile()) { 

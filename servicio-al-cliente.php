@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 
 Template name: Servicios al cliente
@@ -27,7 +27,7 @@ Template name: Servicios al cliente
       <div class="container">
           <div class="row">
           	<section class="servicios_cliente clearfix">
- 		<? 
+ 		<?php 
 		    $detect = new Mobile_Detect();
 		    	 
 			if ($detect->isMobile()) { 

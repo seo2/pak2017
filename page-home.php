@@ -11,7 +11,28 @@ Template name: Home
 <?php include('include-search-home.php') ?>  
 	<section class="main_content">
     	<div class="container">
-<?php wp_reset_query(); ?>	    	
+<?php wp_reset_query(); ?>	
+<?php 
+// TRADUCCIONES
+if(ICL_LANGUAGE_CODE=='en'){
+	$tit1 = "Subscribe here";
+	$tit2 = "Photo Gallery";
+	$tit3 = "HIGHLIGHTS";
+	$btn1 = "View all our stores";
+	$btn2 = "View more";
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+	$tit1 = "Inscreva-se";
+	$tit2 = "Galeria";
+	$tit3 = "DESTACADOS";
+	$btn1 = "Veja todas as nossas lojas";
+	$btn2 = "Veja mais";
+}else{ 
+	$tit1 = "Inscríbete";
+	$tit2 = "Galería";
+	$tit3 = "destacados";
+	$btn1 = "ver todas las tiendas";
+	$btn2 = "ver más";
+} ?>      	
 <?php	                                         
     $args = array(
 		'post_type' => array('home')
@@ -141,7 +162,7 @@ Template name: Home
                                	<?php } ?>
 					  			<?php if(get('slider_medio_link',$slider)){ ?>
 							   	<div class="text-center">
-                               		<a href="<?php echo get('slider_medio_link',$slider); ?>" class="btn btn-default btn_blanco"  role="button">ver más</a>
+                               		<a href="<?php echo get('slider_medio_link',$slider); ?>" class="btn btn-default btn_blanco"  role="button"><?php echo $btn2; ?></a>
                                	</div>
                                	<?php } ?>
                             </div>
@@ -159,7 +180,7 @@ Template name: Home
                         <a href="<?php bloginfo('url'); ?>/arauco-tag" class="box_enlace">
                           <div class="box_img" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_arauco_tag.png);"> </div>
                           <div class="caption">
-                              <h3>Inscríbete</h3>
+                              <h3><?php echo $tit1; ?></h3>
                               <div class="divider"> &nbsp </div>
                           </div>
                         </a>
@@ -177,7 +198,7 @@ Template name: Home
                              <a href="<?php bloginfo('url'); ?>/novedades-galeria#galerias">
 	                            <?php if($e==1){ ?>
                                 <div class="caption">
-                                    <h3>Galería</h3>
+                                    <h3><?php echo $tit2; ?></h3>
                                     <div class="divider"> &nbsp </div>
                                 </div>
                                 <?php } ?>

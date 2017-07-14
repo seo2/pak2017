@@ -1,4 +1,4 @@
-<? include('Mobile_Detect.php'); ?>
+<?php include('Mobile_Detect.php'); ?>
 <?php
 	require_once("ws/_lib/config.php");
 	require_once("ws/_lib/MysqliDb.php");

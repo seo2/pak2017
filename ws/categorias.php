@@ -66,7 +66,7 @@
 					<div class="panel-body" style="word-wrap: break-word;">
 						<div class="row">
 							<div class="col-sm-4">
-								<? echo '<p><img src="'.$value['imagen_categoria'] .'" class="img-responsive"></p>'; ?>
+								<?php echo '<p><img src="'.$value['imagen_categoria'] .'" class="img-responsive"></p>'; ?>
 							</div>
 						</div>
 				<?

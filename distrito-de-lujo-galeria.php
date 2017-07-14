@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 
 Template name: Distrito de lujo Galería
@@ -30,7 +30,7 @@ Template name: Distrito de lujo Galería
             	<section class="entretencion clearfix">
 					<div id="galerias" class="anchor_seccion"></div>
 					<div class="grid_tiendas center-block">
-						<? 
+						<?php 
 						    $detect = new Mobile_Detect();
 						    	 
 							if ($detect->isMobile()) { 

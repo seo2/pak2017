@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 
 Template name: Novedades
@@ -149,7 +149,7 @@ Template name: Novedades
         <section class="entretencion clearfix">
         	<div id="entretencion" class="anchor_entretencion"></div>
 			<h4 class="divider">entretención</h4>    
-<? 
+<?php 
     $detect = new Mobile_Detect();
     	 
 	if ($detect->isMobile()) { 

@@ -61,13 +61,13 @@
 					<div class="panel-body" style="word-wrap: break-word;">
 						<div class="row">
 							<div class="col-sm-4">
-								<? echo '<p><img src="'.$value['logo'] .'" class="img-responsive"></p>'; ?>
+								<?php echo '<p><img src="'.$value['logo'] .'" class="img-responsive"></p>'; ?>
 							</div>
 							<div class="col-sm-4">
-								<? echo '<p>'.strip_tags($value['descripcion']) .'</p>'; ?>
+								<?php echo '<p>'.strip_tags($value['descripcion']) .'</p>'; ?>
 							</div>
 							<div class="col-sm-4">
-								<?  echo '<p><img src="'.$value['imagen_plano_punto_interes'] .'"></p>'; ?>
+								<?php  echo '<p><img src="'.$value['imagen_plano_punto_interes'] .'"></p>'; ?>
 							</div>
 						</div>
 				<?			$e++;

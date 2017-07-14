@@ -21,7 +21,7 @@
     <div class="col-xs-6 col-sm-3 col-md-3">
         <div class="box_servicio" id="<?php echo $post_slug; ?>box">
 	        <a href="<?php echo $url; ?>" class="" <?php if(get('adicionales_enlace_externo')){ ?> target="_blank" <?php } if(!get('adicionales_enlace')){ ?>data-toggle="collapse" data-target="#<?php echo $post_slug; ?>"<?php } ?>>
-	              <? the_post_thumbnail('preview_galerias', array( 'class' => 'center-block img-responsive' ) ); ?>
+	              <?php the_post_thumbnail('preview_galerias', array( 'class' => 'center-block img-responsive' ) ); ?>
 	        </a>
         </div>
         <div class="box_more_info">

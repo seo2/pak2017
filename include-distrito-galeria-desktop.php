@@ -24,14 +24,14 @@
             <div class="box_servicio" id="gal<?php echo $e; ?>box">
 
               <a href="javascript:void(0);" data-toggle="collapse" data-target="#gal<?php echo $e; ?>">
-                  <? the_post_thumbnail('preview_galerias', array( 'class' => 'center-block img-responsive' ) ); ?>
+                  <?php the_post_thumbnail('preview_galerias', array( 'class' => 'center-block img-responsive' ) ); ?>
               </a>
             </div>
             <div class="box_more_info">
               <a href="javascript:void(0);"  data-toggle="collapse" data-target="#gal<?php echo $e; ?>"><?php the_title(); ?></a>
             </div>
         </div>
-        <?    
+        <?php    
                 endwhile; 
           } 
         ?>	
@@ -76,7 +76,7 @@
                 </div>
             </div><!-- container -->
         </div> 
-        <?    
+        <?php    
                 endwhile; 
           } 
         ?>	
@@ -96,14 +96,14 @@
             <div class="box_servicio" id="gal<?php echo $e; ?>box">
 
               <a href="javascript:void(0);" data-toggle="collapse" data-target="#gal<?php echo $e; ?>">
-                  <? the_post_thumbnail('preview_galerias', array( 'class' => 'center-block img-responsive' ) ); ?>
+                  <?php the_post_thumbnail('preview_galerias', array( 'class' => 'center-block img-responsive' ) ); ?>
               </a>
             </div>
             <div class="box_more_info">
               <a href="javascript:void(0);" data-toggle="collapse" data-target="#gal<?php echo $e; ?>"><?php the_title(); ?></a>
             </div>
         </div>
-        <?    
+        <?php    
                 endwhile; 
           } 
         ?>	
@@ -148,7 +148,7 @@
                 </div>
             </div><!-- container -->
         </div> 
-        <?    
+        <?php    
                 endwhile; 
           } 
         ?>	

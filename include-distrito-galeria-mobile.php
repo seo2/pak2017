@@ -1,4 +1,3 @@
-
 <div class="container">
 	<div class="row">
 	  	<?
@@ -24,7 +23,7 @@
     	<div class="col-sm-6">
         	<div class="box_servicio" id="gal<?php echo $e; ?>_xsbox">
 				<a href="javascript:void(0);" class="borde_verde"  data-toggle="collapse" data-target="#gal<?php echo $e; ?>_xs">
-					<? the_post_thumbnail('preview_galerias', array( 'class' => 'center-block img-responsive' ) ); ?>
+					<?php the_post_thumbnail('preview_galerias', array( 'class' => 'center-block img-responsive' ) ); ?>
           		</a>
         	</div>
 			<div class="box_more_info">
@@ -58,7 +57,7 @@
                 </div>
             </div> <!-- container -->
         </div> <!-- content gal   -->
-<?    
+<?php    
         endwhile; 
   } 
 ?>	
