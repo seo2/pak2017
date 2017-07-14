@@ -3312,7 +3312,7 @@ section.main_content, section.main_content section.travellers_actividades {
         font-family: 'euphemia_ucasregular', Helvetica, Arial, sans-serif;
         font-size: 14px;
         color: #e40421;
-        margin-left: 20px; }
+        margin: auto; }
         section.main_content section.entretencion .content_servicio .desc_servicio.desc_galeria a.url_agencia {
           font-family: 'euphemia_ucasbold', Helvetica, Arial, sans-serif;
           font-size: 14px;
@@ -5299,7 +5299,7 @@ section.main_content, section.main_content section.travellers_actividades {
         font-family: 'euphemia_ucasregular', Helvetica, Arial, sans-serif;
         font-size: 14px;
         color: #e40421;
-        margin-left: 20px; }
+        margin: auto; }
         section.main_content section.entretencion .content_servicio .desc_servicio.desc_galeria a.url_agencia {
           font-family: 'euphemia_ucasbold', Helvetica, Arial, sans-serif;
           font-size: 14px;
@@ -7744,7 +7744,7 @@ section.main_content section.entretencion .content_servicio .btn-mas {
   transition: all 0.2s ease-in-out;
   letter-spacing: 3px;
   width: 40%;
-  margin: 0px 0px !important; }
+  margin: 20px 0 0 0 !important; }
 
 section.main_content section.entretencion .content_servicio .btn-mas:hover {
   border: 1px solid transparent;

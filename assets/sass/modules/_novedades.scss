@@ -453,7 +453,7 @@ section.entretencion {
                         }
                         a{
                               @include clarendon(14px, $rojo);
-                              margin-left: 20px;
+                             margin-left: 20px;
                               &.url_agencia {
                                  @include bold(14px, black);
                                  text-transform: uppercase;
@@ -513,7 +513,7 @@ section.entretencion {
                           }
                           a{
                                 @include regular(14px, $rojo);
-                                margin-left: 20px;
+                                margin: auto;
                                 &.url_agencia {
                                    @include bold(14px, black);
                                    text-transform: uppercase;
