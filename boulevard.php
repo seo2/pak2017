@@ -157,7 +157,7 @@ Template name: Boulevard
             <h4 class="divider">distrito de lujo</h4>
             <div class="grid_tiendas">
             <?php
-				$tiendas = $db->rawQuery("select * from pak_tiendas where tipo = 119 order by rand() limit 4");
+				$tiendas = $db->rawQuery("select * from pak_tiendas where punto_interes IN(454,631,543) order by rand() limit 4");
 				if($tiendas){
 				foreach ($tiendas as $t) {   
                 	$imagen = get_img_tienda($t['punto_interes']);
