@@ -193,7 +193,7 @@ Template name: Boulevard
         </section> <!-- end otras tiendas -->    
     </div>
       
-<div id="pages" style="display:none;" data-pagina="<?php bloginfo('url'); ?>/boulevard"></div>
+<div id="pages" style="display:none;" data-pagina="boulevard"></div>
 
 <?php include('footer.php') ?>
 

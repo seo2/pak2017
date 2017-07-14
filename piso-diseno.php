@@ -17,7 +17,7 @@ Template name: Piso de Diseño
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-10">
-                   <h4 class="divider">piso diseño</h4>
+                <h4 class="divider">piso diseño</h4>
             </div>
             <div class="col-sm-12 col-md-2">
                <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
@@ -97,7 +97,7 @@ Template name: Piso de Diseño
               
               </section> <!-- end tiendas -->
       </div>
-		  <div id="pages" style="display:none;" data-pagina="<?php bloginfo('url'); ?>/piso-diseno">
+		  <div id="pages" style="display:none;" data-pagina="piso-diseno">
 <?php 
 	$postperpage = 12;
 	$db->where('tipo', Array(131), 'IN');

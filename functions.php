@@ -267,4 +267,15 @@ function cc_mime_types($mimes) {
 }
 add_filter('upload_mimes', 'cc_mime_types');
 
+function icl_post_languages(){
+  $languages = icl_get_languages('skip_missing=1');
+    
+  if(1 < count($languages)){
+    foreach($languages as $l){
+      if(!$l['active']) $langs[] = '<li><a href="'.$l['url'].'" class="hvr-float"><img src="'.get_template_directory_uri().'/assets/img/'.$l['language_code'].'.png" style="width: 30px;"></a></li>';
+    }
+    echo join('', $langs);
+    }
+}
+
 ?>

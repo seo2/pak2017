@@ -35,16 +35,16 @@ Template name: Distrito de lujo Tiendas
             <?php
 			if($_GET['busqueda']){
 				$buscar = filter_var($_GET["busqueda"], FILTER_SANITIZE_STRING);
-				if($_GET['page']){
-					$desde = 12 * ($_GET['page'] - 1);
+				if($_GET['pagina']){
+					$desde = 12 * ($_GET['pagina'] - 1);
 					$tiendas = $db->rawQuery("select * from pak_tiendas where descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit $desde, 12");
 				}else{
 					//echo "select * from pak_tiendas where descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit 12";
 					$tiendas = $db->rawQuery("select * from pak_tiendas where descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit 12");
 				}
 			}else{
-				if($_GET['page']){
-					$desde 	 = 12 * ($_GET['page'] - 1);
+				if($_GET['pagina']){
+					$desde 	 = 12 * ($_GET['pagina'] - 1);
 					$tiendas = $db->rawQuery("select * from pak_tiendas where tipo = 119 order by nombre limit $desde, 8");
 				}else{
 					$tiendas = $db->rawQuery("select * from pak_tiendas where tipo = 119 order by nombre limit 8");
@@ -108,7 +108,7 @@ Template name: Distrito de lujo Tiendas
 	$x = 1;
 	while($x <= $paginas) {
 	?>
-		<a href="<?php bloginfo('url'); ?>/distrito-de-lujo-tiendas?page=<?php echo  $x; ?>"></a>
+		<a href="<?php bloginfo('url'); ?>/distrito-de-lujo/distrito-de-lujo-tiendas/?pagina=<?php echo  $x; ?>"></a>
 	<?php 
 		$x++; 
 	}

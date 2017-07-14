@@ -91,7 +91,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-url="<?php bloginfo('url'); ?>">
     <a href="javascript:void(0);" id="return-to-top">
       <i class="fa fa-chevron-up" aria-hidden="true"></i>
     </a>

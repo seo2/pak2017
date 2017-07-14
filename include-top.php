@@ -13,22 +13,20 @@
                     <a href="<?php bloginfo('url'); ?>"> parque arauco</a>
                   </div> <!-- brand -->
 
-                 <!--    <div id="lang_switcher" class="visible-xs visible-sm">
+                    <div id="lang_switcher" class="visible-xs visible-sm">
                        <select name="language" class="selectpicker show-menu-arrow"> 
                             <option selected="" value="/esp/">ESP</option>
                             <option value="/eng/">ENG</option>
                              <option value="/por/">POR</option>
                       </select>
                          
-                      </div> -->
+                      </div>
               
-                 <!--  <div class="lang ">
+                  <div class="lang ">
                     <ul class="hidden-xs hidden-sm">
-                       <li><a href="" class="hvr-float"><img src="<?php bloginfo('template_url'); ?>/assets/img/esp.png"></a></li>
-                       <li><a href="" class="hvr-float"><img src="<?php bloginfo('template_url'); ?>/assets/img/eng.png"></a></li>
-                       <li><a href="" class="hvr-float"><img src="<?php bloginfo('template_url'); ?>/assets/img/por.png"></a></li>
+						<?php icl_post_languages(); ?>
                     </ul>
-                   </div>  lang -->
+                   </div>  
                    
                 <div class="rrss hidden-xs hidden-sm">
                    <ul>
@@ -144,7 +142,13 @@
 						<div class="clearfix"></div>
 						<!-- mobile menu -->
 						<section class="search_home_xs visible-xs visible-sm">
-						  <?php include('include-search-home-mobile.php'); ?>
+						<? 
+						    $detect = new Mobile_Detect();
+						    	 
+							if ($detect->isMobile()) { 
+							   include('include-search-home-mobile.php'); 
+							}
+						?>
 						</section>
 						</div>
                       </div><!-- col -->
@@ -154,8 +158,9 @@
              </div><!--/.nav-collapse -->
            </div>
          </nav> <!-- nav desktop-->
-
-          <?php include('include-nav-mobile.php'); ?>
-
-
+		<? 	 
+			if ($detect->isMobile()) { 
+			   include('include-nav-mobile.php'); 
+			}
+		?>
      </section> <!-- top -->

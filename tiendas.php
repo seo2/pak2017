@@ -9,7 +9,27 @@ Template name: Tiendas
 <?php include('include-top.php') ?>
 <?php include('include-slider-home.php') ?>
 <?php include('include-search-home.php') ?>
-
+<?php 
+// TRADUCCIONES
+if(ICL_LANGUAGE_CODE=='en'){
+	$tit1 = "Stores";
+	$btn1 ="View all our stores";
+	$tit2 = "our stores";
+	$tit3 = "HIGHLIGHTS";
+	$btn2 = "View more";
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+	$tit1 = "Lojas";
+	$btn1 ="Veja todas as nossas lojas";
+	$tit2 = "nossas lojas";
+	$tit3 = "DESTACADOS";
+	$btn2 = "Veja mais";
+}else{ 
+	$tit1 = "Tiendas";
+	$btn1 ="ver todas las tiendas";
+	$tit2 = "nuestras tiendas";
+	$tit3 = "destacados";
+	$btn2 = "ver más";
+} ?> 
 	<section class="main_content">
 
       <div class="titulo_seccion ">
@@ -18,10 +38,10 @@ Template name: Tiendas
               <div class="col-sm-12 col-md-10">
                 <?php if($_GET['busqueda']){ ?>
                   <h4 class="divider">Resultado Búsqueda: "<?php echo $_GET['busqueda']; ?>" </h4>
-          <?php }elseif($_GET['catID']){ ?>
+				  <?php }elseif($_GET['catID']){ ?>
                   <h4 class="divider"><?php echo get_nom_categoria($_GET['catID']); ?></h4>
-          <?php }else{ ?>
-                  <h4 class="divider">Tiendas </h4>
+				  <?php }else{ ?>
+                  <h4 class="divider"><?php echo $tit1; ?> </h4>
                   <?php } ?>
               </div>
               <div class="col-sm-12 col-md-2">

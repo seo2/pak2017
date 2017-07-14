@@ -1,8 +1,8 @@
 
 var loc  	= window.location.pathname;
 var dir 	= loc.substring(0, loc.lastIndexOf('/'));
-var urlpak  = document.location.origin+dir;
-
+//var urlpak  = document.location.origin+dir;
+var urlpak = $('body').data('url');
 
 $(document).ready(function() {
 
@@ -367,13 +367,13 @@ $('.box_slider').owlCarousel({
 	        id_tienda = $(this).data('id');
 	   		if(tipo>0){
 	   		  if(tipo=='0'){
-			      pagina = '/tiendas.php?tiendaID=';
+			      pagina = '/tiendas?tiendaID=';
 		      }else if(tipo=='110'){
-			      pagina = '/boulevard-tiendas.php?tiendaID=';
+			      pagina = '/boulevard-tiendas?tiendaID=';
 			  }else if(tipo=='119'){
-			      pagina = '/distrito-de-lujo-tienda.php?tiendaID=';
+			      pagina = '/distrito-de-lujo-tienda?tiendaID=';
 			  }else if(tipo=='131'){
-			      pagina = '/piso-diseno.php?tiendaID=';
+			      pagina = '/piso-diseno?tiendaID=';
 			  }
 		      window.location.href = urlpak+pagina+id_tienda;		   		
 	   		}else{
@@ -392,7 +392,7 @@ $('.box_slider').owlCarousel({
 		   		
 		   		pagina = $('#pages').data('pagina');
 		   		
-		   		window.history.pushState("object or string", "Parque Arauco | " + nombre, pagina+".php?tiendaID="+id_tienda);
+		   		window.history.pushState("object or string", "Parque Arauco | " + nombre, "?tiendaID="+id_tienda);
 		   		document.title = "Parque Arauco | " + nombre;
 		   		$("#caja_datos_tienda p").html(desc);
 		   		$("#caja_datos_tienda .img_tienda").css({"background":"url("+img+")"});
@@ -430,7 +430,7 @@ $('.box_slider').owlCarousel({
 	   		
 	   		pagina = $('#pages').data('pagina');
 			
-	   		window.history.pushState("object or string", "Parque Arauco | Tiendas", pagina+".php");
+	   		window.history.pushState("object or string", "Parque Arauco | Tiendas", urlpak+'/'+pagina);
 	   		document.title = "Parque Arauco | Tiendas";
 	   		
 			$(window).scrollTo($("#tienda_"+id_tienda).offset().top-150, 1500,'elasout');
