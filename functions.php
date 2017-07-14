@@ -36,6 +36,7 @@ function theme_styles() {
 	wp_enqueue_style('style-owltheme', get_template_directory_uri() . '/assets/css/owl.theme.default.css', array(), '1', 'screen' );
 	wp_enqueue_style('style-bootsel', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css', array(), '1', 'screen' );
 	wp_enqueue_style('style-jqui', 'https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css', array(), '1', 'screen' );
+  wp_enqueue_style('style-jasny', 'https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css', array(), '1', 'screen' );
 	wp_enqueue_style('style-valio', get_template_directory_uri() . '/assets/css/formValidation.min.css', array(), '1', 'screen' );
 	wp_enqueue_style('style-pak', get_template_directory_uri() . '/assets/css/custom.css', array(), '1', 'screen' );
 
@@ -64,12 +65,13 @@ function theme_js(){
 	wp_enqueue_script('formvalio-js', get_template_directory_uri() . '/assets/js/formValidation.min.js', array('jquery'),'1', true);
 	wp_enqueue_script('valiolang-js', get_template_directory_uri() . '/assets/js/language/es_ES.js', array('jquery'),'1', true);
 	wp_enqueue_script('valioboot-js', get_template_directory_uri() . '/assets/js/framework/bootstrap.min.js', array('jquery'),'1', true);
+  wp_enqueue_script('jasny-js', 'https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js', array('jquery'),'1', true);
 	wp_enqueue_script('pak-js', get_template_directory_uri() . '/assets/js/pak.js?v=1.1', array('jquery'),'1', true);
 
 }	
-    add_action('wp_enqueue_scripts', 'theme_styles');
-	add_action('init', 'jquery_cdn');
-    add_action('wp_enqueue_scripts', 'theme_js');
+  add_action('wp_enqueue_scripts', 'theme_styles');
+  add_action('init', 'jquery_cdn');
+  add_action('wp_enqueue_scripts', 'theme_js');
 
 
 remove_action('welcome_panel', 'wp_welcome_panel');

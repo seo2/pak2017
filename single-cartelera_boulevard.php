@@ -30,15 +30,15 @@ $meses = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "
 <?php if(get('tipo_de_plantilla')=='Solo imagen'){ ?>            
               <div class="row">
                 <div class="col-sm-12">
-                   <img class="img-responsive visible-md visible-lg" src="<?php echo get('imagen_desktop'); ?>" alt="Cartelera boulevard" >
-                   <img class="img-responsive visible-xs visible-sm" src="<?php echo get('imagen_mobile'); ?>" alt="Cartelera boulevard" >
+                   <img class="img-responsive visible-md visible-lg center-block" src="<?php echo get('imagen_desktop'); ?>" alt="Cartelera boulevard" >
+                   <img class="img-responsive visible-xs visible-sm center-block" src="<?php echo get('imagen_mobile'); ?>" alt="Cartelera boulevard" >
                 </div>
               </div>
 <?php }elseif(get('tipo_de_plantilla')=='1 imagen y listado'){ ?>     
             <div class="row">
                 <div class="col-sm-12">
-                   <img class="img-responsive visible-md visible-lg" src="<?php echo get('imagen_desktop'); ?>" alt="Cartelera boulevard" >
-                   <img class="img-responsive visible-xs visible-sm" src="<?php echo get('imagen_mobile'); ?>" alt="Cartelera boulevard" >
+                   <img class="img-responsive visible-md visible-lg center-block" src="<?php echo get('imagen_desktop'); ?>" alt="Cartelera boulevard" >
+                   <img class="img-responsive visible-xs visible-sm center-block" src="<?php echo get('imagen_mobile'); ?>" alt="Cartelera boulevard" >
                 </div>
             </div>
             <div class="row">

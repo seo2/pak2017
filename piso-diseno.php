@@ -10,7 +10,10 @@ Template name: Piso de Diseño
 <?php include('include-slider-piso-diseno.php') ?>
 <?php include('include-search-home.php') ?>
 
-   <div class="titulo_seccion">
+
+
+    <section class="main_content">
+       <div class="titulo_seccion">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-10">
@@ -22,8 +25,7 @@ Template name: Piso de Diseño
           </div>
         </div>
     </div> <!-- titulo seccion -->
-
-    <section class="main_content">
+    
       <div class="container">
           <div class="row">
               <section class="tiendas">

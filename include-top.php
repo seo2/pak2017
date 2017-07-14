@@ -1,5 +1,5 @@
      <section class="top">
-         <nav class="navbar navbar-default navbar-fixed-top bg_blanco">
+        <nav id="nav_desktop" class="navbar navbar-default navbar-fixed-top bg_blanco">
          <div class="nav_bottom_line"></div>
            <div class="container width">
              <div class="navbar-header">
@@ -144,7 +144,7 @@
 						<div class="clearfix"></div>
 						<!-- mobile menu -->
 						<section class="search_home_xs visible-xs visible-sm">
-						<?php include('include-search-home-mobile.php'); ?>
+						  <?php include('include-search-home-mobile.php'); ?>
 						</section>
 						</div>
                       </div><!-- col -->
@@ -153,5 +153,9 @@
                 
              </div><!--/.nav-collapse -->
            </div>
-         </nav> <!-- nav-->
+         </nav> <!-- nav desktop-->
+
+          <?php include('include-nav-mobile.php'); ?>
+
+
      </section> <!-- top -->

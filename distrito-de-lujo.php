@@ -31,7 +31,10 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$btn2 = "ver más";
 } ?>    
     
-    <div class="titulo_seccion">
+
+
+    <section class="main_content">
+        <div class="titulo_seccion">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-10">
@@ -43,8 +46,7 @@ if(ICL_LANGUAGE_CODE=='en'){
           </div>
         </div>
     </div> <!-- titulo seccion -->
-
-    <section class="main_content">
+    
       <div class="container">
           <div class="row">
 		  	<section class="sobre_distrito">      

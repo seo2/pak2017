@@ -20,6 +20,11 @@
 .panel-group{
   position: relative;
 }
+.nav_desktop{
+    @media(max-width: 991px){
+     display: none;
+  }
+}
 .ancla{
   position: absolute;
   width: 10px; 
@@ -90,9 +95,9 @@
   margin-top: 30px;
   &.sin_slider{
     margin-top: 100px;
-      @media(max-width: 768px){
-               margin-top: 30px;
-          }
+      // @media(max-width: 768px){
+      //          margin-top: 30px;
+      //     }
   }
           h4 {
           @include clarendon(20px, black);
