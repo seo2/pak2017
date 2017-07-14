@@ -271,6 +271,158 @@ section.main_content {
       margin-bottom: 30px;
       min-height: 300px;
       //background-color: tomato;
+        .caption {
+          @include centerer(false, true);
+          text-align: left;
+          margin-left: 30px;
+          @media(max-width: 768px){
+            @include centerer(true, true);
+            text-align: center;
+            width: 90%;
+            margin-left: auto;
+          }
+         
+          h3 {
+            @include clarendon(40px, black);
+            text-transform: uppercase;
+             @media(max-width: 768px){
+                 font-size: 35px;
+            }
+             @media(max-width: 375px){
+                 font-size: 25px;
+            }
+          }
+          h4 {
+            @include clarendon(20px, black);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+             @media(max-width: 768px){
+                 font-size: 10px;
+            }
+             @media(max-width: 375px){
+                 font-size: 16px;
+            }
+          }
+          p{
+             @include clarendon(14px, black);
+              @media(max-width: 768px){
+                  font-size: 14px;
+             }
+              @media(max-width: 375px){
+                  font-size: 14px;
+             }
+          }
+          .divider{
+                color:black;
+                max-width:500px;
+                 @media(max-width: 768px){
+                      max-width:400px;
+                }
+                margin:11px auto 20px auto;
+                overflow:hidden;
+                text-align:center;   
+                line-height:1.2em;
+            }
+
+
+            .divider{
+                  color:black;
+                  max-width:500px;
+                  margin:10px auto 20px auto;
+                  overflow:hidden;
+                  text-align:left;   
+                  line-height:1.2em;
+                     @media(max-width: 768px){
+                          max-width:400px;
+                    }
+              }
+            .divider:before{
+                content:"";
+                vertical-align:middle;
+                display:inline-block;
+                width:60px;
+                border-bottom:1px solid black;
+
+               // margin:0 2% 6px -55%;
+            }
+             .divider:before{
+                        margin-right: 10px;
+                        margin-top: -6px;
+                      }
+              .divider:after{
+                margin-left: 10px;
+              }
+
+
+              a{
+                display: inline-block;
+                margin-top: 20px;
+            
+
+                &.btn_blanco {
+                  // background-color: transparent;
+                  // @include bold(15px, black);
+                  // bottom: 100px;
+                  // text-align: center;
+                  // border-radius: 0;
+                  // padding: 10px 30px;
+                  // height: 43px;
+                  // border: 1px solid black;
+                  // transition:all 0.2s ease-in-out;
+                  // letter-spacing: 3px;
+                  // text-transform: uppercase;
+
+                      @extend %btn_blanco;
+                      color: white;
+                      border-color: white;
+
+                }
+                // &:hover {
+                //      &:hover {
+                //       border: 1px solid transparent;
+                //       background-color: $rojo;
+                //       color: white;
+                //     }
+
+                // }
+
+              }
+
+      &.texto_blanco {
+                h3, h4, p,
+                .divider,
+                .divider:before,
+                .divider:after{ 
+                  color: white;
+                }
+                 .divider:before,
+                .divider:after{ 
+                  border-bottom:1px solid white;
+                }
+                a.btn_rojo {
+                        &:hover {
+                        border: 1px solid white;
+                        background-color: transparent;
+                        color: white;
+                         //padding: 10px 30px;
+                      }
+                }
+              }
+            @media(min-width: 767px){
+               &.texto_blanco2 {
+                margin-top: 80px;
+              }
+          }
+           @media(max-width: 768px){
+               &.texto_blanco2 {
+                margin-top: auto;
+              }
+          }
+              
+
+
+              
+        }// caption
         .img_slide {
               min-height: 300px;
               background-size: cover !important;
