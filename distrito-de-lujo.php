@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 
 Template name: Distrito de Lujo
@@ -30,8 +30,6 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$tit3 = "destacados";
 	$btn2 = "ver más";
 } ?>    
-    
-
 
     <section class="main_content">
         <div class="titulo_seccion">
@@ -41,7 +39,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                <h4 class="divider"><?php echo $tit1; ?></h4>
             </div>
             <div class="col-sm-12 col-md-2">
-              <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
+              <a href="<?php bloginfo('url'); ?>" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>

@@ -184,13 +184,14 @@ if(ICL_LANGUAGE_CODE=='en'){
 	      }else if(suggestion.tipo=='110'){
 		      pagina = '<?php bloginfo('url'); ?>/boulevard-tiendas?tiendaID=';
 		  }else if(suggestion.tipo=='119'){
-		      pagina = '<?php bloginfo('url'); ?>/distrito-de-lujo-tienda?tiendaID=';
+		      pagina = '<?php bloginfo('url'); ?>/distrito-de-lujo/distrito-de-lujo-tienda/?tiendaID=';
 		  }else if(suggestion.tipo=='131'){
 		      pagina = '<?php bloginfo('url'); ?>/piso-diseno?tiendaID=';
 		  }
       }else{
 	      
       }
+      
 	  window.location.href = pagina+suggestion.id;
       
     }

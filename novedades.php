@@ -9,16 +9,36 @@ Template name: Novedades
 <?php include('include-top.php') ?>
 <?php include('include-slider-home.php') ?>
 <?php include('include-search-home.php') ?>
-
+<?php 
+// TRADUCCIONES
+if(ICL_LANGUAGE_CODE=='en'){
+	$tit1 = "NEWS OF THE MONTH";
+	$tit2 = "Entertainment";
+	$tit3 = "HIGHLIGHTS";
+	$btn1 = "More information";
+	$btn2 = "View more restaurants";
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+	$tit1 = "Novidades DO MÊS";
+	$tit2 = "Diversão";
+	$tit3 = "DESTACADOS";
+	$btn1 = "mais informação";
+	$btn2 = "Veja mais restaurantes";
+}else{ 
+	$tit1 = "NOVEDADES DEL MES";
+	$tit2 = "ENTRETENCIÓN";
+	$tit3 = "destacados";
+	$btn1 = "más información";
+	$btn2 = "ver más restaurantes";
+} ?> 
     <section class="main_content">
 	    <div class="titulo_seccion ">
 	        <div class="container">
 	        	<div class="row">
 	            	<div class="col-sm-12 col-md-10">
-	                	<h4 class="divider">novedades del mes </h4>
+	                	<h4 class="divider"><?php echo $tit1; ?></h4>
 	            	</div>
 					<div class="col-sm-12 col-md-2">
-						<a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
+						<a href="<?php bloginfo('url'); ?>" class="back">< <?php echo $back; ?></a>
 					</div>
 				</div>
 	        </div>
@@ -67,7 +87,7 @@ Template name: Novedades
 													<div class="img_lg" style="background: url(<?php echo get('banner_grande_imagen'); ?>);"> </div>
 													<div class="caption texto_blanco2">
 														<div class="">
-															<a class="btn btn-default btn_blanco" href="<?php echo get('banner_grande_link'); ?>" role="button">más información</a>
+															<a class="btn btn-default btn_blanco" href="<?php echo get('banner_grande_link'); ?>" role="button"><?php echo $btn1; ?></a>
 														</div>
 													</div> 
                                 				</div><!-- image dynamic -->
@@ -91,9 +111,9 @@ Template name: Novedades
 								}else{
 									if($_GET['page']){
 										$desde 	 = 12 * ($_GET['page'] - 1);
-										$tiendas = $db->rawQuery("select * from pak_tiendas where tipo NOT IN(119,131,110) order by RAND() limit $desde, 4");
+										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and tipo NOT IN(119,131,110) order by RAND() limit $desde, 4");
 									}else{
-										$tiendas = $db->rawQuery("select * from pak_tiendas where tipo NOT IN(119,131,110) order by RAND() limit 4");
+										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and tipo NOT IN(119,131,110) order by RAND() limit 4");
 									}
 								}
 		                            
@@ -148,7 +168,7 @@ Template name: Novedades
     <div class="row">
         <section class="entretencion clearfix">
         	<div id="entretencion" class="anchor_entretencion"></div>
-			<h4 class="divider">entretención</h4>    
+			<h4 class="divider"><?php echo $tit2; ?></h4>    
 <?php 
     $detect = new Mobile_Detect();
     	 

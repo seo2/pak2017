@@ -16,7 +16,7 @@ Template name: Distrito de lujo tienda
 $style = '';
 if(isset($_GET['tiendaID'])){
 	$punto_interes = $_GET['tiendaID'];
-	$tiendas = $db->rawQuery("select * from pak_tiendas where punto_interes = $punto_interes");
+	$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and punto_interes = $punto_interes");
 	if($tiendas){
 		foreach ($tiendas as $t) {   
 	    	$imagen = get_img_tienda($t['punto_interes']);
@@ -45,7 +45,7 @@ if(isset($_GET['tiendaID'])){
                <h4 class="divider"><?php echo $nom; ?></h4>
             </div>
             <div class="col-sm-12 col-md-2">
-              <a href="javascript:window.history.back();" class="back">< volver</a>
+              <a href="javascript:window.history.back();" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>

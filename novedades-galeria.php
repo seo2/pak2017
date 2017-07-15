@@ -21,7 +21,7 @@ Template name: Novedades Galería
                 <h4  class="divider">galería de fotos</h4>
             </div>
             <div class="col-sm-12 col-md-2">
-                 <a href="novedades.php#entretencion" class="back">< volver</a>
+                 <a href="novedades.php#entretencion" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>

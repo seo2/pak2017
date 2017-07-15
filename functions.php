@@ -278,4 +278,23 @@ function icl_post_languages(){
     }
 }
 
+function icl_post_languages_mobile(){
+  $languages = icl_get_languages('skip_missing=1');
+    
+  if(1 < count($languages)){
+    foreach($languages as $l){
+	    if($l['language_code']=='es'){
+		    $idioma = 'ESP';
+	    }elseif($l['language_code']=='en'){
+		    $idioma = 'ENG';
+		}else{
+		    $idioma = 'POR';
+	    }
+      if($l['active']) $langs[] = '<option selected value="'.$l['url'].'">'.$idioma.'</option>';
+      if(!$l['active']) $langs[] = '<option value="'.$l['url'].'">'.$idioma.'</option>';
+    }
+    echo join('', $langs);
+    }
+}
+
 ?>

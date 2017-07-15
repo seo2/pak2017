@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 
 Template name: Piso de Diseño
@@ -9,7 +9,18 @@ Template name: Piso de Diseño
 <?php include('include-top.php') ?>
 <?php include('include-slider-piso-diseno.php') ?>
 <?php include('include-search-home.php') ?>
-
+<?php 
+// TRADUCCIONES
+if(ICL_LANGUAGE_CODE=='en'){
+	$tit1 = "Design floor";
+	$btn1 = "View more stores";
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+	$tit1 = "Andar de desenho";
+	$btn1 = "veja mais lojas";
+}else{ 
+	$tit1 = "piso diseño";
+	$btn1 = "ver más tiendas";
+} ?> 
 
 
     <section class="main_content">
@@ -17,10 +28,10 @@ Template name: Piso de Diseño
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-10">
-                <h4 class="divider">piso diseño</h4>
+                <h4 class="divider"><?php echo $tit1; ?></h4>
             </div>
             <div class="col-sm-12 col-md-2">
-               <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
+               <a href="<?php bloginfo('url'); ?>" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>
@@ -44,9 +55,9 @@ Template name: Piso de Diseño
 								}else{
 									if($_GET['page']){
 										$desde 	 = 12 * ($_GET['page'] - 1);
-										$tiendas = $db->rawQuery("select * from pak_tiendas where tipo = 131 order by nombre limit $desde, 12");
+										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo = 131 order by nombre limit $desde, 12");
 									}else{
-										$tiendas = $db->rawQuery("select * from pak_tiendas where tipo = 131 order by nombre limit 12");
+										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo = 131 order by nombre limit 12");
 									}
 								}
 		                            
@@ -87,7 +98,7 @@ Template name: Piso de Diseño
                           </div> <!-- container grila tiendas -->
                           <div class="box_ver_mas_tiendas text-center">
                                 <a href="javascript:void(0);" class="btn btn-default btn_ver_mas hvr-float">
-                                  <h3 class="ver_mas" id="cargar_mas">ver más tiendas </h3>
+                                  <h3 class="ver_mas" id="cargar_mas"><?php echo $btn1; ?></h3>
                                   <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
                                   <span id="loader"  style="display:none"><i class="fa fa-circle-o-notch fa-spin fa-fw"></i></span>
                                 </a>

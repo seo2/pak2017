@@ -17,7 +17,7 @@ Template name: Contacto Comercial
                <h4 class="divider"><?php the_title(); ?></h4>
             </div>
             <div class="col-sm-12 col-md-2">
-              <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
+              <a href="<?php bloginfo('url'); ?>" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@ Template name: Contacto Comercial
             <div class="col-sm-12"></div>
               <section class="contacto_comercial clearfix">
               <!--   <div class="col-sm-12">
-                 <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
+                 <a href="<?php bloginfo('url'); ?>" class="back">< <?php echo $back; ?></a>
                   <div class="termino">
                     <div class="title">
                       <h3>contacto comercial</h3>
@@ -37,7 +37,7 @@ Template name: Contacto Comercial
                     </div>
                   </div>
                 </div> -->
-               <!--  <a href="<?php bloginfo('url'); ?>" class="back">< volver</a> -->
+               <!--  <a href="<?php bloginfo('url'); ?>" class="back">< <?php echo $back; ?></a> -->
                   <div class="col-sm-6">
 					<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>

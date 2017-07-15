@@ -1,3 +1,15 @@
+<?php 
+// TRADUCCIONES
+if(ICL_LANGUAGE_CODE=='en'){
+	$back = 'back';
+	$idioma = 2;
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+	$back = 'voltar';
+	$idioma = 3;
+}else{ 
+	$back = 'volver';
+	$idioma = 1;
+} ?> 
 <?php include('Mobile_Detect.php'); ?>
 <?php
 	require_once("ws/_lib/config.php");
@@ -48,7 +60,7 @@
 
 	<?php if(isset($_GET['tiendaID'])){ 
 		$punto_interes = $_GET['tiendaID'];
-		$tiendas = $db->rawQuery("select * from pak_tiendas where punto_interes = $punto_interes");
+		$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and punto_interes = $punto_interes");
 		if($tiendas){
 			foreach ($tiendas as $t) {   
 		    	$imagen = get_img_tienda($t['punto_interes']);

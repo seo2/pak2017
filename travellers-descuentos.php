@@ -18,7 +18,7 @@ Template name: Travellers Descuentos
                <h4 class="divider">tiendas descuentos</h4>
             </div>
             <div class="col-sm-12 col-md-2">
-                 <a href="travellers.php" class="back">< volver</a>
+                 <a href="travellers.php" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>
@@ -61,9 +61,9 @@ Template name: Travellers Descuentos
 						}else{
 							if($_GET['pagina']){
 								$desde 	 = 12 * ($_GET['pagina'] - 1);
-								$tiendas = $db->rawQuery("select * from pak_tiendas where pinDescuento != '' AND pinDescuento != '0' order by nombre limit $desde, 12");
+								$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and pinDescuento != '' AND pinDescuento != '0' order by nombre limit $desde, 12");
 							}else{
-								$tiendas = $db->rawQuery("select * from pak_tiendas where pinDescuento != '' AND pinDescuento != '0' order by nombre limit 12");
+								$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and pinDescuento != '' AND pinDescuento != '0' order by nombre limit 12");
 							}
 						}
                             
@@ -141,7 +141,7 @@ Template name: Travellers Descuentos
 
 	if($_GET['busqueda']){
 		
-		$tiendas = $db->rawQuery("select * from pak_tiendas where descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre");
+		$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre");
 		if($tiendas){
 			foreach ($tiendas as $t) { 
 				$rowcount++;
@@ -159,7 +159,7 @@ Template name: Travellers Descuentos
 	}else{
 		$db->where('tipo', Array(119, 131,110), 'NOT IN');
 		
-		$tiendas = $db->rawQuery("select * from pak_tiendas where pinDescuento != '' AND pinDescuento != '0'");
+		$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and pinDescuento != '' AND pinDescuento != '0'");
 		if($tiendas){
 			foreach ($tiendas as $t) { 
 				$rowcount++;

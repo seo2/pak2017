@@ -1,8 +1,8 @@
-
 var loc  	= window.location.pathname;
 var dir 	= loc.substring(0, loc.lastIndexOf('/'));
 //var urlpak  = document.location.origin+dir;
 var urlpak = $('body').data('url');
+var placeholder = $('.search_home').data('placeholder');
 
 $(document).ready(function() {
 
@@ -489,8 +489,8 @@ $('.box_slider').owlCarousel({
                      e.stopPropagation();
                 });
                 $(document).on('click', function (e) {
-                        var input_clicked = $('.search_home, #input_search_home').removeClass('clicked');
-                         $('#input_search_home').attr('placeholder' , "¿QUÉ TIENDA O CATEGORÍA ESTÁS BUSCANDO?");
+                    var input_clicked = $('.search_home, #input_search_home').removeClass('clicked');
+                     $('#input_search_home').attr('placeholder' , placeholder);
                 });
 
                 // barra busqueda por categoria mobile
@@ -499,8 +499,8 @@ $('.box_slider').owlCarousel({
                      e.stopPropagation();
                 });
                 $(document).on('click', function (e) {
-                        var input_clicked = $('.search_home, #input_search_home_xs').removeClass('clicked');
-                         $('#input_search_home_xs').attr('placeholder' , "¿QUÉ TIENDA O CATEGORÍA ESTÁS BUSCANDO?");
+                    var input_clicked = $('.search_home, #input_search_home_xs').removeClass('clicked');
+                    $('#input_search_home_xs').attr('placeholder' , placeholder);
                 });
 
 
@@ -845,4 +845,12 @@ $(document).mouseup(function(e)
         	$('.navbar-toggle').click();
 	    }
     }
+});
+
+$('#language').on('change', function () {
+  var url = $(this).val(); // get selected value
+  if (url) { // require a URL
+      window.location = url; // redirect
+  }
+  return false;
 });

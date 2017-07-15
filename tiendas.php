@@ -45,7 +45,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                   <?php } ?>
               </div>
               <div class="col-sm-12 col-md-2">
-                 <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
+                 <a href="<?php bloginfo('url'); ?>" class="back">< <?php echo $back; ?></a>
               </div>
             </div>
           </div>
@@ -64,24 +64,24 @@ if(ICL_LANGUAGE_CODE=='en'){
 									$buscar = filter_var($_GET["busqueda"], FILTER_SANITIZE_STRING);
 									if($_GET['pagina']){
 										$desde = 12 * ($_GET['pagina'] - 1);
-										$tiendas = $db->rawQuery("select * from pak_tiendas where descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit $desde, 12");
+										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit $desde, 12");
 									}else{
-										$tiendas = $db->rawQuery("select * from pak_tiendas where descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit 12");
+										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit 12");
 									}
 								}elseif($_GET['catID']){
 									$buscar = $_GET['catID'];
 									if($_GET['pagina']){
 										$desde = 12 * ($_GET['pagina'] - 1);
-										$tiendas = $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre limit $desde,12");
+										$tiendas = $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE a.idioma = $idioma and b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre limit $desde,12");
 									}else{
-										$tiendas = $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre limit 12");
+										$tiendas = $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE a.idioma = $idioma and b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre limit 12");
 									}
 								}else{
 									if($_GET['pagina']){
 										$desde 	 = 12 * ($_GET['pagina'] - 1);
-										$tiendas = $db->rawQuery("select * from pak_tiendas where tipo NOT IN(119,131,110) order by nombre limit $desde, 12");
+										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and tipo NOT IN(119,131,110) order by nombre limit $desde, 12");
 									}else{
-										$tiendas = $db->rawQuery("select * from pak_tiendas where tipo NOT IN(119,131,110) order by nombre limit 12");
+										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and tipo NOT IN(119,131,110) order by nombre limit 12");
 									}
 								}
 		                            
@@ -137,7 +137,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 
 	if($_GET['busqueda']){
 		
-		$tiendas = $db->rawQuery("select * from pak_tiendas where descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre");
+		$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre");
 		if($tiendas){
 			foreach ($tiendas as $t) { 
 				$rowcount++;
@@ -145,7 +145,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 		}
 		$cola = "&busqueda=ropa";		
 	}elseif($_GET['catID']){
-		$tiendas = $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre");
+		$tiendas = $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE a.idioma = $idioma and b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre");
 		if($tiendas){
 			foreach ($tiendas as $t) { 
 				$rowcount++;

@@ -20,7 +20,7 @@ Template name: Arauco Tag
                 <h4 class="divider">arauco tag </h4>
             </div>
             <div class="col-sm-12 col-md-2">
-               <a href="<?php bloginfo('url'); ?>" class="back">< volver</a>
+               <a href="<?php bloginfo('url'); ?>" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>

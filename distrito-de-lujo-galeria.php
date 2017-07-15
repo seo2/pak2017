@@ -17,7 +17,7 @@ Template name: Distrito de lujo Galería
                 <h4  class="divider">vida en distrito</h4>
             </div>
             <div class="col-sm-12 col-md-2">
-                 <a href="distrito-de-lujo.php" class="back">< volver</a>
+                 <a href="distrito-de-lujo.php" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>

@@ -20,7 +20,7 @@ Template name: Arauco Tag FAQ
                 <h4 class="divider">arauco tag / preguntas frecuentes </h4>
             </div>
             <div class="col-sm-12 col-md-2">
-               <a href="javascript:window.history.back();" class="back">< volver</a>
+               <a href="javascript:window.history.back();" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>

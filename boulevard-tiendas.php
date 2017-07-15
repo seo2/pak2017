@@ -14,16 +14,16 @@ Template name: Boulevard Tiendas
           <div class="row">
               <section class="tiendas">
                   <h4 class="divider">boulevard</h4>
-                   <a href="boulevard.php" class="back">< volver</a>
+                   <a href="boulevard.php" class="back">< <?php echo $back; ?></a>
                       <div class="grid_tiendas center-block">
                           <div class="container">
                               <div class="row" id="caja_tienda">
 	                            <?php
 								if($_GET['page']){
 									$desde 	 = 12 * ($_GET['page'] - 1);
-									$tiendas = $db->rawQuery("select * from pak_tiendas where tipo = 110 order by nombre limit $desde, 12");
+									$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo = 110 order by nombre limit $desde, 12");
 								}else{
-									$tiendas = $db->rawQuery("select * from pak_tiendas where tipo = 110 order by nombre limit 12");
+									$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo = 110 order by nombre limit 12");
 								}
 								if($tiendas){
 									foreach ($tiendas as $t) {   

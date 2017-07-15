@@ -2,7 +2,7 @@
 $style = '';
 if(isset($_GET['tiendaID'])){
 	$punto_interes = $_GET['tiendaID'];
-	$tiendas = $db->rawQuery("select * from pak_tiendas where punto_interes = $punto_interes");
+	$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and punto_interes = $punto_interes");
 	if($tiendas){
 		foreach ($tiendas as $t) {   
 	    	$imagen = get_img_tienda($t['punto_interes']);

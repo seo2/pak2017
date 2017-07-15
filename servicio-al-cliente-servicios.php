@@ -16,7 +16,7 @@ Template name: Servicio al Cliente Servicios
                <h4 class="divider">servicios generales</h4> 
             </div>
             <div class="col-sm-12 col-md-2">
-                 <a href="servicio-al-cliente.php" class="back">< volver</a>
+                 <a href="servicio-al-cliente.php" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>

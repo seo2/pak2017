@@ -8,7 +8,7 @@
       <div class="container">
           <div class="row">
           <section class="tarjeta_descuento">
-             <h4 class="divider">SOLICITA TU TARJETA DE DESCUENTO  <a href="<?php bloginfo('url'); ?>" class="back">< volver</a></h4>
+             <h4 class="divider">SOLICITA TU TARJETA DE DESCUENTO  <a href="<?php bloginfo('url'); ?>" class="back">< <?php echo $back; ?></a></h4>
 
              <p>Para recibir este benefcio solo debes ingresar estos datos y ya estarás disfrutando de fabulosos descuentos.</p>
              <?php include('include-form-tarjeta-travellers.php') ?>

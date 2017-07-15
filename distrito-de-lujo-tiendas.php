@@ -18,7 +18,7 @@ Template name: Distrito de lujo Tiendas
                <h4 class="divider">sobre distrito de lujo</h4>
             </div>
             <div class="col-sm-12 col-md-2">
-              <a href="javascript:window.history.back();" class="back">< volver</a>
+              <a href="javascript:window.history.back();" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>
@@ -37,17 +37,17 @@ Template name: Distrito de lujo Tiendas
 				$buscar = filter_var($_GET["busqueda"], FILTER_SANITIZE_STRING);
 				if($_GET['pagina']){
 					$desde = 12 * ($_GET['pagina'] - 1);
-					$tiendas = $db->rawQuery("select * from pak_tiendas where descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit $desde, 12");
+					$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit $desde, 12");
 				}else{
-					//echo "select * from pak_tiendas where descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit 12";
-					$tiendas = $db->rawQuery("select * from pak_tiendas where descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit 12");
+					//echo "select * from pak_tiendas where idioma  = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit 12";
+					$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit 12");
 				}
 			}else{
 				if($_GET['pagina']){
 					$desde 	 = 12 * ($_GET['pagina'] - 1);
-					$tiendas = $db->rawQuery("select * from pak_tiendas where tipo = 119 order by nombre limit $desde, 8");
+					$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo = 119 order by nombre limit $desde, 8");
 				}else{
-					$tiendas = $db->rawQuery("select * from pak_tiendas where tipo = 119 order by nombre limit 8");
+					$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo = 119 order by nombre limit 8");
 				}
 			}
                 

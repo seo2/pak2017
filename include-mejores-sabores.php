@@ -1,9 +1,22 @@
+<?php 
+// TRADUCCIONES
+if(ICL_LANGUAGE_CODE=='en'){
+	$tit1 = "THE BEST";
+	$tit2 = "FLAVORS";
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+	$tit1 = "OS MELHORES";
+	$tit2 = "sabores";
+}else{ 
+	$tit1 = "los mejores";
+	$tit2 = "sabores";
+} ?> 
+
 
                 <div class="content_promos clearfix">
                   <div class="col-sm-12">
                     <div class="main_title">
-                        <h3>los mejores</h3>
-                        <h4 class="divider_left">sabores</h4>
+                        <h3><?php echo $tit1; ?></h3>
+                        <h4 class="divider_left"><?php echo $tit2; ?></h4>
                     </div>
                   </div>
 
@@ -11,7 +24,7 @@
 	                <div class="grid_tiendas">
 		                <?php
 			            
-						$tiendas = $db->rawQuery("select * from pak_tiendas where tipo = 110 order by rand() limit 4");
+						$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and tipo = 110 order by rand() limit 4");
 						if($tiendas){
 						foreach ($tiendas as $t) {   
 		                	$imagen = get_img_tienda($t['punto_interes']);

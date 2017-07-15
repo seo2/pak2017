@@ -172,6 +172,7 @@
 							    echo '<p>'.$ord.'</p>';
 							    if($ord){
 								    $existe = false;
+								    $ord = addslashes( $ord);
 									$participante = $db->rawQuery("select * from pak_tiendas_tags where punto_interes = $punto_interes and tag LIKE '$ord'");
 									if($participante){
 										foreach ($participante as $p) {
@@ -180,6 +181,7 @@
 									} 
 									if(!$existe){
 										$data = Array (
+											"idioma" 		=> $idioma,
 											"punto_interes" => $punto_interes,
 											"tag" 			=> $ord
 										);
@@ -202,6 +204,7 @@
 									} 
 									if(!$existe){
 										$data = Array (
+										"idioma" 		=> $idioma,
 										"punto_interes" => $punto_interes,
 										"local" 		=> $loc
 										);
@@ -229,6 +232,7 @@
 									} 
 									if(!$existe){
 										$data = Array (
+											"idioma" 		=> $idioma,
 											"punto_interes" => $punto_interes,
 											"sub_categoria" => $sc
 										);
@@ -240,6 +244,7 @@
 												"tipo" => $sc
 											);
 										
+											$db->where ('idioma', $idioma);
 											$db->where ('punto_interes', $punto_interes);
 											$db->update ('pak_tiendas', $data);
 										}
@@ -251,6 +256,7 @@
 							$data = Array (
 								"categorias" => $categorias
 							);
+							$db->where ('idioma', $idioma);
 							$db->where ('punto_interes', $punto_interes);
 							$db->update ('pak_tiendas', $data);
 							
@@ -270,6 +276,7 @@
 									if(!$existe){
 										$i++;
 										$data = Array (
+											"idioma" 		=> $idioma,
 											"imgID" 		=> $i,
 											"punto_interes" => $punto_interes,
 											"imagenes"		=> $img
@@ -293,8 +300,11 @@
 						    echo '<p><a href="'.$value['url_punto_interes'] .'">Link</a></p>';
 						    echo '<p>'.$value['telefono_punto_interes'] .'</p>';
 						    echo '<p>'.$value['pinDescuento'] .'</p>';
-						    
 						    echo '<p>'.$value['piiDescripcionDescuento'] .'</p>';
+						    echo '<p>createdAt: '.$createdAt .'</p>';
+						    echo '<p>updatedAt: '.$updatedAt.'</p>';
+						    
+						    
 
 				?>
 					</div>

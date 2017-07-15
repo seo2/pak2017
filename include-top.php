@@ -59,9 +59,14 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$btn2 = "ver más";
 	
 } ?> 
-
+<?php 
+    $detect = new Mobile_Detect();
+?>
 
      <section class="top">
+		<?php 
+			if (!$detect->isMobile()) { 	  
+		?>  
         <nav id="nav_desktop" class="navbar navbar-default navbar-fixed-top bg_blanco">
          <div class="nav_bottom_line"></div>
            <div class="container width">
@@ -83,8 +88,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                              <option value="/por/">POR</option>
                       </select>
                          
-                      </div>
-              
+                      </div>            
                   <div class="lang ">
                     <ul class="hidden-xs hidden-sm">
 						<?php icl_post_languages(); ?>
@@ -96,21 +100,12 @@ if(ICL_LANGUAGE_CODE=='en'){
                      <li><a href="https://www.facebook.com/parauco" target="_blank"><i class="fa fa-facebook hvr-float" aria-hidden="true"></i></a></li>
                      <li><a href="https://www.instagram.com/parquearauco/" target="_blank"><i class="fa fa-instagram hvr-float" aria-hidden="true"></i></a></li>
                      <li><a href="https://twitter.com/parquearauco" target="_blank"><i class="fa fa-twitter hvr-float" aria-hidden="true"></i></a></li>
-<!--                      <li><a href="https://es.pinterest.com/parquearauco/" target="_blank"><i class="fa fa-pinterest-p hvr-float" aria-hidden="true"></i></a></li>
- -->                  <li><a href="<?php bloginfo('site_url'); ?>/horarios"><i class="fa fa-clock-o hvr-float" aria-hidden="true"></i></a></li>
+					 <li><a href="<?php bloginfo('site_url'); ?>/horarios"><i class="fa fa-clock-o hvr-float" aria-hidden="true"></i></a></li>
                    </ul>
-                </div>
-                <!-- RRSS -->
+                </div> 
+                <!-- RRSS -->  
 
-<!--  <div class="search hidden-xs hidden-sm">
-                 <form class="searchbox">
-                     <input type="search" placeholder="Buscar..." name="search" class="searchbox-input" onkeyup="buttonUp();" required>
-                     <input type="submit" class="searchbox-submit" value="go">
-                     <span class="searchbox-icon">
-                          <i class="fa fa-search" aria-hidden="true"></i>
-                     </span>
-                 </form>
-               </div> search -->
+
               <a class="close_tienda" href="javascript:void(0);" data-id=""> </a>
              </div> <!-- navbar header -->
           
@@ -122,15 +117,6 @@ if(ICL_LANGUAGE_CODE=='en'){
                           <!-- col izquierda  -->
                           <div class="row">
                             <div class="col-sm-12 col-md-6">
-                             <div class="rrss visible-xs visible-sm center-block text-center">
-                               <ul>
-                                 <li><a href="https://www.facebook.com/parauco" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                 <li><a href="https://www.instagram.com/parquearauco/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                 <li><a href="https://twitter.com/parquearauco" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <!--  <li><a href="https://es.pinterest.com/parquearauco/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li> -->
-                                <li><a href="<?php bloginfo('url'); ?>/horarios"><i class="fa fa-clock-o" aria-hidden="true"></i></a></li>
-                               </ul>
-                              </div><!-- RRSS -->
                                  <ul class="nav navbar-nav">
                                      <li class="active"><a 			href="<?php bloginfo('url'); ?>">Home</a></li>
                                      <li><a id="btn_distrito" 		href="<?php bloginfo('url'); ?>/distrito-de-lujo"><?php echo $menu2; ?></a></li>
@@ -144,7 +130,6 @@ if(ICL_LANGUAGE_CODE=='en'){
 
                             <div class="divisor_h"></div>
                             <div class="col-sm-12 col-md-6">
-
                                   <ul class="nav navbar-nav">
                                        <li class="hidden-xs hidden-sm"><a class="invisible" href="javascript:void(0);">&nbsp</a></li>
                                        <li class="hidden-xs hidden-sm"><a class="invisible" href="javascript:void(0);">&nbsp</a></li>
@@ -203,16 +188,6 @@ if(ICL_LANGUAGE_CODE=='en'){
 								</div>
 							</div>
 						<div class="clearfix"></div>
-						<!-- mobile menu -->
-						<section class="search_home_xs visible-xs visible-sm">
-						<?php 
-						    $detect = new Mobile_Detect();
-						    	 
-							if ($detect->isMobile()) { 
-							   include('include-search-home-mobile.php'); 
-							}
-						?>
-						</section>
 						</div>
                       </div><!-- col -->
                   </div><!-- row -->
@@ -220,7 +195,8 @@ if(ICL_LANGUAGE_CODE=='en'){
                 
              </div><!--/.nav-collapse -->
            </div>
-         </nav> <!-- nav desktop-->
+         </nav> <!-- nav desktop-->          
+        <?php } ?>
 		<?php 	 
 			if ($detect->isMobile()) { 
 			   include('include-nav-mobile.php'); 

@@ -14,7 +14,7 @@ $meses = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "
                 <h4 class="divider">Cartelera Novedades</h4>
             </div>
             <div class="col-sm-12 col-md-2">
-              <a href="javascript:void(0);" class="back">< volver</a>
+              <a href="javascript:void(0);" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>
