@@ -29,7 +29,7 @@
            <div id="serv1xsancla" class="anclita_xs4"></div>
              <div class="container">
              <h4 class="divider verde">Servicio de transfer</h4>
-             <div class="close_servicio"> </div>
+             <div class="close_servicio" data-target="#serv1xs"> </div>
                <div class="row">
                    <div class="col-md-6 col-md-push-6">
                          <div class="img_servicio"  style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_serv_transfer.jpg);"></div>
@@ -159,6 +159,7 @@
 
 
              <div id="serv2xs" class="content_servicio collapse">
+              <div id="serv2xsancla" class="anclita_xs4"></div>
               <div class="container">
               <h4 class="divider azul">Casas de Cambio</h4>
                <div class="close_servicio" data-target="#serv2xs"> </div>
@@ -266,7 +267,7 @@
             </div> <!-- content agencia -->
 
                   <div id="serv4xs" class="content_servicio collapse">
-                  <div class="close_servicio" data-target="#serv4xs"> </div>
+                   <div id="serv4xsancla" class="anclita_xs4"></div>
                   <div class="container">
                       <h4 class="divider amarillo">Taxis privados</h4>
                      <div class="close_servicio" data-target="#serv4xs"> </div>
@@ -327,7 +328,7 @@
            <div id="serv5xsancla" class="anclita_xs4"></div>
            <div class="container">
                <h4 class="divider rojo">Bancos</h4>
-                  <div class="close_servicio"> </div>
+                  <div class="close_servicio" data-target="#serv5xs"> </div>
                  <div class="row">
                      <div class="col-md-4">
                            <div class="box_agencia">
