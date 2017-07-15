@@ -1,8 +1,13 @@
-<div class="container">
-  <div class="row">
+<div class="container" id="caja-galerias">
+  <div class="row caja-galerias">
 	  	<?
+		  	$postperpage = 8;
 		  	if($_GET['pagina']){
-			  	
+			  	$lapagina = $_GET['pagina'];
+			  	$offset1 = 8 *($lapagina-1);
+			  	$offset2 = $offset1 + 4;
+			  	$e = $offset1;
+			  	$i = $offset1;
 		  	}else{
 			  	$offset1 = 0;
 			  	$offset2 = 4;
@@ -70,7 +75,7 @@
                   	<div class="desc_servicio desc_galeria">
                         <h4><?php the_title(); ?></h4>
                         <?php the_content(); ?>
-                        <div class="btn-mas"><a href="<?php the_permalink(); ?>">Ver más</a></div>
+                        <div class="btn-mas"><a href="<?php the_permalink(); ?>"><?php echo $btn1; ?></a></div>
                     </div>
                   </div>
                 </div>
@@ -142,7 +147,7 @@
                   	<div class="desc_servicio desc_galeria">
                         <h4><?php the_title(); ?></h4>
                         <?php the_content(); ?>
-                        <div class="btn-mas"><a href="<?php the_permalink(); ?>" alt="ver más">Ver más</a></div>
+                        <div class="btn-mas"><a href="<?php the_permalink(); ?>" alt="ver más"><?php echo $btn1; ?></a></div>
                     </div>
                   </div>
                 </div>
@@ -156,9 +161,10 @@
   </div><!-- row -->
 </div> <!-- container -->
 <div class="box_ver_mas_tiendas text-center">
-    <a href="" class="btn btn-default btn_ver_mas hvr-float">
-    	<h3 class="ver_mas">ver más galerías</h3>
+    <a href="javascript:void(0);" class="btn btn-default btn_ver_mas hvr-float">
+    	<h3 class="ver_mas"><?php echo $btn2; ?></h3>
 		<img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="ver más galerías" class="img-responsive center-block arrow_down">
+        <span id="loader"  style="display:none"><i class="fa fa-circle-o-notch fa-spin fa-fw"></i></span>
     </a>
 </div>
 

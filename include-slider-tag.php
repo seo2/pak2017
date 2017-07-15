@@ -1,3 +1,12 @@
+<?php 
+// TRADUCCIONES
+if(ICL_LANGUAGE_CODE=='en'){
+	$btn1 = "Sign up here";
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+	$btn1 = "Registe-se aqui";
+}else{ 
+	$btn1 = "Inscríbete aquí";
+} ?> 
      <section class="box_slider_tag">
         <div class="slider_tag owl-carousel owl-theme">
 <?php
@@ -63,7 +72,7 @@
                                   <div class="box_btn_registro_tag">
                                       <img src="assets/img/logo_arauco_tag.png" alt="" class="center-block hidden">
                                       <div class="strip"> </div>
-                                      <a href="https://www.costaneranorte.cl/sucursal_virtual/login.html"  target="_blank" class="btn btn-default btn_verde" role="button">Inscríbete aquí</a>
+                                      <a href="https://www.costaneranorte.cl/sucursal_virtual/login.html"  target="_blank" class="btn btn-default btn_verde" role="button"><?php echo $btn1; ?></a>
                                   </div>
                                
                             </div>

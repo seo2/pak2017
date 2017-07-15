@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 
 Template name: Horarios
@@ -9,11 +9,20 @@ Template name: Horarios
 <?php include('include-top.php') ?>
 <?php //include('include-slider-servicios-cliente.php') ?>
 <?php include('include-search-no-slider.php') ?>
+<?php 
+// TRADUCCIONES
+if(ICL_LANGUAGE_CODE=='en'){
+	$tit3 = "TIME SCHEDULES";
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+	$tit3 = "HORÁRIOS";
+}else{ 
+	$tit3 = "Horarios";
+} ?>  
      <div class="titulo_seccion sin_slider">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-10">
-                <h4 class="divider">horarios</h4>
+                <h4 class="divider"><?php echo $tit3; ?></h4>
             </div>
             <div class="col-sm-12 col-md-2">
                  <a href="<?php bloginfo('url'); ?>" class="back">< <?php echo $back; ?></a>
@@ -34,12 +43,23 @@ Template name: Horarios
 		                        <section class="box_horarios">
 		                            <div class="col-sm-12">
                                     
-                                    <p> Lunes a domingo abierto desde las 07:00 y acceso restringido a partir de las 23:30</p>
-	                                  
+									<?php	                                         
+									    $args = array(
+											'page_id' => 24
+									    );
+										$the_query = new WP_Query ($args);
+									    if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
+									    	
+									?>	                                    
+                                	<?php the_content(); ?>
+									<?php endwhile; else: ?>
+									<?php endif; ?>	
+	                                  <?php if(1==2){ ?>
                                       <div class="panel-group hidden" id="accordion" role="tablist" aria-multiselectable="true">
         							<?php	                                         
         							    $args = array(
-        									'post_type' 		=> array('horario')
+        									'post_type' 		=> array('horario'),
+											'posts_per_page' 	=> -1
         							    );
         								$the_query = new WP_Query ($args);
         							    $i = 0;
@@ -167,6 +187,7 @@ Template name: Horarios
                                               </div>
                                             </div>                                           
 										</div> <!-- END panel group -->
+                                      <?php } ?>
 									</div>
 								</section> <!-- box horarios del mall -->
                             </div> <!-- end desc_servicio -->

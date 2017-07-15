@@ -6,7 +6,7 @@
                                     <a href="javascript:void(0);"  data-toggle="collapse" data-target="#serv4xs">
                                          <div class="caption">
                                              <p>&nbsp </p>
-                                             <h3>cómo llegar  </h3>
+                                             <h3><?php echo $tit5; ?></h3>
                                              <div class="divider"> </div>
                                          </div>
                                          <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_sac_como_llegar.jpg);"> </div>                             
@@ -20,7 +20,7 @@
         <div id="serv4xs" class="content_servicio collapse">
          <div id="serv4xsancla" class="anclita_xs3"></div>
           <div class="container">
-          <h4 class="divider verde">Cómo llegar</h4> 
+          <h4 class="divider verde"><?php echo $tit5; ?></h4> 
           <div class="close_servicio" data-target="#serv4xs"> </div>
             <div class="row">
                 <div class="col-md-12 ">
@@ -33,8 +33,16 @@
                                     <img src="<?php bloginfo('template_url'); ?>/assets/img/map_turistik.png" alt="" class="img-responsive center-block">
                               </div>
                               <div class="col-xs-8">
-                                    <p>El pasajero El pasajero debe esperar en el lugar indicado por Turistik a la hora.</p>
-                                    <p> Para mayor información de este servicio contactarse con Turistik al <strong>(56- 2) 28201000 </strong>o el e-mail: <a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
+									<?php if(ICL_LANGUAGE_CODE=='en'){ ?>
+									<p>The travelers must wait for Turistik at the indicated time and place.</p>
+									<p>For further information about this service, contact Turistik at <strong>(56- 2) 28201000 </strong>or e-mail:<a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
+									<?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){  ?>
+									<p>O passageiro deve esperar no lugar indicado por Turistik na hora.</p>
+									<p>Para maiores informações deste serviço deve-se contatar com Turistik no telefone: <strong>(56- 2) 28201000 </strong>ou pelo e-mail: <a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
+									<?php }else{  ?>
+									<p>El pasajero El pasajero debe esperar en el lugar indicado por Turistik a la hora.</p>
+									<p> Para mayor información de este servicio contactarse con Turistik al <strong>(56- 2) 28201000 </strong>o el e-mail: <a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
+									<?php } ?>  
                               </div>
                              
                               <!-- <div class="col-xs-4">

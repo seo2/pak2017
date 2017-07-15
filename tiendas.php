@@ -16,19 +16,22 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$btn1 ="View all our stores";
 	$tit2 = "our stores";
 	$tit3 = "HIGHLIGHTS";
-	$btn2 = "View more";
+	$btn2 = "View more stores";
+	$page = 'stores';
 }elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
 	$tit1 = "Lojas";
 	$btn1 ="Veja todas as nossas lojas";
 	$tit2 = "nossas lojas";
 	$tit3 = "DESTACADOS";
-	$btn2 = "Veja mais";
+	$btn2 = "Veja mais lojas";
+	$page = 'lojas';
 }else{ 
 	$tit1 = "Tiendas";
 	$btn1 ="ver todas las tiendas";
 	$tit2 = "nuestras tiendas";
 	$tit3 = "destacados";
-	$btn2 = "ver más";
+	$btn2 = "ver más tiendas";
+	$page = 'tiendas';
 } ?> 
 	<section class="main_content">
 
@@ -120,7 +123,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                         </div> <!-- grid container  -->
                         <div class="box_ver_mas_tiendas text-center">
                         	<a href="javascript:void(0);" class="btn btn-default btn_ver_mas hvr-float">
-                            	<h3 class="ver_mas" id="cargar_mas">ver más tiendas </h3>
+                            	<h3 class="ver_mas" id="cargar_mas"><?php echo $btn2; ?> </h3>
                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
                                 <span id="loader"  style="display:none"><i class="fa fa-circle-o-notch fa-spin fa-fw"></i></span>
                             </a>
@@ -170,7 +173,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$x = 1;
 	while($x <= $paginas) {
 	?>
-		<a href="<?php bloginfo('url'); ?>/tiendas?pagina=<?php echo  $x.$cola; ?>"></a>
+		<a href="<?php bloginfo('url'); ?>/<?php echo $page; ?>?pagina=<?php echo  $x.$cola; ?>"></a>
 	<?php 
 		$x++; 
 	}

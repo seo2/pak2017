@@ -14,14 +14,16 @@ Template name: Piso de Diseño
 if(ICL_LANGUAGE_CODE=='en'){
 	$tit1 = "Design floor";
 	$btn1 = "View more stores";
+	$page = 'design-floor';
 }elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
 	$tit1 = "Andar de desenho";
 	$btn1 = "veja mais lojas";
+	$page = 'andar-de-desenho';
 }else{ 
 	$tit1 = "piso diseño";
 	$btn1 = "ver más tiendas";
+	$page = 'piso-diseno';
 } ?> 
-
 
     <section class="main_content">
        <div class="titulo_seccion">
@@ -55,9 +57,9 @@ if(ICL_LANGUAGE_CODE=='en'){
 								}else{
 									if($_GET['page']){
 										$desde 	 = 12 * ($_GET['page'] - 1);
-										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo = 131 order by nombre limit $desde, 12");
+										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and tipo = 131 order by nombre limit $desde, 12");
 									}else{
-										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo = 131 order by nombre limit 12");
+										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and tipo = 131 order by nombre limit 12");
 									}
 								}
 		                            
@@ -123,7 +125,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$x = 1;
 	while($x <= $paginas) {
 	?>
-		<a href="<?php bloginfo('url'); ?>/piso-diseno?page=<?php echo  $x; ?>"></a>
+		<a href="<?php bloginfo('url'); ?>/<?php echo $page; ?>?page=<?php echo  $x; ?>"></a>
 	<?php 
 		$x++; 
 	}

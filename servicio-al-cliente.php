@@ -10,55 +10,83 @@ Template name: Servicios al cliente
 <?php //include('include-slider-servicios-cliente.php') ?>
 <?php include('include-search-no-slider.php') ?>
 
+<?php 
+// TRADUCCIONES
+if(ICL_LANGUAGE_CODE=='en'){
+	$tit1 = "CUSTOMER SERVICE";
+	$tit2 = "Contact us";
+	$tit3 = "TIME SCHEDULES";
+	$tit4 = "Services";
+	$tit5 = "HOW TO GET THERE";
+	$btn1 = "View all our stores";
+	$btn2 = "View more";
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+	$tit1 = "SERVIÇO AO CLIENTE:";
+	$tit2 = "Contate-Nos";
+	$tit3 = "HORÁRIOS";
+	$tit4 = "SERVIÇOS";
+	$tit5 = "COMO CHEGAR";
+	$btn1 = "Veja todas as nossas lojas";
+	$btn2 = "Veja mais";
+}else{ 
+	$tit1 = "servicio al cliente";
+	$tit2 = "contáctanos";
+	$tit3 = "Horarios";
+	$tit4 = "servicios";
+	$tit5 = "cómo llegar";
+	$btn1 = "ver todas las tiendas";
+	$btn2 = "ver más";
+} ?>  
+
     <div class="titulo_seccion sin_slider ">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-10">
-                 <h4 class="divider"> servicio al cliente </h4> 
-            </div>
-            <div class="col-sm-12 col-md-2">
-               <a href="<?php bloginfo('url'); ?>" class="back">< <?php echo $back; ?></a>
-            </div>
-          </div>
+        	<div class="row">
+            	<div class="col-sm-12 col-md-10">
+                	<h4 class="divider"><?php echo $tit1; ?></h4> 
+            	</div>
+				<div class="col-sm-12 col-md-2">
+					<a href="<?php bloginfo('url'); ?>" class="back">< <?php echo $back; ?></a>
+				</div>
+			</div>
         </div>
     </div> <!-- titulo seccion -->
 
     <section class="main_content">
-      <div class="container">
-          <div class="row">
-          	<section class="servicios_cliente clearfix">
- 		<?php 
-		    $detect = new Mobile_Detect();
-		    	 
-			if ($detect->isMobile()) { 
-			   include('include-sac-mobile.php'); 
-			   include('include-sac-como-llegar-mobile.php'); 
-			}else{ 	 
-			  	include('include-sac-desktop.php');
-			  	include('include-sac-como-llegar-desktop.php');
-			}
-		?>
-            <div class="col-sm-6 col-md-6">
-                <div class="box">
-                    <div class="box_slider">
-                        <div class="item disable-owl-swipe">
-                            <a href="<?php bloginfo('url'); ?>/servicio-al-cliente/servicios/">
-                                <div class="caption">
-                                    <p>&nbsp </p>
-                                    <h3>servicios </h3>
-								    <div class="divider"> </div>
-                                </div>
-                                <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_sac_servicios.jpg);"> </div>                             
-                            </a>
-                       	</div> <!-- item -->
-                    </div><!-- box slider  -->
-                </div><!-- servicios -->
-            </div>
+    	<div class="container">
+        	<div class="row">
+        		<section class="servicios_cliente clearfix">
+		 		<?php 
+				    $detect = new Mobile_Detect();
+				    	 
+					if ($detect->isMobile()) { 
+					   include('include-sac-mobile.php'); 
+					   include('include-sac-como-llegar-mobile.php'); 
+					}else{ 	 
+						include('include-sac-desktop.php');
+						include('include-sac-como-llegar-desktop.php');
+					}
+				?>
+		            <div class="col-sm-6 col-md-6">
+		                <div class="box">
+		                    <div class="box_slider">
+		                        <div class="item disable-owl-swipe">
+		                            <a href="<?php bloginfo('url'); ?>/servicio-al-cliente/servicios/">
+		                                <div class="caption">
+		                                    <p>&nbsp </p>
+		                                    <h3><?php echo $tit4; ?> </h3>
+										    <div class="divider"> </div>
+		                                </div>
+		                                <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_sac_servicios.jpg);"> </div>                             
+		                            </a>
+		                       	</div> <!-- item -->
+		                    </div><!-- box slider  -->
+		                </div><!-- servicios -->
+		            </div>
 
-            <div id="content_como_llegar" class="content_servicio collapse hidden-xs">
+					<div id="content_como_llegar" class="content_servicio collapse hidden-xs">
                 <div id="content_como_llegarancla" class="anclita"></div>
                 <div class="container">
-                    <h4 class="divider verde">Cómo llegar</h4> 
+                    <h4 class="divider verde"><?php echo $tit5; ?></h4> 
                     <div class="close_servicio" data-target="#content_como_llegar"></div>
                       <div class="row">
                           <div class="col-md-12 ">
@@ -72,10 +100,17 @@ Template name: Servicios al cliente
                               </div>
                               <div class="col-xs-10">
                                     <div class="centerer">
-                                      <p>El pasajero El pasajero debe esperar en el lugar indicado por Turistik a la hora.</p>
-                                      <p> Para mayor información de este servicio contactarse con Turistik al <strong>(56- 2) 28201000 </strong>o el e-mail: <a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
+										<?php if(ICL_LANGUAGE_CODE=='en'){ ?>
+										<p>The travelers must wait for Turistik at the indicated time and place.</p>
+										<p>For further information about this service, contact Turistik at <strong>(56- 2) 28201000 </strong>or e-mail:<a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
+										<?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){  ?>
+										<p>O passageiro deve esperar no lugar indicado por Turistik na hora.</p>
+										<p>Para maiores informações deste serviço deve-se contatar com Turistik no telefone: <strong>(56- 2) 28201000 </strong>ou pelo e-mail: <a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
+										<?php }else{  ?>
+										<p>El pasajero El pasajero debe esperar en el lugar indicado por Turistik a la hora.</p>
+										<p> Para mayor información de este servicio contactarse con Turistik al <strong>(56- 2) 28201000 </strong>o el e-mail: <a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
+										<?php } ?>  
                                     </div>
-                                   
                               </div>
                            <!--    <div class="clearfix"></div>
                               <div class="col-xs-2">
@@ -96,21 +131,19 @@ Template name: Servicios al cliente
                     </div> <!-- container -->
                 </div> <!-- content como llegar -->
          
-
-                <div class="col-sm-6 col-md-6">
-                  <div class="box">
-                     <div class="box_slider owl-carousel owl-theme">
-                           <div class="item">
-                               <a href="travellers.php">
-                                     <div class="logo_seccion logo_travellers" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_travellers_blanco.svg);"> </div>                             
-                                    <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_travellers.png);"> </div>                             
-                               </a>
-                            </div>
-                 
-                       </div><!-- box slider  -->
-                </div> <!-- galeria -->
-            </div>
-        </section>
-    </div> <!-- row -->
+					<div class="col-sm-6 col-md-6">
+						<div class="box">
+							<div class="box_slider owl-carousel owl-theme">
+								<div class="item">
+									<a href="<?php bloginfo('url'); ?>/travellers/">
+                                    	<div class="logo_seccion logo_travellers" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_travellers_blanco.svg);"> </div>                             
+										<div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_travellers.png);"> </div>                             
+									</a>
+								</div>
+							</div><!-- box slider  -->
+						</div> <!-- galeria -->
+					</div>
+				</section>
+			</div> <!-- row -->
 <?php include('footer.php') ?>
 

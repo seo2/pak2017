@@ -523,102 +523,84 @@ $('.box_slider').owlCarousel({
 
         });
 
-           // ===== Scroll to Top ==== 
-              $(window).scroll(function() {
-                  if ($(this).scrollTop() >= 560) {        
-                      $('#return-to-top').fadeIn(300);    // Fade in the arrow
-                  } else {
-                      $('#return-to-top').fadeOut(300);   // Else fade out the arrow
-                  }
-              });
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+	if ($(this).scrollTop() >= 560) {        
+    	$('#return-to-top').fadeIn(300);    // Fade in the arrow
+  	}else{
+    	$('#return-to-top').fadeOut(300);   // Else fade out the arrow
+  	}
+});
 
-              $('#return-to-top').click(function() {      // When arrow is clicked
-                  $('body,html').animate({
-                      scrollTop : 0                       // Scroll to top of body
-                  }, 500);
-              });
-
-
+$('#return-to-top').click(function() {      // When arrow is clicked
+  $('body,html').animate({
+      scrollTop : 0                       // Scroll to top of body
+  }, 500);
+});
 
 
-    //     $(document).click(function (event) {
-    //         var clickover = $(event.target);
-    //         var _opened = $(".navbar-collapse").hasClass("navbar-collapse in");
-    //         var _form_control = $("input").hasClass("form-control");
-    //         if (_opened === false && !clickover.hasClass("navbar-toggle") || _form_control === true ) {
-    //             $("button.navbar-toggle").click();
-    //         }
 
-    //         console.log(_form_control);
+$('body').on('click', '.box_servicio a', function() {
+    elid = $(this).data('target');
+    console.log('El ID: '+elid);
+    $('.box_servicio a.active').removeClass('active');
+    $(".content_servicio").collapse('hide');
+    window.setTimeout(function() {
+        $(window).scrollTo($(elid+"ancla"), 1500,'elasout');
+    }, 500);
+    
+	$('.slider_entrentencion').owlCarousel({
+	    loop:false,
+	    margin:10,
+	    nav:true,
+	    dots: false,
+	    autoplay: false,
+	    rewind: true,
+	    lazyLoad:true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        768:{
+	            items:1
+	        },
+	        1024:{
+	            items:1
+	        }
+	    }
+	});  
+});
 
-    // });
-
-//     $(document).on('click', 'a', function(event){
-//     event.preventDefault();
-
-//     $('html, body').animate({
-//         scrollTop: $( $.attr(this, 'href') ).offset().top
-//     }, 500);
-// });
-
-                //SERVICIOS , galerias
-/*
-                $('.box_servicio a').click(function() {
-                    $('.box_servicio a.active').removeClass('active');
-                    $(".content_servicio").collapse('hide');
-                    $(this).toggleClass('active').collapse('show');
-                     window.setTimeout(function() {
-                        $(window).scrollTo($(".close_servicio"), 1500,'elasout');
-                      }, 500);
-            	});
-*/
-
-                $('.box_servicio a').click(function() {
-	                elid = $(this).data('target');
-                    $('.box_servicio a.active').removeClass('active');
-                    $(".content_servicio").collapse('hide');
-                  //  $(this).toggleClass('active').collapse('show');
-                     window.setTimeout(function() {
-                        $(window).scrollTo($(elid+"ancla"), 1500,'elasout');
-                      }, 500);
-//                      $('html, body').animate({scrollTop: $(elid+" .close_servicio").offset().top -100 }, 'slow');
-            	});
-
-                    $('.box_slider a').click(function() {
-                    elid = $(this).data('target');
-                     //$('.box_servicio a.active').removeClass('active');
-                    $(".content_servicio").collapse('hide');
-                  
-                     window.setTimeout(function() {
-                        $(window).scrollTo($(elid+"ancla"), 1500,'elasout');
-                      }, 500);
-//                      $('html, body').animate({scrollTop: $(elid+" .close_servicio").offset().top -100 }, 'slow');
-                });
+$('.box_slider a').click(function() {
+    elid = $(this).data('target');
+    $(".content_servicio").collapse('hide');
   
-                  
-                        
+    window.setTimeout(function() {
+    	$(window).scrollTo($(elid+"ancla"), 1500,'elasout');
+    }, 500);
+});           
 
-                $('.box_more_info a').click(function() {
-                     elid = $(this).data('target');
-                       window.setTimeout(function() {
-                      $(window).scrollTo($(elid+"ancla"), 1500,'elasout');
-                    }, 500);
-                    
-                    $('.box_servicio a.active').removeClass('active');
-                    $(".content_servicio").collapse('hide');
-                    $(".content_servicio").$(this).collapse('show');
-                     
-                });
+$('.box_more_info a').click(function() {
+     elid = $(this).data('target');
+       window.setTimeout(function() {
+      $(window).scrollTo($(elid+"ancla"), 1500,'elasout');
+    }, 500);
+    
+    $('.box_servicio a.active').removeClass('active');
+    $(".content_servicio").collapse('hide');
+    $(".content_servicio").$(this).collapse('show');
+     
+});
 
-                $('.close_servicio').click(function() {     
-	                elid = $(this).data('target');
-                    $(".content_servicio").collapse('hide');
-                    $('.box_servicio a').removeClass('active');
-                    $(".marker").animate({ bottom : "-10px"}, 500, function(){} );
-                     window.setTimeout(function() {
-                        $(window).scrollTo($(elid+"box").offset().top-223, 1500,'elasout');
-                      }, 500);
-                });
+$('body').on('click', '.close_servicio', function() { 
+    elid = $(this).data('target');
+    $(".content_servicio").collapse('hide');
+    $('.box_servicio a').removeClass('active');
+    $(".marker").animate({ bottom : "-10px"}, 500, function(){} );
+     window.setTimeout(function() {
+        $(window).scrollTo($(elid+"box").offset().top-223, 1500,'elasout');
+      }, 500);
+});
 
                 /*end servicios*/
 

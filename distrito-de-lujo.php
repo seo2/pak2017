@@ -13,19 +13,19 @@ Template name: Distrito de Lujo
 // TRADUCCIONES
 if(ICL_LANGUAGE_CODE=='en'){
 	$tit1 = "About Luxury District";
-	$btn1 ="View all our stores";
+	$btn1 = "View all our stores";
 	$tit2 = "our stores";
 	$tit3 = "HIGHLIGHTS";
 	$btn2 = "View more";
 }elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
 	$tit1 = "Sobre Distrito de Luxo";
-	$btn1 ="Veja todas as nossas lojas";
+	$btn1 = "Veja todas as nossas lojas";
 	$tit2 = "nossas lojas";
 	$tit3 = "DESTACADOS";
 	$btn2 = "Veja mais";
 }else{ 
 	$tit1 = "sobre distrito de lujo";
-	$btn1 ="ver todas las tiendas";
+	$btn1 = "ver todas las tiendas";
 	$tit2 = "nuestras tiendas";
 	$tit3 = "destacados";
 	$btn2 = "ver más";
