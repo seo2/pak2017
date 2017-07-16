@@ -43,7 +43,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                 
                 <div class="col-md-4">
                           <div class="form-group">
-                          <label for="exampleInputName2"><?php echo $form3; ?></label>
+                          <label for="exampleInputName2"><?php echo $form2; ?></label>
                            <input type="text" class="form-control" id="exampleInputName2" placeholder="pasaporte / rut / cédula / DNI" name="rut">
                         </div>
 

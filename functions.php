@@ -59,7 +59,7 @@ function theme_js(){
 	wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'),'1', true);
 	wp_enqueue_script('owlcarous-js', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'),'1', true);
 	wp_enqueue_script('bootselec-js', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js', array('jquery'),'1', true);
-	wp_enqueue_script('youtube-js', 'http://www.youtube.com/player_api', array('jquery'),'1', true);
+	wp_enqueue_script('youtube-js', 'https://www.youtube.com/player_api', array('jquery'),'1', true);
 	wp_enqueue_script('scrollto-js', 'https://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js', array('jquery'),'1', true);
 	wp_enqueue_script('autocompl-js', get_template_directory_uri() . '/assets/js/jquery.autocomplete.min.js', array('jquery'),'1', true);
 	wp_enqueue_script('formvalio-js', get_template_directory_uri() . '/assets/js/formValidation.min.js', array('jquery'),'1', true);
@@ -108,11 +108,17 @@ remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 
 // add google analytics to footer
 function add_google_analytics() {
-	echo '<script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>';
 	echo '<script type="text/javascript">';
-	echo 'var pageTracker = _gat._getTracker("UA-XXXXX-X");';
-	echo 'pageTracker._trackPageview();';
-	echo '</script>';
+	echo 'var _gaq = _gaq || [];';
+	echo '_gaq.push( ["_setAccount", "UA-98657-9"], ["_trackPageview"], ["b._setAccount", "UA-17441117-37"], ["b._trackPageview"] );';
+	echo '(function() {';
+	echo 'var ga = document.createElement("script");';
+	echo 'ga.type = "text/javascript"; ';
+	echo 'ga.async = true; ';
+	echo 'ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";';
+	echo 'var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);';
+	echo '})();';
+	echo '</script>';	
 }
 add_action('wp_footer', 'add_google_analytics');
 

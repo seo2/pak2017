@@ -1,8 +1,9 @@
 var loc  	= window.location.pathname;
 var dir 	= loc.substring(0, loc.lastIndexOf('/'));
 //var urlpak  = document.location.origin+dir;
-var urlpak = $('body').data('url');
-var placeholder = $('.search_home').data('placeholder');
+var urlpak 			= $('body').data('url');
+var templateurlpak 	= $('body').data('template');
+var placeholder 	= $('.search_home').data('placeholder');
 
 $(document).ready(function() {
 
@@ -547,7 +548,7 @@ $('body').on('click', '.box_servicio a', function() {
     $(".content_servicio").collapse('hide');
     window.setTimeout(function() {
         $(window).scrollTo($(elid+"ancla"), 1500,'elasout');
-    }, 500);
+    }, 1);
     
 	$('.slider_entrentencion').owlCarousel({
 	    loop:false,
@@ -599,7 +600,7 @@ $('body').on('click', '.close_servicio', function() {
     $(".marker").animate({ bottom : "-10px"}, 500, function(){} );
      window.setTimeout(function() {
         $(window).scrollTo($(elid+"box").offset().top-223, 1500,'elasout');
-      }, 500);
+      }, 1);
 });
 
                 /*end servicios*/
@@ -689,7 +690,7 @@ $('#form_sac_contacto')
 		$("#btnEnviar").html('<i class="fa fa fa-spinner fa-spin"></i>');
 		$.ajax({
 		    type: "POST",
-		    url: "ws/contacto.php",
+		    url: templateurlpak+"/ws/contacto.php",
 		    data: $("#form_sac_contacto").serialize(),
 		    success: function(msg) {
 		    	console.log(msg);
@@ -732,7 +733,7 @@ $('#form_tarjeta_descuento')
 		$("#btnEnviar").html('<i class="fa fa fa-spinner fa-spin"></i>');
 		$.ajax({
 		    type: "POST",
-		    url: "ws/travellers.php",
+		    url: templateurlpak+"/ws/travellers.php",
 		    data: $("#form_tarjeta_descuento").serialize(),
 		    success: function(msg) {
 		    	console.log(msg);
@@ -792,7 +793,7 @@ $('#form_neswsletter')
 			$("#form_neswsletter button").html('<i class="fa fa-spinner fa-spin"></i>');
 			$.ajax({
 			    type: "POST",
-			    url: "ws/suscribirse.php",
+			    url: templateurlpak+"/ws/suscribirse.php",
 			    data: $("#form_neswsletter").serialize(),
 			    success: function(msg) {
 			    	console.log(msg);
@@ -841,6 +842,13 @@ $('#legales').on('change', function () {
   if (url) { // require a URL
       //window.location = url; // redirect
       window.open( url, '_blank' );
+  }
+  return false;
+});
+$('#categorias').on('change', function () {
+  var url = $(this).val(); // get selected value
+  if (url) { // require a URL
+      window.location = url; // redirect
   }
   return false;
 });

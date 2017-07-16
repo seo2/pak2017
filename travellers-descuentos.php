@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 
 Template name: Travellers Descuentos
@@ -10,12 +10,49 @@ Template name: Travellers Descuentos
 <?php // include('include-slider-home.php') ?>
 <?php //include('include-search-home.php') ?>
 <?php include('include-search-no-slider.php') ?>
+<?php 
+// TRADUCCIONES
+if(ICL_LANGUAGE_CODE=='en'){
+	$tit1 = "Stores with DISCOUNTS";
+	$tit2 = "Filter by";
+	$tit3 = "All Categories";
+	$btn1 = "See more discounts";
+	$btn2 = "View more stores";
+	$page = '/en/travellers/discounts';
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+	$tit1 = "Lojas com desconto";
+	$tit2 = "Filtrar";
+	$tit3 = "todas as categorias";
+	$btn1 = "veja mais descontos";
+	$btn2 = "Veja mais lojas";
+	$page = '/pt-br/viajantes/descontos';
+}else{ 
+	$tit1 = "tiendas descuentos";
+	$tit2 = "filtrar por";
+	$tit3 = "Todas las categorías";
+	$btn1 = "ver más descuentos";
+	$btn2 = "ver más tiendas";
+	$page = '/travellers/travellers-descuentos';
+} ?> 
 
+<?php
+function tiene_descuentos($idioma, $catID){
+	$i 			= 0;
+	$db 		= new MysqliDb (DBHOST, DBUSER, DBPASS, DBNAME);
+	$tiendas 	= $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE a.idioma = $idioma and b.idioma = a.idioma and a.pinDescuento != '' AND a.pinDescuento != '0' and b.sub_categoria = $catID AND a.punto_interes = b.punto_interes ORDER BY a.nombre limit 1");
+	if($tiendas){
+		foreach ($tiendas as $t) {
+			$i++;
+		}
+	}
+	return $i;
+}
+?>
    <div class="titulo_seccion sin_slider">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-10">
-               <h4 class="divider">tiendas descuentos</h4>
+               <h4 class="divider"><?php echo $tit1; ?></h4>
             </div>
             <div class="col-sm-12 col-md-2">
                  <a href="travellers.php" class="back">< <?php echo $back; ?></a>
@@ -25,45 +62,52 @@ Template name: Travellers Descuentos
     </div> <!-- titulo seccion -->
 
     <section class="main_content">
-      <div class="container">
-          <div class="row">
-          <section class="travelers_descuentos clearfix">
-             
-             <div class="col-sm-12">
-               <div id="filtro_descuento" class="text-right">
-                <div id="text"> filtrar por: </div>
-                 <select name="" class="selectpicker show-menu-arrow"> 
-                       <option selected="selected" value="">Todas las categorías</option>
-                       <option value="">calzado</option>
-                       <option value="">restaurantes</option>
-                       <option value="">vestuario</option>
-                       <option value="">varios</option>
-                       <option value="">piso diseño</option>
-                       <option value="">distrito de lujo</option>
-                       <option value="">fuera de nuestro mall</option>
-                 </select>
-                 </div>
-             </div>
-               <div class="clear"></div>
-              <div class="grid_descuentos center-block">
-                  <div class="container">
-                      <div class="row" id="caja_tienda">
+    	<div class="container">
+        	<div class="row">
+				<section class="travelers_descuentos clearfix">
+					<div class="col-sm-12">
+						<div id="filtro_descuento" class="text-right">
+							<div id="text"> <?php echo $tit2; ?>: </div>
+								<select name="" class="selectpicker show-menu-arrow" id="categorias"> 
+									<option value="<?php bloginfo('url'); ?>/travellers/discounts/"><?php echo $tit3; ?></option>
+<?php
+					$categorias = $db->rawQuery("SELECT * FROM pak_categorias where idioma = $idioma order by nombre_subcategoria");
+					if($categorias){
+					foreach ($categorias as $c) { 
+						$tiene = 0; 
+						$tiene = tiene_descuentos($idioma, $c['id_subcategoria']);
+						if($tiene == 1){ 
+?>                       	
+			                       <option value="<?php bloginfo('url'); ?>/travellers/discounts/?catID=<?php echo $c['id_subcategoria']; ?>" <?php if($_GET['catID']==$c['id_subcategoria']){ ?>selected<?php } ?>><?php echo $c['nombre_subcategoria']; ?></option>
+
+						<?php
+								}
+							}
+						}  		
+						?>
+                				</select>
+                			</div>
+						</div>
+					<div class="clear"></div>
+					<div class="grid_descuentos center-block">
+						<div class="container">
+							<div class="row" id="caja_tienda">
 
  <?php
 						if($_GET['catID']){
 							$buscar = $_GET['catID'];
 							if($_GET['pagina']){
-								$desde = 12 * ($_GET['pagina'] - 1);
-								$tiendas = $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre limit $desde,12");
+								$desde 		= 12 * ($_GET['pagina'] - 1);
+								$tiendas 	= $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE a.idioma = $idioma and b.idioma = a.idioma and a.pinDescuento != '' AND a.pinDescuento != '0' and b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre limit $desde,12");
 							}else{
-								$tiendas = $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre limit 12");
+								$tiendas = $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE a.idioma = $idioma and b.idioma = a.idioma and a.pinDescuento != '' AND a.pinDescuento != '0' and b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre limit 12");
 							}
 						}else{
 							if($_GET['pagina']){
 								$desde 	 = 12 * ($_GET['pagina'] - 1);
-								$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and pinDescuento != '' AND pinDescuento != '0' order by nombre limit $desde, 12");
+								$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and pinDescuento != '' AND pinDescuento != '0' order by nombre limit $desde, 12");
 							}else{
-								$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and pinDescuento != '' AND pinDescuento != '0' order by nombre limit 12");
+								$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and pinDescuento != '' AND pinDescuento != '0' order by nombre limit 12");
 							}
 						}
                             
@@ -81,7 +125,19 @@ Template name: Travellers Descuentos
                           <div class="col-md-3 caja_tienda"> 
                               <div class="box_descuento">
                                       <div class="item_descuento" id="tienda_<?php echo $t['punto_interes']; ?>">
-                                        <a href="javascript:void(0);" data-id="<?php echo $t['punto_interes']; ?>" data-logo="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" data-desc="<?php echo trim($t['descripcion']); ?>" data-img="<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['numero_piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="<?php bloginfo('template_url'); ?>/ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>" data-tipo="<?php echo $t['tipo']; ?>">
+	                                      
+	                                    <?php  
+											if($t['tipo']=='0'){
+											  $url = '/tiendas?tiendaID='.$t['punto_interes'];
+											}elseif($t['tipo']=='110'){
+											  $url = '/boulevard-tiendas?tiendaID='.$t['punto_interes'];
+											}elseif($t['tipo']=='119'){
+											  $url = '/distrito-de-lujo/distrito-de-lujo-tienda/?tiendaID='.$t['punto_interes'];
+											}elseif($t['tipo']=='131'){
+											  $url = '/piso-diseno?tiendaID='.$t['punto_interes'];
+											}                                  
+	                                    ?>
+                                        <a href="<?php bloginfo('url'); ?><?php echo $url; ?>" data-id="<?php echo $t['punto_interes']; ?>" data-logo="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" data-desc="<?php echo trim($t['descripcion']); ?>" data-img="<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['numero_piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="<?php bloginfo('template_url'); ?>/ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>" data-tipo="<?php echo $t['tipo']; ?>">
                                           <div class="box_dcto">
                                               <div class="datos_dcto">
                                          
@@ -124,7 +180,7 @@ Template name: Travellers Descuentos
                                
                 <div class="box_ver_mas_descuentos text-center">
                 	<a href="javascript:void(0);" class="btn btn-default btn_ver_mas hvr-float">
-                    	<h3 class="ver_mas" id="cargar_mas">ver más descuentos </h3>
+                    	<h3 class="ver_mas" id="cargar_mas"><?php echo $btn1; ?></h3>
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
                         <span id="loader"  style="display:none"><i class="fa fa-circle-o-notch fa-spin fa-fw"></i></span>
                     </a>
@@ -136,20 +192,10 @@ Template name: Travellers Descuentos
 
 <div id="pages" style="display:none;" data-pagina="tiendas">
 <?php 
-	$postperpage = 12;
-	$rowcount = 0;
-
-	if($_GET['busqueda']){
-		
-		$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre");
-		if($tiendas){
-			foreach ($tiendas as $t) { 
-				$rowcount++;
-			}
-		}
-		$cola = "&busqueda=ropa";		
-	}elseif($_GET['catID']){
-		$tiendas = $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre");
+	$postperpage 	= 12;
+	$rowcount 		= 0;
+	if($_GET['catID']){		
+		$tiendas = $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE a.idioma = $idioma and b.idioma = a.idioma and a.pinDescuento != '' AND a.pinDescuento != '0' and b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre");
 		if($tiendas){
 			foreach ($tiendas as $t) { 
 				$rowcount++;
@@ -157,8 +203,6 @@ Template name: Travellers Descuentos
 		}
 		$cola = "&catID=$buscar";	
 	}else{
-		$db->where('tipo', Array(119, 131,110), 'NOT IN');
-		
 		$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and pinDescuento != '' AND pinDescuento != '0'");
 		if($tiendas){
 			foreach ($tiendas as $t) { 
@@ -168,9 +212,6 @@ Template name: Travellers Descuentos
 		$cola = "";
 	}
 
-
-
-
 	echo "Total Items: ".$rowcount;
 	
 	$paginas = ceil($rowcount/$postperpage); 
@@ -179,8 +220,9 @@ Template name: Travellers Descuentos
 	
 	$x = 1;
 	while($x <= $paginas) {
+	
 	?>
-		<a href="<?php bloginfo('url'); ?>/travellers-descuentos/?pagina=<?php echo  $x.$cola; ?>"></a>
+		<a href="<?php bloginfo('url'); ?><?php echo $page; ?>/?pagina=<?php echo  $x.$cola; ?>"></a>
 	<?php 
 		$x++; 
 	}

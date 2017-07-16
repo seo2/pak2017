@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 
 Template name: Travellers Formulario
@@ -10,11 +10,20 @@ Template name: Travellers Formulario
 <?php // include('include-slider-home.php') ?>
 <?php //include('include-search-home.php') ?>
 <?php include('include-search-no-slider.php') ?>
+<?php 
+// TRADUCCIONES
+if(ICL_LANGUAGE_CODE=='en'){
+	$tit2 = "Contact us";
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+	$tit2 = "Contate-Nos";
+}else{ 
+	$tit2 = "contáctanos";
+} ?>   
      <div class="titulo_seccion sin_slider">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-10">
-                <h4 class="divider">contacto</h4>
+                <h4 class="divider"><?php echo $tit2; ?></h4>
             </div>
             <div class="col-sm-12 col-md-2">
                  <a href="travellers.php" class="back">< <?php echo $back; ?></a>
@@ -27,19 +36,16 @@ Template name: Travellers Formulario
       <div class="container">
           <div class="row">
           <section class="tarjeta_descuento">
-            
-
-               <p> En nuestro afán por entregarte siempre una experiencia única y de calidad, disponemos
-                          para ti una serie de servicios que harán de tu visita a Parque Arauco el mejor momento.</p>
-
-               <p> Nuestro personal, altamente capacitado, tiene una clara orientación hacia 
-                         tus necesidades, siempre con la mejor disposición a ayudarte en lo que necesites.</p>
-
-               <p> Para cualquier duda o consulta, puedes llamarnos directamente al teléfono: 
-               <span class="texto_negro_bold">600 500 0011</span> o bien escribirnos a través del siguiente formulario:</p>
-
-                <p class="texto_rojo">Los campos marcados con el signo (*) son obligatorios.</p>
-
+			<?php	                                         
+			    $args = array(
+					'page_id' => 49
+			    );
+				$the_query = new WP_Query ($args);
+			    if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
+			    	the_content(); 
+			?>	  
+			<?php endwhile; else: ?>
+			<?php endif; ?>	  
                 <!-- formulario  -->
                <?php  include('include-form-tarjeta-travellers.php') ?>
              
