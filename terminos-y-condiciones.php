@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 
 Template name: Términos y Condiciones
@@ -10,12 +10,21 @@ Template name: Términos y Condiciones
 <?php // include('include-slider-home.php') ?>
 <?php //include('include-search-home.php') ?>
 <?php include('include-search-no-slider.php') ?>
+<?php 
+// TRADUCCIONES
+if(ICL_LANGUAGE_CODE=='en'){
+	$tit  = "TERMS AND CONDITIONS";
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+	$tit  = "TERMOS E CONDIÇÕES";
+}else{ 
+	$tit  = "términos y condiciones";
+} ?>
 
     <div class="titulo_seccion sin_slider">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-10">
-               <h4 class="divider">términos y condiciones</h4>
+               <h4 class="divider"><?php echo $tit; ?></h4>
             </div>
             <div class="col-sm-12 col-md-2">
               <a href="<?php bloginfo('url'); ?>" class="back">< <?php echo $back; ?></a>

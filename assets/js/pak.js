@@ -836,3 +836,11 @@ $('#language').on('change', function () {
   }
   return false;
 });
+$('#legales').on('change', function () {
+  var url = $(this).val(); // get selected value
+  if (url) { // require a URL
+      //window.location = url; // redirect
+      window.open( url, '_blank' );
+  }
+  return false;
+});

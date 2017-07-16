@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 
 Template name: Contacto Comercial

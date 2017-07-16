@@ -151,18 +151,18 @@ if(ICL_LANGUAGE_CODE=='en'){
   var currencies = [
 	  
 	  <?php
-	$categorias = $db->rawQuery("select * from pak_categorias");
+	$categorias = $db->rawQuery("select * from pak_categorias where idioma = $idioma");
 	if($categorias){
 		foreach ($categorias as $p) {
 			
-			echo "{ value: '".$p['nombre_subcategoria']."', id: '".$p['id_subcategoria']."', tipo: '-', busqueda: 'Cat' },";
+			echo "{ value: '".addslashes($p['nombre_subcategoria'])."', id: '".$p['id_subcategoria']."', tipo: '-', busqueda: 'Cat' },";
 		}
 	}  	
-	$tiendas = $db->rawQuery("select * from pak_tiendas");
+	$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma");
 	if($tiendas){
 		foreach ($tiendas as $t) {
 			
-			echo "{ value: '". str_replace("'", "",  $t['nombre'])."', id: '".$t['punto_interes']."', tipo: '".$t['tipo']."', busqueda: 'Tienda' },";
+			echo "{ value: '". str_replace("'", "",  addslashes($t['nombre']))."', id: '".$t['punto_interes']."', tipo: '".$t['tipo']."', busqueda: 'Tienda' },";
 		}
 	}    
 	  ?>
