@@ -303,4 +303,16 @@ function icl_post_languages_mobile(){
     }
 }
 
+
+/**
+* add external link to Tools area
+*/
+add_action('admin_menu', 'example_admin_menu');
+function example_admin_menu() {
+    global $submenu;
+    $url = get_site_url().'/admin';
+    $submenu['index.php'][] = array('Formularios', 'manage_options', $url);
+}
+
+
 ?>
