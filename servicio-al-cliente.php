@@ -100,16 +100,16 @@ if(ICL_LANGUAGE_CODE=='en'){
                               </div>
                               <div class="col-xs-10">
                                     <div class="centerer">
-										<?php if(ICL_LANGUAGE_CODE=='en'){ ?>
-										<p>The travelers must wait for Turistik at the indicated time and place.</p>
-										<p>For further information about this service, contact Turistik at <strong>(56- 2) 28201000 </strong>or e-mail:<a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
-										<?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){  ?>
-										<p>O passageiro deve esperar no lugar indicado por Turistik na hora.</p>
-										<p>Para maiores informações deste serviço deve-se contatar com Turistik no telefone: <strong>(56- 2) 28201000 </strong>ou pelo e-mail: <a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
-										<?php }else{  ?>
-										<p>El pasajero El pasajero debe esperar en el lugar indicado por Turistik a la hora.</p>
-										<p> Para mayor información de este servicio contactarse con Turistik al <strong>(56- 2) 28201000 </strong>o el e-mail: <a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
-										<?php } ?>  
+                    										<?php if(ICL_LANGUAGE_CODE=='en'){ ?>
+                    										<p>The travelers must wait for Turistik at the indicated time and place.</p>
+                    										<p>For further information about this service, contact Turistik at <strong>(56- 2) 28201000 </strong>or e-mail:<a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
+                    										<?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){  ?>
+                    										<p>O passageiro deve esperar no lugar indicado por Turistik na hora.</p>
+                    										<p>Para maiores informações deste serviço deve-se contatar com Turistik no telefone: <strong>(56- 2) 28201000 </strong>ou pelo e-mail: <a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
+                    										<?php }else{  ?>
+                    										<p>El pasajero debe esperar en el lugar indicado por Turistik a la hora.</p>
+                    										<p> Para mayor información de este servicio contactarse con Turistik al <strong>(56- 2) 28201000 </strong>o el e-mail: <a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
+                    										<?php } ?>  
                                     </div>
                               </div>
                            <!--    <div class="clearfix"></div>

@@ -49,7 +49,7 @@ if(ICL_LANGUAGE_CODE=='en'){
  -->           
             <div class="col-sm-12">
               <?php include('include-slider-distrito-de-lujo-servicios.php') ?>
-              <a href="<?php bloginfo('url'); ?>/distrito-de-lujo-tiendas" class="ver_mas_tiendas raya_after pull-right"> <?php echo $btn1; ?> </a>
+              <a href="<?php bloginfo('url'); ?>/distrito-de-lujo/distrito-de-lujo-tiendas/" class="ver_mas_tiendas raya_after pull-right"> <?php echo $btn1; ?> </a>
             </div>
              <?php include('include-modal-ubicacion-distrito-de-lujo.php'); ?>
           </section> <!-- fin grilla tiendas distrito -->

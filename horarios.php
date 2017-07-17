@@ -54,8 +54,8 @@ if(ICL_LANGUAGE_CODE=='en'){
                                 	<?php the_content(); ?>
 									<?php endwhile; else: ?>
 									<?php endif; ?>	
-	                                  <?php if(1==2){ ?>
-                                      <div class="panel-group hidden" id="accordion" role="tablist" aria-multiselectable="true">
+	                                 
+                                      <div class="panel-group " id="accordion" role="tablist" aria-multiselectable="true">
         							<?php	                                         
         							    $args = array(
         									'post_type' 		=> array('horario'),
@@ -99,11 +99,11 @@ if(ICL_LANGUAGE_CODE=='en'){
                                                </div>
                                              </div>
                                            </div>
-											<?php endwhile; else: ?>
-											<?php endif; ?>
-											<?php wp_reset_query(); ?>
-											<?php $i++; ?>
-                                           <div class="panel panel-default">
+    											<?php endwhile; else: ?>
+    											<?php endif; ?>
+    											<?php wp_reset_query(); ?>
+    											<?php $i++; ?>
+                                           <div class="panel panel-default hide">
                                               <div class="panel-heading" role="tab" id="">
                                                   <!-- <div class="ribbon"></div> -->
                                                 <h4 class="panel-title">
@@ -116,11 +116,11 @@ if(ICL_LANGUAGE_CODE=='en'){
                                                 <div class="panel-body nopad">
                                                      <div class="row">
                                                        <div class="col-sm-12"> 
-                                                           <p> Lunes a domingo abierto desde las 07:00 y acceso restringido a partir de las 23:30 (Por Acceso Rosario Norte)</p>
+                                                           <p> Lunes a domingo abierto desde las 07:00 y acceso restringido a partir de las 23:30 hrs.</p>
                                                        </div>
                                                      </div>
                                               
-                                                <table id="table_horarios_estacionamientos" class="table table-bordered">
+                                                <table id="table_horarios_estacionamientos" class="table table-bordered hide">
                                                      <tr>
                                                        <td colspan="5" align="center" class="titulo_tabla">
                                                          <h5>ESTACIONAMIENTOS</h5>
@@ -187,7 +187,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                                               </div>
                                             </div>                                           
 										</div> <!-- END panel group -->
-                                      <?php } ?>
+                                    
 									</div>
 								</section> <!-- box horarios del mall -->
                             </div> <!-- end desc_servicio -->

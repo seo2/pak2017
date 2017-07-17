@@ -40,7 +40,7 @@
 									<p>O passageiro deve esperar no lugar indicado por Turistik na hora.</p>
 									<p>Para maiores informações deste serviço deve-se contatar com Turistik no telefone: <strong>(56- 2) 28201000 </strong>ou pelo e-mail: <a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
 									<?php }else{  ?>
-									<p>El pasajero El pasajero debe esperar en el lugar indicado por Turistik a la hora.</p>
+									<p>El pasajero debe esperar en el lugar indicado por Turistik a la hora.</p>
 									<p> Para mayor información de este servicio contactarse con Turistik al <strong>(56- 2) 28201000 </strong>o el e-mail: <a href="mailto:contacto@turistik.cl"><strong>contacto@turistik.cl</strong></a></p>
 									<?php } ?>  
                               </div>

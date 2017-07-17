@@ -39,8 +39,8 @@ if(isset($_GET['tiendaID'])){
 					<p><?php echo $desc; ?></p>
                     <h3> CONTACTO: <span class="telefono"><?php echo $fono; ?><span></h3>
                     <h4> PISO <span class="piso"><?php echo $piso; ?></span></h4> 
-                    <a href="javascript:void(0);" class="btn btn-default btn_mapa" data-toggle="modal" data-target="#mapaTienda">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i> ver mapa de ubicación </a>
+                    <a href="javascript:void(0);" class="btn btn-default btn_mapa hide" data-toggle="modal" data-target="#mapaTienda">
+                    <i class="fa fa-map-marker " aria-hidden="true"></i> ver mapa de ubicación </a>
                     <div class="clearfix"></div>
                     <a href="<?php echo $url; ?>" target="_blank" class="url"><?php echo $url; ?></a>
                     <div class="share_tienda">

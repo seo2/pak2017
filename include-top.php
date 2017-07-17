@@ -16,7 +16,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$tit2 = "How to get there ";
 	$tit3 = "Subscribe here";
 	$tit4 = "I accept the conditions";
-	$tit5 = "I’d like to subscribe";
+	$tit5 = "Enter your email";
 	$btn1 = "View all our stores";
 	$btn2 = "View more";
 }elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
@@ -26,7 +26,7 @@ if(ICL_LANGUAGE_CODE=='en'){
     $menu5 = "Diversão";
     $menu6 = "Novidades";
     $menu7 = "Lojas";
-	$menu8 = "arauco tag";
+	  $menu8 = "arauco tag";
     $menu9 = "Revista detalhe";
     $menu10 = "Serviço ao cliente";
     $menu11 = "Viajantes";
@@ -35,7 +35,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$tit2 = "Como chegar";
 	$tit3 = "Inscreva-se";
 	$tit4 = "Aceito as condições";
-	$tit5 = "Quero-me inscrever";
+	$tit5 = "Digite o seu e-mail";
 	$btn1 = "Veja todas as nossas lojas";
 	$btn2 = "Veja mais";
 }else{ 	
@@ -45,7 +45,7 @@ if(ICL_LANGUAGE_CODE=='en'){
     $menu5 = "entretención";
     $menu6 = "novedades";
     $menu7 = "tiendas";
-	$menu8 = "arauco tag";
+	  $menu8 = "arauco tag";
     $menu9 = "revista detalle";
     $menu10 = "servicio al cliente";
     $menu11 = "travellers";
@@ -54,7 +54,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$tit2 = "cómo llegar";
 	$tit3 = "suscríbete";
 	$tit4 = "Acepto las condiciones";
-	$tit5 = "me quiero suscribir";
+	$tit5 = "ingresa tu email";
 	$btn1 = "ver todas las tiendas";
 	$btn2 = "ver más";
 	

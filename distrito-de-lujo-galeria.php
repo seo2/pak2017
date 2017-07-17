@@ -34,7 +34,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                 <h4  class="divider"><?php echo $tit1; ?></h4>
             </div>
             <div class="col-sm-12 col-md-2">
-                 <a href="distrito-de-lujo.php" class="back">< <?php echo $back; ?></a>
+                 <a href="javascript:window.history.back();" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>

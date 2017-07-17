@@ -21,7 +21,7 @@ if (have_posts()) :
                  <h4 class="divider"><?php the_title(); ?></h4> 
             </div>
             <div class="col-sm-12 col-md-2">
-               <a href="servicio-al-cliente.php" class="back">< <?php echo $back; ?></a>
+               <a href="<?php bloginfo('url'); ?>/servicio-al-cliente/" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>

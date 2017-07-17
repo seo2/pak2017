@@ -55,7 +55,7 @@ function tiene_descuentos($idioma, $catID){
                <h4 class="divider"><?php echo $tit1; ?></h4>
             </div>
             <div class="col-sm-12 col-md-2">
-                 <a href="travellers.php" class="back">< <?php echo $back; ?></a>
+                 <a href="javascript:window.history.back();" class="back">< <?php echo $back; ?></a>
             </div>
           </div>
         </div>

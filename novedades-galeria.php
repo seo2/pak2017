@@ -38,7 +38,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 	                <h4  class="divider"><?php echo $tit1; ?></h4>
 	            </div>
 	            <div class="col-sm-12 col-md-2">
-	                 <a href="novedades.php#entretencion" class="back">< <?php echo $back; ?></a>
+	                 <a href="<?php bloginfo('url'); ?>/novedades/#entretencion" class="back">< <?php echo $back; ?></a>
 	            </div>
 	          </div>
 	        </div>
@@ -50,7 +50,6 @@ if(ICL_LANGUAGE_CODE=='en'){
 				<div class="grid_tiendas center-block">       
 				<?php 
 				    $detect = new Mobile_Detect();
-				    	 
 					if ($detect->isMobile()) { 
 					   include('include-novedades-galeria-mobile.php'); 
 					}else{ 	 

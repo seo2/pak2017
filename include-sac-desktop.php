@@ -69,6 +69,7 @@
 							<div class="desc_servicio">
 								<section class="box_horarios">
                                     <div class="col-sm-12">
+
 										<?php	                                         
 										    $args = array(
 												'page_id' => 24
@@ -81,8 +82,8 @@
 										<?php endwhile; else: ?>
 										<?php endif; ?>	   
 										
-										<?php if(1==2){ ?>
-                                        <div class="panel-group hidden" id="accordion" role="tablist" aria-multiselectable="true">
+										
+                                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         							<?php	                                         
         							    $args = array(
         									'post_type' 		=> array('horario')
@@ -129,7 +130,7 @@
 											<?php endif; ?>
 											<?php wp_reset_query(); ?>
 											<?php $i++; ?>
-                                           <div class="panel panel-default">
+                                           <div class="panel panel-default hide">
                                               <div class="panel-heading" role="tab" id="">
                                                   <!-- <div class="ribbon"></div> -->
                                                 <h4 class="panel-title">
@@ -142,11 +143,11 @@
                                                 <div class="panel-body nopad">
                                                      <div class="row">
                                                        <div class="col-sm-12"> 
-                                                           <p> Lunes a domingo abierto desde las 07:00 y acceso restringido a partir de las 23:30 (Por Acceso Rosario Norte)</p>
+                                                           <p> Lunes a domingo abierto desde las 07:00 y acceso restringido a partir de las 23:30 hrs.</p>
                                                        </div>
                                                      </div>
                                               
-                                                <table id="table_horarios_estacionamientos" class="table table-bordered">
+                                                <table id="table_horarios_estacionamientos" class="table table-bordered hide">
                                                      <tr>
                                                        <td colspan="5" align="center" class="titulo_tabla">
                                                          <h5>ESTACIONAMIENTOS</h5>
@@ -213,7 +214,7 @@
                                               </div>
                                             </div>                                           
 										</div> <!-- END panel group -->
-										<?php } ?>
+										
                                 </div>
                           </section> <!-- box horarios del mall -->
                      </div> <!-- end desc_servicio -->

@@ -91,7 +91,7 @@ if(isset($_GET['tiendaID'])){
                       </div>
                       </div>
                </div><!-- caja tienda -->
-                 <a href="distrito-de-lujo-tiendas.php" class="ver_mas_tiendas raya_after pull-right"> ver más tiendas </a>
+                 <a href="<?php bloginfo('url'); ?>/distrito-de-lujo/distrito-de-lujo-tiendas" class="ver_mas_tiendas raya_after pull-right"> ver más tiendas </a>
             </div>
           </section> <!-- fin grilla tiendas distrito -->
 

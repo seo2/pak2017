@@ -71,19 +71,19 @@
                           <div class="col-sm-12 col_box_news_letter"> 
                             <div class="box_newsletter" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_box_newsletter.jpg);">  
                               		<h3><?php echo $tit3; ?></h3>
-									<form class="form_neswsletter" role="" id="form_neswsletter">
-										<div class="box_input">
-											<input  class="form-control" type="email" placeholder="<?php echo $tit5; ?>" required name="mail"/>
-											<button type="submit">
-												<i class="fa fa-envelope" aria-hidden="true"></i>
-											</button>
-										</div>
-										<div class="checkbox">
-											<label>
-												<input type="checkbox" id="acepto"> <a href=""><?php echo $tit4; ?></a>
-											</label>
-										</div>
-									</form>
+                  									<form class="form_neswsletter" role="" id="form_neswsletter">
+                  										<div class="box_input">
+                  											<input  class="form-control" type="email" placeholder="" required name="mail"/>
+                  											<button type="submit">
+                  												<i class="fa fa-envelope" aria-hidden="true"></i>
+                  											</button>
+                  										</div>
+                  										<div class="checkbox">
+                  											<label>
+                  												<input type="checkbox" id="acepto"> <a href=""><?php echo $tit4; ?></a>
+                  											</label>
+                  										</div>
+                  									</form>
                             </div>
                           </div>
                         <div class="clearfix"></div>
