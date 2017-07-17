@@ -27,7 +27,7 @@ Template name: Distrito de lujo Tiendas
 
     <section class="main_content">
       <div class="container">
-          <section class="tiendas_distrito">
+          <section class="tiendas_distrito clearfix" id="tiendas_distrito">
           
 
 <!-- <a href="javascript:void(0);" class="ver" data-toggle="modal" data-target="#mapaDistrito">ubicación distrito de lujo <i class="fa fa-map-marker" aria-hidden="true"></i></a> -->
@@ -36,15 +36,15 @@ Template name: Distrito de lujo Tiendas
 			if($_GET['busqueda']){
 				$buscar = filter_var($_GET["busqueda"], FILTER_SANITIZE_STRING);
 				if($_GET['pagina']){
-					$desde = 12 * ($_GET['pagina'] - 1);
-					$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit $desde, 12");
+					$desde = 8 * ($_GET['pagina'] - 1);
+					$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit $desde, 8");
 				}else{
 					//echo "select * from pak_tiendas where idioma  = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit 12";
-					$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit 12");
+					$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit 8");
 				}
 			}else{
 				if($_GET['pagina']){
-					$desde 	 = 12 * ($_GET['pagina'] - 1);
+					$desde 	 = 8 * ($_GET['pagina'] - 1);
 					$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo = 119 order by nombre limit $desde, 8");
 				}else{
 					$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and tipo = 119 order by nombre limit 8");
@@ -76,7 +76,10 @@ Template name: Distrito de lujo Tiendas
 				}
 			}  		
 			?>
+            <?php include('include-modal-ubicacion-distrito-de-lujo.php'); ?>
 
+          </section> <!-- fin grilla tiendas distrito -->
+		<section class="tiendas_distrito clearfix">
 			<div class="row">
 	            <div class="box_ver_mas_tiendas text-center">
 	            	<a href="javascript:void(0);" class="btn btn-default btn_ver_mas hvr-float">
@@ -86,19 +89,21 @@ Template name: Distrito de lujo Tiendas
 	                </a>
 	            </div> <!-- ver mas -->  
             </div>
-            <?php include('include-modal-ubicacion-distrito-de-lujo.php'); ?>
-
-          </section> <!-- fin grilla tiendas distrito -->
+   		</section>
     <!--   <div class="row">
         <?php// include('footer-distrito-de-lujo.php') ?>
       </div> -->
       
 <div id="pages" style="display:none;" data-pagina="<?php bloginfo('template_url'); ?>/distrito-de-lujo-tienda">
 <?php 
-	$postperpage = 12;
-	$db->where('tipo', Array(119), 'IN');
-	$rowcount = $db->getValue ("pak_tiendas", "count(*)");
-
+	$postperpage = 8;
+	$rowcount = 0;
+	$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and tipo = 119");    
+	if($tiendas){
+		foreach ($tiendas as $t) {   
+			$rowcount++;
+		}
+	}
 	echo "Total Items: ".$rowcount;
 	
 	$paginas = ceil($rowcount/$postperpage); 
@@ -148,7 +153,7 @@ function loadMoreContent(position) {
 				pines = $(data).find(".caja_tienda");
 				console.log(pines);
 				$('#loader').fadeOut('slow', function() {
-					$('.tiendas_distrito').append( $(pines).hide().fadeIn(2000));
+					$('#tiendas_distrito').append( $(pines).hide().fadeIn(2000));
 			        current=position;
 			        if(position +1 < pages.length) {
 					
