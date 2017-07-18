@@ -398,6 +398,9 @@ footer .bullets li.bullet .bullet-content p a {
     -o-animation: none !important;
     -ms-animation: none !important;
     animation: none !important; } }
+.sin_borde {
+  border: none !important; }
+
 #return-to-top {
   position: fixed;
   bottom: 20px;

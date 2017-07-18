@@ -507,9 +507,9 @@ $('.box_slider').owlCarousel({
 
                 $('.navbar-toggle').click(function () {
                      if($('#navbar').attr('aria-expanded') === "false"){
-                         $('.close_tienda').hide();
+                        // $('.close_tienda').hide();
                         }else if($('#navbar').attr('aria-expanded') === "true" && $('body').hasClass('')){
-                            $('.close_tienda').show();
+                           // $('.close_tienda').show();
                         }
                 });
 

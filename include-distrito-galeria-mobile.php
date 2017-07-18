@@ -31,7 +31,7 @@
 					<?php the_post_thumbnail('preview_galerias', array( 'class' => 'center-block img-responsive' ) ); ?>
           		</a>
         	</div>
-			<div class="box_more_info">
+			<div class="box_more_info sin_borde">
 				<a href="javascript:void(0);" data-toggle="collapse" data-target="#gal<?php echo $e; ?>_xs"><?php the_title(); ?></a>
         	</div>
     	</div>
