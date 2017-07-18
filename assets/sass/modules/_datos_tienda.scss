@@ -8,6 +8,15 @@
     background-color: white;
     overflow: hidden;
     display: none;
+    .container{
+      width: 1140px;
+    }
+    @media(max-width: 1439px){
+      .container{
+        width: 100%;
+      }
+    }
+   
       .datos_tienda {
         position: relative;
         min-height: 480px;
@@ -47,7 +56,16 @@
             }
 
           .datos{
-                  @include centerer(true, true);
+                  // position: relative;
+                  // left: auto;
+                  // top: auto;
+                  // transform: none;
+                  @include centerer(false, true);
+                  padding: 0 20px 0 0;
+                  @media(max-width: 1439px){
+                    @include centerer(true, true);
+                      padding: 0;
+                  }
                  
                   z-index: 0;
                   @media(max-width: 991px){
@@ -123,7 +141,7 @@
                     margin-bottom: 30px;
                     width: 150px;
                   }
-                .share_tienda{
+                 .share_tienda{
                   margin-top: 10px;
                           ul {
                               list-style-type: none;
@@ -165,11 +183,108 @@
               background-repeat: no-repeat !important;
               min-height: 480px;
               position: relative;
+              width: 100%;
               @media(max-width: 767px){
-                    min-height: 200px;
+                    min-height: 300px;
               }
 
+              .marco{
+                // max-width: 500px;
+                // max-height: 480px;
+                border: 1px solid white;
+                @include centerer(true, true);
+                width: 90%;
+                height: 90%;
+                z-index: 1001;
+              }
 
+                     .box_dcto {
+                        @include centerer(true, true);
+                          background-color: rgba(0,0,0,0.4);
+                          width: 100%;
+                          height: 100%;
+                          padding: 20px;
+                          z-index: 100;
+
+                          // @media(max-width:767px){
+                          //     width: 80%;
+                          //     height: 80%;
+                          // }
+
+                         .datos_dcto{
+                          @include centerer(true, true);
+                          width: 62%;
+                          @media(max-width: 1024px){
+                            width: 65%;
+                          }
+                           @media(max-width: 991px){
+                            width: 150px;
+                          }
+                          @include centerer(true, true);
+
+                          .num{
+                              @include bold(60px,white);
+                              line-height: 1;
+                              text-align: center;
+                            //  float: left;
+                              letter-spacing: -4px;
+                                @media(max-width: 1024px){
+                                font-size: 70px;
+                               }
+                              @media(max-width: 767px){
+                                font-size: 70px;
+                               }
+                                
+                            }
+
+                            .box_percent{
+                              float:right;
+                              .text_percent{
+                                  @include bold(50px,white);
+                                  line-height: 1;
+                                   @media(max-width: 1024px){
+                                    font-size: 40px;
+                                  }
+                              }
+                              .text_dcto{
+                                  @include bold(20px,white);
+                                  text-transform: uppercase;
+                                   @media(max-width:1024px){
+                                    font-size: 14px;
+                                  }
+                              }
+                            }
+                            p{
+                               @include bold(12px,white);
+                               margin-top: 10px;
+                             }
+                         }
+
+                      }
+                      // img {
+                      //    transition: all .5s ease;
+                      //    opacity: 1;
+                      // }
+                      
+                        // &:hover  {
+                        //   .box_dcto{
+                        //     background-color: rgba(0,0,0,0.8);
+                        //   }
+                              
+                        //       img{
+                        //         opacity: 0.9;
+                        //         transform: scale(1.05);
+                        //     }
+                          
+                        // }
+              
+                      
+             
+
+
+
+           
+       
                    
                  
                
@@ -180,4 +295,6 @@
           margin-top: 0;
         }
 
-}
+
+
+} /* end caja datos tienda */

@@ -23,7 +23,7 @@
                     	<a class="owl-video item-video" href="https://www.youtube.com/watch?v=3DgsV87OcJY"></a>
                     <?php }else{ ?>
                         <!-- 1600x580 hidden-xs hidden-sm-->
-                        <div class="owl-lazy img_slide" data-src="<?php echo get('slider_imagen_desktop',$slider); ?>" style="background: url(<?php echo get('slider_imagen_desktop',$slider); ?>)"> </div>
+                        <div class="owl-lazy img_slide hidden-xs hidden-sm" data-src="<?php echo get('slider_imagen_desktop',$slider); ?>" style="background: url(<?php echo get('slider_imagen_desktop',$slider); ?>)"> </div>
                           <!-- 700x580 -->
                         <div class="owl-lazy img_slide visible-xs visible-sm" data-src="<?php echo get('slider_image_mobile',$slider); ?>" style="background: url(<?php echo get('slider_image_mobile',$slider); ?>);"> </div>
 	                    <?php if(get('textos_texto_1',$slider)){ ?>

@@ -213,12 +213,25 @@ section.distrito_de_lujo{
                .item {
                   position: relative;
                      .caption {
+
                        @include centerer(true, true);
                        // text-align: left;
-                               @media(max-width: 991px){
+
+                              @media(max-width: 991px){
+                                @include centerer(true, true);
+                                text-align: center;
+                                 width:90%;
+                              }
+
+                               @media(max-width: 768px){
                                  @include centerer(true, true);
                                  text-align: center;
-                                 max-width: 90%;
+                                  width:50%;
+                               }
+                                @media(max-width: 767px){
+                                 @include centerer(true, true);
+                                 text-align: center;
+                                  width:90%;
                                }
 
                         .logo_tienda_dl{
