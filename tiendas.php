@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 
 Template name: Tiendas
@@ -67,9 +67,9 @@ if(ICL_LANGUAGE_CODE=='en'){
 									$buscar = filter_var($_GET["busqueda"], FILTER_SANITIZE_STRING);
 									if($_GET['pagina']){
 										$desde = 12 * ($_GET['pagina'] - 1);
-										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit $desde, 12");
+										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and (descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%') ORDER BY nombre limit $desde, 12");
 									}else{
-										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre limit 12");
+										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and (descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%') ORDER BY nombre limit 12");
 									}
 								}elseif($_GET['catID']){
 									$buscar = $_GET['catID'];
@@ -96,7 +96,13 @@ if(ICL_LANGUAGE_CODE=='en'){
                                     	}else{
 	                                    	$imagen = '/ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
                                     	}
-                                ?>
+                                
+										if($t['pinDescuento'] != '' && $t['pinDescuento'] != '0'){
+											$clase = ' tieneDescuento';
+										}else{
+											$clase = '';
+										}
+								?>
                                 <div class="col-sm-3 caja_tienda"> 
                                       <div class="item_tienda" id="tienda_<?php echo $t['punto_interes']; ?>">
                                         <div  class="tienda">
@@ -104,7 +110,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                                               <h4 class="nombre_tienda"><?php echo $t['nombre']; ?></h4>
                                                <div class="borde"> </div>
                                               <span class="bg_nombre_tienda"> </span>
-                                                <span id="adidas" class="overlay_img" data-id="<?php echo $t['punto_interes']; ?>" data-logo="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" data-desc="<?php echo trim($t['descripcion']); ?>" data-img="<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['numero_piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="<?php bloginfo('template_url'); ?>/ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>" data-tipo="<?php echo $t['tipo']; ?>"></span>
+                                                <span id="adidas" class="overlay_img<?php echo $clase; ?>" data-id="<?php echo $t['punto_interes']; ?>" data-logo="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" data-desc="<?php echo trim($t['descripcion']); ?>" data-img="<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['numero_piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="<?php bloginfo('template_url'); ?>/ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>" data-tipo="<?php echo $t['tipo']; ?>" data-pindcto="<?php echo $t['pinDescuento']; ?>" data-pinctodesc="<?php echo $t['piiDescripcionDescuento']; ?>"></span>
                                                 <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>">
                                             </a>
 											<div class="box_logo_tienda">
@@ -140,7 +146,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 
 	if($_GET['busqueda']){
 		
-		$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%' ORDER BY nombre");
+		$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and (descripcion LIKE '%$buscar%' OR nombre LIKE '%$buscar%') ORDER BY nombre");
 		if($tiendas){
 			foreach ($tiendas as $t) { 
 				$rowcount++;
@@ -160,9 +166,6 @@ if(ICL_LANGUAGE_CODE=='en'){
 		$rowcount = $db->getValue ("pak_tiendas", "count(*)");
 		$cola = "";
 	}
-
-
-
 
 	echo "Total Items: ".$rowcount;
 	

@@ -106,7 +106,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                 <!-- RRSS -->  
 
 
-              <a class="close_tienda" href="javascript:void(0);" data-id=""> </a>
+              <a class="close_tienda" href="javascript:void(0);" data-id="<?php echo $_GET['tiendaID']; ?>"> </a>
              </div> <!-- navbar header -->
           
           <div id="navbar" class="navbar-collapse collapse ">

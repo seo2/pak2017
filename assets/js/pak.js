@@ -385,6 +385,19 @@ $('.box_slider').owlCarousel({
 		   		fono 	= $(this).data('fono');
 		   		piso 	= $(this).data('piso');
 		   		url  	= $(this).data('url');
+		   		pindcto 	= $(this).data('pindcto');
+		   		pinctodesc  = $(this).data('pinctodesc');   		
+		   		
+		   		if( $(this).hasClass('tieneDescuento')){
+			   		$('.pinDescuento').removeClass('hide');
+			   		$('#pinDescuento').html(pindcto);
+			   		$('#piiDescripcionDescuento').html(pinctodesc);
+		   		}else{
+			   		$('.pinDescuento').addClass('hide');
+			   		$('#pinDescuento').html('');
+			   		$('#piiDescripcionDescuento').html('');
+		   		}
+		   		
 		   		result 	= url.replace(/(^\w+:|^)\/\//, '');
 		   		if (result.charAt(result.length - 1) == '/') {
 				  result = result.substr(0, result.length - 1);
