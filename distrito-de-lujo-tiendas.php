@@ -10,12 +10,36 @@ Template name: Distrito de lujo Tiendas
 <?php //include('include-slider-dl.php') ?>
 <?php //include('include-search-home.php') ?>
 <?php include('include-search-no-slider.php') ?>
+<?php 
+// TRADUCCIONES
+if(ICL_LANGUAGE_CODE=='en'){
+	$tit1 = "About luxury district";
+	$btn1 ="View all our stores";
+	$tit2 = "our stores";
+	$tit3 = "HIGHLIGHTS";
+	$btn2 = "View more stores";
+	$page = 'distrito-de-luxo/luxury-district-stores';
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+	$tit1 = "Sobre o distrito de luxo";
+	$btn1 ="Veja todas as nossas lojas";
+	$tit2 = "nossas lojas";
+	$tit3 = "DESTACADOS";
+	$btn2 = "Veja mais lojas";
+	$page = 'distrito-de-luxo/distrito-de-luxo-lojas';
+}else{ 
+	$tit1 = "Sobre distrito de lujo";
+	$btn1 ="ver todas las tiendas";
+	$tit2 = "nuestras tiendas";
+	$tit3 = "destacados";
+	$btn2 = "ver más tiendas";
+	$page = 'distrito-de-lujo/distrito-de-lujo-tiendas';
+} ?> 
 
     <div class="titulo_seccion sin_slider">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-10">
-               <h4 class="divider">sobre distrito de lujo</h4>
+               <h4 class="divider"><?php echo $tit1; ?></h4>
             </div>
             <div class="col-sm-12 col-md-2">
               <a href="javascript:window.history.back();" class="back">< <?php echo $back; ?></a>
@@ -83,7 +107,7 @@ Template name: Distrito de lujo Tiendas
 			<div class="row">
 	            <div class="box_ver_mas_tiendas text-center">
 	            	<a href="javascript:void(0);" class="btn btn-default btn_ver_mas hvr-float">
-	                	<h3 class="ver_mas" id="cargar_mas">ver más tiendas </h3>
+	                	<h3 class="ver_mas" id="cargar_mas"><?php echo $btn2; ?> </h3>
 	                    <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
 	                    <span id="loader"  style="display:none"><i class="fa fa-circle-o-notch fa-spin fa-fw"></i></span>
 	                </a>
@@ -113,7 +137,7 @@ Template name: Distrito de lujo Tiendas
 	$x = 1;
 	while($x <= $paginas) {
 	?>
-		<a href="<?php bloginfo('url'); ?>/distrito-de-lujo/distrito-de-lujo-tiendas/?pagina=<?php echo  $x; ?>"></a>
+		<a href="<?php bloginfo('url'); ?>/<?php echo $page; ?>/?pagina=<?php echo  $x; ?>"></a>
 	<?php 
 		$x++; 
 	}

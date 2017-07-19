@@ -386,17 +386,7 @@ $('.box_slider').owlCarousel({
 		   		piso 	= $(this).data('piso');
 		   		url  	= $(this).data('url');
 		   		pindcto 	= $(this).data('pindcto');
-		   		pinctodesc  = $(this).data('pinctodesc');   		
-		   		
-		   		if( $(this).hasClass('tieneDescuento')){
-			   		$('.pinDescuento').removeClass('hide');
-			   		$('#pinDescuento').html(pindcto);
-			   		$('#piiDescripcionDescuento').html(pinctodesc);
-		   		}else{
-			   		$('.pinDescuento').addClass('hide');
-			   		$('#pinDescuento').html('');
-			   		$('#piiDescripcionDescuento').html('');
-		   		}
+		   		pinctodesc  = $(this).data('pinctodesc');   	
 		   		
 		   		result 	= url.replace(/(^\w+:|^)\/\//, '');
 		   		if (result.charAt(result.length - 1) == '/') {
@@ -422,7 +412,18 @@ $('.box_slider').owlCarousel({
 	            $(".lang, .rrss, .search").hide();
 	            $("#caja_datos_tienda").css("display", "block");
 	            $(".close_tienda").css('display','block').show().data('id',id_tienda);
-	
+		
+		   		
+		   		if( $(this).hasClass('tieneDescuento')){
+			   		$('.pinDescuento').removeClass('hide');
+			   		$('#pinDescuento').html(pindcto);
+			   		$('#piiDescripcionDescuento').html(pinctodesc);
+		   		}else{
+			   		$('.pinDescuento').addClass('hide');
+			   		$('#pinDescuento').html('');
+			   		$('#piiDescripcionDescuento').html('');
+		   		}
+		   		
 	            $('body').toggleClass('menu_open');
 	            $('body,html').animate({
 	                scrollTop : 0                   
