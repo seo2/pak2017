@@ -92,6 +92,9 @@ if(ICL_LANGUAGE_CODE=='en'){
 				                                <div class="logo_tienda">
 				                                    <img src="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" alt="" class="img-responsive">
 				                                </div> <!-- logo_tienda -->
+                                            	<?php if($t['pinDescuento'] != '' && $t['pinDescuento'] != '0'){ ?>
+                                            		<img src="<?php bloginfo('template_url'); ?>/assets/img/logotravellersxs.png" alt="" class="img-responsive logotravellersxs">
+												<?php } ?>
 				                            </div> <!-- box logo tienda -->
 				                        </div> <!--  tienda -->
 				                    </div> <!-- item tienda -->

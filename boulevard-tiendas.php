@@ -33,6 +33,12 @@ Template name: Boulevard Tiendas
                                     	}else{
 	                                    	$imagen = 'ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
                                     	}
+                                
+										if($t['pinDescuento'] != '' && $t['pinDescuento'] != '0'){
+											$clase = ' tieneDescuento';
+										}else{
+											$clase = '';
+										}
                                 ?>
 					            <div class="col-sm-3 caja_tienda"> 
 					            	<div class="item_tienda" id="tienda_<?php echo $t['punto_interes']; ?>">
@@ -41,13 +47,16 @@ Template name: Boulevard Tiendas
                                               <h4 class="nombre_tienda"><?php echo $t['nombre']; ?></h4>
                                                <div class="borde"> </div>
                                               <span class="bg_nombre_tienda"> </span>
-					                        	<span id="adidas" class="overlay_img" data-id="<?php echo $t['punto_interes']; ?>" data-logo="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" data-desc="<?php echo trim($t['descripcion']); ?>" data-img="<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['numero_piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="<?php bloginfo('template_url'); ?>/ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>" ></span>
+					                        	<span id="adidas" class="overlay_img<?php echo $clase; ?>" data-id="<?php echo $t['punto_interes']; ?>" data-logo="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" data-desc="<?php echo trim($t['descripcion']); ?>" data-img="<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['numero_piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="<?php bloginfo('template_url'); ?>/ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>" data-pindcto="<?php echo $t['pinDescuento']; ?>" data-pinctodesc="<?php echo $t['piiDescripcionDescuento']; ?>"></span>
 					                            <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>">
 					                        </a>
 				                            <div class="box_logo_tienda">
 				                                <div class="logo_tienda">
 				                                    <img src="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" alt="" class="img-responsive">
 				                                </div> <!-- logo_tienda -->
+                                            	<?php if($t['pinDescuento'] != '' && $t['pinDescuento'] != '0'){ ?>
+                                            		<img src="<?php bloginfo('template_url'); ?>/assets/img/logotravellersxs.png" alt="" class="img-responsive logotravellersxs">
+												<?php } ?>
 				                            </div> <!-- box logo tienda -->
 				                        </div> <!--  tienda -->
 				                    </div> <!-- item tienda -->
