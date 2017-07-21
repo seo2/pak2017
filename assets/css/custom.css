@@ -294,7 +294,7 @@ section.box_slider_home .slider_home .item a.btn_single_img, section.box_slider_
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  bottom: 60px;
+  bottom: 10px;
   border-radius: 0;
   padding: 10px 30px;
   letter-spacing: 3px;
@@ -1769,7 +1769,7 @@ section.box_slider_tag .slider_tag {
       text-align: left; }
       @media (max-width: 768px) {
         section.box_slider_tag .slider_tag .item .caption {
-          top: 340px; } }
+          top: 240px; } }
       @media (max-width: 767px) {
         section.box_slider_tag .slider_tag .item .caption {
           top: 220px; } }
@@ -2450,6 +2450,11 @@ section.main_content, section.main_content section.travellers_actividades {
       @media (max-width: 768px) {
         section.main_content .box_horizontal .caption.texto_blanco2 {
           margin-top: auto; } }
+      @media (max-width: 768px) {
+        section.main_content .box_horizontal .caption.caption_cartelera {
+          width: auto; }
+          section.main_content .box_horizontal .caption.caption_cartelera .divider {
+            text-align: left; } }
     section.main_content .box_horizontal .img_slide {
       min-height: 300px;
       background-size: cover !important;
@@ -7958,7 +7963,5 @@ section.main_content section.entretencion .content_servicio .owl-dots {
 nav #navbar .container.menu_container .col-sm-12 .box_newsletter .form_neswsletter .box_input button[type=submit] i.fa-spinner {
   color: white;
   font-size: 40px; }
-
-.logotravellersxs{ position: absolute; transform: translate(-50%, -50%); top: 50%; right: -10px; width: 40px;}
 
 /*----*/
