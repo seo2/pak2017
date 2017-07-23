@@ -398,7 +398,8 @@ $('.box_slider').owlCarousel({
 		   		
 		   		window.history.pushState("object or string", "Parque Arauco | " + nombre, "?tiendaID="+id_tienda);
 		   		document.title = "Parque Arauco | " + nombre;
-		   		$("#caja_datos_tienda p").html(desc);
+		   		$("#caja_datos_tienda p").html('');
+		   		$("#caja_datos_tienda p.descripciontienda").html(desc);
 		   		$("#caja_datos_tienda .img_tienda").css({"background":"url("+img+")"});
 		   		$("#caja_datos_tienda .logo_tienda img").attr('src',logo);
 		   		$("#caja_datos_tienda .telefono").html(fono);

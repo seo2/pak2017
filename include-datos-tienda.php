@@ -58,7 +58,7 @@ if(isset($_GET['tiendaID'])){
                         <div class="logo_tienda">
                             <img src="<?php bloginfo('template_url'); ?>/<?php echo $logo; ?>" alt="" class="img-responsive">
                         </div>
-						<p><?php echo $desc; ?></p>
+						<p class="descripciontienda"><?php echo $desc; ?></p>
                         <h3> CONTACTO: <span class="telefono"><?php echo $fono; ?><span></h3>
                         <h4> PISO <span class="piso"><?php echo $piso; ?></span></h4> 
                         <a href="javascript:void(0);" class="btn btn-default btn_mapa hide" data-toggle="modal" data-target="#mapaTienda">
