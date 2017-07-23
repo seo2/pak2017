@@ -10,7 +10,10 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$back = 'volver';
 	$idioma = 1;
 } ?> 
-<?php include('Mobile_Detect.php'); ?>
+<?php 
+	include('Mobile_Detect.php'); 
+	include('classes/BFI_Thumb.php');	
+?>
 <?php
 	require_once("ws/_lib/config.php");
 	require_once("ws/_lib/MysqliDb.php");

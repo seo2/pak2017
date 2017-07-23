@@ -7,9 +7,13 @@ if(isset($_GET['tiendaID'])){
 		foreach ($tiendas as $t) {   
 	    	$imagen = get_img_tienda($t['punto_interes']);
 	    	if(!$imagen){
-	        	$imagen = "assets/img/demobgtienda.jpg";
+	        	$imagen 	= "/assets/img/demobgtienda.jpg";
+			  	$imagen	 	= get_template_directory_uri().$imagen;
 	    	}else{
-                $imagen = 'ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
+	        	$imagen 	= '/ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
+	        	$params1 	= array( 'width' => 650, 'height' => 650, 'crop' => true );	
+			  	$imagen	 	= get_template_directory_uri().$imagen;
+			  	$imagen  	= bfi_thumb( $imagen, $params1 );
 	    	}
 			$logo = "ws/uploads/logo_". $t['punto_interes'].".jpg";
 			$desc = trim($t['descripcion']);
@@ -31,7 +35,7 @@ if(isset($_GET['tiendaID'])){
     	<div id="adidas" class="datos_tienda">
 			<div class="row ">
             	<div class="col-sm-6 col-sm-push-6 nopad relative">
-                	<div class="img_tienda" style="background: url(<?php bloginfo('template_url'); ?>/<?php echo $imagen; ?>);" >
+                	<div class="img_tienda" style="background: url(<?php echo $imagen; ?>);" >
 					<?php 
 					if($pinDescuento != '' && $pinDescuento != '0'){
 						$clase = '';
