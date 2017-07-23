@@ -419,7 +419,15 @@ section.main_content {
               }
           }
               
+            &.caption_cartelera {
+                 @media(max-width: 768px){
+                    width: auto;
+                    .divider{
+                      text-align: left;
+                    }
+              }
 
+            }
 
               
         }// caption

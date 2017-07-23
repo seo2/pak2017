@@ -82,12 +82,12 @@ if(ICL_LANGUAGE_CODE=='en'){
 								</div> <!-- col sm 4 -->
 								
 								<div class=" col-sm-8 col-md-9"> 
-                                	<div class="box_horizontal">
+                  <div class="box_horizontal">
 										<div class="box_slider">
 											<div class="item disable-owl-swipe">
 												<div class="image_dynamic">
 													<div class="img_lg" style="background: url(<?php echo get('caluga_cartelera_imagen'); ?>);"> </div>
-													<div class="caption <?php if(get('caluga_cartelera_texto_blanco')){ ?>texto_blanco<?php } ?>">
+													<div class="caption caption_cartelera <?php if(get('caluga_cartelera_texto_blanco')){ ?>texto_blanco<?php } ?>">
 														<h3><?php echo $tit2; ?></h3>
 														<h4 class="divider">boulevard</h4>
 														<p><?php echo get('caluga_cartelera_fecha'); ?></p> 
