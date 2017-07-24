@@ -867,3 +867,9 @@ $('#categorias').on('change', function () {
   }
   return false;
 });
+
+$('.datepicker').datepicker({
+	format: "dd/mm/yyyy",
+	weekStart: 1,
+	language: "es"
+});

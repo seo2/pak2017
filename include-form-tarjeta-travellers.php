@@ -76,7 +76,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                        <div class="col-md-4">
                           <div class="form-group">
                           <label for="fecha"><?php echo $form6; ?> <span class="texto_rojo">*</span></label>
-                          <input type="date" class="form-control" id="fecha" placeholder="" name="fecha" required>
+                          <input type="text" class="form-control datepicker" id="fecha" placeholder="" name="fecha" required>
                         </div>
                       </div>
                       
