@@ -415,6 +415,7 @@ $('.box_slider').owlCarousel({
 	            $(".close_tienda").css('display','block').show().data('id',id_tienda);
 		
 		   		
+/*
 		   		if( $(this).hasClass('tieneDescuento')){
 			   		$('.pinDescuento').removeClass('hide');
 			   		$('#pinDescuento').html(pindcto);
@@ -424,6 +425,7 @@ $('.box_slider').owlCarousel({
 			   		$('#pinDescuento').html('');
 			   		$('#piiDescripcionDescuento').html('');
 		   		}
+*/
 		   		
 	            $('body').toggleClass('menu_open');
 	            $('body,html').animate({

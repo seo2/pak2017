@@ -42,6 +42,7 @@ if(isset($_GET['tiendaID'])){
 					}else{
 						$clase = ' hide';
 					}
+						$clase = ' hide';
 					?>
                     	<div class="marco pinDescuento<?php echo $clase; ?>"></div>
 						<div class="box_dcto pinDescuento<?php echo $clase; ?>">
