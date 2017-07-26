@@ -68,7 +68,7 @@
 
                         <p>Convidamos a nossos clientes para assinarem convênio Arauco TAG, autorizando que a cobrança pelo uso dos estacionamentos de Parque Arauco seja faturado e carregado mensalmente em sua conta de Costanera Norte. Este processo é rápido e fácil. Pode o realizar nos seguintes pontos:</p>
                         <ul>
-							<li><span>Diretamente em <a href="http://www.araucotag.cl" target="_blank"> www.araucotag.cl</a></span></li>
+							<li><span>Diretamente em <a href="http://www.costaneranorte.cl" target="_blank"> www.costaneranorte.cl</a></span></li>
 							<li><span>Módulo Costanera Norte, localizado no corredor de serviço.</span></li>
 							<li><span>Escritórios de Costanera Norte.</span></li>
 							<li><span>Enviar o formulário de inscrição ao e-mail <a href="mailto:araucotag@cnorte.cl">araucotag@cnorte.cl</a>. O formulário de inscrição pode ser obtido diretamente no Parque Arauco ou nos escritórios de Costanera Norte.</span></li>

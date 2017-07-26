@@ -69,7 +69,7 @@
                         <p>We invite you to sign the Arauco TAG agreement giving authorization to charge and bill the use of Parque Arauco parking lots against your Costanera Norte account on a monthly basis.  This process is fast and easy and you can do this in the following spots:</p>
                         
                         <ul>
-							<li><span>Directly into <a href="http://www.araucotag.cl" target="_blank">www.araucotag.cl</a></span></li>
+							<li><span>Directly into <a href="http://www.costaneranorte.cl" target="_blank">www.costaneranorte.cl</a></span></li>
 							<li><span>Costanera Norte counter located at the service corridor.</span></li>
 							<li><span>Costanera Norte offices.</span></li>
 							<li><span>Send the registration form at the email  <a href="mailto:araucotag@cnorte.cl">araucotag@cnorte.cl</a>. The registration form can be obtained directly in Parque Arauco or in Costanera Norte offices.</span></li>

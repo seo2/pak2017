@@ -13,21 +13,21 @@ Template name: Travellers Descuentos
 <?php 
 // TRADUCCIONES
 if(ICL_LANGUAGE_CODE=='en'){
-	$tit1 = "Stores with DISCOUNTS";
+	$tit1 = "Stores with DISCOUNTS for travellers";
 	$tit2 = "Filter by";
 	$tit3 = "All Categories";
 	$btn1 = "See more discounts";
 	$btn2 = "View more stores";
 	$page = '/en/travellers/discounts';
 }elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
-	$tit1 = "Lojas com desconto";
+	$tit1 = "Lojas com desconto para viajantes";
 	$tit2 = "Filtrar";
 	$tit3 = "todas as categorias";
 	$btn1 = "veja mais descontos";
 	$btn2 = "Veja mais lojas";
 	$page = '/pt-br/viajantes/descontos';
 }else{ 
-	$tit1 = "tiendas descuentos";
+	$tit1 = "TIENDAS DESCUENTOS PARA TRAVELLERS";
 	$tit2 = "filtrar por";
 	$tit3 = "Todas las categorías";
 	$btn1 = "ver más descuentos";
@@ -160,9 +160,9 @@ function tiene_descuentos($idioma, $catID){
                                         </a>
                                         <div class="box_logo_tienda">
                                           <div class="logo_tienda">
-                                            <!--  -->
                                               <img src="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" alt="" class="img-responsive">
                                           </div> <!-- logo_tienda -->
+                                          <img src="<?php bloginfo('template_url'); ?>/assets/img/logotravellersxs.png" alt="" class="img-responsive logotravellersxs">
                                         </div> <!-- box logo tienda -->
                                     </div> <!--  tienda -->
                             </div> <!-- item tienda -->

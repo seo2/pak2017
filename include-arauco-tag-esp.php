@@ -79,7 +79,7 @@
                              fácil y puedes realizarlo en los siguientes puntos:
                         </p>
                         <ul>
-							<li><span>Directamente en<a href="http://www.araucotag.cl" target="_blank"> www.araucotag.cl</a></span></li>
+							<li><span>Directamente en<a href="http://www.costaneranorte.cl" target="_blank"> www.costaneranorte.cl</a></span></li>
 							<li><span>Módulo Costanera Norte, ubicado en pasillo de servicio.</span></li>
 							<li><span>Oficinas de Costanera Norte.</span></li>
 							<li><span>Enviar el formulario de inscripción al correo electrónico <a href="mailto:araucotag@cnorte.cl">araucotag@cnorte.cl</a>. El formulario de
