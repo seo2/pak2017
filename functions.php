@@ -69,6 +69,7 @@ function theme_js(){
 	wp_enqueue_script('jasny-js', 'https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js', array('jquery'),'1', true);
 	wp_enqueue_script('datepicker-js', get_template_directory_uri() . '/assets/js/datepicker.min.js', array('jquery'),'1', true);
 	wp_enqueue_script('datepicker-es', get_template_directory_uri() . '/assets/js/datepicker.es-ES.js', array('jquery'),'1', true);
+	wp_enqueue_script('bigtext-js', get_template_directory_uri() . '/assets/js/bigtext.js', array('jquery'),'1.7', true);
 	wp_enqueue_script('pak-js', get_template_directory_uri() . '/assets/js/pak.js', array('jquery'),'1.7', true);
 
 }	

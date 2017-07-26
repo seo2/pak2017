@@ -148,7 +148,7 @@ function tiene_descuentos($idioma, $catID){
                                           <div class="box_dcto">
                                               <div class="datos_dcto">
                                          
-                                                      <div class="num"><?php echo  $t['pinDescuento']; ?><?php //echo str_replace('%', '', $t['pinDescuento']); ?></div>   
+                                                      <div class="num bigtext"><span><?php echo  $t['pinDescuento']; ?><?php //echo str_replace('%', '', $t['pinDescuento']); ?></span></div>   
 <!--
                                                       <div class="box_percent">
                                                            <div class="text_percent"> % </div>
@@ -272,6 +272,7 @@ function loadMoreContent(position) {
 				console.log(pines);
 				$('#loader').fadeOut('slow', function() {
 					$('#caja_tienda').append( $(pines).hide().fadeIn(2000));
+					$('.bigtext').bigtext();
 			        current=position;
 			        if(position +1 < pages.length) {
 					

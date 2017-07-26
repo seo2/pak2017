@@ -875,3 +875,5 @@ $('.datepicker').datepicker({
 	weekStart: 1,
 	language: "es"
 });
+
+$('.bigtext').bigtext();

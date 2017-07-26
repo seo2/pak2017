@@ -3895,12 +3895,13 @@ section.main_content, section.main_content section.travellers_actividades {
               section.main_content section.travelers_descuentos .grid_descuentos .box_descuento .item_descuento a .box_dcto .datos_dcto, section.main_content section.piso_diseno_descuentos .grid_descuentos .box_descuento .item_descuento a .box_dcto .datos_dcto {
                 width: 150px; } }
             section.main_content section.travelers_descuentos .grid_descuentos .box_descuento .item_descuento a .box_dcto .datos_dcto .num, section.main_content section.piso_diseno_descuentos .grid_descuentos .box_descuento .item_descuento a .box_dcto .datos_dcto .num {
+	            
               font-family: 'euphemia_ucasbold', Helvetica, Arial, sans-serif;
-              font-size: 60px;
+             
               color: white;
               line-height: 1;
-              float: left;
-              letter-spacing: -4px; }
+/*               float: left; */
+/*               letter-spacing: -4px; */ }
               @media (max-width: 1024px) {
                 section.main_content section.travelers_descuentos .grid_descuentos .box_descuento .item_descuento a .box_dcto .datos_dcto .num, section.main_content section.piso_diseno_descuentos .grid_descuentos .box_descuento .item_descuento a .box_dcto .datos_dcto .num {
                   font-size: 60px; } }
