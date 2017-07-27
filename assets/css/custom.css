@@ -294,7 +294,7 @@ section.box_slider_home .slider_home .item a.btn_single_img, section.box_slider_
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  bottom: 10px;
+  bottom: 50px;
   border-radius: 0;
   padding: 10px 30px;
   letter-spacing: 3px;
@@ -2345,23 +2345,32 @@ section.main_content, section.main_content section.travellers_actividades {
   section.main_content .box_horizontal, section.main_content section.travellers_actividades .box_horizontal {
     margin-bottom: 30px;
     min-height: 300px; }
-    section.main_content .box_horizontal .caption {
+    section.main_content .box_horizontal.box_boulevard .caption {
       position: absolute;
       top: 50%;
       -webkit-transform: translate(0, -50%);
       transform: translate(0, -50%);
+      left: 30px;
       text-align: left;
-      margin-left: 30px; }
+      bottom: auto; }
+      section.main_content .box_horizontal.box_boulevard .caption .text-center {
+        text-align: left; }
       @media (max-width: 768px) {
-        section.main_content .box_horizontal .caption {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-          text-align: center;
-          width: 90%;
-          margin-left: auto; } }
+        section.main_content .box_horizontal.box_boulevard .caption {
+          left: auto;
+          width: 100%; }
+          section.main_content .box_horizontal.box_boulevard .caption h3,
+          section.main_content .box_horizontal.box_boulevard .caption h4,
+          section.main_content .box_horizontal.box_boulevard .caption p {
+            margin-left: 20px; }
+          section.main_content .box_horizontal.box_boulevard .caption .text-center {
+            text-align: center; } }
+    section.main_content .box_horizontal .caption {
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      bottom: 50px; }
       section.main_content .box_horizontal .caption h3 {
         font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif;
         font-size: 40px;
@@ -2428,7 +2437,7 @@ section.main_content, section.main_content section.travellers_actividades {
         margin-left: 10px; }
       section.main_content .box_horizontal .caption a {
         display: inline-block;
-        margin-top: 20px; }
+        margin-top: 0px; }
         section.main_content .box_horizontal .caption a.btn_blanco {
           color: white;
           border-color: white; }
@@ -2455,6 +2464,12 @@ section.main_content, section.main_content section.travellers_actividades {
           width: auto; }
           section.main_content .box_horizontal .caption.caption_cartelera .divider {
             text-align: left; } }
+      section.main_content .box_horizontal .caption .image_dynamic.box_novedades .caption {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        bottom: 50px; }
     section.main_content .box_horizontal .img_slide {
       min-height: 300px;
       background-size: cover !important;
@@ -2464,14 +2479,10 @@ section.main_content, section.main_content section.travellers_actividades {
     section.main_content .box_horizontal .owl-dots {
       position: absolute;
       bottom: 10px;
-      right: 30px; }
-      @media (max-width: 767px) {
-        section.main_content .box_horizontal .owl-dots {
-          right: auto;
-          position: absolute;
-          left: 50%;
-          -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0); } }
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      transform: translate(-50%, 0); }
       section.main_content .box_horizontal .owl-dots.disabled {
         display: none; }
       section.main_content .box_horizontal .owl-dots .owl-dot span {
@@ -2541,108 +2552,91 @@ section.main_content, section.main_content section.travellers_actividades {
           width: 100%;
           display: inline-block;
           margin-top: 40px; }
-    section.main_content .image_dynamic .caption {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+    section.main_content .image_dynamic .caption h3 {
+      font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif;
+      font-size: 40px;
+      color: black;
+      text-transform: uppercase; }
+      @media (max-width: 768px) {
+        section.main_content .image_dynamic .caption h3 {
+          font-size: 35px; } }
+      @media (max-width: 375px) {
+        section.main_content .image_dynamic .caption h3 {
+          font-size: 25px; } }
+    section.main_content .image_dynamic .caption h4 {
+      font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
+      @media (max-width: 768px) {
+        section.main_content .image_dynamic .caption h4 {
+          font-size: 10px; } }
+      @media (max-width: 375px) {
+        section.main_content .image_dynamic .caption h4 {
+          font-size: 16px; } }
+    section.main_content .image_dynamic .caption p {
+      font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: black; }
+      @media (max-width: 768px) {
+        section.main_content .image_dynamic .caption p {
+          font-size: 14px; } }
+      @media (max-width: 375px) {
+        section.main_content .image_dynamic .caption p {
+          font-size: 14px; } }
+    section.main_content .image_dynamic .caption .divider {
+      color: black;
+      max-width: 500px;
+      margin: 11px auto 20px auto;
+      overflow: hidden;
+      text-align: center;
+      line-height: 1.2em; }
+      @media (max-width: 768px) {
+        section.main_content .image_dynamic .caption .divider {
+          max-width: 400px; } }
+    section.main_content .image_dynamic .caption .divider {
+      color: black;
+      max-width: 500px;
+      margin: 10px auto 20px auto;
+      overflow: hidden;
       text-align: left;
-      margin-left: 30px; }
+      line-height: 1.2em; }
       @media (max-width: 768px) {
-        section.main_content .image_dynamic .caption {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-          text-align: center;
-          width: 90%;
-          margin-left: auto; } }
-      section.main_content .image_dynamic .caption h3 {
-        font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif;
-        font-size: 40px;
-        color: black;
-        text-transform: uppercase; }
-        @media (max-width: 768px) {
-          section.main_content .image_dynamic .caption h3 {
-            font-size: 35px; } }
-        @media (max-width: 375px) {
-          section.main_content .image_dynamic .caption h3 {
-            font-size: 25px; } }
-      section.main_content .image_dynamic .caption h4 {
-        font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif;
-        font-size: 20px;
-        color: black;
-        text-transform: uppercase;
-        letter-spacing: 3px; }
-        @media (max-width: 768px) {
-          section.main_content .image_dynamic .caption h4 {
-            font-size: 10px; } }
-        @media (max-width: 375px) {
-          section.main_content .image_dynamic .caption h4 {
-            font-size: 16px; } }
-      section.main_content .image_dynamic .caption p {
-        font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: black; }
-        @media (max-width: 768px) {
-          section.main_content .image_dynamic .caption p {
-            font-size: 14px; } }
-        @media (max-width: 375px) {
-          section.main_content .image_dynamic .caption p {
-            font-size: 14px; } }
-      section.main_content .image_dynamic .caption .divider {
-        color: black;
-        max-width: 500px;
-        margin: 11px auto 20px auto;
-        overflow: hidden;
-        text-align: center;
-        line-height: 1.2em; }
-        @media (max-width: 768px) {
-          section.main_content .image_dynamic .caption .divider {
-            max-width: 400px; } }
-      section.main_content .image_dynamic .caption .divider {
-        color: black;
-        max-width: 500px;
-        margin: 10px auto 20px auto;
-        overflow: hidden;
-        text-align: left;
-        line-height: 1.2em; }
-        @media (max-width: 768px) {
-          section.main_content .image_dynamic .caption .divider {
-            max-width: 400px; } }
-      section.main_content .image_dynamic .caption .divider:before {
-        content: "";
-        vertical-align: middle;
-        display: inline-block;
-        width: 60px;
-        border-bottom: 1px solid black; }
-      section.main_content .image_dynamic .caption .divider:before {
-        margin-right: 10px;
-        margin-top: -6px; }
-      section.main_content .image_dynamic .caption .divider:after {
-        margin-left: 10px; }
-      section.main_content .image_dynamic .caption a {
-        display: inline-block;
-        margin-top: 20px; }
-      section.main_content .image_dynamic .caption.texto_blanco h3, section.main_content .image_dynamic .caption.texto_blanco h4, section.main_content .image_dynamic .caption.texto_blanco p,
-      section.main_content .image_dynamic .caption.texto_blanco .divider,
-      section.main_content .image_dynamic .caption.texto_blanco .divider:before,
-      section.main_content .image_dynamic .caption.texto_blanco .divider:after {
-        color: white; }
-      section.main_content .image_dynamic .caption.texto_blanco .divider:before,
-      section.main_content .image_dynamic .caption.texto_blanco .divider:after {
-        border-bottom: 1px solid white; }
-      section.main_content .image_dynamic .caption.texto_blanco a.btn_rojo:hover, section.main_content .image_dynamic .caption.texto_blanco section.box_slider_home #caja_datos_tienda .datos_tienda .datos a.btn_mapa:hover, section.box_slider_home #caja_datos_tienda .datos_tienda .datos section.main_content .image_dynamic .caption.texto_blanco a.btn_mapa:hover {
-        border: 1px solid white;
-        background-color: transparent;
-        color: white; }
-      @media (min-width: 767px) {
-        section.main_content .image_dynamic .caption.texto_blanco2 {
-          margin-top: 80px; } }
-      @media (max-width: 768px) {
-        section.main_content .image_dynamic .caption.texto_blanco2 {
-          margin-top: auto; } }
+        section.main_content .image_dynamic .caption .divider {
+          max-width: 400px; } }
+    section.main_content .image_dynamic .caption .divider:before {
+      content: "";
+      vertical-align: middle;
+      display: inline-block;
+      width: 60px;
+      border-bottom: 1px solid black; }
+    section.main_content .image_dynamic .caption .divider:before {
+      margin-right: 10px;
+      margin-top: -6px; }
+    section.main_content .image_dynamic .caption .divider:after {
+      margin-left: 10px; }
+    section.main_content .image_dynamic .caption a {
+      display: inline-block;
+      margin-top: 20px; }
+    section.main_content .image_dynamic .caption.texto_blanco h3, section.main_content .image_dynamic .caption.texto_blanco h4, section.main_content .image_dynamic .caption.texto_blanco p,
+    section.main_content .image_dynamic .caption.texto_blanco .divider,
+    section.main_content .image_dynamic .caption.texto_blanco .divider:before,
+    section.main_content .image_dynamic .caption.texto_blanco .divider:after {
+      color: white; }
+    section.main_content .image_dynamic .caption.texto_blanco .divider:before,
+    section.main_content .image_dynamic .caption.texto_blanco .divider:after {
+      border-bottom: 1px solid white; }
+    section.main_content .image_dynamic .caption.texto_blanco a.btn_rojo:hover, section.main_content .image_dynamic .caption.texto_blanco section.box_slider_home #caja_datos_tienda .datos_tienda .datos a.btn_mapa:hover, section.box_slider_home #caja_datos_tienda .datos_tienda .datos section.main_content .image_dynamic .caption.texto_blanco a.btn_mapa:hover {
+      border: 1px solid white;
+      background-color: transparent;
+      color: white; }
+    @media (min-width: 767px) {
+      section.main_content .image_dynamic .caption.texto_blanco2 {
+        margin-top: 80px; } }
+    @media (max-width: 768px) {
+      section.main_content .image_dynamic .caption.texto_blanco2 {
+        margin-top: auto; } }
     section.main_content .image_dynamic a .caption_lg {
       position: absolute;
       top: 50%;
