@@ -87,6 +87,7 @@ section.travelers_descuentos, section.piso_diseno_descuentos {
                     display: block;
                     position: relative;
                     overflow: hidden;
+                    color: white;
                    .box_dcto {
                       @include centerer(true, true);
                         background-color: rgba(0,0,0,0.5);
