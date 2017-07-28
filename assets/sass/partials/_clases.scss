@@ -265,7 +265,7 @@ a{
 
 }
 %btn_single_image{
-        background-color: transparent;
+             background-color: $rojo;
             @include bold(12px, white);
             @include centerer(true, false);
             bottom: 50px;
@@ -273,11 +273,11 @@ a{
             padding: 10px 30px;
            // height: 43px;
             letter-spacing: 3px;
-            border: 1px solid white;
+            border: 1px solid transparent;
             text-transform: uppercase;
             transition:all 0.2s ease-in-out;
                   &:hover {
-                    border: 1px solid transparent;
+                    border: 1px solid white;
                     background-color: $rojo;
                     color: white;
                     //padding: 10px 30px;

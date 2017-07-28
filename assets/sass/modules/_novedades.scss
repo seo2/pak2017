@@ -247,13 +247,15 @@ section.novedades {
               }
               .caption{
                 a.btn_blanco {
-                        border-color: white;
-                        color: white;
+                       border: 1px solid transparent;
+                       background-color: $rojo;
+                       color: white;
                         &:hover {
-                        border: 1px solid transparent;
-                        background-color: $rojo;
-                        color: white;
+                
                          //padding: 10px 30px;
+
+                         border-color: white;
+                        // color: white;
                       }
                 }
 

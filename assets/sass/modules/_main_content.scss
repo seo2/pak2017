@@ -401,7 +401,10 @@ section.main_content {
                 &.btn_blanco {
                       @extend %btn_blanco;
                       color: white;
-                      border-color: white;
+                      background-color: $rojo;
+                      &:hover{
+                         border-color: white;
+                      }
                 }
       
 
@@ -460,17 +463,13 @@ section.main_content {
                       //   // //margin-left: auto;
                       //   //  bottom: 50px;
                       // }
+
                   }
               }
 
             }
         
-              
         }// texto del slider
-
-
-      
-
 
         .img_slide {
               min-height: 300px;
