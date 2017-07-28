@@ -251,10 +251,9 @@ section.novedades {
                        background-color: $rojo;
                        color: white;
                         &:hover {
-                
+                        border: 1px solid white;
+                        color: white;
                          //padding: 10px 30px;
-
-                         border-color: white;
                         // color: white;
                       }
                 }

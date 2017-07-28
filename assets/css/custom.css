@@ -614,8 +614,8 @@ section.main_content .box_horizontal .caption .divider:before { content: ""; ver
 section.main_content .box_horizontal .caption .divider:before { margin-right: 10px; margin-top: -6px; }
 section.main_content .box_horizontal .caption .divider:after { margin-left: 10px; }
 section.main_content .box_horizontal .caption a { display: inline-block; margin-top: 0px; }
-section.main_content .box_horizontal .caption a.btn_blanco { color: white; background-color: #e40421; }
-section.main_content .box_horizontal .caption a.btn_blanco:hover { border-color: white; }
+section.main_content .box_horizontal .caption a.btn_blanco { color: white; background-color: #e40421; border: 1px solid transparent; }
+section.main_content .box_horizontal .caption a.btn_blanco:hover { border: 1px solid white; }
 section.main_content .box_horizontal .caption.texto_blanco h3, section.main_content .box_horizontal .caption.texto_blanco h4, section.main_content .box_horizontal .caption.texto_blanco p, section.main_content .box_horizontal .caption.texto_blanco .divider, section.main_content .box_horizontal .caption.texto_blanco .divider:before, section.main_content .box_horizontal .caption.texto_blanco .divider:after { color: white; }
 section.main_content .box_horizontal .caption.texto_blanco .divider:before, section.main_content .box_horizontal .caption.texto_blanco .divider:after { border-bottom: 1px solid white; }
 section.main_content .box_horizontal .caption.texto_blanco a.btn_rojo:hover, section.main_content .box_horizontal .caption.texto_blanco section.box_slider_home #caja_datos_tienda .datos_tienda .datos a.btn_mapa:hover, section.box_slider_home #caja_datos_tienda .datos_tienda .datos section.main_content .box_horizontal .caption.texto_blanco a.btn_mapa:hover { border: 1px solid white; background-color: transparent; color: white; }
@@ -776,7 +776,7 @@ section.main_content section.novedades .image_dynamic .img_lg { min-height: 322p
 @media (max-width: 1024px) { section.main_content section.novedades .image_dynamic .img_lg { min-height: 275px !important; } }
 @media (max-width: 991px) { section.main_content section.novedades .image_dynamic .img_lg { min-height: 323px !important; } }
 section.main_content section.novedades .image_dynamic .caption a.btn_blanco { border: 1px solid transparent; background-color: #e40421; color: white; }
-section.main_content section.novedades .image_dynamic .caption a.btn_blanco:hover { border-color: white; }
+section.main_content section.novedades .image_dynamic .caption a.btn_blanco:hover { border: 1px solid white; color: white; }
 section.main_content section.entretencion { padding: 0 0 40px 0; position: relative; }
 section.main_content section.entretencion h4 { font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif; font-size: 20px; color: black; text-transform: uppercase; letter-spacing: 5px; }
 @media (max-width: 768px) { section.main_content section.entretencion h4 { font-size: 18px; } }
@@ -1218,7 +1218,7 @@ section.main_content section.novedades .image_dynamic .img_lg { min-height: 322p
 @media (max-width: 1024px) { section.main_content section.novedades .image_dynamic .img_lg { min-height: 275px !important; } }
 @media (max-width: 991px) { section.main_content section.novedades .image_dynamic .img_lg { min-height: 323px !important; } }
 section.main_content section.novedades .image_dynamic .caption a.btn_blanco { border: 1px solid transparent; background-color: #e40421; color: white; }
-section.main_content section.novedades .image_dynamic .caption a.btn_blanco:hover { border-color: white; }
+section.main_content section.novedades .image_dynamic .caption a.btn_blanco:hover { border: 1px solid white; color: white; }
 section.main_content section.entretencion { padding: 0 0 40px 0; position: relative; }
 section.main_content section.entretencion h4 { font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif; font-size: 20px; color: black; text-transform: uppercase; letter-spacing: 5px; }
 @media (max-width: 768px) { section.main_content section.entretencion h4 { font-size: 18px; } }
