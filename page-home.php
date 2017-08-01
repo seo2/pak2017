@@ -217,12 +217,12 @@ if(ICL_LANGUAGE_CODE=='en'){
                       <div class="item">
                          <!--  <div class="image_dynamic_portada" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/tendencias.gif);"> </div> -->
                           <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/tendencias.gif" alt="">
-                            <a href="" class="btn btn-default btn_rojo2  role="button">ver más</a>
+                            <a href="" class="btn btn-default btn_rojo2"  role="button">ver más</a>
                       </div>
                       <div class="item">
                          <!--  <div class="image_dynamic_portada" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/revista_detalle.jpg);"> </div> -->
                          <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/revista_detalle.jpg" alt="">
-                           <a href="" class="btn btn-default btn_rojo2  role="button">ver más</a>
+                           <a href="" class="btn btn-default btn_rojo2"  role="button">ver más</a>
                       </div>
                    </div>
                    <!--  <div class="caption_revista" >
