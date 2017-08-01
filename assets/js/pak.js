@@ -901,4 +901,6 @@ $('.datepicker').datepicker({
 	language: "es"
 });
 
-$('.bigtext').bigtext();
+$('.bigtext').bigtext({
+    maxfontsize: 50 // default is 528 (in px)
+});
