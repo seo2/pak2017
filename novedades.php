@@ -80,7 +80,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 								</div> <!-- col sm 4 -->
 								
 								<div class=" col-sm-8 col-md-9"> 
-                  <div class="box_horizontal box_novedades">
+									<div class="box_horizontal box_novedades">
 										<div class="box_slider">
 											<div class="item disable-owl-swipe">
 												<div class="image_dynamic">
@@ -90,80 +90,40 @@ if(ICL_LANGUAGE_CODE=='en'){
 															<a class="btn btn-default btn_blanco" href="<?php echo get('banner_grande_link'); ?>" role="button"><?php echo $btn1; ?></a>
 														</div>
 													</div> 
-                        </div><!-- image dynamic -->
+                        						</div><!-- image dynamic -->
 											</div><!-- item -->
 										</div> <!-- box slider -->
 									</div> <!-- box horizontal -->
 								</div> <!-- col sm 12 -->
 							</div><!-- fin row -->
-<?php endwhile; else: ?>
-<?php endif; ?>             
-                              <div class="row" id="caja_tienda">
-	                            <?php
-								if($_GET['buscar']){
-									$buscar = filter_var($_GET["buscar"], FILTER_SANITIZE_STRING);
-									if($_GET['page']){
-										$desde = 12 * ($_GET['page'] - 1);
-										$resultado = $db->rawQuery("select * from cha_historia where hisTit LIKE '%$buscar%' OR hisNom LIKE '%$buscar%' and hisEst = 0 ORDER BY hisId DESC limit $desde, 12");
-									}else{
-										$resultado = $db->rawQuery("select * from cha_historia where hisTit LIKE '%$buscar%' OR hisNom LIKE '%$buscar%' and hisEst = 0 ORDER BY hisId DESC limit 12");
-									}
-								}else{
-									if($_GET['page']){
-										$desde 	 = 12 * ($_GET['page'] - 1);
-										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and tipo NOT IN(119,131,110) order by RAND() limit $desde, 4");
-									}else{
-										$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and tipo NOT IN(119,131,110) order by RAND() limit 4");
-									}
-								}
-		                            
-								if($tiendas){
-									foreach ($tiendas as $t) {   
-                                    	$imagen = get_img_tienda($t['punto_interes']);
-                                    	if(!$imagen){
-                                        	$imagen 	= "/assets/img/demobgtienda.jpg";
-										  	$imagen	 	= get_template_directory_uri().$imagen;
-                                    	}else{
-	                                    	$imagen 	= '/ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
-	                                    	$params1 	= array( 'width' => 650, 'height' => 650, 'crop' => true );	
-										  	$imagen	 	= get_template_directory_uri().$imagen;
-										  	$imagen  	= bfi_thumb( $imagen, $params1 );
-                                    	}
-                                ?>
-                                  <div class="col-sm-3 caja_tienda"> 
-                                      <div class="item_tienda" id="tienda_<?php echo $t['punto_interes']; ?>">
-                                            <div  class="tienda">
-                                                <a class="btn_tienda" href="javascript:void(0);"  >
-                                                    <span id="adidas" class="overlay_img" data-id="<?php echo $t['punto_interes']; ?>" data-logo="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" data-desc='<?php echo trim($t['descripcion']); ?>' data-img="<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['numero_piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="<?php bloginfo('template_url'); ?>/ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>" data-tipo="<?php echo $t['tipo']; ?>"></span>
-                                                    <img class="img-responsive" src="<?php echo $imagen; ?>">
-                                                  </a>
-                                                  <div class="box_logo_tienda">
-                                                    <div class="logo_tienda">
-                                                        <img src="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" alt="" class="img-responsive">
-                                                    </div> <!-- logo_tienda -->
-                                                  </div> <!-- box logo tienda -->
-                                            </div> <!--  tienda -->
-                                    </div> <!-- item tienda -->
-
-                              </div> <!-- col sm 3 -->
-								 
-								<?php
-									}
-								}  		
-								?>
-
-                            </div><!-- row tiendas -->
-                          </div> <!-- container grilla novedades -->
-
-<!--
-                          <div class="box_ver_mas_tiendas text-center">
-                               <a href="" class="btn btn-default btn_ver_mas hvr-float">
-                                  <h3 class="ver_mas">ver más novedades</h3>
-                                  <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
-                              </a>
-                          </div>
--->
-                                         
+						    <div class="row">
+						        <section class="entretencion clearfix">				    
+							   	<?php
+								   	$e = 0;
+									$sliders = get_order_group('destacados_imagen');
+									foreach($sliders as $slider){  
+										$e++;
+										if($e<=4){ 
+								?> 
+								    <div class="col-xs-6 col-sm-3 col-md-3">
+								        <div class="box_servicio" >
+									        <a href="<?php echo get('destacados_link',$slider); ?>">
+									            <img class="img-responsive" src="<?php echo get('destacados_imagen',$slider); ?>" alt="">
+									        </a>
+								        </div>
+								        <div class="box_more_info">
+								          <a  href="<?php echo get('destacados_link',$slider); ?>"><?php echo get('destacados_texto',$slider); ?></a>
+								        </div>
+								    </div>
+								<?php 
+										}
+									} ?>   
+							    </section>
+							</div>
+							<?php endwhile; else: ?>
+							<?php endif; ?>             
+                        </div> <!-- container grilla novedades -->
+         
                       </div><!-- grid tiendas -->
               
               </section> <!-- end tiendas -->
