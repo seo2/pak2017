@@ -112,7 +112,7 @@ section.travelers_descuentos, section.piso_diseno_descuentos {
                           .num{
                             @include bold(60px,white);
                             line-height: 1;
-                            float: left;
+                          //  float: left;
                             letter-spacing: -4px;
                               @media(max-width: 1024px){
                               font-size: 60px;
