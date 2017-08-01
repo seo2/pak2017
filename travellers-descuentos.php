@@ -272,7 +272,9 @@ function loadMoreContent(position) {
 				console.log(pines);
 				$('#loader').fadeOut('slow', function() {
 					$('#caja_tienda').append( $(pines).hide().fadeIn(2000));
-					$('.bigtext').bigtext();
+					$('.bigtext').bigtext({
+					    maxfontsize: 50
+					});
 			        current=position;
 			        if(position +1 < pages.length) {
 					
