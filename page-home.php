@@ -222,7 +222,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 						?>    	
                       <div class="item">
                          <!--  <div class="image_dynamic_portada" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/tendencias.gif);"> </div> -->
-                          <img class="img-responsive" src="<<?php echo get('destacado_grande_imagen',$slider); ?>" alt="">
+                          <img class="img-responsive" src="<?php echo get('destacado_grande_imagen',$slider); ?>" alt="">
                           <?php 
 	                          if(get('destacado_grande_link',$slider)){
                           ?>
