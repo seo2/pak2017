@@ -66,7 +66,7 @@ $('.slider_home').owlCarousel({
     margin:10,
     nav:false,
     dots: true,
-    autoplay: false,
+    autoplay: true,
     video: true,
     center: true,
     lazyLoad:true,
