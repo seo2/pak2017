@@ -66,7 +66,7 @@ $('.slider_home').owlCarousel({
     margin:10,
     nav:false,
     dots: true,
-    autoplay: false,
+    autoplay: true,
     video: true,
     center: true,
     lazyLoad:true,
@@ -83,6 +83,31 @@ $('.slider_home').owlCarousel({
     }
 
 });
+
+$('.slider_destacado_home').owlCarousel({
+    loop: false,
+    margin:10,
+    nav:false,
+    dots: true,
+    autoplay: true,
+    video: true,
+    center: true,
+    lazyLoad:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1
+        },
+        1200:{
+            items:1
+        }
+    }
+
+});
+
+
 
 $('.slider_dl').owlCarousel({
     loop:false,

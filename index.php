@@ -3,6 +3,7 @@
 <?php include('include-slider-home.php') ?>
 <?php include('include-search-home.php') ?>  
 	<section class="main_content">
+
     	<div class="container">
 <?php wp_reset_query(); ?>	    	
 <?php	                                         
@@ -135,6 +136,7 @@
 					  			<?php if(get('slider_medio_link',$slider)){ ?>
 							   	<div class="text-center">
                                		<a href="<?php echo get('slider_medio_link',$slider); ?>" class="btn btn-default btn_blanco"  role="button">ver más</a>
+
                                	</div>
                                	<?php } ?>
                             </div>

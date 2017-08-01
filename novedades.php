@@ -80,17 +80,17 @@ if(ICL_LANGUAGE_CODE=='en'){
 								</div> <!-- col sm 4 -->
 								
 								<div class=" col-sm-8 col-md-9"> 
-                                	<div class="box_horizontal">
+                  <div class="box_horizontal box_novedades">
 										<div class="box_slider">
 											<div class="item disable-owl-swipe">
 												<div class="image_dynamic">
 													<div class="img_lg" style="background: url(<?php echo get('banner_grande_imagen'); ?>);"> </div>
-													<div class="caption texto_blanco2">
+													<div class="caption texto_blanco">
 														<div class="">
 															<a class="btn btn-default btn_blanco" href="<?php echo get('banner_grande_link'); ?>" role="button"><?php echo $btn1; ?></a>
 														</div>
 													</div> 
-                                				</div><!-- image dynamic -->
+                        </div><!-- image dynamic -->
 											</div><!-- item -->
 										</div> <!-- box slider -->
 									</div> <!-- box horizontal -->
