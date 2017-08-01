@@ -100,8 +100,10 @@ a.ver_mas_tiendas:hover { color: #e40421; }
 section.box_slider_home .slider_home .item .caption a.btn_blanco, section.main_content .box_horizontal .caption a.btn_blanco, section.main_content .image_dynamic .caption a.btn_blanco, section.main_content section.sobre_distrito .box_content .content_about a.btn_blanco, section.main_content section.distrito_de_lujo .slider_tiendas_dl .item .caption a.btn_blanco, section.box_slider_travellers .slider_travellers .item .caption a.btn_blanco, section.box_slider_servicios_cliente .slider_servicios_cliente .item .caption a.btn_blanco, section.box_slider_dl .slider_dl .item .caption a.btn_blanco { background-color: transparent; font-family: 'euphemia_ucasbold', Helvetica, Arial, sans-serif; font-size: 12px; color: black; bottom: 100px; border-radius: 0; border: 1px solid black; text-align: center; padding: 10px 30px; text-transform: uppercase; transition: all 0.2s ease-in-out; letter-spacing: 3px; }
 section.box_slider_home .slider_home .item .caption a.btn_blanco:hover, section.main_content .box_horizontal .caption a.btn_blanco:hover, section.main_content .image_dynamic .caption a.btn_blanco:hover, section.main_content section.sobre_distrito .box_content .content_about a.btn_blanco:hover, section.main_content section.distrito_de_lujo .slider_tiendas_dl .item .caption a.btn_blanco:hover, section.box_slider_travellers .slider_travellers .item .caption a.btn_blanco:hover, section.box_slider_servicios_cliente .slider_servicios_cliente .item .caption a.btn_blanco:hover, section.box_slider_dl .slider_dl .item .caption a.btn_blanco:hover { border: 1px solid transparent; background-color: #e40421; color: white; }
 
-section.box_slider_home .slider_home .item a.btn_single_img, section.box_slider_travellers .slider_travellers .item a.btn_single_img, section.box_slider_servicios_cliente .slider_servicios_cliente .item a.btn_single_img, section.box_slider_dl .slider_dl .item a.btn_single_img { background-color: #e40421; font-family: 'euphemia_ucasbold', Helvetica, Arial, sans-serif; font-size: 12px; color: white; position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); bottom: 50px; border-radius: 0; padding: 10px 30px; letter-spacing: 3px; border: 1px solid transparent; text-transform: uppercase; transition: all 0.2s ease-in-out; }
-section.box_slider_home .slider_home .item a.btn_single_img:hover, section.box_slider_travellers .slider_travellers .item a.btn_single_img:hover, section.box_slider_servicios_cliente .slider_servicios_cliente .item a.btn_single_img:hover, section.box_slider_dl .slider_dl .item a.btn_single_img:hover { border: 1px solid white; background-color: #e40421; color: white; }
+.btn_rojo2, section.box_slider_home .slider_home .item a.btn_single_img, section.box_slider_travellers .slider_travellers .item a.btn_single_img, section.box_slider_servicios_cliente .slider_servicios_cliente .item a.btn_single_img, section.box_slider_dl .slider_dl .item a.btn_single_img { background-color: #e40421; font-family: 'euphemia_ucasbold', Helvetica, Arial, sans-serif; font-size: 12px; color: white; position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); bottom: 50px; border-radius: 0; padding: 10px 30px; letter-spacing: 3px; border: 1px solid transparent; text-transform: uppercase; transition: all 0.2s ease-in-out; }
+.btn_rojo2:hover, section.box_slider_home .slider_home .item a.btn_single_img:hover, section.box_slider_travellers .slider_travellers .item a.btn_single_img:hover, section.box_slider_servicios_cliente .slider_servicios_cliente .item a.btn_single_img:hover, section.box_slider_dl .slider_dl .item a.btn_single_img:hover { border: 1px solid white; background-color: #e40421; color: white; }
+
+.btn_rojo2 { bottom: 50px; }
 
 /*----------------------------------------------------------*/
 footer .bullets li.bullet .bullet-content p a { color: #e40421; text-decoration: none; display: block; }
@@ -1783,6 +1785,23 @@ section.box_slider_dl .slider_dl .owl-dots.disabled { display: none; }
 section.box_slider_dl .slider_dl .owl-dots .owl-dot span { border: 2px solid white; background: transparent; border-radius: 50px; height: 15px; width: 15px; cursor: pointer; }
 @media (max-width: 767px) { section.box_slider_dl .slider_dl .owl-dots .owl-dot span { margin-left: 5px; margin-right: 5px; } }
 section.box_slider_dl .slider_dl .owl-dots .owl-dot.active span { background-color: #e40421; }
+
+.slider_destacado_home { position: relative; }
+.slider_destacado_home .item { position: relative; }
+.slider_destacado_home .owl-nav.disabled { display: none; }
+.slider_destacado_home .owl-dots { position: absolute; position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); bottom: 10px; }
+.slider_destacado_home .owl-dots.disabled { display: none; }
+.slider_destacado_home .owl-dots .owl-dot span { border: 2px solid white; background: transparent; border-radius: 50px; height: 15px; width: 15px; cursor: pointer; }
+@media (max-width: 767px) { .slider_destacado_home .owl-dots .owl-dot span { margin-left: 5px; margin-right: 5px; } }
+.slider_destacado_home .owl-dots .owl-dot.active span { background-color: #e40421; }
+.slider_destacado_home .owl-next, .slider_destacado_home .owl-prev { width: 20px; height: 60px; position: absolute; text-indent: -9999px; top: 50%; margin-top: -30px; cursor: pointer; opacity: 0.9; }
+.slider_destacado_home .owl-next:hover, .slider_destacado_home .owl-prev:hover { background-color: transparent; opacity: 0.5; }
+.slider_destacado_home .owl-next { background: url(../img/arrow_right2.png) no-repeat !important; right: 30px; }
+@media (max-width: 1024px) { .slider_destacado_home .owl-next { right: 30px; margin-top: -30px !important; } }
+@media (max-width: 768px) { .slider_destacado_home .owl-next { right: 10px; } }
+.slider_destacado_home .owl-prev { background: url(../img/arrow_left2.png) no-repeat !important; left: 30px; }
+@media (max-width: 1024px) { .slider_destacado_home .owl-prev { margin-top: -30px !important; } }
+@media (max-width: 768px) { .slider_destacado_home .owl-prev { left: 10px; } }
 
 section.visitanos { padding: 45px 0; position: relative; border-top: 1px solid #B7B7B7; }
 section.visitanos h2 { font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif; font-size: 20px; color: black; text-transform: uppercase; position: absolute; top: -10px; background-color: #fff; display: inline-block; width: 170px; }

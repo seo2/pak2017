@@ -286,6 +286,13 @@ a{
 
 }
 
+  .btn_rojo2{
+    @extend %btn_single_image;
+    bottom: 50px;
+  }
+
+
+
 /*----------------------------------------------------------*/
 
 %link_rojo{
@@ -367,6 +374,7 @@ a{
         color: $rojo;
       }
   }
+
 
 .btn_negro{
     background-color: $negro;
