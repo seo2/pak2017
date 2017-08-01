@@ -47,7 +47,29 @@
 				
 				curl_close ($ch);
 				$json = json_decode($result, true);
+
+				$obj 	= json_decode($result);
+				$data 	= $obj->objetoRetorno;
+			
+				$id_list = array_map(function ($val) { return (int) $val->punto_interes; }, $data);
 				
+				//print_r($id_list);
+
+				$db->where('punto_interes', $id_list, 'NOT IN');
+				$db->delete('pak_tiendas');
+
+				$db->where('punto_interes', $id_list, 'NOT IN');
+				$db->delete('pak_tiendas_img');
+				
+				$db->where('punto_interes', $id_list, 'NOT IN');
+				$db->delete('pak_tiendas_local');
+				
+				$db->where('punto_interes', $id_list, 'NOT IN');
+				$db->delete('pak_tiendas_scat');
+				
+				$db->where('punto_interes', $id_list, 'NOT IN');
+				$db->delete('pak_tiendas_tags');
+
 				//print_r($json);
 				$e = 0;
 				foreach(  $json['objetoRetorno'] as $value ){
@@ -416,7 +438,7 @@
 				<?
 				}
 				echo $e;
-				?>   				
+				?>   			
   			</div>	
   		</div>
 
@@ -427,4 +449,3 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
-
