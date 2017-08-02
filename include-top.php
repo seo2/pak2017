@@ -134,8 +134,9 @@ if(ICL_LANGUAGE_CODE=='en'){
                                        <li class="hidden-xs hidden-sm"><a class="invisible" href="javascript:void(0);">&nbsp</a></li>
                                        <li class="hidden-xs hidden-sm"><a class="invisible" href="javascript:void(0);">&nbsp</a></li>
                                        <li class="hidden-xs hidden-sm"><a class="invisible" href="javascript:void(0);">&nbsp</a></li>
+                                       <li class="hidden-xs hidden-sm"><a class="invisible" href="javascript:void(0);">&nbsp</a></li>
                                        <li><a href="<?php bloginfo('url'); ?>/arauco-tag"><?php echo $menu8; ?></a></li>
-                                       <li><a href="http://www.revistadetalle.cl/" target="_blank"><?php echo $menu9; ?></a></li>
+<!--                                        <li><a href="http://www.revistadetalle.cl/" target="_blank"><?php echo $menu9; ?></a></li> -->
                                        <li><a href="<?php bloginfo('url'); ?>/servicio-al-cliente"><?php echo $menu10; ?></a></li>
                                        <li><a href="<?php bloginfo('url'); ?>/travellers"><?php echo $menu11; ?></a></li>
                                   </ul>

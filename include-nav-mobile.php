@@ -36,7 +36,7 @@
                     <div class="divisor_h text-center"></div>
                      <ul class="nav navbar-nav lista_menu">
                        <li><a href="<?php bloginfo('url'); ?>/arauco-tag"><?php echo $menu8; ?></a></li>
-                       <li><a href="http://www.revistadetalle.cl/" target="_blank"><?php echo $menu9; ?></a></li>
+<!--                        <li><a href="http://www.revistadetalle.cl/" target="_blank"><?php echo $menu9; ?></a></li> -->
                        <li><a href="<?php bloginfo('url'); ?>/servicio-al-cliente"><?php echo $menu10; ?></a></li>
                        <li><a href="<?php bloginfo('url'); ?>/travellers"><?php echo $menu11; ?></a></li>
                    </ul>
