@@ -33,7 +33,7 @@ section.box_slider_tag {
                         top: 220px;
 
                       }
-             
+
                     h3 {
                       @include clarendon(50px, black);
                       text-transform: uppercase;
@@ -73,11 +73,11 @@ section.box_slider_tag {
                     .divider{
                           color:black;
                           overflow:hidden;
-                          text-align:left;   
+                          text-align:left;
                           line-height:1.2em;
                              @media(max-width: 768px){
                                   text-align: center;
-                                  
+
                             }
                       }
 
@@ -89,7 +89,7 @@ section.box_slider_tag {
                             width:50px;
                             border-bottom:1px solid black;
                             margin-top: -6px;
-                         
+
                         }
                         .divider:before{
                           margin-right: 10px;
@@ -98,14 +98,14 @@ section.box_slider_tag {
                           margin-left: 10px;
                         }
                   .box_btn_registro_tag{
-                        
+
                         width: 300px;
                       //  @include centerer(true, true);
                      //   margin-left: 60px;
                          @media(max-width: 768px){
                                  margin: 0 auto;
                                  max-width: 90%;
-                                  
+
                             }
 
                         img{
@@ -115,7 +115,7 @@ section.box_slider_tag {
                           display: block;
                           margin-bottom: 20px;
                         }
-                    
+
                         .strip {
                           background-size: cover !important;
                           background-position: center !important;
@@ -146,7 +146,7 @@ section.box_slider_tag {
                                   border: 1px solid black;
                                   background-color: white;
                                   color: $verde;
-                                
+
                                 }
                           }
                     }
@@ -157,11 +157,11 @@ section.box_slider_tag {
                 h3, h4, p,
                 .divider,
                 .divider:before,
-                .divider:after{ 
+                .divider:after{
                   color: white;
                 }
                  .divider:before,
-                .divider:after{ 
+                .divider:after{
                   border-bottom:1px solid white;
                 }
                 a.btn_verde {
@@ -176,7 +176,7 @@ section.box_slider_tag {
                 }
               } // texto-blanco
             }// caption
-          
+
             .img_slide {
                 background-size: cover !important;
                 background-position: center top !important;
@@ -189,7 +189,7 @@ section.box_slider_tag {
                 }
             }
         .owl-video-wrapper {
-              
+
                   min-height: 480px;
                   overflow: hidden;
                   @media (max-width: 767px){
@@ -201,7 +201,7 @@ section.box_slider_tag {
 
 
               }
-            
+
           }
           .owl-video{
             display: block;
@@ -213,9 +213,9 @@ section.box_slider_tag {
                 }
               }
               .owl-video-tn {
-          
+
                 min-height: 480px;
-               
+
                   @media (max-width: 767px){
                       min-height: 400px;
                   }
@@ -245,13 +245,13 @@ section.box_slider_tag {
 
               }
           }
-          
+
 
              // hover foto oscura
                     &.texto_negro {
                         color: black;
                         border: 1px solid black;
-                    
+
                     }
 
         }
@@ -291,8 +291,45 @@ section.box_slider_tag {
           }
 
         } // dots
+        .owl-next, .owl-prev {
+               width:20px;
+               height: 60px;
+               position: absolute;
+               text-indent: -9999px;
+               top: 50%;
+               margin-top: -30px;
+               cursor:pointer;
+                opacity: 0.9;
+              // @include transition(all 0.2s ease-in-out);
+                  &:hover {
+                   background-color: transparent;
+                   opacity: 0.5;
+                 }
+        }
+
+         .owl-next {
+             background: url(../img/arrow_right2.png) no-repeat !important;
+             right: 30px;
+                 @media (max-width:1024px){
+                   right: 30px;
+                   margin-top: -30px !important;
+               }
+                @media (max-width:768px){
+                   right: 10px;
+               }
+         }
+         .owl-prev {
+             background: url(../img/arrow_left2.png) no-repeat !important;
+             left: 30px;
+             @media (max-width:1024px){
+                 margin-top: -30px !important;
+             }
+               @media (max-width:768px){
+                   left: 10px;
+               }
+         }
       }
 
   }
 
-  
+

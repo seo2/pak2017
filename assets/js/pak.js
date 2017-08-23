@@ -15,7 +15,7 @@ $(document).ready(function() {
 /*animacion cerrar mobile*/
 
 
-                  
+
             $(window).scroll(function() {
                      if ($(this).scrollTop() < 480) {
                         $(".search_home").addClass("fixed");
@@ -64,7 +64,7 @@ $('#slider_piso_diseno').owlCarousel({
 $('.slider_home').owlCarousel({
     loop: false,
     margin:10,
-    nav:false,
+    nav:true,
     dots: true,
     autoplay: true,
     video: true,
@@ -112,9 +112,9 @@ $('.slider_destacado_home').owlCarousel({
 $('.slider_dl').owlCarousel({
     loop:false,
     margin:10,
-    nav:false,
+    nav:true,
     dots: true,
-    autoplay: false,
+    autoplay: true,
     video: true,
     lazyLoad:true,
     responsive:{
@@ -203,7 +203,7 @@ $('.slider_servicios_generales').owlCarousel({
 $('.slider_tag').owlCarousel({
     loop:false,
     margin:10,
-    nav:false,
+    nav:true,
     dots: true,
     autoplay: false,
     rewind: true,
@@ -224,7 +224,7 @@ $('.slider_tag').owlCarousel({
 $('.slider_travellers').owlCarousel({
     loop:false,
     margin:10,
-    nav:false,
+    nav:true,
     dots: false,
     autoplay: false,
     rewind: true,
@@ -308,7 +308,7 @@ $('.slider_travellers_tarjeta').owlCarousel({
 // slider calugas secciones
 
 $('.box_slider').owlCarousel({
-  
+
     loop:false,
     margin:10,
     nav:false,
@@ -355,7 +355,7 @@ $('.box_slider').owlCarousel({
 
 
         // function Time(){
-        //         var offset = -70; 
+        //         var offset = -70;
         //          //  Handler for .ready() called.
         //          $('html, body').animate({
         //             scrollTop: $(".search_home").offset().top + offset
@@ -401,7 +401,7 @@ $('.box_slider').owlCarousel({
 			  }else if(tipo=='131'){
 			      pagina = '/piso-diseno?tiendaID=';
 			  }
-		      window.location.href = urlpak+pagina+id_tienda;		   		
+		      window.location.href = urlpak+pagina+id_tienda;
 	   		}else{
 		   		logo 	= $(this).data('logo');
 		   		desc 	= $(this).data('desc');
@@ -411,16 +411,16 @@ $('.box_slider').owlCarousel({
 		   		piso 	= $(this).data('piso');
 		   		url  	= $(this).data('url');
 		   		pindcto 	= $(this).data('pindcto');
-		   		pinctodesc  = $(this).data('pinctodesc');   	
-		   		
+		   		pinctodesc  = $(this).data('pinctodesc');
+
 		   		result 	= url.replace(/(^\w+:|^)\/\//, '');
 		   		if (result.charAt(result.length - 1) == '/') {
 				  result = result.substr(0, result.length - 1);
 				}
 		   		mapa  = $(this).data('mapa');
-		   		
+
 		   		pagina = $('#pages').data('pagina');
-		   		
+
 		   		window.history.pushState("object or string", "Parque Arauco | " + nombre, "?tiendaID="+id_tienda);
 		   		document.title = "Parque Arauco | " + nombre;
 		   		$("#caja_datos_tienda p").html('');
@@ -433,13 +433,13 @@ $('.box_slider').owlCarousel({
 		   		$('#mapaTienda img').attr('src',mapa);
 	            $(".overlay_img").css("background-color", "transparent");
 	            $(this).css("background-color", "rgba(228,4,33,0.5)");
-	
+
 	            $("#lang_switcher").removeClass('visible-xs visible-sm').css('display', 'none');
 	            $(".lang, .rrss, .search").hide();
 	            $("#caja_datos_tienda").css("display", "block");
 	            $(".close_tienda").css('display','block').show().data('id',id_tienda);
-		
-		   		
+
+
 /*
 		   		if( $(this).hasClass('tieneDescuento')){
 			   		$('.pinDescuento').removeClass('hide');
@@ -451,31 +451,31 @@ $('.box_slider').owlCarousel({
 			   		$('#piiDescripcionDescuento').html('');
 		   		}
 */
-		   		
+
 	            $('body').toggleClass('menu_open');
 	            $('body,html').animate({
-	                scrollTop : 0                   
+	                scrollTop : 0
 	            }, 800);
 	   		}
-                
+
         });
-            
-          
-        $('.navbar-header').on('click', '.close_tienda', function(e) {    
+
+
+        $('.navbar-header').on('click', '.close_tienda', function(e) {
             $(".overlay_img").css("background-color", "transparent");
             $("#lang_switcher").addClass('visible-xs visible-sm');
             $(".lang, .rrss, .search").show();
             $(".close_tienda").hide();
             $("#caja_datos_tienda").fadeOut();
-        
+
 			id_tienda = $(this).data('id');
 			console.log(id_tienda);
-	   		
+
 	   		pagina = $('#pages').data('pagina');
-			
+
 	   		window.history.pushState("object or string", "Parque Arauco | Tiendas", urlpak+'/'+pagina);
 	   		document.title = "Parque Arauco | Tiendas";
-	   		
+
 			$(window).scrollTo($("#tienda_"+id_tienda).offset().top-150, 1500,'elasout');
         });
 
@@ -500,7 +500,7 @@ $('.box_slider').owlCarousel({
                     isOpen = false;
                         $('.rrss').css('z-index', '1');
                 }
-            });  
+            });
              submitIcon.mouseup(function(){
                     return false;
                 });
@@ -557,7 +557,7 @@ $('.box_slider').owlCarousel({
 
                 $('.navbar-toggle, .close_tienda').click(function () {
                     var menuOpen = $('body').toggleClass('menu_open');
-                    
+
                 });
 
         // colapsa menu al click en un enlace
@@ -566,9 +566,9 @@ $('.box_slider').owlCarousel({
 
         });
 
-// ===== Scroll to Top ==== 
+// ===== Scroll to Top ====
 $(window).scroll(function() {
-	if ($(this).scrollTop() >= 560) {        
+	if ($(this).scrollTop() >= 560) {
     	$('#return-to-top').fadeIn(300);    // Fade in the arrow
   	}else{
     	$('#return-to-top').fadeOut(300);   // Else fade out the arrow
@@ -591,7 +591,7 @@ $('body').on('click', '.box_servicio a', function() {
     window.setTimeout(function() {
         $(window).scrollTo($(elid+"ancla"), 1500,'elasout');
     }, 1);
-    
+
 	$('.slider_entrentencion').owlCarousel({
 	    loop:false,
 	    margin:10,
@@ -611,31 +611,31 @@ $('body').on('click', '.box_servicio a', function() {
 	            items:1
 	        }
 	    }
-	});  
+	});
 });
 
 $('.box_slider a').click(function() {
     elid = $(this).data('target');
     $(".content_servicio").collapse('hide');
-  
+
     window.setTimeout(function() {
     	$(window).scrollTo($(elid+"ancla"), 1500,'elasout');
     }, 500);
-});           
+});
 
 $('.box_more_info a').click(function() {
      elid = $(this).data('target');
        window.setTimeout(function() {
       $(window).scrollTo($(elid+"ancla"), 1500,'elasout');
     }, 500);
-    
+
     $('.box_servicio a.active').removeClass('active');
     $(".content_servicio").collapse('hide');
     $(".content_servicio").$(this).collapse('show');
-     
+
 });
 
-$('body').on('click', '.close_servicio', function() { 
+$('body').on('click', '.close_servicio', function() {
     elid = $(this).data('target');
     $(".content_servicio").collapse('hide');
     $('.box_servicio a').removeClass('active');
@@ -652,37 +652,37 @@ $('body').on('click', '.close_servicio', function() {
                     e.stopPropagation();
                 })
 
-                  
+
                   $('.box_slider').click(function() {
                       // $('.marker').removeClass('active');
                        // $(this).addClass('active');
                   });
 
-                               
+
                   //      $(".video")[0].src += "&autoplay=0";
                     //play video
 
-                 
+
                     $('.box_video').on('click', function(ev) {
 	                    $('.videito ').attr('src','');
 						video 		= $(this).data('video');
 						cajaid 		= $(this).attr('id');
 						urlvideo 	= 'http://www.youtube.com/embed/'+video+'?rel=0&enablejsapi=1&autoplay=1'
-						
+
 						console.log(video);
-						
+
                                 $(".cap_video").show();
                                 $(".lente_video").show();
                                 $(".btn_play_video").show();
 //                                 $('iframe').attr('src', $('iframe').attr('src'));
-                             
+
                                 $(".cap_video", this).hide();
                                 $(".lente_video", this).hide();
                                 $(".btn_play_video", this).hide();
-								
-                              
+
+
 						$('.'+cajaid).attr('src',urlvideo);
-                
+
                               ev.preventDefault();
                   });
 
@@ -690,7 +690,7 @@ $('body').on('click', '.close_servicio', function() {
             //     $(window).scrollTop($('.search_home').offset().top).scrollLeft($('.search_home').offset().left);
             // }
 
-          
+
 
 
 
@@ -751,7 +751,7 @@ $('#form_sac_contacto')
 				//alert(status);
 			}
 		});
-		 
+
     });
 
 $('#form_tarjeta_descuento')
@@ -794,7 +794,7 @@ $('#form_tarjeta_descuento')
 				//alert(status);
 			}
 		});
-		 
+
     });
 
 
@@ -853,18 +853,18 @@ $('#form_neswsletter')
 			    error: function(xhr, status, error) {
 					//alert(status);
 				}
-			}); 
+			});
 		}else{
 			alert('Debes aceptar los términos y condiciones.');
 		}
-		 
+
     });
 
 
-$(document).mouseup(function(e) 
+$(document).mouseup(function(e)
 {
     var container = $(".menu_container");
-    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    if (!container.is(e.target) && container.has(e.target).length === 0)
     {
 	    if($('#navbar').hasClass('in')){
         	$('.navbar-toggle').click();
