@@ -46,7 +46,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                     </a>
                 </div>
                 <div class="item">
-                    <a href="javascript:void(0);" target="_blank">
+                    <a href="http://araucocoronel.cl/" target="_blank">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/logos_mall/arauco_coronel.svg" alt="" class="center-block">
                     </a>
                 </div>
@@ -93,7 +93,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                 </a>
             </li>
             <li>
-                <a class="hvr-float" href="javascript:void(0);" target="_blank">
+                <a class="hvr-float" href="http://araucocoronel.cl/" target="_blank">
                   <img src="<?php bloginfo('template_url'); ?>/assets/img/logos_mall/arauco_coronel.svg" class="logo_size">
                 </a>
             </li>

@@ -28,7 +28,7 @@ if($tipo==1){
 	$to = "kcastillo@parauco.com";
 }elseif($tipo==3){
 	$servicio = "Actividades del mall";	
-	$to = "cgarcia@parauco.com";
+	$to = "meskenazi@parauco.com";
 }elseif($tipo==4){
 	$servicio = "Arriendo espacios y locales";	
 	$to = "clira@parauco.com";
@@ -40,7 +40,7 @@ if($tipo==1){
 	$to = "jaldunate@parauco.com";
 }elseif($tipo==7){
 	$servicio = "Sitio web y redes sociales";	
-	$to = "mbesnier@parauco.com";
+	$to = "cdelrio@parauco.com";
 }
 
 
