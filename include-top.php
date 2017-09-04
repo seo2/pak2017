@@ -45,7 +45,7 @@ if(ICL_LANGUAGE_CODE=='en'){
     $menu5 = "entretención";
     $menu6 = "novedades";
     $menu7 = "tiendas";
-	  $menu8 = "arauco tag";
+	$menu8 = "arauco tag";
     $menu9 = "revista detalle";
     $menu10 = "servicio al cliente";
     $menu11 = "travellers";
@@ -119,12 +119,30 @@ if(ICL_LANGUAGE_CODE=='en'){
                             <div class="col-sm-12 col-md-6">
                                  <ul class="nav navbar-nav">
                                      <li class="active"><a 			href="<?php bloginfo('url'); ?>">Home</a></li>
+                                     <?php 
+									// TRADUCCIONES
+									if(ICL_LANGUAGE_CODE=='en'){ ?>
+                                     <li><a id="btn_distrito" 		href="<?php bloginfo('url'); ?>/distrito-de-luxo"><?php echo $menu2; ?></a></li>
+                                     <li><a id="btn_boulevard" 		href="<?php bloginfo('url'); ?>/boulevard#boulevard"><?php echo $menu3; ?></a></li>
+                                     <li><a id="btn_piso" 			href="<?php bloginfo('url'); ?>/piso-diseno"><?php echo $menu4; ?></a></li>
+                                     <li><a id="btn_entretencion" 	href="<?php bloginfo('url'); ?>/news#entretencion"><?php echo $menu5; ?></a></li>
+                                     <li><a id="btn_novedades" 		href="<?php bloginfo('url'); ?>/news#novedades"><?php echo $menu6; ?></a></li>
+                                     <li><a id="btn_tiendas" 		href="<?php bloginfo('url'); ?>/tiendas#tiendas"><?php echo $menu7; ?></a></li>
+                                    <?php }elseif(ICL_LANGUAGE_CODE=='pt-br'){ ?>
+                                     <li><a id="btn_distrito" 		href="<?php bloginfo('url'); ?>/distrito-de-luxo"><?php echo $menu2; ?></a></li>
+                                     <li><a id="btn_boulevard" 		href="<?php bloginfo('url'); ?>/boulevard#boulevard"><?php echo $menu3; ?></a></li>
+                                     <li><a id="btn_piso" 			href="<?php bloginfo('url'); ?>/piso-diseno"><?php echo $menu4; ?></a></li>
+                                     <li><a id="btn_entretencion" 	href="<?php bloginfo('url'); ?>/novidades#entretencion"><?php echo $menu5; ?></a></li>
+                                     <li><a id="btn_novedades" 		href="<?php bloginfo('url'); ?>/novidades#novedades"><?php echo $menu6; ?></a></li>
+                                     <li><a id="btn_tiendas" 		href="<?php bloginfo('url'); ?>/tiendas#tiendas"><?php echo $menu7; ?></a></li>
+                                    <?php }else{ 	?>
                                      <li><a id="btn_distrito" 		href="<?php bloginfo('url'); ?>/distrito-de-lujo"><?php echo $menu2; ?></a></li>
                                      <li><a id="btn_boulevard" 		href="<?php bloginfo('url'); ?>/boulevard#boulevard"><?php echo $menu3; ?></a></li>
                                      <li><a id="btn_piso" 			href="<?php bloginfo('url'); ?>/piso-diseno"><?php echo $menu4; ?></a></li>
                                      <li><a id="btn_entretencion" 	href="<?php bloginfo('url'); ?>/novedades#entretencion"><?php echo $menu5; ?></a></li>
                                      <li><a id="btn_novedades" 		href="<?php bloginfo('url'); ?>/novedades#novedades"><?php echo $menu6; ?></a></li>
                                      <li><a id="btn_tiendas" 		href="<?php bloginfo('url'); ?>/tiendas#tiendas"><?php echo $menu7; ?></a></li>
+                                    <?php } ?>
                                 </ul>
                             </div>
 

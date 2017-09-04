@@ -58,8 +58,8 @@
                           <div class="row">
                             <div class="caption texto_blanco">
                                 <img class="logo_travellers" src="<?php bloginfo('template_url'); ?>/assets/img/logo_travellers.svg" alt="">
-                                <p>Solicita tu tarjeta de descuento en el mesón central de informaciones del mall.</p>
-                                <p>Exclusivo para extranjeros con pasaporte o DNI</p>
+                                <p><?php echo get('textos_texto_2',$slider); ?></p>
+                                <p><?php echo get('textos_texto_3',$slider); ?></p>
                             </div>
                           </div>
                         </div>

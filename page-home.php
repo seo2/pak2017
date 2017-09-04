@@ -177,6 +177,15 @@ if(ICL_LANGUAGE_CODE=='en'){
               <div class="col-sm-6 col-md-6">
                   <div class="box">
                         <!-- arauco tag -->
+                        <?php if(get('arauco_tag_imagen')){ ?>
+                        <a href="<?php bloginfo('url'); ?>/arauco-tag" class="box_enlace">
+                          <div class="box_img" style="background: url(<?php echo get('arauco_tag_imagen'); ?>);"> </div>
+                          <div class="caption">
+                              <h3><?php echo $tit1; ?></h3>
+                              <div class="divider"> &nbsp </div>
+                          </div>
+                        </a>
+                        <?php }else{ ?>
                         <a href="<?php bloginfo('url'); ?>/arauco-tag" class="box_enlace">
                           <div class="box_img" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg_arauco_tag.png);"> </div>
                           <div class="caption">
@@ -184,6 +193,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                               <div class="divider"> &nbsp </div>
                           </div>
                         </a>
+                        <?php } ?>
                  </div> <!-- arauco tag -->
                       
                   <div class="box">
