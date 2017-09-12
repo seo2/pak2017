@@ -10,24 +10,26 @@ Template name: Travellers Actividades
 <?php // include('include-slider-home.php') ?>
 <?php //include('include-search-home.php') ?>
 <?php include('include-search-no-slider.php') ?>
-<?php 
+<?php
 // TRADUCCIONES
 if(ICL_LANGUAGE_CODE=='en'){
 	$tit  = "activities";
 	$tit1 = "cinema";
 	$tit2 = "theater";
-	$tit3 = "art Gallery
-";
-}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+  $tit3 = "art Gallery";
+	$tit4 = "casa foa";
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){
 	$tit  = "atividades";
 	$tit1 = "cinema";
 	$tit2 = "teatro";
-	$tit3 = "galeria de Arte";
-}else{ 
+  $tit3 = "galeria de Arte";
+	$tit4 = "casa foa";
+}else{
 	$tit  = "actividades";
 	$tit1 = "cine";
 	$tit2 = "teatro";
-	$tit3 = "galería de arte";
+  $tit3 = "galería de arte";
+	$tit4 = "casa foa";
 } ?>
      <div class="titulo_seccion sin_slider">
         <div class="container">
@@ -46,7 +48,7 @@ if(ICL_LANGUAGE_CODE=='en'){
       <div class="container">
           <div class="row">
           <section class="travellers_actividades clearfix">
-         
+
                 <div class="col-sm-6 col-md-6">
 
                       <div class="box">
@@ -59,23 +61,23 @@ if(ICL_LANGUAGE_CODE=='en'){
 
                                                <div class="divider"> </div>
                                            </div>
-                                           <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_zona.jpg);"> </div>                             
+                                           <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_zona.jpg);"> </div>
                                       </a>
                                    </div> <!-- item -->
                                     <!-- <div class="item">
                                       <a href="">
-                                           <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_zona.jpg);"> </div>                             
+                                           <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_zona.jpg);"> </div>
                                       </a>
                                    </div>  item -->
                               </div><!-- box slider  -->
                      </div>
-                </div> 
+                </div>
 
                 <div class="col-sm-6 col-md-6">
                     <div class="box">
                           <div class="box_slider owl-carousel owl-theme ">
                             <div class="item">
-                               
+
                                 <a href="<?php bloginfo('url'); ?>/distrito-de-lujo/">
                                   <div class="logo_seccion logo_distrito" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/logo_distrito.svg);"> </div>
                                   <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_distrito.png);"> </div>
@@ -94,7 +96,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                             </div> -->
                         </div><!-- box slider  -->
                     </div> <!-- slider distrito -->
-                </div> 
+                </div>
 
                 <div class="col-sm-6 col-md-6">
                      <div class="box">
@@ -106,17 +108,17 @@ if(ICL_LANGUAGE_CODE=='en'){
                                               <h3><?php echo $tit1; ?> </h3>
                                               <div class="divider"> </div>
                                           </div>
-                                          <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_cine.jpg);"> </div>                             
+                                          <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_cine.jpg);"> </div>
                                      </a>
                                   </div> <!-- item -->
                                     <!-- <div class="item">
                                      <a href="">
-                                          <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_zona.jpg);"> </div>                             
+                                          <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_zona.jpg);"> </div>
                                      </a>
                                   </div> item -->
                              </div><!-- box slider  -->
                     </div><!-- cine -->
-                </div> 
+                </div>
 
                 <div class="col-sm-6 col-md-6">
                      <div class="box">
@@ -128,7 +130,7 @@ if(ICL_LANGUAGE_CODE=='en'){
                                               <h3><?php echo $tit2; ?> </h3>
                                               <div class="divider"> </div>
                                           </div>
-                                          <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_teatro.jpg);"> </div>                             
+                                          <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/portada_teatro.jpg);"> </div>
                                      </a>
                                   </div> <!-- item -->
                              </div><!-- box slider  -->
@@ -155,21 +157,32 @@ if(ICL_LANGUAGE_CODE=='en'){
                          <!--   <div class="item">
                                 <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider3.jpg);"> </div>
                             </div> -->
-                        <!--    <div class="item"> 
+                        <!--    <div class="item">
                                 <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/slider4.jpg);"> </div>
                             </div> -->
                        </div><!-- box slider  -->
                 </div> <!-- galeria -->
             </div>
 
+                <div class="col-sm-6 col-md-6">
+                  <div class="box">
+                     <div class="box_slider owl-carousel owl-theme">
+                           <div class="item">
+                             <a href="http://casafoa.cl/" target="_blank">
+                                <div class="caption">
+                                     <p>&nbsp </p>
+                                     <h3><?php echo $tit4; ?> </h3>
+                                    <div class="divider"> &nbsp </div>
+                                </div>
+                               <div class="box_slide" style="background: url(<?php bloginfo('template_url'); ?>/assets/img/bg-casa-foa.jpg);"> </div>
+                             </a>
+                           </div>
 
-
+                       </div><!-- box slider  -->
+                </div> <!-- casa foa -->
+            </div>
           </section>
-       
-           
-            </div> <!-- row -->
+    </div> <!-- row -->
 
-
-            
 <?php include('footer.php') ?>
 
