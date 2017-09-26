@@ -15,7 +15,7 @@
 }
 .bottom{
   position: absolute;
-  
+
 }
 .panel-group{
   position: relative;
@@ -27,7 +27,7 @@
 }
 .ancla{
   position: absolute;
-  width: 10px; 
+  width: 10px;
   height: 10px;
   //background-color: tomato;
   top: -185px;
@@ -115,8 +115,8 @@
               color:black;
              // margin:0 0 20px 15px;
               overflow:hidden;
-              text-align:left;   
-           
+              text-align:left;
+
           }
 
             .divider:before{
@@ -127,10 +127,10 @@
                 border-bottom:1px solid black;
                 margin-top: -6px;
                  margin-right: 10px;
-          
+
             }
            a{
-            
+
 
               &.back{
                   text-decoration: none;
@@ -191,8 +191,8 @@ a{
               color:black;
               margin:0 0 40px 15px;
               overflow:hidden;
-              text-align:left;   
-           
+              text-align:left;
+
           }
 
             &.raya_after:after{
@@ -401,9 +401,17 @@ a{
                -o-animation: none !important;
               -ms-animation: none !important;
                   animation: none !important;
-        } 
+        }
     }
 
 .sin_borde{
   border: none !important;
 }
+.bajada{
+  font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+
+

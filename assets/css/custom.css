@@ -129,6 +129,8 @@ footer .bullets li.bullet .bullet-content p a { color: #e40421; text-decoration:
 @media (max-width: 1024px) { .wow { visibility: visible !important; -webkit-animation: none !important; animation: none !important; } }
 .sin_borde { border: none !important; }
 
+.bajada { font-family: 'superclarendonlight_italic', Helvetica, Arial, sans-serif; font-size: 1em; margin-top: 20px; }
+
 #return-to-top { position: fixed; bottom: 20px; right: 40px; background: black; background: rgba(0, 0, 0, 0.7); width: 50px; height: 50px; display: block; text-decoration: none; border-radius: 35px; display: none; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; z-index: 1002; }
 @media (max-width: 767px) { #return-to-top { right: 15px; } }
 #return-to-top:hover { background: rgba(0, 0, 0, 0.9); }

@@ -16,6 +16,7 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$tit1 = "Stores with DISCOUNTS for travellers";
 	$tit2 = "Filter by";
 	$tit3 = "All Categories";
+  $tit4 = "";
 	$btn1 = "See more discounts";
 	$btn2 = "View more stores";
 	$page = '/en/travellers/discounts';
@@ -23,13 +24,15 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$tit1 = "Lojas com desconto para viajantes";
 	$tit2 = "Filtrar";
 	$tit3 = "todas as categorias";
+  $tit4 = "";
 	$btn1 = "veja mais descontos";
 	$btn2 = "Veja mais lojas";
 	$page = '/pt-br/viajantes/descontos';
 }else{
-	$tit1 = "TIENDAS DESCUENTOS PARA TRAVELLERS";
+	$tit1 = "Descuentos exclusivos para travellers";
 	$tit2 = "filtrar por";
 	$tit3 = "Todas las categorías";
+  $tit4 = "(* Descuentos no acumulables con otras promociones ni ofertas)";
 	$btn1 = "ver más descuentos";
 	$btn2 = "ver más tiendas";
 	$page = '/travellers/travellers-descuentos';
@@ -53,6 +56,7 @@ function tiene_descuentos($idioma, $catID){
           <div class="row">
             <div class="col-sm-12 col-md-10">
                <h4 class="divider"><?php echo $tit1; ?></h4>
+               <p class="bajada"><?php echo $tit4; ?></p>
             </div>
             <div class="col-sm-12 col-md-2">
                  <a href="javascript:window.history.back();" class="back">< <?php echo $back; ?></a>
@@ -93,7 +97,7 @@ function tiene_descuentos($idioma, $catID){
 						<div class="container">
 							<div class="row" id="caja_tienda">
 
- <?php
+        <?php
 						if($_GET['catID']){
 							$buscar = $_GET['catID'];
 							if($_GET['pagina']){
