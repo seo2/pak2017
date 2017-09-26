@@ -10,7 +10,7 @@ Template name: Travellers Descuentos
 <?php // include('include-slider-home.php') ?>
 <?php //include('include-search-home.php') ?>
 <?php include('include-search-no-slider.php') ?>
-<?php 
+<?php
 // TRADUCCIONES
 if(ICL_LANGUAGE_CODE=='en'){
 	$tit1 = "Stores with DISCOUNTS for travellers";
@@ -19,21 +19,21 @@ if(ICL_LANGUAGE_CODE=='en'){
 	$btn1 = "See more discounts";
 	$btn2 = "View more stores";
 	$page = '/en/travellers/discounts';
-}elseif(ICL_LANGUAGE_CODE=='pt-br'){ 
+}elseif(ICL_LANGUAGE_CODE=='pt-br'){
 	$tit1 = "Lojas com desconto para viajantes";
 	$tit2 = "Filtrar";
 	$tit3 = "todas as categorias";
 	$btn1 = "veja mais descontos";
 	$btn2 = "Veja mais lojas";
 	$page = '/pt-br/viajantes/descontos';
-}else{ 
+}else{
 	$tit1 = "TIENDAS DESCUENTOS PARA TRAVELLERS";
 	$tit2 = "filtrar por";
 	$tit3 = "Todas las categorías";
 	$btn1 = "ver más descuentos";
 	$btn2 = "ver más tiendas";
 	$page = '/travellers/travellers-descuentos';
-} ?> 
+} ?>
 
 <?php
 function tiene_descuentos($idioma, $catID){
@@ -68,22 +68,22 @@ function tiene_descuentos($idioma, $catID){
 					<div class="col-sm-12">
 						<div id="filtro_descuento" class="text-right">
 							<div id="text"> <?php echo $tit2; ?>: </div>
-								<select name="" class="selectpicker show-menu-arrow" id="categorias"> 
+								<select name="" class="selectpicker show-menu-arrow" id="categorias">
 									<option value="<?php bloginfo('url'); ?>/travellers/discounts/"><?php echo $tit3; ?></option>
 <?php
 					$categorias = $db->rawQuery("SELECT * FROM pak_categorias where idioma = $idioma order by nombre_subcategoria");
 					if($categorias){
-					foreach ($categorias as $c) { 
-						$tiene = 0; 
+					foreach ($categorias as $c) {
+						$tiene = 0;
 						$tiene = tiene_descuentos($idioma, $c['id_subcategoria']);
-						if($tiene == 1){ 
-?>                       	
+						if($tiene == 1){
+?>
 			                       <option value="<?php bloginfo('url'); ?>/travellers/discounts/?catID=<?php echo $c['id_subcategoria']; ?>" <?php if($_GET['catID']==$c['id_subcategoria']){ ?>selected<?php } ?>><?php echo $c['nombre_subcategoria']; ?></option>
 
 						<?php
 								}
 							}
-						}  		
+						}
 						?>
                 				</select>
                 			</div>
@@ -110,30 +110,30 @@ function tiene_descuentos($idioma, $catID){
 								$tiendas = $db->rawQuery("select * from pak_tiendas where idioma = $idioma and pinDescuento != '' AND pinDescuento != '0' order by nombre limit 12");
 							}
 						}
-                            
+
 						if($tiendas){
-							foreach ($tiendas as $t) {   
-								
-								
+							foreach ($tiendas as $t) {
+
+
                             	$imagen = get_img_tienda($t['punto_interes']);
                             	if(!$imagen){
                                 	$imagen 	= "/assets/img/demobgtienda.jpg";
 								  	$imagen	 	= get_template_directory_uri().$imagen;
                             	}else{
                                 	$imagen 	= '/ws/uploads/img_'. $t['punto_interes'].'_1.jpg';
-                                	$params1 	= array( 'width' => 650, 'height' => 650, 'crop' => true );	
+                                	$params1 	= array( 'width' => 650, 'height' => 650, 'crop' => true );
 								  	$imagen	 	= get_template_directory_uri().$imagen;
 								  	$imagen  	= bfi_thumb( $imagen, $params1 );
                             	}
-								
-                        ?>                          
-                          
-                          
-                          <div class="col-md-3 caja_tienda"> 
+
+                        ?>
+
+
+                          <div class="col-md-3 caja_tienda">
                               <div class="box_descuento">
                                       <div class="item_descuento" id="tienda_<?php echo $t['punto_interes']; ?>">
-	                                      
-	                                    <?php  
+
+	                                    <?php
 											if($t['tipo']=='0'){
 											  $url = '/tiendas?tiendaID='.$t['punto_interes'];
 											}elseif($t['tipo']=='110'){
@@ -142,25 +142,31 @@ function tiene_descuentos($idioma, $catID){
 											  $url = '/distrito-de-lujo/distrito-de-lujo-tienda/?tiendaID='.$t['punto_interes'];
 											}elseif($t['tipo']=='131'){
 											  $url = '/piso-diseno?tiendaID='.$t['punto_interes'];
-											}                                  
+											}
 	                                    ?>
                                         <a href="javascript:void(0);<?php //bloginfo('url'); ?><?php //echo $url; ?>" data-id="<?php echo $t['punto_interes']; ?>" data-logo="<?php bloginfo('template_url'); ?>/ws/uploads/logo_<?php echo $t['punto_interes']; ?>.jpg" data-img="<?php echo $imagen; ?>" data-fono="<?php echo $t['telefono_punto_interes']; ?>" data-piso="<?php echo $t['numero_piso']; ?>" data-url="<?php echo $t['url_punto_interes']; ?>" data-mapa="<?php bloginfo('template_url'); ?>/ws/uploads/plano_<?php echo $t['punto_interes']; ?>.jpg" data-nombre="<?php echo $t['nombre']; ?>" data-tipo="<?php echo $t['tipo']; ?>">
+                                          <div class="box_nombre_tienda">
+                                            <h4 class="nombre_tienda"><?php echo $t['nombre']; ?></h4>
+                                          </div>
+
+                                           <div class="borde"> </div>
+
                                           <div class="box_dcto">
                                               <div class="datos_dcto">
-                                         
-                                                      <div class="num bigtext"><span><?php echo  $t['pinDescuento']; ?><?php //echo str_replace('%', '', $t['pinDescuento']); ?></span></div>   
+
+                                                      <div class="num bigtext"><span><?php echo  $t['pinDescuento']; ?><?php //echo str_replace('%', '', $t['pinDescuento']); ?></span></div>
 <!--
                                                       <div class="box_percent">
                                                            <div class="text_percent"> % </div>
                                                            <div class="text_dcto">dcto </div>
                                                        </div>
 -->
-                                                  
+
                                                       <div class="clearfix"></div>
                                                   <p><?php echo $t['piiDescripcionDescuento']; ?></p>
                                                 </div>
 
-                                                 
+
                                             </div>
                                             <!-- 720 x 720 -->
                                             <img class="img-responsive" src="<?php echo $imagen; ?>">
@@ -177,42 +183,42 @@ function tiene_descuentos($idioma, $catID){
 
 						<?php
 							}
-						}  		
+						}
 						?>
 
 
-           
+
                     </div>
                   </div> <!-- container grila descuentos -->
-                               
+
                 <div class="box_ver_mas_descuentos text-center">
                 	<a href="javascript:void(0);" class="btn btn-default btn_ver_mas hvr-float">
                     	<h3 class="ver_mas" id="cargar_mas"><?php echo $btn1; ?></h3>
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_down.png" alt="" class="img-responsive center-block arrow_down">
                         <span id="loader"  style="display:none"><i class="fa fa-circle-o-notch fa-spin fa-fw"></i></span>
                     </a>
-                </div> <!-- ver mas -->     
+                </div> <!-- ver mas -->
               </div><!-- grid descuentos -->
 
           </section>
 </div> <!-- row -->
 
 <div id="pages" style="display:none;" data-pagina="tiendas">
-<?php 
+<?php
 	$postperpage 	= 12;
 	$rowcount 		= 0;
-	if($_GET['catID']){		
+	if($_GET['catID']){
 		$tiendas = $db->rawQuery("SELECT * FROM pak_tiendas a, pak_tiendas_scat b WHERE a.idioma = $idioma and b.idioma = a.idioma and a.pinDescuento != '' AND a.pinDescuento != '0' and b.sub_categoria = $buscar AND a.punto_interes = b.punto_interes ORDER BY a.nombre");
 		if($tiendas){
-			foreach ($tiendas as $t) { 
+			foreach ($tiendas as $t) {
 				$rowcount++;
 			}
 		}
-		$cola = "&catID=$buscar";	
+		$cola = "&catID=$buscar";
 	}else{
 		$tiendas = $db->rawQuery("select * from pak_tiendas where idioma  = $idioma and pinDescuento != '' AND pinDescuento != '0'");
 		if($tiendas){
-			foreach ($tiendas as $t) { 
+			foreach ($tiendas as $t) {
 				$rowcount++;
 			}
 		}
@@ -220,36 +226,36 @@ function tiene_descuentos($idioma, $catID){
 	}
 
 	echo "Total Items: ".$rowcount;
-	
-	$paginas = ceil($rowcount/$postperpage); 
-	
+
+	$paginas = ceil($rowcount/$postperpage);
+
 	echo " - Páginas: ".$paginas;
-	
+
 	$x = 1;
 	while($x <= $paginas) {
-	
+
 	?>
 		<a href="<?php bloginfo('url'); ?><?php echo $page; ?>/?pagina=<?php echo  $x.$cola; ?>"></a>
-	<?php 
-		$x++; 
+	<?php
+		$x++;
 	}
 	?>
-	
+
 </div>
 
-            
+
 <?php include('footer.php') ?>
 
 <script>
 <?php if($paginas<=1){ ?>
 	$('.box_ver_mas_descuentos').hide();
-<?php } ?>	
-	
-	
+<?php } ?>
+
+
 var pages 	= new Array();
-var current = 0; 
+var current = 0;
 var loaded 	= new Array();
-	
+
 $('#pages a').each(function(index) {
     pages[index] = $(this).attr('href');
     loaded[$(this).attr('href')] = 0;
@@ -258,11 +264,11 @@ $('#pages a').each(function(index) {
 
 
 $('.box_ver_mas_descuentos').on('click', function(){
-  	loaded[pages[current+1]] = loaded[pages[current+1]] + 1; 
+  	loaded[pages[current+1]] = loaded[pages[current+1]] + 1;
     if(loaded[pages[current+1]] <= 1){
          loadMoreContent(current+1);
 	}
-}) 
+})
 
 function loadMoreContent(position) {
     if(position < pages.length) {
@@ -277,7 +283,7 @@ function loadMoreContent(position) {
 					});
 			        current=position;
 			        if(position +1 < pages.length) {
-					
+
 					}else{
 					 	$('.box_ver_mas_tiendas').hide();
 					}
